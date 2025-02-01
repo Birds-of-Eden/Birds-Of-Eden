@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.heading {
+  @apply mb-12 animate-gradient-slow bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-center text-5xl font-extrabold leading-relaxed text-transparent;
+}
+
+.heading2 {
+  @apply mb-12 animate-gradient-slow bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 bg-clip-text text-center text-3xl font-extrabold leading-relaxed text-transparent;
+}
+
+@screen sm {
+}
+
+@screen md {
+}
+
+@screen lg {
+}
+
+@screen xl {
+}
+
+@screen 2xl {
+}
