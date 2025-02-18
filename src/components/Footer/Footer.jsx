@@ -22,7 +22,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-violet-900 text-white">
+    <footer className="bg-violet-900  text-white">
       <div className="container flex flex-col items-center justify-between py-12 md:flex-row">
         <div className="md:w-1/3">
           <div className="mb-4 flex items-center justify-center md:mb-0">
@@ -46,7 +46,7 @@ const Footer = () => {
               className="flex items-center justify-center transition duration-300 ease-in-out hover:text-primary"
             >
               <span className="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
-                BIRDS 
+                BIRDS
               </span>
               <span className="ml-2 inline-block text-primary drop-shadow-lg">
                 OF EDEN

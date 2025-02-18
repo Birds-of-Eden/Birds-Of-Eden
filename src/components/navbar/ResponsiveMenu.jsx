@@ -217,6 +217,32 @@ const ResponsiveMenu = ({ showMenu }) => {
                 </NavLink>
               </li>
 
+              <li className="cursor-pointer">
+                <NavLink
+                  to="/hardware"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "flex items-center gap-2 text-red-500"
+                      : "flex items-center gap-2"
+                  }
+                >
+                  Hardware Products
+                </NavLink>
+              </li>
+
+              <li className="cursor-pointer">
+                <NavLink
+                  to="/drones"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "flex items-center gap-2 text-red-500"
+                      : "flex items-center gap-2"
+                  }
+                >
+                  Drones
+                </NavLink>
+              </li>
+
               <li className="p-2 hover:bg-violet-200">
                 <NavLink
                   to="/blogs"

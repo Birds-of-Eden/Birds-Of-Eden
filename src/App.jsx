@@ -33,6 +33,8 @@ import Accessories from "./pages/Accessories";
 import PaymentGatewayIntegration from "./pages/PaymentGatewayIntegration";
 import QuickBookIntegration from "./pages/QuickBookIntegration";
 import ZohoIntegration from "./pages/ZohoIntegration";
+import Drones from "./pages/Drones";
+import DroneDetailsPage from "./pages/DroneDetailsPage";
 
 function App() {
   useEffect(() => {
@@ -75,6 +77,7 @@ function App() {
           <Route path="/products/:tab" element={<ProductPage />} />
           <Route path="/test-your-iq" element={<TestYourIQ />} />
           <Route path="/blogs" element={<BlogsPage />} />
+          <Route path="/drones" element={<Drones />} />
 
           {/* New Routes for Other Services */}
           <Route
@@ -86,6 +89,7 @@ function App() {
             element={<QuickBookIntegration />}
           />
           <Route path="/zoho-integration" element={<ZohoIntegration />} />
+          <Route path="/drones/:id" element={<DroneDetailsPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>

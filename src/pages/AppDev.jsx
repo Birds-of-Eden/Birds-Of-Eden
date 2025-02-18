@@ -1,6 +1,3 @@
-// AppDev.jsx
-// import React from "react";
-
 const AppDev = () => {
   return (
     <div className="pt-24">

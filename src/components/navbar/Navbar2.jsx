@@ -596,6 +596,19 @@ const Navbar2 = () => {
                       Hardware Products
                     </NavLink>
                   </li>
+
+                  <li className="cursor-pointer">
+                    <NavLink
+                      to="/drones"
+                      className={({ isActive }) =>
+                        `flex items-center gap-1.5 whitespace-nowrap rounded-full border border-transparent px-4 py-2 hover:border-white/20 hover:bg-white/10  ${
+                          isActive && ""
+                        }`
+                      }
+                    >
+                      Drones
+                    </NavLink>
+                  </li>
                 </ul>
               </div>
               <div className="hidden items-center gap-5 lg:flex">
