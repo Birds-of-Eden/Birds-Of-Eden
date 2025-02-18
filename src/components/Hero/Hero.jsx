@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Video from "../../assets/2.mp4"; // Import the video file
 import Banner from "../../assets/undraw_real_time_sync_re_nky7.svg";
+import CircleServices from "./circleServices";
 
 const Hero = () => {
   return (
@@ -18,7 +19,7 @@ const Hero = () => {
       <div className="after:absolute after:inset-0 after:h-full after:w-full after:bg-black/60"></div>
 
       {/* Content */}
-      <section className="container relative z-10 flex pb-32 pt-44 py-20 flex-col items-center justify-center">
+      <section className="container relative z-10 flex flex-col items-center justify-center py-20 pb-32 pt-44">
         <div className="grid grid-cols-1 items-center gap-8 text-white md:grid-cols-2">
           <div
             data-aos="fade-right"
@@ -26,11 +27,14 @@ const Hero = () => {
             data-aos-once="true"
             className="flex flex-col items-center gap-4 text-center md:items-start md:text-left"
           >
-            <h1 className="mb-3 text-2xl md:text-5xl transition-transform duration-500">
+            <h1 className="mb-3 text-2xl transition-transform duration-500 md:text-5xl">
               <span className="scale-10 0 transform rounded font-bold text-primary transition-transform duration-500">
                 BIRDS OF EDEN
               </span>
-              <span> Innovating the Future of Erp Software Solutions And AI</span>
+              <span>
+                {" "}
+                Innovating the Future of Erp Software Solutions And AI
+              </span>
             </h1>
             <p className="text-xl font-light duration-500">
               Birds OF EDEN is a cutting-edge software company dedicated to
@@ -52,11 +56,12 @@ const Hero = () => {
               </Link>
             </div>
           </div>
-          <img
+          {/* <img
             src="/undraw_progressive_app_m-9-ms.svg"
             alt="No image"
             className="w-full hidden lg:block"
-          />
+          /> */}
+          <CircleServices />
         </div>
       </section>
     </main>
