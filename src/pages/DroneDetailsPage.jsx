@@ -18,7 +18,7 @@ const DroneDetailsPage = () => {
       <img
         src={drone.image}
         alt={drone.title}
-        className="h-64 w-full rounded-lg object-cover shadow-md"
+        className="rounded-lg object-cover shadow-md"
       />
       <h2 className="mt-4 text-3xl font-bold text-gray-800 dark:text-white">
         {drone.title}
