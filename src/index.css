@@ -24,3 +24,7 @@
 
 @screen 2xl {
 }
+
+.splide__arrow {
+  background-color: white;
+}

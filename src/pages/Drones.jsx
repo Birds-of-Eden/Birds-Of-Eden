@@ -1,5 +1,6 @@
 import DroneCard from "../components/Drones/DroneCard";
 import droneData from "../Data/droneData";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 const Drones = () => {
   return (
@@ -8,16 +9,26 @@ const Drones = () => {
         <h2 className="mb-8 text-center text-3xl font-bold text-gray-800 dark:text-white">
           Explore Our Drone Collection
         </h2>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
-          {droneData.map((drone) => (
-            <DroneCard
-              key={drone.id}
-              id={drone.id}
-              title={drone.title}
-              description={drone.description}
-              image={drone.image}
-            />
-          ))}
+        <div>
+          <Splide
+            options={{
+              type: "loop",
+              perPage: 3,
+              gap: 24,
+            }}
+          >
+            {droneData.map((drone, index) => (
+              <SplideSlide key={index} className="overflow-hidden rounded-lg">
+                <DroneCard
+                  key={drone.id}
+                  id={drone.id}
+                  title={drone.title}
+                  description={drone.description}
+                  image={drone.image}
+                />
+              </SplideSlide>
+            ))}
+          </Splide>
         </div>
       </div>
     </section>

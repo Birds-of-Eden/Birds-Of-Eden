@@ -22,7 +22,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-violet-900  text-white">
+    <footer className="bg-[#334155] text-white">
       <div className="container flex flex-col items-center justify-between py-12 md:flex-row">
         <div className="md:w-1/3">
           <div className="mb-4 flex items-center justify-center md:mb-0">
@@ -69,7 +69,7 @@ const Footer = () => {
                     to="/"
                     className={({ isActive }) =>
                       isActive
-                        ? "flex  items-center gap-2 text-red-500"
+                        ? "flex  items-center gap-2 text-blue-500"
                         : "flex  items-center gap-2"
                     }
                   >
@@ -81,7 +81,7 @@ const Footer = () => {
                     to="/about"
                     className={({ isActive }) =>
                       isActive
-                        ? "flex  items-center gap-2 text-red-500"
+                        ? "flex  items-center gap-2 text-blue-500"
                         : "flex  items-center gap-2"
                     }
                   >
@@ -94,7 +94,7 @@ const Footer = () => {
                     to="/contact"
                     className={({ isActive }) =>
                       isActive
-                        ? "flex items-center gap-2 text-red-500"
+                        ? "flex items-center gap-2 text-blue-500"
                         : "flex items-center gap-2"
                     }
                   >
@@ -111,7 +111,7 @@ const Footer = () => {
                     to="/privacy"
                     className={({ isActive }) =>
                       isActive
-                        ? "flex  items-center gap-2 text-red-500"
+                        ? "flex  items-center gap-2 text-blue-500"
                         : "flex  items-center gap-2"
                     }
                   >
@@ -123,7 +123,7 @@ const Footer = () => {
                     to="/services"
                     className={({ isActive }) =>
                       isActive
-                        ? "flex  items-center gap-2 text-red-500"
+                        ? "flex  items-center gap-2 text-blue-500"
                         : "flex  items-center gap-2"
                     }
                   >
