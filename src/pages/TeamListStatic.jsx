@@ -61,9 +61,9 @@ const TeamListStatic = () => {
   const roleOrder = ["CEO", "CTO", "COO"];
 
   return (
-    <div className=" dark:bg-slate-800">
+    <div className="bg-slate-100 dark:bg-slate-800">
       {/* <Navbar2 toggleTheme={toggleTheme} /> */}
-      <div className="container mx-auto justify-center px-5 py-10 text-center dark:bg-slate-800 md:min-h-screen">
+      <div className="container mx-auto justify-center bg-slate-100 px-5 py-10  text-center dark:bg-slate-800 md:min-h-screen">
         <h1 className="heading2 md:text-5xl">Meet Our Executive Team</h1>
         <div className="container mx-auto">
           {roleOrder.map(
@@ -78,7 +78,9 @@ const TeamListStatic = () => {
                       <div
                         key={member.id}
                         className={`transform overflow-hidden rounded-xl ${
-                          theme === "light" ? "bg-white" : "bg-gray-800"
+                          theme === "light"
+                            ? "bg-white"
+                            : "bg-gray-200 dark:bg-slate-900"
                         } shadow-lg transition duration-500 hover:scale-105 hover:shadow-2xl`}
                       >
                         <div className="group relative">
@@ -92,7 +94,9 @@ const TeamListStatic = () => {
                         <div className="p-6">
                           <h3
                             className={`mb-3 text-2xl font-semibold ${
-                              theme === "light" ? "text-gray-900" : "text-white"
+                              theme === "light"
+                                ? "text-gray-900"
+                                : "text-black dark:text-white"
                             }`}
                           >
                             {member.name}
@@ -101,7 +105,7 @@ const TeamListStatic = () => {
                             className={`mb-5 ${
                               theme === "light"
                                 ? "text-gray-600"
-                                : "text-gray-400"
+                                : "font-bold text-pink-500 dark:text-white"
                             }`}
                           >
                             {member.role}

@@ -14,8 +14,8 @@ const AboutUs = () => {
     <div>
       {/* <Navbar2 /> */}
 
-      <div className=" pb-10">
-        <div className="relative z-[1] bg-blue-500/50 bg-[url('/pexels-felixmittermeier-1205301.jpg')] bg-cover bg-center bg-no-repeat py-8 text-center after:absolute after:inset-0 after:bg-gradient-to-t after:from-black after:to-blue-500/60">
+      <div className=" bg-slate-100 pb-10 dark:bg-slate-800">
+        <div className="relative z-[1] bg-[url('/pexels-felixmittermeier-1205301.jpg')] bg-cover bg-center bg-no-repeat py-8 text-center after:absolute after:inset-0 after:bg-gradient-to-t after:from-slate-100 after:to-blue-500/60 dark:bg-blue-500/50 dark:to-slate-800 dark:after:from-slate-800">
           <h1
             className={`relative z-[1] justify-center rounded-lg p-4 text-center text-4xl font-bold`}
           >
@@ -26,7 +26,7 @@ const AboutUs = () => {
           </h1>
         </div>
 
-        <div className="container bg-gradient-to-t from-transparent to-black">
+        <div className="container bg-gradient-to-t from-transparent to-slate-100 dark:to-slate-800">
           <p className={`mb-8 text-lg ${animated ? "animate-fadeIn" : ""}`}>
             <span className="font-semibold">BIRDS OF EDEN</span> is a dynamic
             software company dedicated to creating innovative solutions that

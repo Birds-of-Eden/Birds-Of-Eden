@@ -101,7 +101,7 @@ const OurService = () => {
                 alt={card.title}
                 className="mb-4 h-12 w-12 animate-spin-slow"
               />
-              <h3 className="mb-2 transform animate-pulse text-xl font-bold text-indigo-600 transition-transform duration-300 hover:scale-105 dark:text-purple-400">
+              <h3 className="mb-2 transform  text-xl font-bold text-indigo-600 transition-transform duration-300 hover:scale-105 dark:text-purple-400">
                 {card.title}
               </h3>
               <p className="mb-4 text-center text-gray-700 dark:text-white">
