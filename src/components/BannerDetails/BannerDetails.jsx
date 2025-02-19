@@ -52,7 +52,7 @@ const BannerDetails = ({ reverse, img }) => {
               </div>
               <div className="space-x-4">
                 <Link to="/get-started">
-                  <button className="transform animate-pulse rounded-md border-2 border-blue-500 bg-blue-500 px-4 py-2 text-sm text-white shadow-md transition-transform duration-300 hover:scale-105 hover:border-blue-700 hover:bg-blue-700">
+                  <button className="transform  rounded-md border-2 border-blue-500 bg-blue-500 px-4 py-2 text-sm text-white shadow-md transition-transform duration-300 hover:scale-105 hover:border-blue-700 hover:bg-blue-700">
                     Get Started
                   </button>
                 </Link>

@@ -43,7 +43,7 @@ const Navbar2 = () => {
                     href="mailto:talat@birdsofeden.com"
                     className="hover:underline"
                   >
-                    talat@birdsofeden.com
+                    talat@birdsofeden.me
                   </a>
                 </div>
                 <div className="flex items-center gap-2 p-2 text-white">
@@ -57,7 +57,7 @@ const Navbar2 = () => {
           </div>
         </div>
         {/* Main Navigation */}
-        <div className="bg-gradient-to-r from-blue-500/30 to-blue-300/30 text-black shadow-lg dark:text-white">
+        <div className="bg-gradient-to-r from-blue-500/30 to-blue-300/40 text-black shadow-lg dark:text-white">
           <div className="container">
             <nav className="flex h-[80px] items-center justify-between gap-10 p-2">
               <div className="flex items-center">
@@ -102,7 +102,7 @@ const Navbar2 = () => {
                     </NavLink>
                     <div className="absolute left-0 z-[9999] hidden pt-2 group-hover:block">
                       <div className="rounded-xl bg-gradient-to-b from-blue-500/50 to-blue-500/20 p-2 text-black backdrop-blur-xl">
-                        <ul className="flex flex-col gap-1 text-white">
+                        <ul className="flex flex-col gap-1 text-black">
                           <li className="whitespace-nowrap rounded-lg p-2 hover:bg-white/20">
                             <NavLink
                               to="/"
