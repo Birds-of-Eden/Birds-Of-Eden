@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { cn } from "../lib/utils";
 import React from "react";
 
@@ -38,10 +39,9 @@ export function Circles({
               "--duration": calculatedDuration,
               "--radius": radius,
               "--angle": angle,
-              "--icon-size": `${iconSize}px`,
             }}
             className={cn(
-              `size-[var(--icon-size)] animate-orbit absolute flex transform-gpu items-center justify-center rounded-full`,
+              `absolute flex transform-gpu animate-orbit items-center justify-center rounded-full`,
               { "[animation-direction:reverse]": reverse },
               className,
             )}

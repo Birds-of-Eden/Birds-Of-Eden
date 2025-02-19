@@ -9,10 +9,10 @@ export default function CircleServices() {
     <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden">
       <Circles iconSize={40}>
         <Icons.openai />
-        <GiDeliveryDrone className="h-[100px] w-[100px] rounded-full bg-white/80 p-4  text-black ring-2 ring-white ring-offset-2 ring-offset-transparent backdrop-blur-sm" />
-        <FaReact className="h-[100px] w-[100px] rounded-full bg-white/80 p-4  text-black ring-2 ring-white ring-offset-2 ring-offset-transparent backdrop-blur-sm" />
-        <SiNextdotjs className="h-[100px] w-[100px] rounded-full bg-white/80 p-4  text-black ring-2 ring-white ring-offset-2 ring-offset-transparent backdrop-blur-sm" />
-        <FaPython className="h-[100px] w-[100px] rounded-full bg-white/80 p-4  text-black ring-2 ring-white ring-offset-2 ring-offset-transparent backdrop-blur-sm" />
+        <GiDeliveryDrone className="h-[100px] w-[100px] shrink-0 rounded-full bg-white/80 p-4  text-black ring-2 ring-white ring-offset-2 ring-offset-transparent backdrop-blur-sm" />
+        <FaReact className="h-[100px] w-[100px] shrink-0 rounded-full bg-white/80 p-4  text-black ring-2 ring-white ring-offset-2 ring-offset-transparent backdrop-blur-sm" />
+        <SiNextdotjs className="h-[100px] w-[100px] shrink-0 rounded-full bg-white/80 p-4  text-black ring-2 ring-white ring-offset-2 ring-offset-transparent backdrop-blur-sm" />
+        <FaPython className="h-[100px] w-[100px] shrink-0 rounded-full bg-white/80 p-4  text-black ring-2 ring-white ring-offset-2 ring-offset-transparent backdrop-blur-sm" />
       </Circles>
     </div>
   );
