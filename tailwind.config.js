@@ -84,11 +84,32 @@ export default {
               "rotate(calc(var(--angle) * 1deg + 360deg)) translateY(calc(var(--radius) * 1px)) rotate(calc((var(--angle) * -1deg) - 360deg))",
           },
         },
+        scroll: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        rolling: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        "scroll-vertical": {
+          "0%": { transform: "translateY(0)" },
+          "100%": { transform: "translateY(-50%)" },
+        },
       },
       animation: {
         "spin-slow": "rotate 5s linear infinite",
         "gradient-slow": "gradient 3s ease infinite",
         orbit: "orbit calc(var(--duration)*1s) linear infinite",
+        "modal-appear": "modalAppear 0.3s ease-out forwards",
+        scroll: "scroll 20s linear infinite",
+        rolling: "rolling 30s linear infinite",
+        "scroll-vertical": "scroll-vertical 25s linear infinite",
+      },
+      lineClamp: {
+        1: "1",
+        2: "2",
+        3: "3",
       },
     },
   },

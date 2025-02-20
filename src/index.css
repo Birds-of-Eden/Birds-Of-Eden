@@ -78,3 +78,32 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes modalAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-modal-appear {
+  animation: modalAppear 0.3s ease-out forwards;
+}
+
+/* Smooth transitions for all transform properties */
+* {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* Prevent text selection during gallery interaction */
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}

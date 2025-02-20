@@ -13,6 +13,14 @@ export default function CircleServices() {
         <FaReact className="h-[100px] w-[100px] shrink-0 rounded-full bg-white/80 p-4  text-black ring-2 ring-white ring-offset-2 ring-offset-transparent backdrop-blur-sm" />
         <SiNextdotjs className="h-[100px] w-[100px] shrink-0 rounded-full bg-white/80 p-4  text-black ring-2 ring-white ring-offset-2 ring-offset-transparent backdrop-blur-sm" />
         <FaPython className="h-[100px] w-[100px] shrink-0 rounded-full bg-white/80 p-4  text-black ring-2 ring-white ring-offset-2 ring-offset-transparent backdrop-blur-sm" />
+        {/* New Image */}
+        {/* <div className="h-[100px] w-[100px] shrink-0 overflow-hidden rounded-full bg-white/80 p-2 ring-2 ring-white ring-offset-2 ring-offset-transparent backdrop-blur-sm">
+          <img
+            src={eccseoImage}
+            alt="EccSeo React"
+            className="h-full w-full rounded-full object-cover"
+          />
+        </div> */}
       </Circles>
     </div>
   );
