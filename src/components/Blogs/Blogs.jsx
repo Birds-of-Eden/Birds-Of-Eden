@@ -5,9 +5,9 @@ import blogData from "../../data/blogData";
 
 const Blogs = () => {
   return (
-    <div>
+    <div className=" bg-slate-100 dark:bg-slate-900">
       <main data-aos="fade-up" data-aos-offset="200">
-        <section className="container mb-10 py-8">
+        <section className="container mb-10  py-8">
           <h1 className="heading mb-8 text-center text-3xl font-bold">
             Our Latest Blogs
           </h1>

@@ -10,6 +10,10 @@
   @apply mb-12 animate-gradient-slow bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 bg-clip-text text-center text-3xl font-extrabold leading-relaxed text-transparent;
 }
 
+.heading3 {
+  @apply bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-center text-4xl font-bold text-transparent;
+}
+
 .splide__arrow {
   background-color: white;
 }
@@ -106,4 +110,17 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+}
+
+.splide__arrow {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.splide__arrow--prev {
+  left: -2rem;
+}
+
+.splide__arrow--next {
+  right: -2rem;
 }

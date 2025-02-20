@@ -12,9 +12,18 @@ const Drones = () => {
         <div>
           <Splide
             options={{
-              type: "loop",
-              perPage: 3,
-              gap: 24,
+              type: "loop", // Enables infinite loop
+              perPage: 3, // Shows 3 clients at a time
+              gap: 24, // Space between slides
+              autoplay: true, // Enables automatic sliding
+              interval: 3000, // Changes slide every 3 seconds
+              pauseOnHover: true, // Stops auto-slide on hover
+              arrows: false, // Shows navigation arrows
+              pagination: true, // Shows pagination dots
+              breakpoints: {
+                1024: { perPage: 2 }, // Show 2 items on medium screens
+                640: { perPage: 1 }, // Show 1 item on small screens
+              },
             }}
           >
             {droneData.map((drone, index) => (

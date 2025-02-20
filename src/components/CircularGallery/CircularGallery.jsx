@@ -15,10 +15,15 @@ import {
   Texture,
 } from "ogl";
 
-import office_1 from "../../assets/office_1.jpeg";
-import office_2 from "../../assets/office_2.jpeg";
-import office_3 from "../../assets/office_3.png";
-import office_4 from "../../assets/office_4.png";
+import office_1 from "../../assets/office_1.png";
+import office_2 from "../../assets/office_2.png";
+import chatgpt from "../../assets/chatgpt.jpg";
+import cisco from "../../assets/cisco.png";
+import huawei from "../../assets/huawei.jpg";
+import juniper from "../../assets/juniper.png";
+import wordpress from "../../assets/wordpress.jpg";
+import tenda from "../../assets/tenda.png";
+import oracle from "../../assets/oracle.jpg";
 
 import React from "react";
 
@@ -438,33 +443,34 @@ class App {
         text: "Employee Of the Month",
       },
       {
-        image: office_3,
-        text: "Management Team",
+        image: juniper,
+        text: "juniper",
+      },
+
+      {
+        image: huawei,
+        text: "uawei",
       },
       {
-        image: office_4,
-        text: "Employee Of the Month",
+        image: cisco,
+        text: "Cisco",
       },
-      // {
-      //   image: `https://picsum.photos/seed/5/800/600?grayscale`,
-      //   text: "Deep Diving",
-      // },
-      // {
-      //   image: `https://picsum.photos/seed/16/800/600?grayscale`,
-      //   text: "Train Track",
-      // },
-      // {
-      //   image: `https://picsum.photos/seed/17/800/600?grayscale`,
-      //   text: "Santorini",
-      // },
-      // {
-      //   image: `https://picsum.photos/seed/8/800/600?grayscale`,
-      //   text: "Blurry Lights",
-      // },
-      // {
-      //   image: `https://picsum.photos/seed/9/800/600?grayscale`,
-      //   text: "New York",
-      // },
+      {
+        image: chatgpt,
+        text: "Chatgpt",
+      },
+      {
+        image: wordpress,
+        text: "Wordpress",
+      },
+      {
+        image: tenda,
+        text: "Tenda",
+      },
+      {
+        image: oracle,
+        text: "Oracle",
+      },
       // {
       //   image: `https://picsum.photos/seed/10/800/600?grayscale`,
       //   text: "Good Boy",

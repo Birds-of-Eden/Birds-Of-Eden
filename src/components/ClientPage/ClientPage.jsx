@@ -157,7 +157,7 @@ const ClientPage = () => {
             autoplay: true, // Enables automatic sliding
             interval: 3000, // Changes slide every 3 seconds
             pauseOnHover: true, // Stops auto-slide on hover
-            arrows: true, // Shows navigation arrows
+            arrows: false, // Shows navigation arrows
             pagination: true, // Shows pagination dots
             breakpoints: {
               1024: { perPage: 2 }, // Show 2 items on medium screens

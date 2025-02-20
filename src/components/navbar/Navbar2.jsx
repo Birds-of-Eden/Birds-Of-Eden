@@ -8,7 +8,7 @@ import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 const Navbar2 = () => {
   const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light",
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark",
   );
   const [showMenu, setShowMenu] = useState(false);
 
@@ -120,7 +120,7 @@ const Navbar2 = () => {
                               to="/about"
                               className={({ isActive }) =>
                                 `flex items-center gap-2 ${
-                                  isActive ? "text-amber-500" : "text-white/80"
+                                  isActive ? "text-amber-500" : "text-white/80 "
                                 }`
                               }
                             >

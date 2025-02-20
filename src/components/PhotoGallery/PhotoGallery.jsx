@@ -113,7 +113,7 @@ const PhotoGallery = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-gray-900 to-gray-800 p-4 sm:p-8">
+    <div className="flex flex-col items-center justify-center overflow-hidden bg-slate-100 bg-gradient-to-b p-4 dark:from-slate-800 dark:to-slate-700 sm:p-8">
       <h1 className="heading pb-16 text-3xl text-white">Our Projects</h1>
 
       <div className="relative w-full overflow-hidden">
