@@ -37,6 +37,7 @@ import Drones from "./pages/Drones";
 import DroneDetailsPage from "./pages/DroneDetailsPage";
 import BlogDetails from "./components/Blogs/BlogDetails";
 import Blogs from "./components/Blogs/Blogs";
+import Orm from "./pages/Orm";
 
 function App() {
   useEffect(() => {
@@ -91,6 +92,7 @@ function App() {
             element={<QuickBookIntegration />}
           />
           <Route path="/zoho-integration" element={<ZohoIntegration />} />
+          <Route path="/orm" element={<Orm />} />
           <Route path="/drones/:id" element={<DroneDetailsPage />} />
           <Route path="/blog/:id" element={<BlogDetails />} />
         </Routes>
