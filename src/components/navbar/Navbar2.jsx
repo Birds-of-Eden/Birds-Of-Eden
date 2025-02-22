@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { BiPhoneCall, BiSolidMoon, BiSolidSun } from "react-icons/bi";
 import { HiMenuAlt1, HiMenuAlt3, HiOutlineChevronDown } from "react-icons/hi";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/logo.jpeg";
+import logo from "../../assets/boedl3.png";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
@@ -65,7 +65,7 @@ const Navbar2 = () => {
                   <img
                     src={logo}
                     alt="logo"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover "
                     // style={{
                     //   filter: theme === "dark" ? "invert(1)" : "invert(0)",
                     // }}
@@ -351,6 +351,21 @@ const Navbar2 = () => {
                                       }
                                     >
                                       Zoho Integration
+                                    </NavLink>
+                                  </li>
+
+                                  <li className="mb-2 cursor-pointer hover:text-primary">
+                                    <NavLink
+                                      to="/orm"
+                                      className={({ isActive }) =>
+                                        `flex items-center gap-2 ${
+                                          isActive
+                                            ? "text-amber-500"
+                                            : "text-white/70 hover:text-white"
+                                        }`
+                                      }
+                                    >
+                                      ORM
                                     </NavLink>
                                   </li>
                                 </ul>
