@@ -77,6 +77,10 @@
 @layer base {
   * {
     @apply border-border;
+
+    .hover\:rgb-glow:hover {
+      animation: rgbGlow 3s infinite alternate;
+    }
   }
   body {
     @apply bg-background text-foreground;
@@ -112,18 +116,18 @@
   -ms-user-select: none;
 }
 
-.splide__arrow {
+/* .splide__arrow {
   top: 50%;
   transform: translateY(-50%);
-}
+} */
 
-.splide__arrow--prev {
-  left: -2rem;
-}
+/* .splide__arrow--prev {
+  left: -rem;
+} */
 
-.splide__arrow--next {
+/* .splide__arrow--next {
   right: -2rem;
-}
+} */
 
 .custom-arrows {
   position: absolute;
@@ -152,14 +156,41 @@
 }
 
 .custom-prev {
-  left: -25px; /* Adjust this value to control distance from the left */
+  left: -35px; /* Adjust this value to control distance from the left */
 }
 
 .custom-next {
-  right: -25px; /* Adjust this value to control distance from the right */
+  right: -35px; /* Adjust this value to control distance from the right */
 }
 
 .custom-prev:hover,
 .custom-next:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(216, 216, 216, 0.7);
+}
+
+@keyframes rgbGlow {
+  0% {
+    box-shadow:
+      0 0 20px rgba(255, 1, 1, 0.8),
+      0 0 30px rgba(255, 1, 1, 0.521),
+      0 0 40px rgba(218, 2, 2, 0.459);
+  }
+  33% {
+    box-shadow:
+      0 0 20px rgba(29, 240, 29, 0.8),
+      0 0 30px rgba(14, 161, 14, 0.8),
+      0 0 40px rgba(45, 236, 45, 0.247);
+  }
+  66% {
+    box-shadow:
+      0 0 20px rgba(18, 18, 243, 0.8),
+      0 0 30px rgba(12, 12, 214, 0.8),
+      0 0 40px rgba(55, 55, 240, 0.8);
+  }
+  100% {
+    box-shadow:
+      0 0 20px rgba(190, 5, 5, 0.8),
+      0 0 30px rgba(121, 26, 26, 0.8),
+      0 0 40px rgba(224, 36, 36, 0.8);
+  }
 }
