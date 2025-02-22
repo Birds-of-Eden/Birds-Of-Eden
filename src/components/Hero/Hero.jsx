@@ -8,14 +8,14 @@ const Hero = () => {
   return (
     <main className="relative">
       {/* Video background */}
-      <video
+      {/* <video
         autoPlay
         loop
         muted
         className="absolute inset-0 h-full w-full object-cover"
       >
         <source src={Video} type="video/mp4" />
-      </video>
+      </video> */}
       <div className="after:absolute after:inset-0 after:h-full after:w-full after:bg-black/60"></div>
 
       {/* Content */}
