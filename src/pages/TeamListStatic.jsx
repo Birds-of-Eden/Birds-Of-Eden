@@ -1,22 +1,23 @@
-import React, { useEffect, useState } from "react";
-import Navbar2 from "../components/navbar/Navbar2";
+import { useEffect, useState } from "react";
 
-// Importing team member images correctly
-import { default as CEOImage, default as CTOImage } from "../assets/talat.webp"; // Assuming you have a different image for the CTO
+// Importing team member images
+import { default as CEOImage } from "../assets/talat.webp";
+import { default as CTOImage } from "../assets/talat.webp";
 
 const TeamListStatic = () => {
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light",
   );
 
-  // Static team members data with imported images
   const teamMembers = [
     {
       id: 1,
       name: "Talat Md. Tawfik Elahi",
       role: "CEO",
       image: CEOImage,
-      portfolioLink: "https://talat-me.vercel.app/", // Added portfolio link for the CEO
+      portfolioLink: "https://talat-me.vercel.app/",
+      description:
+        "`Talat Md. Tawfik Elahi is the visionary leader and dynamic CEO of our company, steering the organization with unparalleled strategic insight and a relentless drive for excellence. With an extensive background in strategic management and business development, he brings a wealth of knowledge and expertise to the table, enabling the company to navigate complex business landscapes with agility and precision.His leadership is defined by a forward-thinking approach that consistently challenges the status quo, fostering a culture of innovation and continuous improvement. Under his strategic direction, the company has achieved remarkable growth, expanding its footprint and solidifying its position as an industry leader. His unwavering commitment to excellence and passion for transformative change have inspired a culture of high performance, driving the team to exceed expectations and set new benchmarks of success.`",
     },
     {
       id: 2,
@@ -24,13 +25,17 @@ const TeamListStatic = () => {
       role: "CTO",
       image: CTOImage,
       portfolioLink: "https://talat-me.vercel.app/",
+      description:
+        "`Talat Md. Tawfik Elahi is the visionary leader and dynamic CEO of our company, steering the organization with unparalleled strategic insight and a relentless drive for excellence. With an extensive background in strategic management and business development, he brings a wealth of knowledge and expertise to the table, enabling the company to navigate complex business landscapes with agility and precision.His leadership is defined by a forward-thinking approach that consistently challenges the status quo, fostering a culture of innovation and continuous improvement. Under his strategic direction, the company has achieved remarkable growth, expanding its footprint and solidifying its position as an industry leader. His unwavering commitment to excellence and passion for transformative change have inspired a culture of high performance, driving the team to exceed expectations and set new benchmarks of success.`",
     },
     {
       id: 3,
       name: "Md. Amenul Islam",
       role: "COO",
-      image: CTOImage, // Change to the correct image for the COO
+      image: CTOImage,
       portfolioLink: "https://aminul-me.vercel.app/",
+      description:
+        "`Md. Amenul Islam is the Chief Operating Officer,steering the organization with unparalleled strategic insight and a relentless drive for excellence. With an extensive background in strategic management and business development, he brings a wealth of knowledge and expertise to the table, enabling the company to navigate complex business landscapes with agility and precision.His leadership is defined by a forward-thinking approach that consistently challenges the status quo, fostering a culture of innovation and continuous improvement. Under his strategic direction, the company has achieved remarkable growth, expanding its footprint and solidifying its position as an industry leader. His unwavering commitment to excellence and passion for transformative change have inspired a culture of high performance, driving the team to exceed expectations and set new benchmarks of success.`",
     },
   ];
 
@@ -44,11 +49,7 @@ const TeamListStatic = () => {
     }
   }, [theme]);
 
-  const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-    localStorage.setItem("theme", newTheme);
-  };
+  const roleOrder = ["CEO", "CTO", "COO"];
 
   const groupedTeamMembers = teamMembers.reduce((acc, member) => {
     if (!acc[member.role]) {
@@ -58,70 +59,62 @@ const TeamListStatic = () => {
     return acc;
   }, {});
 
-  const roleOrder = ["CEO", "CTO", "COO"];
-
   return (
-    <div className="bg-slate-100 dark:bg-slate-800">
-      {/* <Navbar2 toggleTheme={toggleTheme} /> */}
-      <div className="container mx-auto justify-center bg-slate-100 px-5 py-10  text-center dark:bg-slate-800 md:min-h-screen">
-        <h1 className="heading2 md:text-5xl">Meet Our Executive Team</h1>
-        <div className="container mx-auto">
+    <div className="min-h-screen bg-slate-100 py-12 dark:bg-slate-900">
+      <div className="container mx-auto px-4">
+        <h1 className="mb-16 text-center text-4xl font-bold dark:text-white md:text-5xl">
+          Meet Our Executive Team
+        </h1>
+
+        <div className="space-y-16">
           {roleOrder.map(
             (role) =>
               groupedTeamMembers[role] && (
-                <div key={role} className="mb-10">
-                  <h2 className="mb-8 mt-4 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-center text-4xl font-bold text-transparent">
+                <div key={role} className="mb-16">
+                  <h2 className="mb-8 text-center text-3xl font-semibold dark:text-white">
                     {role}
                   </h2>
-                  <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                  <div className="space-y-8">
                     {groupedTeamMembers[role].map((member) => (
                       <div
                         key={member.id}
-                        className={`transform overflow-hidden rounded-xl ${
-                          theme === "light"
-                            ? "bg-white"
-                            : "bg-gray-200 dark:bg-slate-900"
-                        } shadow-lg transition duration-500 hover:scale-105 hover:shadow-2xl`}
+                        className="flex flex-col gap-8 md:flex-row"
                       >
-                        <div className="group relative">
-                          <img
-                            src={member.image}
-                            alt={member.name}
-                            className="h-64 w-full transform object-cover transition duration-500 ease-in-out group-hover:scale-110"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60 transition duration-500 ease-in-out group-hover:opacity-80"></div>
+                        {/* Card Section */}
+                        <div className="w-full overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800 md:w-64">
+                          <div className="p-4">
+                            <img
+                              src={member.image}
+                              alt={member.name}
+                              className="mx-auto mb-4 h-32 w-32 rounded-full"
+                            />
+                            <h3 className="mb-2 text-center text-lg font-semibold dark:text-white">
+                              {member.name}
+                            </h3>
+                            <p className="mb-4 text-center text-blue-400">
+                              {member.role}
+                            </p>
+                            {member.portfolioLink && (
+                              <a
+                                href={member.portfolioLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block w-full rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 py-2 text-center font-medium transition-all duration-300 hover:from-blue-700 hover:to-purple-700 dark:text-white"
+                              >
+                                View Portfolio
+                              </a>
+                            )}
+                          </div>
                         </div>
-                        <div className="p-6">
-                          <h3
-                            className={`mb-3 text-2xl font-semibold ${
-                              theme === "light"
-                                ? "text-gray-900"
-                                : "text-black dark:text-white"
-                            }`}
-                          >
-                            {member.name}
-                          </h3>
-                          <p
-                            className={`mb-5 ${
-                              theme === "light"
-                                ? "text-gray-600"
-                                : "font-bold text-pink-500 dark:text-white"
-                            }`}
-                          >
-                            {member.role}
-                          </p>
 
-                          {/* Conditionally render portfolio button for CEO */}
-                          {member.portfolioLink && (
-                            <a
-                              href={member.portfolioLink}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="mt-4 inline-block rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-700"
-                            >
-                              Visit Portfolio
-                            </a>
-                          )}
+                        {/* Description Section */}
+                        <div className="flex-1 rounded-xl bg-slate-200 p-6 dark:bg-slate-800">
+                          <h4 className="mb-4 text-xl font-semibold text-gray-900 dark:text-white">
+                            Description
+                          </h4>
+                          <p className="rounded-md px-3  py-2 text-sm italic leading-relaxed shadow-sm shadow-gray-500 dark:text-white dark:shadow-gray-300">
+                            {member.description}
+                          </p>
                         </div>
                       </div>
                     ))}
