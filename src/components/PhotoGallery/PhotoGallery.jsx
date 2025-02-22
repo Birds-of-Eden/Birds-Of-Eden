@@ -118,7 +118,7 @@ const PhotoGallery = () => {
 
       <div className="relative w-full overflow-hidden">
         <div className="carousel-container flex items-center justify-center">
-          <div className="carousel-track animate-rolling flex gap-8">
+          <div className="carousel-track flex animate-rolling gap-8">
             {projects.concat(projects).map((project, index) => (
               <div
                 key={`${project.id}-${index}`}
@@ -153,7 +153,7 @@ const PhotoGallery = () => {
           onClick={handleModalClose}
         >
           <div
-            className="animate-modal-appear relative w-full max-w-4xl rounded-xl border border-gray-700 bg-gray-900"
+            className="relative w-full max-w-4xl animate-modal-appear rounded-xl border border-gray-700 bg-gray-900"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -161,7 +161,7 @@ const PhotoGallery = () => {
               className="absolute right-2 top-2 rounded-lg bg-gray-800/50 p-2 text-gray-400 transition-colors hover:bg-gray-700/50 hover:text-white sm:right-4 sm:top-4"
               aria-label="Close modal"
             >
-              <X size={24} />
+              {/* <X size={24} /> */}
             </button>
             <div className="grid grid-cols-1 gap-6 p-6 md:grid-cols-2">
               <div className="relative h-48 overflow-hidden rounded-lg sm:h-64 md:h-[400px]">
