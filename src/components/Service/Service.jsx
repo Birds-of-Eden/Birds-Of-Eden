@@ -1,5 +1,6 @@
 import React from "react";
 import CountUp from "react-countup";
+import SplashCursor from "../SplashCursor/SplashCursor";
 
 const Service = () => {
   return (

@@ -6,8 +6,8 @@ import SplashCursor from "../components/SplashCursor/SplashCursor";
 const Layout = ({ children }) => {
   return (
     <div className="dark:bg-slate-900 dark:text-white">
-      <SplashCursor /> {/* Directly using Splash Cursor */}
       <Navbar2 />
+      <SplashCursor /> {/* Directly using Splash Cursor */}
       <main>{children}</main>
       <Footer />
     </div>

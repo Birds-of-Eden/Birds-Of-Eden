@@ -99,10 +99,10 @@
 }
 
 /* Smooth transitions for all transform properties */
-* {
+/* * {
   transform-style: preserve-3d;
   backface-visibility: hidden;
-}
+} */
 
 /* Prevent text selection during gallery interaction */
 .no-select {

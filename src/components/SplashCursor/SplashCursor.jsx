@@ -1,14 +1,8 @@
-/*
-	jsrepo 1.28.2
-	Installed from https://reactbits.dev/tailwind/
-	1-22-2025
-*/
-
 "use client";
 import { useEffect, useRef } from "react";
 
 function SplashCursor({
-  // Add whatever props you like for customization
+  // You can customize these props if you want
   SIM_RESOLUTION = 128,
   DYE_RESOLUTION = 1440,
   CAPTURE_RESOLUTION = 512,
@@ -83,6 +77,7 @@ function SplashCursor({
         gl =
           canvas.getContext("webgl", params) ||
           canvas.getContext("experimental-webgl", params);
+
       let halfFloat;
       let supportLinearFiltering;
       if (isWebGL2) {
@@ -95,6 +90,7 @@ function SplashCursor({
         );
       }
       gl.clearColor(0.0, 0.0, 0.0, 1.0);
+
       const halfFloatTexType = isWebGL2
         ? gl.HALF_FLOAT
         : halfFloat && halfFloat.HALF_FLOAT_OES;
@@ -140,10 +136,7 @@ function SplashCursor({
             return null;
         }
       }
-      return {
-        internalFormat,
-        format,
-      };
+      return { internalFormat, format };
     }
 
     function supportRenderTextureFormat(gl, internalFormat, format, type) {
@@ -306,7 +299,7 @@ function SplashCursor({
         void main () {
             gl_FragColor = value * texture2D(uTexture, vUv);
         }
-     `,
+      `,
     );
 
     const displayShaderSource = `
@@ -1257,8 +1250,26 @@ function SplashCursor({
   ]);
 
   return (
-    <div className="pointer-events-none fixed left-0 top-0 z-50">
-      <canvas ref={canvasRef} id="fluid" className="h-screen w-screen" />
+    <div
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        zIndex: 50,
+        pointerEvents: "none",
+        width: "100%",
+        height: "100%",
+      }}
+    >
+      <canvas
+        ref={canvasRef}
+        id="fluid"
+        style={{
+          width: "100vw",
+          height: "100vh",
+          display: "block",
+        }}
+      />
     </div>
   );
 }
