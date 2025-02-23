@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+
+import { motion } from "framer-motion";
+
 import {
   X,
   ChevronLeft,
@@ -23,118 +26,6 @@ import project12 from "../../assets/project_12.jpeg";
 import project13 from "../../assets/project_13.jpeg";
 import project14 from "../../assets/project_14.png";
 import project15 from "../../assets/project_15.png";
-
-// const projects = [
-//   {
-//     id: 1,
-//     title: "E-Commerce Platform",
-//     category: "Web Development",
-//     image:
-//       "https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&q=80&w=1600",
-//     description:
-//       "A modern e-commerce solution with real-time inventory management and advanced analytics.",
-//     client: "Global Retail Inc.",
-//     completionDate: "2024",
-//     teamSize: 8,
-//     challenge:
-//       "The client needed a scalable e-commerce platform that could handle high traffic volumes while maintaining fast loading times and real-time inventory updates.",
-//     solution:
-//       "We implemented a microservices architecture with Redis caching and real-time WebSocket connections for inventory updates. The platform now handles millions of transactions monthly.",
-//     technologies: [
-//       "React",
-//       "Node.js",
-//       "Redis",
-//       "PostgreSQL",
-//       "WebSocket",
-//       "AWS",
-//     ],
-//   },
-//   {
-//     id: 2,
-//     title: "Mobile Banking App",
-//     category: "Mobile Development",
-//     image:
-//       "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=1600",
-//     description:
-//       "Secure and intuitive mobile banking application with biometric authentication.",
-//     client: "FinTech Solutions Ltd.",
-//     completionDate: "2024",
-//     teamSize: 6,
-//     challenge:
-//       "Creating a secure yet user-friendly mobile banking experience with support for multiple authentication methods.",
-//     solution:
-//       "Implemented biometric authentication, real-time fraud detection, and an intuitive UI that simplified complex banking operations.",
-//     technologies: ["React Native", "TypeScript", "Node.js", "MongoDB", "AWS"],
-//   },
-//   {
-//     id: 3,
-//     title: "AI Analytics Dashboard",
-//     category: "Data Science",
-//     image:
-//       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1600",
-//     description:
-//       "Advanced analytics platform powered by machine learning algorithms.",
-//     client: "Data Insights Corp",
-//     completionDate: "2023",
-//     teamSize: 5,
-//     challenge:
-//       "Building a real-time analytics platform that could process and visualize large datasets efficiently.",
-//     solution:
-//       "Developed a custom analytics engine with ML capabilities for predictive insights and interactive visualizations.",
-//     technologies: ["Python", "TensorFlow", "React", "D3.js", "PostgreSQL"],
-//   },
-//   {
-//     id: 4,
-//     title: "Smart Home System",
-//     category: "IoT",
-//     image:
-//       "https://images.unsplash.com/photo-1558002038-876f1d0aa8d6?auto=format&fit=crop&q=80&w=1600",
-//     description:
-//       "Integrated smart home automation solution with AI-powered controls.",
-//     client: "Smart Living Technologies",
-//     completionDate: "2024",
-//     teamSize: 7,
-//     challenge:
-//       "Integrating multiple IoT devices and creating a unified control system with minimal latency.",
-//     solution:
-//       "Created a mesh network architecture with edge computing capabilities for real-time device control.",
-//     technologies: ["IoT", "React", "Node.js", "MQTT", "TensorFlow Lite"],
-//   },
-//   {
-//     id: 5,
-//     title: "Fitness Tracking Platform",
-//     category: "Health Tech",
-//     image:
-//       "https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&q=80&w=1600",
-//     description:
-//       "Comprehensive fitness and health monitoring system with AI coaching.",
-//     client: "FitTech Solutions",
-//     completionDate: "2023",
-//     teamSize: 6,
-//     challenge:
-//       "Creating an engaging fitness platform that could provide personalized workout recommendations.",
-//     solution:
-//       "Implemented AI-powered workout planning and real-time progress tracking with social features.",
-//     technologies: ["React Native", "Node.js", "TensorFlow", "PostgreSQL"],
-//   },
-//   {
-//     id: 6,
-//     title: "Educational Platform",
-//     category: "EdTech",
-//     image:
-//       "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&q=80&w=1600",
-//     description:
-//       "Interactive learning management system with personalized learning paths.",
-//     client: "EduTech Innovations",
-//     completionDate: "2024",
-//     teamSize: 9,
-//     challenge:
-//       "Developing an adaptive learning platform that could cater to different learning styles and paces.",
-//     solution:
-//       "Built an AI-driven system that adapts content delivery based on student performance and engagement.",
-//     technologies: ["React", "Python", "Django", "PostgreSQL", "Redis"],
-//   },
-// ];
 
 const projects = [
   {
@@ -258,7 +149,13 @@ const ProjectGallery = () => {
   };
 
   return (
-    <section className="bg-gray-900 py-20">
+    <motion.section
+      className="bg-gray-900 py-20"
+      initial={{ opacity: 0, scale: 0.95, y: 30 }}
+      whileInView={{ opacity: 1, scale: 1, y: 0 }}
+      viewport={{ once: false, amount: 0.3 }}
+      transition={{ duration: 0.8, ease: "easeInOut" }}
+    >
       <div className="container mx-auto px-4">
         <h2 className="mb-4 text-center text-4xl font-bold text-white">
           Our Projects
@@ -268,15 +165,37 @@ const ProjectGallery = () => {
           technology and create meaningful impact for our clients.
         </p>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <motion.div
+          className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.3 }}
+          variants={{
+            hidden: { opacity: 0, y: 30 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: {
+                staggerChildren: 0.2,
+                ease: "easeInOut",
+              },
+            },
+          }}
+        >
           {currentProjects.map((project) => (
-            <div
+            <motion.div
               key={project.id}
-              className="group relative transform cursor-pointer overflow-hidden rounded-xl transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02]"
+              className="group relative cursor-pointer overflow-hidden rounded-xl shadow-lg"
               onClick={() => {
                 setSelectedProject(project);
                 setModalTab("overview");
               }}
+              initial={{ opacity: 0, y: 30, scale: 0.95 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: false, amount: 0.3 }}
+              transition={{ duration: 0.6, ease: "easeInOut" }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img
@@ -297,9 +216,9 @@ const ProjectGallery = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
         {totalPages > 1 && (
           <div className="mt-12 flex justify-center gap-2">
@@ -407,7 +326,7 @@ const ProjectGallery = () => {
           </div>
         </div>
       )}
-    </section>
+    </motion.section>
   );
 };
 
