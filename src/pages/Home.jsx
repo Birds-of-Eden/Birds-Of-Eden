@@ -36,8 +36,14 @@ const transformStyles = [
 const Home = () => {
   return (
     <div>
-      <Hero />
-      <Service />
+      <div>
+        <Hero />
+      </div>
+
+      <div>
+        <Service />
+      </div>
+
       <BannerDetails reverse={true} img={Banner1} />
       {/* <BannerDetails img={Banner2} /> */}
       {/* <Banner /> */}
@@ -49,8 +55,9 @@ const Home = () => {
         <PhotoGallery />
       </div>
 
-      <div style={{ height: "700px", position: "relative" }} className="pb-40">
-        <h1 className="heading">Our Partners</h1>
+      <div className="relative h-[500px] pb-40 md:h-[700px]">
+        <h1 className="heading3 pt-10">Our Partners</h1>
+
         <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} />
       </div>
 
