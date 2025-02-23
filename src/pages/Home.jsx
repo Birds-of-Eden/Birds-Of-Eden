@@ -21,6 +21,8 @@ import office_1 from "../assets/office_1.png";
 import office_2 from "../assets/office_2.png";
 import office_3 from "../assets/office_3.png";
 import ProjectGallery from "../components/ProjectGallery/ProjectGallery";
+import BounceCards from "../components/BounceCards/BounceCards";
+import ERPProjects from "../components/ERPProjects";
 
 const images = [office_1, office_2, office_1];
 
@@ -37,7 +39,8 @@ const Home = () => {
     <div>
       <Hero />
       <Service />
-      <RollingErpCard autoplay={true} pauseOnHover={true} />
+      <ERPProjects />
+      {/* <RollingErpCard autoplay={true} pauseOnHover={true} /> */}
       {/* <ERPDesignComponent /> */}
       <BannerDetails reverse={true} img={Banner1} />
       {/* <BannerDetails img={Banner2} /> */}
