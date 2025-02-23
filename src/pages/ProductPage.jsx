@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react"; // Make sure useState and useEffect are imported
+import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 
 import Corporate from "../pages/Corporate";
 import Ecommerce from "../pages/Ecommerce";
@@ -33,55 +34,122 @@ const ProductPage = () => {
     }
   };
 
+  // Animation Variants
+  const tabVariants = {
+    hidden: { opacity: 0, y: 10 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 20,
+      },
+    },
+  };
+
+  const contentVariants = {
+    hidden: { opacity: 0, x: 50 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 20,
+      },
+    },
+    exit: {
+      opacity: 0,
+      x: -50,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 20,
+      },
+    },
+  };
+
   return (
     <div className="">
       <div className="container mx-auto p-4">
-        <h1 className="my-8 bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-center text-4xl font-extrabold text-transparent sm:text-5xl">
+        <motion.h1
+          className="my-8 bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-center text-4xl font-extrabold text-transparent sm:text-5xl"
+          variants={tabVariants}
+          initial="hidden"
+          animate="visible"
+        >
           Our Products
-        </h1>
-        <div className="mb-4 flex overflow-x-scroll border-b sm:overflow-x-visible">
-          <button
+        </motion.h1>
+        <motion.div
+          className="mb-4 flex overflow-x-scroll border-b sm:overflow-x-visible"
+          variants={tabVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.button
             className={`whitespace-nowrap px-4 py-2 ${
               activeTab === "govt" ? "border-b-2 border-blue-500" : ""
             }`}
             onClick={() => navigate("/products/govt")}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
             Govt.
-          </button>
-          <button
+          </motion.button>
+          <motion.button
             className={`whitespace-nowrap px-4 py-2 ${
               activeTab === "seo" ? "border-b-2 border-blue-500" : ""
             }`}
             onClick={() => navigate("/products/seo")}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
             ERP for SEO Agencies
-          </button>
-          <button
+          </motion.button>
+          <motion.button
             className={`whitespace-nowrap px-4 py-2 ${
               activeTab === "financial" ? "border-b-2 border-blue-500" : ""
             }`}
             onClick={() => navigate("/products/financial")}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
             Financial Institutions
-          </button>
-          <button
+          </motion.button>
+          <motion.button
             className={`whitespace-nowrap px-4 py-2 ${
               activeTab === "corporate" ? "border-b-2 border-blue-500" : ""
             }`}
             onClick={() => navigate("/products/corporate")}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
             Corporate
-          </button>
-          <button
+          </motion.button>
+          <motion.button
             className={`whitespace-nowrap px-4 py-2 ${
               activeTab === "ecommerce" ? "border-b-2 border-blue-500" : ""
             }`}
             onClick={() => navigate("/products/ecommerce")}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
             E-Commerce
-          </button>
-        </div>
-        <div className="mt-4">{renderContent()}</div>
+          </motion.button>
+        </motion.div>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeTab}
+            variants={contentVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            className="mt-4"
+          >
+            {renderContent()}
+          </motion.div>
+        </AnimatePresence>
       </div>
     </div>
   );

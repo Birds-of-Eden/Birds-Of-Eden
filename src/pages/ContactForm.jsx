@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -35,13 +36,31 @@ const ContactForm = () => {
   return (
     <div className="">
       <div className="flex min-h-screen flex-col justify-between bg-slate-100 dark:bg-slate-800">
-        <div className="container mx-auto flex flex-col items-center justify-center space-y-8 p-8 md:flex-row md:gap-20 md:space-x-12 md:space-y-0">
-          <div className="mb-8 w-full max-w-md  rounded-lg bg-slate-200 p-8 shadow-lg dark:bg-slate-700 md:mb-0">
+        <motion.div
+          className="container mx-auto flex flex-col items-center justify-center space-y-8 p-8 md:flex-row md:gap-20 md:space-x-12 md:space-y-0"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          <motion.div
+            className="mb-8 w-full max-w-md rounded-lg bg-slate-200 p-8 shadow-lg dark:bg-slate-700 md:mb-0"
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
             <h2 className="mb-6 text-3xl font-bold text-black dark:text-white">
               Contact Us
             </h2>
             <form onSubmit={handleSubmit}>
-              <div className="mb-4">
+              <motion.div
+                className="mb-4"
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
                 <label
                   htmlFor="name"
                   className="block text-sm font-medium text-black dark:text-white"
@@ -54,11 +73,18 @@ const ContactForm = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md bg-slate-100 px-3 py-2 text-white focus:border-blue-500 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+                  className="mt-1 block w-full rounded-md bg-slate-100 px-3 py-2 text-black focus:border-blue-500 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50"
                   placeholder="Enter your name"
                 />
-              </div>
-              <div className="mb-4">
+              </motion.div>
+
+              <motion.div
+                className="mb-4"
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
                 <label
                   htmlFor="email"
                   className="block text-sm font-medium text-black dark:text-white"
@@ -74,8 +100,15 @@ const ContactForm = () => {
                   className="mt-1 block w-full rounded-md bg-slate-100 px-3 py-2 text-black focus:border-blue-500 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50"
                   placeholder="Enter your email"
                 />
-              </div>
-              <div className="mb-4">
+              </motion.div>
+
+              <motion.div
+                className="mb-4"
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+              >
                 <label
                   htmlFor="message"
                   className="block text-sm font-medium text-black dark:text-white"
@@ -91,55 +124,30 @@ const ContactForm = () => {
                   placeholder="Enter your message"
                   rows="4"
                 />
-              </div>
-              <button
+              </motion.div>
+
+              <motion.button
                 type="submit"
                 className="w-full rounded-md bg-blue-600 px-4 py-2 font-bold text-white hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ duration: 0.3 }}
               >
                 Send Message
-              </button>
+              </motion.button>
             </form>
-          </div>
-          <div className=" w-full max-w-lg rounded-lg bg-slate-200 p-8 shadow-md dark:bg-slate-700">
+          </motion.div>
+
+          <motion.div
+            className="w-full max-w-lg rounded-lg bg-slate-200 p-8 shadow-md dark:bg-slate-700"
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
             <h2 className="mb-6 text-3xl font-bold text-black dark:text-white">
               Our Location
             </h2>
-            <div className="mb-4">
-              <div className="mb-2 flex items-center">
-                <svg
-                  className="mr-2 h-6 w-6 text-blue-500"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 2a7 7 0 017 7c0 4.163-3.755 8.022-6.549 10.357a1 1 0 01-1.386 0C6.755 17.022 3 13.163 3 9a7 7 0 017-7zm0 2a5 5 0 00-5 5c0 1.5.682 3.803 3.749 6.698l.251.227a1 1 0 001.502 0l.251-.227C16.318 10.803 17 8.5 17 7a5 5 0 00-5-5z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-                <p className="text-black dark:text-white">
-                  ECB Chattar, Dhaka Cantonment, Tower-71, Dhaka, Bangladesh
-                </p>
-              </div>
-              <div className="flex items-center">
-                <svg
-                  className="mr-2 h-6 w-6 text-blue-500"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 2a7 7 0 017 7c0 4.163-3.755 8.022-6.549 10.357a1 1 0 01-1.386 0C6.755 17.022 3 13.163 3 9a7 7 0 017-7zm0 2a5 5 0 00-5 5c0 1.5.682 3.803 3.749 6.698l.251.227a1 1 0 001.502 0l.251-.227C16.318 10.803 17 8.5 17 7a5 5 0 00-5-5z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-                <p className="text-black dark:text-white">
-                  Email: info@example.com
-                </p>
-              </div>
-            </div>
             <div className="relative mb-4 h-96 overflow-hidden rounded-lg shadow-lg">
               <div className="absolute inset-0">
                 <iframe
@@ -150,8 +158,8 @@ const ContactForm = () => {
                 ></iframe>
               </div>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );
