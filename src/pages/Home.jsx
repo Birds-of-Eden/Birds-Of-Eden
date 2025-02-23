@@ -15,7 +15,7 @@ import CircularGallery from "../components/CircularGallery/CircularGallery";
 import PhotoGallery from "../components/PhotoGallery/PhotoGallery";
 import DronePage from "./DronePage";
 
-import BounceCards from "../components/BounceCards/BounceCards";
+import RollingErpCard from "../components/ErpSolutions/RollingCard";
 
 import office_1 from "../assets/office_1.png";
 import office_2 from "../assets/office_2.png";
@@ -37,12 +37,12 @@ const Home = () => {
     <div>
       <Hero />
       <Service />
+      <RollingErpCard autoplay={true} pauseOnHover={true} />
+      {/* <ERPDesignComponent /> */}
       <BannerDetails reverse={true} img={Banner1} />
       {/* <BannerDetails img={Banner2} /> */}
       {/* <Banner /> */}
       <DronePage />
-      <Blogs />
-      <ClientPage />
 
       <div>
         <ProjectGallery />
@@ -93,6 +93,8 @@ const Home = () => {
           />
         </div>
       </div>
+      <ClientPage />
+      <Blogs />
     </div>
   );
 };
