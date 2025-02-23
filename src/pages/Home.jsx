@@ -20,6 +20,7 @@ import BounceCards from "../components/BounceCards/BounceCards";
 import office_1 from "../assets/office_1.png";
 import office_2 from "../assets/office_2.png";
 import office_3 from "../assets/office_3.png";
+import ProjectGallery from "../components/ProjectGallery/ProjectGallery";
 
 const images = [office_1, office_2, office_1];
 
@@ -44,7 +45,7 @@ const Home = () => {
       <ClientPage />
 
       <div>
-        <PhotoGallery />
+        <ProjectGallery />
       </div>
 
       <div style={{ height: "700px", position: "relative" }} className="pb-40">
