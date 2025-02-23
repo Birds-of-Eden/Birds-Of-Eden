@@ -156,11 +156,11 @@
 }
 
 .custom-prev {
-  left: -35px; /* Adjust this value to control distance from the left */
+  left: -55px; /* Adjust this value to control distance from the left */
 }
 
 .custom-next {
-  right: -35px; /* Adjust this value to control distance from the right */
+  right: -65px; /* Adjust this value to control distance from the right */
 }
 
 .custom-prev:hover,
