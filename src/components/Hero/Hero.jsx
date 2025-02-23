@@ -30,7 +30,6 @@ const Hero = () => {
             data-aos="fade-right"
             data-aos-duration="400"
             data-aos-once="true"
-            f
             className="items-center text-center md:flex md:flex-col md:items-start md:gap-4 md:text-left"
           >
             <h1 className="mb-3 mt-8 text-2xl transition-transform duration-500 md:text-5xl">

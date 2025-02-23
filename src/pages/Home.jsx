@@ -41,8 +41,6 @@ const Home = () => {
       {/* <BannerDetails img={Banner2} /> */}
       {/* <Banner /> */}
       <DronePage />
-      <Blogs />
-      <ClientPage />
 
       <div>
         <ProjectGallery />
@@ -93,6 +91,8 @@ const Home = () => {
           />
         </div>
       </div>
+      <ClientPage />
+      <Blogs />
     </div>
   );
 };
