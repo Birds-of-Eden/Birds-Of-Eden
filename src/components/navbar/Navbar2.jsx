@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { BiPhoneCall, BiSolidMoon, BiSolidSun } from "react-icons/bi";
 import { HiMenuAlt1, HiMenuAlt3, HiOutlineChevronDown } from "react-icons/hi";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/boedl3.png";
+import logo from "../../assets/boedl1.png";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
@@ -61,11 +61,11 @@ const Navbar2 = () => {
           <div className="container">
             <nav className="flex h-[80px] items-center justify-between gap-10 p-2">
               <div className="flex items-center">
-                <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full">
+                <div className="relative h-16 w-16 overflow-hidden  shadow-md transition duration-300 hover:shadow-lg ">
                   <img
                     src={logo}
                     alt="logo"
-                    className="h-full w-full object-cover "
+                    className=" object-cover "
                     // style={{
                     //   filter: theme === "dark" ? "invert(1)" : "invert(0)",
                     // }}
@@ -641,14 +641,12 @@ const Navbar2 = () => {
                 </button>
                 <NavLink
                   to="/career"
-                  className={({ isActive }) =>
-                    `relative  flex items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 px-6 py-3 font-bold uppercase text-white transition duration-300 hover:from-blue-700 hover:to-blue-900`
-                  }
+                  className={({ isActive }) => `link boxshadow`}
                 >
-                  Career
-                  <span className="absolute right-0 top-0 -mr-2 -mt-2 animate-bounce rounded-full bg-red-500 px-2 py-1 text-xs font-semibold text-white">
+                  career
+                  {/* <span className="absolute right-0 top-0 -mr-2 -mt-2 animate-bounce rounded-full bg-red-500 px-2 py-1 text-xs font-semibold text-white">
                     New!
-                  </span>
+                  </span> */}
                 </NavLink>
 
                 {/* <div className="flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-500 to-indigo-500 py-1.5 pl-2 pr-4 shadow-lg">

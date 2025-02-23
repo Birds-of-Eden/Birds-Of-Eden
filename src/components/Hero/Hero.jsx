@@ -1,26 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Video from "../../assets/2.mp4"; // Import the video file
+import Video from "../../assets/2.mp4";
 import Banner from "../../assets/undraw_real_time_sync_re_nky7.svg";
 import CircleServices from "./circleServices";
 import Typewriter from "typewriter-effect";
+import Particles from "../Backgrounds/Particles/Particles";
 
 const Hero = () => {
   return (
-    <main className="relative">
-      {/* Video background */}
-      {/* <video
-        autoPlay
-        loop
-        muted
-        className="absolute inset-0 h-full w-full object-cover"
-      >
-        <source src={Video} type="video/mp4" />
-      </video> */}
-      <div className="after:absolute after:inset-0 after:h-full after:w-full after:bg-black/60"></div>
+    <main className="relative min-h-screen">
+      {/* Particles Background - Covering entire section */}
+      <div className="absolute inset-0 z-0">
+        <Particles
+          particleColors={["#ffffff", "#ffffff"]}
+          particleCount={200}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
+        />
+      </div>
 
       {/* Content */}
-      <section className="container relative z-10 flex flex-col items-center justify-center py-20 pb-32 pt-44">
+      <section className="container relative z-10 flex h-screen flex-col items-center justify-center py-20 pb-32 pt-44">
         <div className="grid grid-cols-1 items-center gap-8 text-white md:grid-cols-2">
           <div
             data-aos="fade-right"
@@ -28,27 +32,27 @@ const Hero = () => {
             data-aos-once="true"
             className="flex flex-col items-center gap-4 text-center md:items-start md:text-left"
           >
-             <h1 className="mb-3 text-2xl transition-transform duration-500 md:text-5xl">
-      <span className="scale-10 transform rounded font-bold text-primary transition-transform duration-500">
-        BIRDS OF EDEN
-      </span>{" "}
-      <span>
-        <Typewriter
-          options={{
-            strings: [
-              "Innovating the Future of ERP Software Solutions And AI",
-              "Revolutionizing Business Automation",
-              "Empowering the Next Generation of AI Systems",
-            ],
-            autoStart: true,
-            loop: true,
-            delay: 50,
-            deleteSpeed: 25,
-          }}
-        />
-      </span>
-    </h1>
-            <p className="text-xl font-light duration-500">
+            <h1 className="mb-3 text-2xl transition-transform duration-500 md:text-5xl">
+              <span className="scale-10 transform rounded font-bold text-primary transition-transform duration-500">
+                BIRDS OF EDEN
+              </span>{" "}
+              <span className="text-black dark:text-white">
+                <Typewriter
+                  options={{
+                    strings: [
+                      "Innovating the Future of ERP Software Solutions And AI",
+                      "Revolutionizing Business Automation",
+                      "Empowering the Next Generation of AI Systems",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                    delay: 50,
+                    deleteSpeed: 25,
+                  }}
+                />
+              </span>
+            </h1>
+            <p className="text-xl font-light text-black duration-500 dark:text-white">
               Birds OF EDEN is a cutting-edge software company dedicated to
               transforming ideas into reality through innovative technology
               solutions. Our mission is to empower businesses and individuals
@@ -68,11 +72,6 @@ const Hero = () => {
               </Link>
             </div>
           </div>
-          {/* <img
-            src="/undraw_progressive_app_m-9-ms.svg"
-            alt="No image"
-            className="w-full hidden lg:block"
-          /> */}
           <CircleServices />
         </div>
       </section>

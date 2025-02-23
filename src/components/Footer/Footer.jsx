@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BiMoon, BiSun } from "react-icons/bi";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/logo.jpeg";
+import logo from "../../assets/boedl1.png";
 
 const Footer = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "system");
@@ -26,12 +26,12 @@ const Footer = () => {
       <div className="container flex flex-col items-center justify-between py-12 md:flex-row">
         <div className="md:w-1/3">
           <div className="mb-4 flex items-center justify-center md:mb-0">
-            <div className="relative h-20 w-20 overflow-hidden rounded-full border-4 border-white shadow-md transition duration-300 hover:shadow-lg md:h-24 md:w-24">
+            <div className="relative h-20 w-20 overflow-hidden rounded-full border-2 border-white p-2 shadow-md transition duration-300 hover:shadow-lg md:h-24 md:w-24">
               <img
                 src={logo}
                 alt="logo"
                 className="h-full w-full transform object-cover duration-500 hover:scale-105"
-                style={{ filter: theme === "dark" ? "invert(1)" : "invert(0)" }}
+                // style={{ filter: theme === "dark" ? "invert(1)" : "invert(0)" }}
               />
               {/* <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition duration-300 hover:opacity-100">
                 <a href="#" className="text-lg font-bold text-white">
