@@ -435,14 +435,6 @@ class App {
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
       {
-        image: office_1,
-        text: "Office Group Photo",
-      },
-      {
-        image: office_2,
-        text: "Employee Of the Month",
-      },
-      {
         image: juniper,
         text: "juniper",
       },
