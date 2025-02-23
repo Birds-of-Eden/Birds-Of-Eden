@@ -8,13 +8,13 @@ import sdaia from "../../assets/sdaia.png";
 import obg from "../../assets/OBG.png";
 import rohm from "../../assets/ROHM.png";
 import govtban from "../../assets/bangovt.png";
-
+import movingTexas from "../../assets/moving-texas.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 const clients = [
   {
     name: "Ann-Nahl Software",
-    logo: nahl, // Update with actual logo URL
+    logo: nahl,
     description:
       "Ann-Nahl Software provides cutting-edge software solutions for businesses, with a focus on quality and customer satisfaction.",
     website: "https://aan-nahl.com/",
@@ -25,7 +25,7 @@ const clients = [
   },
   {
     name: "BuzzMoving",
-    logo: buzzmoving, // Update with actual logo URL
+    logo: buzzmoving,
     description:
       "BuzzMoving offers a seamless moving experience, ensuring that all relocations are handled with care and precision.",
     website: "https://www.buzzmoving.com",
@@ -37,7 +37,7 @@ const clients = [
 
   {
     name: "Reputation Prime.AI",
-    logo: repuprime, // Update with actual logo URL
+    logo: repuprime,
     description:
       "Reputation Prime helps businesses build and maintain a strong online reputation through strategic reputation management solutions.",
     website: "https://www.reputationprime.com",
@@ -49,7 +49,7 @@ const clients = [
 
   {
     name: "Ministry of Health Saudi Arabia",
-    logo: mhsa, // Replace with actual logo URL
+    logo: mhsa,
     description:
       "The Ministry of Health Saudi Arabia provides healthcare services, policies, and medical regulations to enhance public health.",
     website: "https://www.moh.gov.sa/en/Pages/default.aspx",
@@ -60,7 +60,7 @@ const clients = [
   },
   {
     name: "Ministry of Human Resources & Social Development",
-    logo: hrsd, // Replace with actual logo URL
+    logo: hrsd,
     description:
       "The Ministry of Human Resources and Social Development works towards an empowered community and an attractive labor market.",
     website: "https://www.hrsd.gov.sa/en",
@@ -71,7 +71,7 @@ const clients = [
   },
   {
     name: "SDAIA (Saudi Data & AI Authority)",
-    logo: sdaia, // Replace with actual logo URL
+    logo: sdaia,
     description:
       "SDAIA is dedicated to advancing data and artificial intelligence solutions to drive digital transformation in Saudi Arabia.",
     website: "https://sdaia.gov.sa/en/default.aspx",
@@ -82,7 +82,7 @@ const clients = [
   },
   {
     name: "Oman Botanic Garden",
-    logo: obg, // Replace with actual logo URL
+    logo: obg,
     description:
       "Oman Botanic Garden showcases the diverse plant life of Oman, promoting conservation and education.",
     website: "https://omanbotanicgarden.com/",
@@ -93,7 +93,7 @@ const clients = [
   },
   {
     name: "Royal Opera House Muscat",
-    logo: rohm, // Replace with actual logo URL
+    logo: rohm,
     description:
       "The Royal Opera House Muscat is Oman's premier venue for musical and cultural performances, promoting artistic excellence.",
     website: "https://rohmuscat.org.om/en/Pages/default.aspx",
@@ -104,7 +104,7 @@ const clients = [
   },
   {
     name: "Government of Bangladesh",
-    logo: govtban, // Replace with actual logo URL
+    logo: govtban,
     description:
       "The official portal of the Government of Bangladesh provides information and services for citizens, businesses, and visitors.",
     website: "https://bangladesh.gov.bd/",
@@ -115,10 +115,10 @@ const clients = [
   },
   {
     name: "New York Quote Texas",
-    logo: "https://via.placeholder.com/100", // Replace with actual logo URL
+    logo: "https://via.placeholder.com/100",
     description:
       "New York Quote Texas provides competitive insurance quotes, helping individuals and businesses secure the best policies.",
-    website: "https://newyorkquotetexas.com", // Replace with actual URL if available
+    website: "https://newyorkquotetexas.com",
     contact: "contact@newyorkquotetexas.com",
     services: ["Insurance Quotes", "Financial Planning", "Risk Assessment"],
     testimonial:
@@ -126,10 +126,10 @@ const clients = [
   },
   {
     name: "Moving Texas",
-    logo: "https://via.placeholder.com/100", // Replace with actual logo URL
+    logo: movingTexas,
     description:
       "Moving Texas offers top-notch relocation services for residential and commercial clients across the state.",
-    website: "https://movingtexas.com", // Replace with actual URL if available
+    website: "https://movingtexas.com",
     contact: "contact@movingtexas.com",
     services: ["Residential Moving", "Commercial Moving", "Storage Solutions"],
     testimonial:
@@ -144,24 +144,33 @@ const ClientPage = () => {
     setDarkMode(!darkMode);
   };
 
+  // Truncate text function
+  const truncateText = (text, maxLength) => {
+    if (text.length <= maxLength) return text;
+    return text.substr(0, maxLength) + "...";
+  };
+
   return (
     <div className="mb-10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h1 className="heading">Our Clients</h1>
+        <h1 className="heading my-8 text-center text-3xl font-bold">
+          Our Clients
+        </h1>
 
         <Splide
           options={{
-            type: "loop", // Enables infinite loop
-            perPage: 3, // Shows 3 clients at a time
-            gap: 24, // Space between slides
-            autoplay: true, // Enables automatic sliding
-            interval: 3000, // Changes slide every 3 seconds
-            pauseOnHover: true, // Stops auto-slide on hover
-            arrows: true, // Shows navigation arrows
-            pagination: true, // Shows pagination dots
+            type: "loop",
+            perPage: 3,
+            gap: "2rem",
+            autoplay: true,
+            interval: 3000,
+            pauseOnHover: true,
+            arrows: true,
+            pagination: true,
             breakpoints: {
-              1024: { perPage: 2 }, // Show 2 items on medium screens
-              640: { perPage: 1 }, // Show 1 item on small screens
+              1280: { perPage: 3 },
+              1024: { perPage: 2 },
+              640: { perPage: 1 },
             },
             classes: {
               arrows: "splide__arrows custom-arrows",
@@ -173,29 +182,42 @@ const ClientPage = () => {
         >
           {clients.map((client, index) => (
             <SplideSlide key={index}>
-              <div className="px-4 py-6 sm:p-6">
-                <div className="rounded-lg bg-white p-6 py-16 shadow-lg transition-shadow duration-300 hover:shadow-xl dark:bg-gray-800">
-                  <img
-                    src={client.logo}
-                    alt={client.name}
-                    className="mx-auto mb-4 h-16"
-                  />
-                  <h2 className="mb-2 text-center text-xl font-semibold text-gray-900 dark:text-gray-200 sm:text-2xl">
-                    {client.name}
-                  </h2>
-                  <p className="mb-4 text-center text-gray-700 dark:text-gray-300">
-                    {client.description}
-                  </p>
-                  <ul className="mb-4 text-gray-700 dark:text-gray-300">
-                    {client.services.map((service, idx) => (
-                      <li key={idx} className="text-center">
-                        • {service}
-                      </li>
-                    ))}
-                  </ul>
-                  <blockquote className="mb-4 text-center italic text-gray-700 dark:text-gray-300">
-                    "{client.testimonial}"
-                  </blockquote>
+              <div className="m-4 mb-6 h-[480px] rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl dark:bg-slate-800">
+                <div className="flex h-full flex-col">
+                  <div className="mb-4 h-20 flex-shrink-0">
+                    <img
+                      src={client.logo}
+                      alt={client.name}
+                      className="mx-auto h-full object-contain "
+                    />
+                  </div>
+
+                  <div className="flex flex-grow flex-col justify-between">
+                    <div>
+                      <h2 className="mb-2 text-center text-xl font-semibold text-gray-900 dark:text-gray-200 sm:text-2xl">
+                        {client.name}
+                      </h2>
+                      <p className="text-md mb-4 text-center text-gray-700 dark:text-gray-300">
+                        {truncateText(client.description, 120)}
+                      </p>
+
+                      <div className="mb-4">
+                        <ul className="text-gray-700 dark:text-gray-300">
+                          {client.services.map((service, idx) => (
+                            <li key={idx} className="text-center text-sm">
+                              • {service}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      <div className="mt-auto">
+                        <blockquote className="text-center text-sm italic text-gray-700 dark:text-gray-300">
+                          "{truncateText(client.testimonial, 100)}"
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </SplideSlide>
@@ -205,4 +227,5 @@ const ClientPage = () => {
     </div>
   );
 };
+
 export default ClientPage;
