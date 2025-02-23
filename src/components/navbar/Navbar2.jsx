@@ -61,11 +61,11 @@ const Navbar2 = () => {
           <div className="container">
             <nav className="flex h-[80px] items-center justify-between gap-10 p-2">
               <div className="flex items-center">
-                <div className="relative h-16 w-16 overflow-hidden  shadow-md transition duration-300 hover:shadow-lg ">
+                <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full">
                   <img
                     src={logo}
                     alt="logo"
-                    className=" object-cover "
+                    className="h-full w-full object-cover"
                     // style={{
                     //   filter: theme === "dark" ? "invert(1)" : "invert(0)",
                     // }}
