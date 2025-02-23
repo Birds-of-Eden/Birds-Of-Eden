@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 // Importing the icons
 import icon1 from "./../assets/icon1.png"; // Replace with actual icon path
@@ -22,6 +23,51 @@ const OurService = () => {
       ...prevState,
       [index]: !prevState[index],
     }));
+  };
+
+  // Container animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.2,
+      },
+    },
+  };
+
+  // Card animation variants
+  const cardVariants = {
+    hidden: {
+      opacity: 0,
+      y: 50,
+      scale: 0.9,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 12,
+        mass: 0.9,
+      },
+    },
+  };
+
+  // Text expansion animation variants
+  const textExpandVariants = {
+    hidden: { opacity: 0, height: 0 },
+    visible: {
+      opacity: 1,
+      height: "auto",
+      transition: {
+        duration: 0.3,
+        ease: "easeOut",
+      },
+    },
   };
 
   const cards = [
@@ -88,38 +134,71 @@ const OurService = () => {
   ];
 
   return (
-    <div className="">
-      <div className="container mx-auto mb-16 mt-8">
-        <div className="grid gap-8 text-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    <div className="py-16">
+      <motion.div
+        className="container mx-auto mb-16 mt-8"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        <motion.div className="grid gap-8 text-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {cards.map((card, index) => (
-            <div
+            <motion.div
               key={index}
-              className="flex flex-col items-center rounded-lg bg-white p-6 shadow-lg transition-transform duration-300 hover:scale-105 dark:bg-slate-800"
+              variants={cardVariants}
+              whileHover={{
+                scale: 1.03,
+                transition: {
+                  type: "spring",
+                  stiffness: 300,
+                  damping: 20,
+                },
+              }}
+              className="group flex flex-col items-center rounded-lg bg-white p-6 shadow-lg dark:bg-slate-800"
             >
-              <img
+              <motion.img
                 src={card.icon}
                 alt={card.title}
-                className="mb-4 h-12 w-12 animate-spin-slow"
+                className="mb-4 h-12 w-12"
+                animate={{
+                  rotate: [0, 360],
+                }}
+                transition={{
+                  duration: 20,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
               />
-              <h3 className="mb-2 transform  text-xl font-bold text-indigo-600 transition-transform duration-300 hover:scale-105 dark:text-purple-400">
+              <motion.h3
+                className="mb-2 text-xl font-bold text-indigo-600 dark:text-purple-400"
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
                 {card.title}
-              </h3>
-              <p className="mb-4 text-center text-gray-700 dark:text-white">
-                {card.text.substring(0, card.text.indexOf(".") + 1)}
-                {visibleText[index] && (
-                  <span>{card.text.substring(card.text.indexOf(".") + 1)}</span>
-                )}
-              </p>
-              <button
+              </motion.h3>
+              <div className="mb-4 text-center text-gray-700 dark:text-white">
+                <p>{card.text.substring(0, card.text.indexOf(".") + 1)}</p>
+                <motion.div
+                  variants={textExpandVariants}
+                  initial="hidden"
+                  animate={visibleText[index] ? "visible" : "hidden"}
+                  className="overflow-hidden"
+                >
+                  <p>{card.text.substring(card.text.indexOf(".") + 1)}</p>
+                </motion.div>
+              </div>
+              <motion.button
                 onClick={() => toggleTextVisibility(index)}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 className="mt-auto rounded-md bg-indigo-600 px-4 py-2 text-white transition-colors duration-300 hover:bg-indigo-700 dark:text-white"
               >
                 {visibleText[index] ? "Show Less" : "Learn More"}
-              </button>
-            </div>
+              </motion.button>
+            </motion.div>
           ))}
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };

@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
-// Importing hardware images correctly
+// Importing hardware images
 import hardware1 from "../assets/hardware_1.jpg";
 import hardware2 from "../assets/hardware_2.jpg";
 import hardware3 from "../assets/hardware_3.jpg";
 import router from "../assets/router_1.jpg";
 import dockingStation from "../assets/docking_station.jpg";
-import external_hdd from "../assets/external_hdd.jpg"; // Ensure the correct file name
+import external_hdd from "../assets/external_hdd.jpg";
 
 const Accessories = () => {
-  // Corrected image array
   const images = [
     hardware1,
     hardware2,
@@ -25,7 +25,6 @@ const Accessories = () => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
     }, 3000);
-
     return () => clearInterval(interval);
   }, []);
 
@@ -39,9 +38,20 @@ const Accessories = () => {
   };
 
   return (
-    <div className="container mx-auto pb-16 pt-24">
+    <motion.div
+      className="container mx-auto pb-16 pt-24"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
       {/* Page Header */}
-      <div className="mb-10 text-center">
+      <motion.div
+        className="mb-10 text-center"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6 }}
+      >
         <h1 className="text-4xl font-bold text-gray-800 dark:text-white">
           Premium Tech Accessories for Professionals
         </h1>
@@ -49,12 +59,18 @@ const Accessories = () => {
           Optimize your workflow with high-quality, industry-standard
           accessories designed for software agencies and businesses.
         </p>
-      </div>
+      </motion.div>
 
       {/* Main Content Grid */}
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
         {/* Accessories Details Section */}
-        <div className="flex flex-col justify-center rounded-lg bg-gray-100 p-8 shadow-lg dark:bg-slate-800">
+        <motion.div
+          className="flex flex-col justify-center rounded-lg bg-gray-100 p-8 shadow-lg dark:bg-slate-800"
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
           <h2 className="mb-6 text-2xl font-bold text-gray-800 dark:text-white sm:text-3xl">
             Essential Tech Accessories for Your Business
           </h2>
@@ -82,40 +98,54 @@ const Accessories = () => {
               Enhance multitasking capabilities.
             </li>
           </ul>
-          <p className="text-lg text-gray-700 dark:text-white">
-            We provide high-quality, **enterprise-grade hardware** tailored for
-            **software companies, IT professionals, and remote work
-            environments**.
-          </p>
-        </div>
+        </motion.div>
 
         {/* Image Carousel Section */}
-        <div className="relative h-[400px] w-full overflow-hidden rounded-lg shadow-lg">
-          {/* Carousel Image */}
-          <img
+        <motion.div
+          className="relative h-[400px] w-full overflow-hidden rounded-lg shadow-lg"
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          <motion.img
+            key={currentIndex}
             src={images[currentIndex]}
             alt={`Tech Accessory ${currentIndex + 1}`}
-            className="h-full w-full rounded-lg object-cover transition-opacity duration-500 ease-in-out"
+            className="h-full w-full rounded-lg object-cover"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
           />
 
           {/* Navigation Buttons */}
-          <button
+          <motion.button
             onClick={prevSlide}
             className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-gray-800/50 p-3 text-white transition-all hover:bg-gray-800"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             ❮
-          </button>
-          <button
+          </motion.button>
+          <motion.button
             onClick={nextSlide}
             className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-gray-800/50 p-3 text-white transition-all hover:bg-gray-800"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             ❯
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
       </div>
 
       {/* Additional Accessories Section */}
-      <div className="mt-16">
+      <motion.div
+        className="mt-16"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
         <h2 className="text-center text-3xl font-bold text-gray-800 dark:text-white">
           Industry-Standard Networking & Tech Solutions
         </h2>
@@ -124,58 +154,33 @@ const Accessories = () => {
           accessories.
         </p>
 
-        {/* Grid Layout for Additional Products */}
         <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
-          {/* Router */}
-          <div className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-900">
-            <img
-              src={router}
-              alt="Enterprise Router"
-              className="mb-4 w-full rounded-lg object-cover"
-            />
-            <h3 className="text-xl font-bold text-gray-800 dark:text-white">
-              Enterprise Router
-            </h3>
-            <p className="mt-2 text-gray-600 dark:text-gray-300">
-              **High-speed, secure, and reliable networking solutions** for
-              software agencies.
-            </p>
-          </div>
-
-          {/* Docking Station */}
-          <div className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-900">
-            <img
-              src={dockingStation}
-              alt="Docking Station"
-              className="mb-4 w-full rounded-lg object-cover"
-            />
-            <h3 className="text-xl font-bold text-gray-800 dark:text-white">
-              Multi-Port Docking Station
-            </h3>
-            <p className="mt-2 text-gray-600 dark:text-gray-300">
-              **USB-C & Thunderbolt docking solutions** for seamless workspace
-              connectivity.
-            </p>
-          </div>
-
-          {/* Professional external_hdd */}
-          <div className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-900">
-            <img
-              src={external_hdd}
-              alt="Professional external_hdd"
-              className="mb-4 w-full rounded-lg object-cover"
-            />
-            <h3 className="text-xl font-bold text-gray-800 dark:text-white">
-              Professional external_hdd
-            </h3>
-            <p className="mt-2 text-gray-600 dark:text-gray-300">
-              Crystal-clear audio for **meetings, remote work, and development
-              teams**.
-            </p>
-          </div>
+          {[router, dockingStation, external_hdd].map((image, index) => (
+            <motion.div
+              key={index}
+              className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-900"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              whileHover={{ scale: 1.03 }}
+            >
+              <img
+                src={image}
+                alt="Accessory"
+                className="mb-4 w-full rounded-lg object-cover"
+              />
+              <h3 className="text-xl font-bold text-gray-800 dark:text-white">
+                Accessory {index + 1}
+              </h3>
+              <p className="mt-2 text-gray-600 dark:text-gray-300">
+                High-performance accessory for professionals.
+              </p>
+            </motion.div>
+          ))}
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
