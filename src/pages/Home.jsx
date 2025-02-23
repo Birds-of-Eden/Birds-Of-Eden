@@ -15,7 +15,7 @@ import CircularGallery from "../components/CircularGallery/CircularGallery";
 import PhotoGallery from "../components/PhotoGallery/PhotoGallery";
 import DronePage from "./DronePage";
 
-import BounceCards from "../components/BounceCards/BounceCards";
+import RollingErpCard from "../components/ErpSolutions/RollingCard";
 
 const images = [
   "https://picsum.photos/400/400?grayscale",
@@ -38,6 +38,8 @@ const Home = () => {
     <div>
       <Hero />
       <Service />
+      <RollingErpCard autoplay={true} pauseOnHover={true} />
+      {/* <ERPDesignComponent /> */}
       <BannerDetails reverse={true} img={Banner1} />
       {/* <BannerDetails img={Banner2} /> */}
       {/* <Banner /> */}
