@@ -210,3 +210,92 @@
 .link:hover {
   @apply boxshadow bg-[#03e9f4] text-white;
 }
+
+.boxshadow2 {
+  box-shadow:
+    0 0 5px #007bff,
+    0 0 25px #007bff,
+    0 0 50px #007bff,
+    0 0 100px #007bff;
+}
+
+.link2 {
+  @apply rounded border-2 border-[#0327f4] px-[22px] py-[6px] text-[16px] uppercase tracking-[1px] text-black dark:text-[#f1f9f9];
+}
+
+.link2:hover {
+  @apply boxshadow bg-[#031bf4] text-white;
+}
+
+.boxshadow3 {
+  box-shadow:
+    0 0 5px #28a745,
+    /* Light green */ 0 0 25px #28a745,
+    0 0 50px #28a745,
+    0 0 100px #28a745;
+}
+
+.link3 {
+  @apply rounded border-2 border-[#28a745] px-[22px] py-[16px] text-[16px] uppercase tracking-[1px] text-black dark:text-[#f1f9f9];
+}
+
+.link3:hover {
+  @apply boxshadow3 bg-[#28a745] text-white;
+}
+
+.boxshadow4 {
+  box-shadow:
+    0 0 5px #ffbf00,
+    /* Amber color */ 0 0 25px #ffbf00,
+    0 0 50px #ffbf00,
+    0 0 100px #ffbf00;
+}
+
+.link4 {
+  @apply rounded border-2 border-[#ffbf00] px-[22px] py-[7px] text-[16px] uppercase tracking-[1px] text-black dark:text-[#f1f9f9];
+}
+
+.link4:hover {
+  @apply boxshadow4 bg-[#ffbf00] text-white;
+}
+
+.boxshadow5 {
+  box-shadow:
+    0 0 5px #ff69b4,
+    /* Pink color */ 0 0 25px #ff69b4,
+    0 0 50px #ff69b4,
+    0 0 100px #ff69b4;
+}
+
+.link5 {
+  @apply rounded border-2 border-[#ff69b4] px-[22px] py-[7px] text-[16px] uppercase tracking-[1px] text-black dark:text-[#f1f9f9];
+}
+
+.link5:hover {
+  @apply boxshadow4 bg-[#ff69b4] text-white;
+}
+
+/* src/components/LogoSpinner.css */
+.logo-spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #0f172a; /* Light background for contrast */
+}
+
+.logo-spinner {
+  width: 150px;
+  height: 150px;
+  animation: spin 2s linear infinite;
+  transition: transform 0.3s ease-in-out;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

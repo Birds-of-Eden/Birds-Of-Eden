@@ -198,7 +198,7 @@ const JobPostListStatic = () => {
               onClick={() => handleApplyClick(post)}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-block rounded-lg bg-gradient-to-r from-pink-500 to-purple-500 px-6 py-2 text-lg font-semibold text-white shadow-md transition-transform hover:from-pink-600 hover:to-purple-600 hover:shadow-lg"
+              className="boxshadow5 link5 mt-14"
             >
               Apply Now
             </motion.button>

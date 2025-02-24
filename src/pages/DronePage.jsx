@@ -5,7 +5,7 @@ import { drones } from "../Data/drones";
 
 function DronePage() {
   return (
-    <div className="bg-slate-100 text-white dark:bg-slate-800">
+    <div className="bg-slate-100 text-white dark:bg-slate-900">
       <div className="container mx-auto px-4 py-12">
         <div className="mb-12">
           <h1 className="heading3 pb-10">Our Latest Technology</h1>
