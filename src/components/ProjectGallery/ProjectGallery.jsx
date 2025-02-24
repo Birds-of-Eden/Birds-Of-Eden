@@ -150,7 +150,7 @@ const ProjectGallery = () => {
 
   return (
     <motion.section
-      className="bg-gray-900 py-20"
+      className="bg-slate-800 py-20"
       initial={{ opacity: 0, scale: 0.95, y: 30 }}
       whileInView={{ opacity: 1, scale: 1, y: 0 }}
       viewport={{ once: false, amount: 0.3 }}

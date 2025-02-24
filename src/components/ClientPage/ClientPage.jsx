@@ -9,6 +9,7 @@ import obg from "../../assets/OBG.png";
 import rohm from "../../assets/ROHM.png";
 import govtban from "../../assets/bangovt.png";
 import movingTexas from "../../assets/moving-texas.png";
+import movingquote from "../../assets/logo-png.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 const clients = [
@@ -36,7 +37,7 @@ const clients = [
   },
 
   {
-    name: "Reputation Prime.AI",
+    name: "",
     logo: repuprime,
     description:
       "Reputation Prime helps businesses build and maintain a strong online reputation through strategic reputation management solutions.",
@@ -114,8 +115,8 @@ const clients = [
       "The Bangladesh Government portal offers a seamless experience in accessing essential government services.",
   },
   {
-    name: "New York Quote Texas",
-    logo: "https://via.placeholder.com/100",
+    name: "Moving Quote NewYork",
+    logo: movingquote,
     description:
       "New York Quote Texas provides competitive insurance quotes, helping individuals and businesses secure the best policies.",
     website: "https://newyorkquotetexas.com",

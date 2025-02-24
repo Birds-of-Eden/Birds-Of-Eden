@@ -80,7 +80,16 @@ export default function BounceCards({
           overwrite: "auto",
         });
       } else {
-        const offsetX = i < hoveredIdx ? -160 : 160;
+        // Push 40px for mobile, original offset for others
+        const offsetX =
+          window.innerWidth < 640
+            ? i < hoveredIdx
+              ? -40
+              : 40 // 40px for mobile
+            : i < hoveredIdx
+              ? -150
+              : 150; // Original offset for other devices
+
         const pushedTransform = getPushedTransform(baseTransform, offsetX);
 
         const distance = Math.abs(hoveredIdx - i);
@@ -125,7 +134,10 @@ export default function BounceCards({
       {images.map((src, idx) => (
         <div
           key={idx}
-          className={`card card-${idx} absolute aspect-square w-[200px] overflow-hidden rounded-[30px] border-8 border-white`}
+          className={`card card-${idx} absolute aspect-square w-[130px] overflow-hidden rounded-[30px] border-8
+          border-white sm:w-[180px] md:w-[240px] 
+          ${window.innerWidth < 640 ? "m-2" : "m-4"}
+        `}
           style={{
             boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
             transform: transformStyles[idx] || "none",

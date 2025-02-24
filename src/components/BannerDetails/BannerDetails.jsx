@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const BannerDetails = ({ reverse, img }) => {
   return (
     <section>
-      <main className="mb-10 bg-slate-100 dark:bg-slate-800 dark:text-white">
+      <main className=" bg-slate-100 dark:bg-slate-800 dark:text-white">
         <section className="container flex flex-col items-center justify-center py-10 md:h-[500px]">
           <div className="grid grid-cols-1 items-center gap-4 md:grid-cols-2">
             <div
@@ -52,7 +52,7 @@ const BannerDetails = ({ reverse, img }) => {
               </div>
               <div className="space-x-4">
                 <Link to="/get-started">
-                  <button className="transform  rounded-md border-2 border-blue-500 bg-blue-500 px-4 py-2 text-sm text-white shadow-md transition-transform duration-300 hover:scale-105 hover:border-blue-700 hover:bg-blue-700">
+                  <button className="rounded-lg bg-blue-600 px-6 py-2 text-white transition-colors hover:bg-blue-700">
                     Get Started
                   </button>
                 </Link>
