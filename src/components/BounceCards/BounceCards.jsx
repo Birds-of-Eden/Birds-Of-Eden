@@ -125,7 +125,10 @@ export default function BounceCards({
       {images.map((src, idx) => (
         <div
           key={idx}
-          className={`card card-${idx} absolute aspect-square w-[200px] overflow-hidden rounded-[30px] border-8 border-white`}
+          className={`card card-${idx} absolute aspect-square w-[130px] overflow-hidden rounded-[30px] border-8
+          border-white sm:w-[180px] md:w-[240px] 
+          ${window.innerWidth < 640 ? "m-2" : "m-4"}
+        `}
           style={{
             boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
             transform: transformStyles[idx] || "none",
