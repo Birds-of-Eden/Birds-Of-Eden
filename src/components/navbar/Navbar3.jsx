@@ -16,7 +16,7 @@ import logo from "../../assets/boedl1.png";
 
 const Navbar = () => {
   const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light",
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark",
   );
   const [showMenu, setShowMenu] = useState(false);
   const mobileRef = useRef(null);
