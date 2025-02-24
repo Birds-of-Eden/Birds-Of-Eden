@@ -38,6 +38,7 @@ import DroneDetailsPage from "./pages/DroneDetailsPage";
 import BlogDetails from "./components/Blogs/BlogDetails";
 import Blogs from "./components/Blogs/Blogs";
 import Orm from "./pages/Orm";
+import ProjectDetails from "./pages/ProjectDetails";
 
 function App() {
   useEffect(() => {
@@ -81,6 +82,7 @@ function App() {
           <Route path="/test-your-iq" element={<TestYourIQ />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/drones" element={<Drones />} />
+          <Route path="/projects/:id" element={<ProjectDetails />} />
 
           {/* New Routes for Other Services */}
           <Route
