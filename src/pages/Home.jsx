@@ -25,22 +25,25 @@ import BounceCards from "../components/BounceCards/BounceCards";
 import ERPProjects from "../components/ERPProjects";
 
 const images = [office_1, office_2, office_1];
-
 const baseTransformStyles = [
   "rotate(5deg) translate(-180px)",
   "rotate(0deg)",
   "rotate(-5deg) translate(180px)",
 ];
 
-const transformStyles =
-  window.innerWidth < 640
-    ? baseTransformStyles.map((style) =>
-        style.replace(/translate\(([-0-9.]+)px\)/g, (match, p1) => {
-          const newValue = parseFloat(p1) < 0 ? -100 : 100; // Use 100px or -100px for mobile
-          return `translate(${newValue}px)`;
-        }),
-      )
-    : baseTransformStyles;
+const transformStyles = window.innerWidth < 640
+  ? baseTransformStyles.map((style) =>
+      style
+        .replace(/rotate\(([-0-9.]+)deg\)/g, (match, p1) => {
+          const newRotation = parseFloat(p1) * 0.4; // 40% rotation for mobile
+          return `rotate(${newRotation}deg)`;
+        })
+        .replace(/translate\(([-0-9.]+)px\)/g, (match, p1) => {
+          const newTranslate = Math.max(Math.min(parseFloat(p1) * 0.5, 80), -80); // Limit translate to ±80px
+          return `translate(${newTranslate}px)`;
+        })
+    )
+  : baseTransformStyles;
 
 const Home = () => {
   return (

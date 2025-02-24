@@ -80,7 +80,16 @@ export default function BounceCards({
           overwrite: "auto",
         });
       } else {
-        const offsetX = i < hoveredIdx ? -160 : 160;
+        // Push 40px for mobile, original offset for others
+        const offsetX =
+          window.innerWidth < 640
+            ? i < hoveredIdx
+              ? -40
+              : 40 // 40px for mobile
+            : i < hoveredIdx
+              ? -150
+              : 150; // Original offset for other devices
+
         const pushedTransform = getPushedTransform(baseTransform, offsetX);
 
         const distance = Math.abs(hoveredIdx - i);
