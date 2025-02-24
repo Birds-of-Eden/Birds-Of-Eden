@@ -1,7 +1,7 @@
 export const drones = [
   {
     id: "1",
-    name: "AgriPrecision X1",
+    title: "AgriPrecision X1",
     description:
       "Advanced agricultural drone equipped with multispectral imaging for crop health monitoring, precision spraying system for efficient pesticide distribution, and AI-powered crop analysis. Features variable-rate application technology and real-time crop mapping capabilities.",
     specs: {
@@ -14,7 +14,7 @@ export const drones = [
   },
   {
     id: "2",
-    name: "FireRescue Pro",
+    title: "FireRescue Pro",
     description:
       "High-performance emergency response drone with thermal imaging, smoke penetration capabilities, and real-time video transmission. Equipped with water bombing attachment and infrared sensors for night operations. Essential for modern firefighting and search & rescue missions.",
     specs: {
@@ -27,7 +27,7 @@ export const drones = [
   },
   {
     id: "3",
-    name: "InspectorTech X2",
+    title: "InspectorTech X2",
     description:
       "Industrial inspection drone designed for infrastructure monitoring and maintenance. Features ultra-high resolution cameras, LiDAR scanning, and crack detection AI. Perfect for bridge inspections, wind turbine maintenance, and building surveys.",
     specs: {
@@ -40,7 +40,7 @@ export const drones = [
   },
   {
     id: "4",
-    name: "MineMapper Elite",
+    title: "MineMapper Elite",
     description:
       "Specialized mining and quarry drone with advanced 3D mapping capabilities, dust-resistant design, and underground navigation system. Equipped with gas sensors and electromagnetic sensors for mineral detection and safety monitoring.",
     specs: {

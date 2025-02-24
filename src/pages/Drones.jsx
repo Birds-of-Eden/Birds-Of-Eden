@@ -1,8 +1,7 @@
-// Drones.jsx
 import DroneCard from "../components/Drones/DroneCard";
-import droneData from "../Data/droneData";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { motion } from "framer-motion";
+import { drones } from './../Data/drones';
 
 const Drones = () => {
   return (
@@ -39,13 +38,14 @@ const Drones = () => {
               },
             }}
           >
-            {droneData.map((drone, index) => (
-              <SplideSlide key={index} className="overflow-hidden rounded-lg">
+            {drones.map((drone, index) => (
+              <SplideSlide key={index} className="mt-5 mb-14 overflow-hidden rounded-lg">
                 <DroneCard
+                
                   key={drone.id}
                   id={drone.id}
                   title={drone.title}
-                  description={drone.description}
+                  description={drone.description.split(" ").slice(0, 7).join(" ") + "..."}
                   image={drone.image}
                   index={index} // Pass index to alternate animations
                 />
