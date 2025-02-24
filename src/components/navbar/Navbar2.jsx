@@ -1,16 +1,25 @@
-import { useEffect, useState } from "react";
-import { BiPhoneCall, BiSolidMoon, BiSolidSun } from "react-icons/bi";
+import { useEffect, useRef, useState } from "react";
+import { BiSolidMoon, BiSolidSun } from "react-icons/bi";
 import { HiMenuAlt1, HiMenuAlt3, HiOutlineChevronDown } from "react-icons/hi";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/boedl1.png";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { useOnClickOutside } from "usehooks-ts";
 
 const Navbar2 = () => {
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark",
   );
   const [showMenu, setShowMenu] = useState(false);
+
+  const mobileRef = useRef(null);
+
+  const handleClickOutside = () => {
+    setShowMenu(false);
+  };
+
+  useOnClickOutside(mobileRef, handleClickOutside);
 
   const element = document.documentElement;
 
@@ -26,7 +35,7 @@ const Navbar2 = () => {
       element.classList.remove("dark");
       localStorage.setItem("data-mode", "light");
     }
-  }, [theme]);
+  }, [theme, element.classList]);
 
   return (
     <>
@@ -86,7 +95,7 @@ const Navbar2 = () => {
                 </div>
               </div>
 
-              <div className="hidden items-center md:flex">
+              <div className="hidden items-center overflow-x-auto md:flex">
                 <ul className="flex items-center">
                   <li className="group relative cursor-pointer">
                     <NavLink
@@ -626,30 +635,31 @@ const Navbar2 = () => {
                   </li>
                 </ul>
               </div>
-              <div className="hidden items-center gap-5 lg:flex">
-                <button
-                  className="flex aspect-square h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/10 px-4 py-2"
-                  onClick={() =>
-                    theme == "light" ? setTheme("dark") : setTheme("light")
-                  }
-                >
-                  {theme === "dark" ? (
-                    <BiSolidSun className="h-6 w-6 shrink-0" />
-                  ) : (
-                    <BiSolidMoon className="h-6 w-6 shrink-0" />
-                  )}
-                </button>
-                <NavLink
-                  to="/career"
-                  className={({ isActive }) => `link boxshadow`}
-                >
-                  career
-                  {/* <span className="absolute right-0 top-0 -mr-2 -mt-2 animate-bounce rounded-full bg-red-500 px-2 py-1 text-xs font-semibold text-white">
+              <div className="flex items-center gap-2">
+                <div className="flex hidden items-center gap-5 md:flex">
+                  <button
+                    className="flex aspect-square h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/10 px-4 py-2"
+                    onClick={() =>
+                      theme == "light" ? setTheme("dark") : setTheme("light")
+                    }
+                  >
+                    {theme === "dark" ? (
+                      <BiSolidSun className="h-6 w-6 shrink-0" />
+                    ) : (
+                      <BiSolidMoon className="h-6 w-6 shrink-0" />
+                    )}
+                  </button>
+                  <NavLink
+                    to="/career"
+                    className={({ isActive }) => `link boxshadow`}
+                  >
+                    career
+                    {/* <span className="absolute right-0 top-0 -mr-2 -mt-2 animate-bounce rounded-full bg-red-500 px-2 py-1 text-xs font-semibold text-white">
                     New!
                   </span> */}
-                </NavLink>
+                  </NavLink>
 
-                {/* <div className="flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-500 to-indigo-500 py-1.5 pl-2 pr-4 shadow-lg">
+                  {/* <div className="flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-500 to-indigo-500 py-1.5 pl-2 pr-4 shadow-lg">
                   <div className="rounded-full bg-primary p-2 text-lg text-white transition duration-300 ease-in-out hover:scale-110 hover:bg-primary/90">
                     <FaPhoneAlt className="h-5 w-5" />
                   </div>
@@ -665,7 +675,7 @@ const Navbar2 = () => {
                   </div>
                 </div> */}
 
-                {/* <NavLink
+                  {/* <NavLink
                   to="/career"
                   className={({ isActive }) =>
                     `font-md  relative flex items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 px-6 py-3 text-sm uppercase text-white transition duration-300 hover:from-blue-700 hover:to-blue-900`
@@ -673,38 +683,39 @@ const Navbar2 = () => {
                 >
                   Log In
                 </NavLink> */}
-              </div>
-              <div className="flex items-center gap-4 md:hidden">
-                {theme === "dark" ? (
-                  <BiSolidSun
-                    onClick={() => setTheme("light")}
-                    className="cursor-pointer text-2xl"
-                  />
-                ) : (
-                  <BiSolidMoon
-                    onClick={() => setTheme("dark")}
-                    className="cursor-pointer text-2xl"
-                  />
-                )}
-                {showMenu ? (
-                  <HiMenuAlt1
-                    onClick={toggleMenu}
-                    className="cursor-pointer transition-all"
-                    size={30}
-                  />
-                ) : (
-                  <HiMenuAlt3
-                    onClick={toggleMenu}
-                    className="cursor-pointer transition-all"
-                    size={30}
-                  />
-                )}
+                </div>
+                <div className="flex items-center gap-4 md:hidden">
+                  {theme === "dark" ? (
+                    <BiSolidSun
+                      onClick={() => setTheme("light")}
+                      className="cursor-pointer text-2xl"
+                    />
+                  ) : (
+                    <BiSolidMoon
+                      onClick={() => setTheme("dark")}
+                      className="cursor-pointer text-2xl"
+                    />
+                  )}
+                  {showMenu ? (
+                    <HiMenuAlt1
+                      onClick={toggleMenu}
+                      className="cursor-pointer transition-all"
+                      size={30}
+                    />
+                  ) : (
+                    <HiMenuAlt3
+                      onClick={toggleMenu}
+                      className="cursor-pointer transition-all"
+                      size={30}
+                    />
+                  )}
+                </div>
               </div>
             </nav>
           </div>
         </div>
       </header>
-      <ResponsiveMenu showMenu={showMenu} />
+      <ResponsiveMenu showMenu={showMenu} ref={mobileRef} />
     </>
   );
 };

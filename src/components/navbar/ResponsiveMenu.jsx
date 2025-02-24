@@ -1,17 +1,19 @@
+/* eslint-disable react/prop-types */
 import React, { useState } from "react";
 import { FaCaretDown, FaCaretUp, FaUserCircle } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
-const ResponsiveMenu = ({ showMenu }) => {
+const ResponsiveMenu = React.forwardRef(({ showMenu }, ref) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div
+      ref={ref}
       className={`${
         showMenu ? "left-0" : "-left-[100%]"
-      } fixed bottom-0 top-0 z-[60] flex h-screen w-[75%] flex-col justify-between bg-slate-950 px-8 pb-6 pt-24 text-white transition-all duration-200 md:hidden`}
+      } fixed top-0 z-[999] flex h-full w-[75%] flex-col justify-between border-r bg-slate-950 pb-6 text-white transition-all duration-200 md:hidden`}
     >
-      <div className="flex-grow overflow-y-auto">
+      <div className="flex-grow overflow-y-auto overflow-x-hidden p-5">
         <div className="card">
           <div className="flex items-center justify-start gap-3">
             <FaUserCircle size={50} />
@@ -299,11 +301,12 @@ const ResponsiveMenu = ({ showMenu }) => {
         </div>
       </div>
 
-      <div className="footer mb-10 mt-8">
+      <div className="footer bg-gray-900 p-5">
         <h1>© 2024 All Rights Reserved</h1>
       </div>
     </div>
   );
-};
+});
 
+ResponsiveMenu.displayName = ResponsiveMenu;
 export default ResponsiveMenu;

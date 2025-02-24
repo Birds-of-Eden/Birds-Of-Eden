@@ -11,7 +11,7 @@ import EditBook from "./fetaures/books/EditBook";
 import AboutUs from "./pages/AboutUs";
 import AppDev from "./pages/AppDev";
 import BackendTechnologiesStatic from "./pages/BackendTechnologiesStatic";
-import BlogsPage from "./pages/BlogsPage";
+// import BlogsPage from "./pages/BlogsPage";
 import ContactForm from "./pages/ContactForm";
 import Error from "./pages/Error";
 import FrontendTechnologiesStatic from "./pages/FrontendTechnologiesStatic";

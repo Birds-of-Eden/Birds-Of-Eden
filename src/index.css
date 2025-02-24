@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
 .heading {
   @apply mb-12 animate-gradient-slow bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-center text-5xl font-extrabold leading-relaxed text-transparent;
 }
