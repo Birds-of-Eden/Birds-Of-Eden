@@ -6,18 +6,26 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "../ui/navigation-menu";
-import logo from "../../assets/logo.jpeg";
 import { NavLink } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { BiSolidMoon, BiSolidSun } from "react-icons/bi";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
+import { useOnClickOutside } from "usehooks-ts";
+import logo from "../../assets/boedl1.png";
 
 const Navbar = () => {
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light",
   );
   const [showMenu, setShowMenu] = useState(false);
+  const mobileRef = useRef(null);
+
+  const handleClickOutside = () => {
+    setShowMenu(false);
+  };
+
+  useOnClickOutside(mobileRef, handleClickOutside);
 
   const element = document.documentElement;
 
@@ -70,7 +78,7 @@ const Navbar = () => {
             <div className="flex h-16 items-center justify-between gap-10">
               <div className="flex items-center gap-4">
                 {/* Logo */}
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2">
                   <div className="relative size-12 shrink-0 overflow-hidden rounded-full">
                     <img
                       src={logo}
@@ -94,7 +102,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Menu */}
-                <NavigationMenu>
+                <NavigationMenu className="hidden 2xl:flex">
                   <NavigationMenuList>
                     <NavigationMenuItem>
                       <NavigationMenuTrigger>Hover Here</NavigationMenuTrigger>
@@ -501,14 +509,12 @@ const Navbar = () => {
                     <NavigationMenuItem
                       asChild
                       className={({ isActive }) =>
-                        `rounded-lg px-4 py-2 tracking-wide transition-colors hover:bg-zinc-200 focus:bg-zinc-700/50 focus:outline-none active:bg-zinc-700/50 dark:hover:bg-zinc-700/50 ${
+                        `rounded-lg px-4 py-2 tracking-wide transition-colors hover:bg-zinc-200 focus:outline-none dark:hover:bg-zinc-700/50 dark:focus:bg-zinc-700/50 dark:active:bg-zinc-700/50 ${
                           isActive ? "text-blue-500" : ""
                         }`
                       }
                     >
-                      <NavLink to="/hardware" className="whitespace-nowrap">
-                        Hardware Products
-                      </NavLink>
+                      <NavLink to="/hardware">Hardware Product</NavLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem
                       asChild
@@ -525,7 +531,7 @@ const Navbar = () => {
               </div>
 
               {/* Dark mode & Others */}
-              <div className="hidden items-center gap-5 lg:flex">
+              <div className="hidden items-center gap-5 2xl:flex">
                 <button
                   className="flex aspect-square h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/10 px-4 py-2"
                   onClick={() =>
@@ -538,19 +544,11 @@ const Navbar = () => {
                     <BiSolidMoon className="h-6 w-6 shrink-0" />
                   )}
                 </button>
-                <NavLink
-                  to="/career"
-                  className={() =>
-                    `relative  flex items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 px-6 py-3 font-bold uppercase text-white transition duration-300 hover:from-blue-700 hover:to-blue-900`
-                  }
-                >
-                  Career
-                  <span className="absolute right-0 top-0 -mr-2 -mt-2 animate-bounce rounded-full bg-red-500 px-2 py-1 text-xs font-semibold text-white">
-                    New!
-                  </span>
+                <NavLink to="/career" className={() => `link boxshadow`}>
+                  career
                 </NavLink>
               </div>
-              <div className="flex items-center gap-4 md:hidden">
+              <div className="flex items-center gap-4 2xl:hidden">
                 {theme === "dark" ? (
                   <BiSolidSun
                     onClick={() => setTheme("light")}
@@ -580,7 +578,7 @@ const Navbar = () => {
           </div>
         </nav>
       </header>
-      <ResponsiveMenu showMenu={showMenu} />
+      <ResponsiveMenu showMenu={showMenu} ref={mobileRef} />
     </>
   );
 };

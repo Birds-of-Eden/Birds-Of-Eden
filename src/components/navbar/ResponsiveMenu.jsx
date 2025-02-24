@@ -11,7 +11,7 @@ const ResponsiveMenu = React.forwardRef(({ showMenu }, ref) => {
       ref={ref}
       className={`${
         showMenu ? "left-0" : "-left-[100%]"
-      } fixed top-0 z-[999] flex h-full w-[75%] flex-col justify-between border-r bg-slate-950 pb-6 text-white transition-all duration-200 md:hidden`}
+      } fixed top-0 z-[999] flex h-full w-[75%] flex-col justify-between border-r bg-slate-950 text-white transition-all duration-200 2xl:hidden`}
     >
       <div className="flex-grow overflow-y-auto overflow-x-hidden p-5">
         <div className="card">
