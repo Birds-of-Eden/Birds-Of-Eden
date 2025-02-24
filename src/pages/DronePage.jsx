@@ -2,8 +2,11 @@ import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { drones } from "../Data/drones";
+import { useNavigate } from "react-router-dom";
 
 function DronePage() {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-slate-100 text-white dark:bg-slate-900">
       <div className="container mx-auto px-4 py-12">
@@ -15,7 +18,7 @@ function DronePage() {
           options={{
             type: "fade",
             rewind: true,
-            arrows: true, // Enabled arrows
+            arrows: true,
             pagination: true,
             autoplay: true,
             interval: 4000,
@@ -49,10 +52,16 @@ function DronePage() {
                     {drone.description}
                   </p>
                   <div className="flex gap-4">
-                    <button className="rounded-lg bg-blue-600 px-6 py-2 text-white transition-colors hover:bg-blue-700">
-                      Learn More
+                    <button
+                      onClick={() => navigate(`/drones`, { state: { from: "dronePage" } })}
+                      className="rounded-lg bg-blue-600 px-6 py-2 text-white transition-colors hover:bg-blue-700"
+                    >
+                      View Collections
                     </button>
-                    <button className="rounded-lg border border-blue-400 px-6 py-2 text-blue-400 transition-colors hover:bg-blue-400 hover:text-white">
+                    <button
+                      onClick={() => navigate(`/drones/${drone.id}`, { state: { from: "dronePage" } })}
+                      className="rounded-lg border border-blue-400 px-6 py-2 text-blue-400 transition-colors hover:bg-blue-400 hover:text-white"
+                    >
                       View Specs
                     </button>
                   </div>

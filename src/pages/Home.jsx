@@ -26,14 +26,25 @@ import ERPProjects from "../components/ERPProjects";
 // import Top_Photo_Gallery from "../components/Top_Photo_Gallery";
 
 const images = [office_1, office_2, office_1];
-
-const transformStyles = [
-  // "rotate(5deg) translate(-350px)",
+const baseTransformStyles = [
   "rotate(5deg) translate(-180px)",
   "rotate(0deg)",
   "rotate(-5deg) translate(180px)",
-  // "rotate(-10deg) translate(150px)",
 ];
+
+const transformStyles = window.innerWidth < 640
+  ? baseTransformStyles.map((style) =>
+      style
+        .replace(/rotate\(([-0-9.]+)deg\)/g, (match, p1) => {
+          const newRotation = parseFloat(p1) * 0.4; // 40% rotation for mobile
+          return `rotate(${newRotation}deg)`;
+        })
+        .replace(/translate\(([-0-9.]+)px\)/g, (match, p1) => {
+          const newTranslate = Math.max(Math.min(parseFloat(p1) * 0.5, 80), -80); // Limit translate to ±80px
+          return `translate(${newTranslate}px)`;
+        })
+    )
+  : baseTransformStyles;
 
 const Home = () => {
   return (
@@ -66,29 +77,24 @@ const Home = () => {
           textAlign: "center",
         }}
       >
-        <h2
-          style={{
-            // color: "#fff",
-            fontSize: "2.5em",
-            marginBottom: "20px",
-            fontFamily: "Arial, sans-serif",
-          }}
-          className="heading2 pb-10"
-        >
+        <h2 className="heading2 pb-10 font-sans text-2xl text-white sm:text-3xl md:text-4xl lg:text-5xl">
           Our Team Moments
         </h2>
+
         <div
           style={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            flexWrap: window.innerWidth < 640 ? "wrap" : "nowrap", // Wrap on mobile
+            gap: window.innerWidth < 640 ? "5px" : "20px", // Smaller gap on mobile
           }}
         >
           <BounceCards
             className="custom-bounceCards"
             images={images}
-            containerWidth={500}
-            containerHeight={250}
+            containerWidth={window.innerWidth < 640 ? 350 : 500} // Smaller width on mobile
+            containerHeight={window.innerWidth < 640 ? 200 : 250} // Smaller height on mobile
             animationDelay={1}
             animationStagger={0.09}
             easeType="elastic.out(1, 0.5)"
