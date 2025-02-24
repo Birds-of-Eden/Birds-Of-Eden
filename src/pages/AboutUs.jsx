@@ -277,17 +277,15 @@ const AboutUs = () => {
                 name: "Talat Md. Tawfiq Elahi",
                 role: "Co-Founder & CEO",
                 direction: -1,
-              },
-              {
-                name: "Talat Md. Tawfiq Elahi",
-                role: "CTO",
-                direction: 0,
+                Image: "./src/assets/talat.webp"
               },
               {
                 name: "Md.Amenul Islam",
-                role: "COO",
-                direction: 1,
+                role: "CTO",
+                direction: 0,
+                Image: "./src/assets/avatar3.jpg"
               },
+              
             ].map((member, index) => (
               <motion.div
                 key={index}
@@ -313,7 +311,7 @@ const AboutUs = () => {
                 }}
               >
                 <img
-                  src={talatImage}
+                  src={member.Image}
                   alt={member.name}
                   className="mb-2 w-full rounded-lg"
                 />
