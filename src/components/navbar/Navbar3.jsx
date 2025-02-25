@@ -38,6 +38,12 @@ import logo from "../../assets/boedl1.png";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 const Navbar = () => {
+  const [selectedLanguage, setSelectedLanguage] = useState(null);
+
+  const handleLanguageChange = (lang) => {
+    setSelectedLanguage(lang);
+  };
+
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark",
   );
@@ -84,11 +90,61 @@ const Navbar = () => {
                     talat@birdsofeden.me
                   </a>
                 </div>
-                <div className="flex items-center gap-2 p-2 text-black dark:text-white">
+                <div className="flex cursor-pointer items-center gap-2 p-2 text-black dark:text-white">
                   <FaPhoneAlt className="size-5" />
                   <a href="tel:01842781978" className="hover:underline">
                     +88-01842781978
                   </a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <label
+                    className={`flex size-7 cursor-pointer items-center justify-center rounded-full ${selectedLanguage === "en" ? "ring-2 ring-white" : ""}`}
+                    title="English"
+                  >
+                    <input
+                      type="radio"
+                      name="language"
+                      className="appearance-none"
+                      checked={selectedLanguage === "en"}
+                      onChange={() => handleLanguageChange("en")}
+                    />
+                    <img
+                      src="/public/flags/32364_united_states_flag_usa_united states_icon.png"
+                      className="rounded-full"
+                    />
+                  </label>
+                  <label
+                    className={`flex size-7 cursor-pointer items-center justify-center rounded-full ${selectedLanguage === "bn" ? "ring-2 ring-white" : "border border-zinc-500"}`}
+                    title="Bengali"
+                  >
+                    <input
+                      type="radio"
+                      name="language"
+                      className="appearance-none"
+                      checked={selectedLanguage === "bn"}
+                      onChange={() => handleLanguageChange("bn")}
+                    />
+                    <img
+                      src="/public/flags/2176511_bangladesh_country_flag_icon.png"
+                      className="rounded-full"
+                    />
+                  </label>
+                  <label
+                    className={`flex size-7 cursor-pointer items-center justify-center rounded-full ${selectedLanguage === "jp" ? "ring-2 ring-white" : "border border-zinc-500"}`}
+                    title="Japanese"
+                  >
+                    <input
+                      type="radio"
+                      name="language"
+                      className="appearance-none"
+                      checked={selectedLanguage === "jp"}
+                      onChange={() => handleLanguageChange("jp")}
+                    />
+                    <img
+                      src="/public/flags/2361501_flag_japan_icon.png"
+                      className="rounded-full"
+                    />
+                  </label>
                 </div>
               </div>
             </div>
