@@ -22,7 +22,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#334155] text-white">
+    <footer className="bg-slate-50 text-white dark:bg-[#334155]">
       <div className="container flex flex-col items-center justify-between py-12 md:flex-row">
         <div className="md:w-1/3">
           <div className="mb-4 flex items-center justify-center md:mb-0">
@@ -54,12 +54,12 @@ const Footer = () => {
             </a>
           </h1>
 
-          <p className="mt-2 text-center">
+          <p className="mt-2 text-center text-black dark:text-white">
             BIRDS OF EDEN is a pioneering software company dedicated to
             transforming innovative ideas into reality.
           </p>
         </div>
-        <div className="mt-8 md:mt-0 md:w-2/3">
+        <div className="mt-8 text-black dark:text-white md:mt-0 md:w-2/3">
           <div className="grid grid-cols-2 gap-8 md:grid-cols-3">
             <div>
               <h2 className="mb-4 text-xl font-semibold">Important Links</h2>
@@ -137,7 +137,7 @@ const Footer = () => {
               <div className="flex flex-col gap-2">
                 <h3>Subscribe to our newsletter</h3>
                 <input
-                  className="rounded-full px-3 py-1 text-black focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500"
+                  className="rounded-full bg-slate-200 px-3 py-1 text-black focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500 dark:bg-slate-100"
                   type="text"
                   placeholder="Email"
                 />
@@ -164,16 +164,16 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="border-t border-gray-300 pb-4 pt-8 text-center">
+      <div className="border-t border-gray-300 pb-4 pt-8 text-center text-black dark:text-white">
         <p>@copyright 2024 Talat</p>
         <button
           onClick={toggleTheme}
-          className="mt-4 rounded-md border border-white px-4 py-2 focus:outline-none focus:ring-2 focus:ring-white"
+          className="mt-4 rounded-md border border-black px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black dark:border-white dark:focus:ring-white "
         >
           {theme === "dark" ? (
-            <BiSun className="text-xl text-white" />
+            <BiSun className="text-xl text-black dark:text-white" />
           ) : (
-            <BiMoon className="text-xl text-white" />
+            <BiMoon className="text-xl text-black dark:text-white" />
           )}
         </button>
       </div>

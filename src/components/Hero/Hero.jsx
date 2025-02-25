@@ -67,12 +67,12 @@ const Hero = () => {
 
             <div className="grid gap-1 md:mt-4 md:flex md:space-x-4">
               <Link to="/get-started">
-                <button className="mb-2 rounded-md border-2 border-blue-500 bg-blue-500/50 px-8 py-3 text-lg text-white shadow-md transition-transform duration-300 hover:scale-105 hover:border-blue-700 hover:bg-blue-700 md:text-2xl">
+                <button className="mb-2 rounded-md border-2 border-blue-500 bg-blue-500/50 px-8 py-3 text-lg text-black shadow-md transition-transform duration-300 hover:scale-105 hover:border-blue-700 hover:bg-blue-700 dark:text-white md:text-2xl">
                   Get Started
                 </button>
               </Link>
               <Link to="/learn-more">
-                <button className="rounded-md border-2 border-emerald-500 bg-emerald-500/50 px-8 py-3 text-lg text-white shadow-md transition-transform duration-300 hover:scale-105 hover:bg-emerald-500 md:text-2xl">
+                <button className="rounded-md border-2 border-emerald-500 bg-emerald-500/50 px-8 py-3 text-lg text-black shadow-md transition-transform duration-300 hover:scale-105 hover:bg-emerald-500 dark:text-white md:text-2xl">
                   Learn More
                 </button>
               </Link>
