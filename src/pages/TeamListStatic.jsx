@@ -20,22 +20,13 @@ const TeamListStatic = () => {
     },
     {
       id: 2,
-      name: "Talat Md. Taufik Elahi",
+      name: "Md. Amenul Islam",
       role: "CTO",
       image: CTOImage,
       portfolioLink: "https://talat-me.vercel.app/",
       description:
-        "Talat Md. Tawfik Elahi is the visionary leader and dynamic CEO of our company, steering the organization with unparalleled strategic insight and a relentless drive for excellence. With a profound understanding of industry trends and a forward-thinking approach, he has been instrumental in shaping the company's growth trajectory and establishing it as a leader in its field. His ability to anticipate market shifts and adapt to evolving challenges has enabled the company to thrive in a competitive landscape. Under his leadership, the organization thrives through effective strategic planning and efficient resource allocation. He is known for his ability to bridge the gap between strategy and execution, ensuring that organizational goals are not only well-defined but also meticulously implemented. His strategic foresight allows him to anticipate challenges, enabling the organization to navigate complexities with agility.",
-    },
-    {
-      id: 3,
-      name: "Md. Amenul Islam",
-      role: "COO",
-      image: CTOImage,
-      portfolioLink: "https://aminul-me.vercel.app/",
-      description:
         "Md. Amenul Islam serves as the Chief Operating Officer, playing a pivotal role in steering the organization with strategic insight and operational excellence. With a visionary approach and a keen understanding of business dynamics, he ensures the seamless execution of strategic goals, driving both growth and operational efficiency. Under his leadership, the organization thrives through effective strategic planning and efficient resource allocation. He is known for his ability to bridge the gap between strategy and execution, ensuring that organizational goals are not only well-defined but also meticulously implemented. His strategic foresight allows him to anticipate challenges, enabling the organization to navigate complexities with agility.",
-    },
+    }
   ];
 
   useEffect(() => {
