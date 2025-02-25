@@ -14,8 +14,8 @@ const BannerDetails = ({ reverse, img }) => {
               className={`${reverse ? "order-1 md:order-2" : "order-2"} w-full`}
             >
               <img
-                src={img}
-                alt="No image"
+                src="https://images.pexels.com/photos/3184638/pexels-photo-3184638.jpeg"
+                alt="উচ্চ-মানের প্রযুক্তি পটভূমি"
                 className="mx-auto h-[450px] w-full rounded-md ring-2 transition-all duration-500 hover:drop-shadow-[0_0_20px_rgba(255,215,0,0.8)]"
               />
             </div>
