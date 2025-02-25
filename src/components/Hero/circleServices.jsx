@@ -54,7 +54,7 @@ export default function CircleServices() {
   }, []);
 
   return (
-    <div className="relative flex h-[700px] w-full flex-col items-center justify-center overflow-hidden">
+    <div className="relative flex h-[700px] w-full flex-col items-center justify-center">
       <Circles iconSize={40} radius={radius}>
         <SiOpenai
           style={{
