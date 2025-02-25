@@ -25,7 +25,7 @@ const Hero = () => {
 
       {/* Content */}
       <section className="container z-10 flex h-screen md:flex-col md:items-center md:justify-center md:py-20 md:pb-32 md:pt-44">
-        <div className="grid grid-cols-1 items-center gap-4 text-white md:grid-cols-2 md:gap-8">
+        <div className="grid grid-cols-1 items-center gap-4 text-white md:gap-8 xl:grid-cols-2">
           <div
             data-aos="fade-right"
             data-aos-duration="400"

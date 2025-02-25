@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
 .heading {
   @apply mb-12 animate-gradient-slow bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-center text-5xl font-extrabold leading-relaxed text-transparent;
 }
@@ -198,7 +205,7 @@
 .boxshadow {
   box-shadow:
     0 0 5px #03e9f4,
-    0 0 25px #03e9f4,
+    0 0 0px #03e9f4,
     0 0 50px #03e9f4,
     0 0 100px #03e9f4;
 }
