@@ -47,37 +47,21 @@ const Navbar = () => {
     <>
       <header className="sticky top-0 z-50 w-full">
         {/* Top Bar */}
-<<<<<<< HEAD
-        <div className="bg-zinc-800">
-=======
         <div className="bg-slate-200 dark:bg-zinc-800">
->>>>>>> zisan
           <div className="container">
             <div className="flex h-12 items-center justify-center md:justify-end">
               {/* Phone */}
               <div className="flex items-center gap-2">
-<<<<<<< HEAD
-                <div className="flex items-center gap-2 p-2 text-white">
-                  <FaEnvelope className="size-5" />
-                  <a
-                    href="mailto:talat@birdsofeden.com"
-                    className="hover:underline"
-=======
                 <div className="flex items-center gap-2 p-2 text-black dark:text-white">
                   <FaEnvelope className="size-5" />
                   <a
                     href="mailto:talat@birdsofeden.com"
                     className="hover:underline "
->>>>>>> zisan
                   >
                     talat@birdsofeden.me
                   </a>
                 </div>
-<<<<<<< HEAD
-                <div className="flex items-center gap-2 p-2 text-white">
-=======
                 <div className="flex items-center gap-2 p-2 text-black dark:text-white">
->>>>>>> zisan
                   <FaPhoneAlt className="size-5" />
                   <a href="tel:01842781978" className="hover:underline">
                     +88-01842781978
@@ -95,22 +79,14 @@ const Navbar = () => {
               <div className="flex items-center gap-4">
                 {/* Logo */}
                 <div className="flex items-center gap-2">
-<<<<<<< HEAD
-                  <div className="relative size-12 shrink-0 overflow-hidden rounded-full">
-=======
                   <div className="relative size-14 shrink-0 overflow-hidden ">
->>>>>>> zisan
                     <img
                       src={logo}
                       alt="logo"
                       className="h-full w-full object-cover"
                     />
                   </div>
-<<<<<<< HEAD
-                  <div className="ml-3 shrink-0 text-lg sm:text-xl md:text-2xl">
-=======
                   <div className="ml-0 shrink-0 text-lg sm:text-xl md:text-xl 2xl:ml-3 2xl:text-2xl">
->>>>>>> zisan
                     <NavLink
                       to="/"
                       className="flex items-center tracking-wide text-white transition duration-300 ease-in-out hover:text-primary"
@@ -126,18 +102,6 @@ const Navbar = () => {
                 </div>
 
                 {/* Menu */}
-<<<<<<< HEAD
-                <NavigationMenu className="hidden 2xl:flex">
-                  <NavigationMenuList>
-                    <NavigationMenuItem>
-                      <NavigationMenuTrigger>Hover Here</NavigationMenuTrigger>
-                      <NavigationMenuContent>
-                        <div className="flex flex-col p-3">
-                          <NavLink
-                            to="/"
-                            className={({ isActive }) =>
-                              `flex items-center gap-2 whitespace-nowrap rounded px-3 py-2 hover:bg-zinc-200 dark:hover:bg-zinc-700/50 ${
-=======
                 <NavigationMenu className="hidden md:flex">
                   <NavigationMenuList>
                     <NavigationMenuItem>
@@ -148,7 +112,6 @@ const Navbar = () => {
                             to="/"
                             className={({ isActive }) =>
                               ` flex items-center gap-2 whitespace-nowrap rounded px-3 py-2 hover:bg-zinc-200 dark:hover:bg-zinc-700/50 ${
->>>>>>> zisan
                                 isActive
                                   ? "text-blue-500"
                                   : "text-black/80 dark:text-white/80"
@@ -440,13 +403,7 @@ const Navbar = () => {
                       </NavigationMenuContent>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-<<<<<<< HEAD
-                      <NavigationMenuTrigger>
-                        Our Products
-                      </NavigationMenuTrigger>
-=======
                       <NavigationMenuTrigger>Products</NavigationMenuTrigger>
->>>>>>> zisan
                       <NavigationMenuContent>
                         <div className="flex w-[450px] flex-col gap-4 p-3">
                           <div className="flex gap-4">
@@ -550,20 +507,12 @@ const Navbar = () => {
                     <NavigationMenuItem
                       asChild
                       className={({ isActive }) =>
-<<<<<<< HEAD
-                        `rounded-lg px-4 py-2 tracking-wide transition-colors hover:bg-zinc-200 focus:outline-none dark:hover:bg-zinc-700/50 dark:focus:bg-zinc-700/50 dark:active:bg-zinc-700/50 ${
-=======
                         `whitespace-nowrap rounded-lg px-4 py-2 tracking-wide transition-colors hover:bg-zinc-200 focus:outline-none dark:hover:bg-zinc-700/50 dark:focus:bg-zinc-700/50 dark:active:bg-zinc-700/50 ${
->>>>>>> zisan
                           isActive ? "text-blue-500" : ""
                         }`
                       }
                     >
-<<<<<<< HEAD
-                      <NavLink to="/hardware">Hardware Product</NavLink>
-=======
                       <NavLink to="/hardware">Hardware Products</NavLink>
->>>>>>> zisan
                     </NavigationMenuItem>
                     <NavigationMenuItem
                       asChild
@@ -580,11 +529,7 @@ const Navbar = () => {
               </div>
 
               {/* Dark mode & Others */}
-<<<<<<< HEAD
-              <div className="hidden items-center gap-5 2xl:flex">
-=======
               <div className="hidden items-center gap-5 md:flex">
->>>>>>> zisan
                 <button
                   className="flex aspect-square h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/10 px-4 py-2"
                   onClick={() =>
@@ -601,11 +546,7 @@ const Navbar = () => {
                   career
                 </NavLink>
               </div>
-<<<<<<< HEAD
-              <div className="flex items-center gap-4 2xl:hidden">
-=======
               <div className="flex items-center gap-4 md:hidden">
->>>>>>> zisan
                 {theme === "dark" ? (
                   <BiSolidSun
                     onClick={() => setTheme("light")}

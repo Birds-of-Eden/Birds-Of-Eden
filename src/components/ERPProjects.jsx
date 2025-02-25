@@ -40,21 +40,13 @@ function ERPProjects() {
       animate="visible"
       className="bg-slate-100 text-white dark:bg-slate-900"
     >
-<<<<<<< HEAD
       <div className="container mx-auto px-4 py-12">
-=======
-      <div className="container mx-auto px-4 py-10">
->>>>>>> zisan
         <div className="mb-12">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-<<<<<<< HEAD
             className="heading3 pb-4 text-center"
-=======
-            className="heading3 text-center"
->>>>>>> zisan
           >
             Our ERP Projects
           </motion.h1>
