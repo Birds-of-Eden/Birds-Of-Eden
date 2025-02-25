@@ -30,6 +30,7 @@ function ERPProjects() {
 
   const handleLearnMore = (id) => {
     navigate(`/projects/${id}`);
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -45,7 +46,7 @@ function ERPProjects() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="heading3 text-center"
+            className="heading3 pb-4 text-center"
           >
             Our ERP Projects
           </motion.h1>

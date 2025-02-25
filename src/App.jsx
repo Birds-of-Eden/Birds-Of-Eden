@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Layout from "./layouts/Layout";
 import LogoSpinner from "./components/LogoSpinner"; // Import the Loader component
+import ProjectDetails from "./pages/ProjectDetails";
 
 // Lazy load components
 const TestYourIQ = lazy(() => import("./components/TestYourIQ/TestYourIQ"));
@@ -89,6 +90,7 @@ function App() {
             <Route path="/test-your-iq" element={<TestYourIQ />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/drones" element={<Drones />} />
+            <Route path="/projects/:id" element={<ProjectDetails />} />
 
             {/* New Routes for Other Services */}
             <Route
