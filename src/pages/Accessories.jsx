@@ -39,70 +39,76 @@ const Accessories = () => {
 
   return (
     <motion.div
-      className="container mx-auto pb-16 pt-24"
+      className="container mx-auto bg-gray-50 pb-20 pt-28 dark:bg-gray-900"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       {/* Page Header */}
       <motion.div
-        className="mb-10 text-center"
+        className="mb-14 text-center"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.6 }}
       >
-        <h1 className="text-4xl font-bold text-gray-800 dark:text-white">
-          Premium Tech Accessories for Professionals
+        <h1 className="text-5xl font-extrabold tracking-tight text-gray-800 dark:text-white">
+          Premium Tech Accessories
         </h1>
-        <p className="mt-3 text-lg text-gray-600 dark:text-gray-300">
-          Optimize your workflow with high-quality, industry-standard
-          accessories designed for software agencies and businesses.
+        <p className="mt-4 text-xl text-gray-600 dark:text-gray-300">
+          Empower your workspace with high-quality, professional-grade tech
+          accessories.
         </p>
       </motion.div>
 
       {/* Main Content Grid */}
-      <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
         {/* Accessories Details Section */}
         <motion.div
-          className="flex flex-col justify-center rounded-lg bg-gray-100 p-8 shadow-lg dark:bg-slate-800"
+          className="flex flex-col justify-center rounded-lg bg-white p-10 shadow-2xl dark:bg-gray-800"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <h2 className="mb-6 text-2xl font-bold text-gray-800 dark:text-white sm:text-3xl">
-            Essential Tech Accessories for Your Business
+          <h2 className="mb-6 text-3xl font-bold text-gray-800 dark:text-white">
+            Professional Tech Accessories
           </h2>
-          <p className="mb-4 text-lg text-gray-700 dark:text-white">
-            Equip your team with cutting-edge accessories to enhance
-            productivity and efficiency:
+          <p className="mb-6 text-lg text-gray-700 dark:text-gray-300">
+            Enhance productivity with premium accessories:
           </p>
-          <ul className="mb-6 list-disc space-y-3 pl-6 text-lg text-gray-700 dark:text-white">
+          <ul className="mb-8 list-disc space-y-4 pl-6 text-lg text-gray-700 dark:text-gray-300">
             <li>
-              <span className="font-bold">
+              <span className="font-semibold text-gray-800 dark:text-gray-100">
                 Mechanical Keyboards & Ergonomic Mice:
               </span>{" "}
-              Improve typing comfort and precision.
+              Precision and comfort for daily use.
             </li>
             <li>
-              <span className="font-bold">
+              <span className="font-semibold text-gray-800 dark:text-gray-100">
                 High-Speed SSDs & External Storage:
               </span>{" "}
-              Ensure fast data transfer and reliable backups.
+              Secure and fast data management.
             </li>
             <li>
-              <span className="font-bold">
+              <span className="font-semibold text-gray-800 dark:text-gray-100">
                 Ultra HD Monitors & Docking Stations:
               </span>{" "}
-              Enhance multitasking capabilities.
+              Optimized for multitasking efficiency.
             </li>
           </ul>
+          <motion.button
+            className="self-start rounded-md bg-blue-600 px-6 py-3 text-lg font-semibold text-white transition hover:bg-blue-700"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Explore Collection
+          </motion.button>
         </motion.div>
 
         {/* Image Carousel Section */}
         <motion.div
-          className="relative h-[400px] w-full overflow-hidden rounded-lg shadow-lg"
+          className="relative h-[450px] w-full overflow-hidden rounded-lg shadow-2xl"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
@@ -121,7 +127,7 @@ const Accessories = () => {
           {/* Navigation Buttons */}
           <motion.button
             onClick={prevSlide}
-            className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-gray-800/50 p-3 text-white transition-all hover:bg-gray-800"
+            className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-gray-800/70 p-4 text-white transition hover:bg-gray-800"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -129,7 +135,7 @@ const Accessories = () => {
           </motion.button>
           <motion.button
             onClick={nextSlide}
-            className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-gray-800/50 p-3 text-white transition-all hover:bg-gray-800"
+            className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-gray-800/70 p-4 text-white transition hover:bg-gray-800"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -140,25 +146,24 @@ const Accessories = () => {
 
       {/* Additional Accessories Section */}
       <motion.div
-        className="mt-16"
+        className="mt-20"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <h2 className="text-center text-3xl font-bold text-gray-800 dark:text-white">
-          Industry-Standard Networking & Tech Solutions
+        <h2 className="text-center text-4xl font-bold text-gray-800 dark:text-white">
+          Networking & Tech Solutions
         </h2>
-        <p className="mt-3 text-center text-lg text-gray-600 dark:text-gray-300">
-          Upgrade your office with high-performance networking gear and
-          accessories.
+        <p className="mt-4 text-center text-lg text-gray-600 dark:text-gray-300">
+          High-performance gear for seamless connectivity and productivity.
         </p>
 
-        <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
+        <div className="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
           {[router, dockingStation, external_hdd].map((image, index) => (
             <motion.div
               key={index}
-              className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-900"
+              className="rounded-lg bg-white p-6 shadow-2xl transition hover:shadow-xl dark:bg-gray-900"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
@@ -170,7 +175,7 @@ const Accessories = () => {
                 alt="Accessory"
                 className="mb-4 w-full rounded-lg object-cover"
               />
-              <h3 className="text-xl font-bold text-gray-800 dark:text-white">
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
                 Accessory {index + 1}
               </h3>
               <p className="mt-2 text-gray-600 dark:text-gray-300">

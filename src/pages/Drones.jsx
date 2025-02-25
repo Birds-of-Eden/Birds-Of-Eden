@@ -1,11 +1,11 @@
 import DroneCard from "../components/Drones/DroneCard";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { motion } from "framer-motion";
-import { drones } from './../Data/drones';
+import { drones } from "./../Data/drones";
 
 const Drones = () => {
   return (
-    <section className="px-6 pb-24 pt-24">
+    <section className="bg-gray-50 px-6 pb-24 pt-24 dark:bg-gray-900">
       <motion.div
         className="mx-auto max-w-6xl"
         initial={{ opacity: 0, y: 20 }}
@@ -14,40 +14,48 @@ const Drones = () => {
         transition={{ duration: 0.6 }}
       >
         <motion.h2
-          className="mb-4 text-center text-3xl font-bold dark:text-white"
+          className="mb-6 text-center text-4xl font-extrabold tracking-tight text-gray-800 dark:text-white"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "anticipate" }}
         >
-          Explore Our Drone Collection
+          Discover Our Premium Drone Collection
         </motion.h2>
-        <div>
+        <p className="mb-12 text-center text-lg text-gray-600 dark:text-gray-300">
+          Cutting-edge technology for the sky explorers
+        </p>
+        <div className="relative">
           <Splide
             options={{
               type: "loop",
               perPage: 3,
-              gap: 24,
+              gap: "2rem",
               autoplay: true,
-              interval: 3000,
+              interval: 4000,
               pauseOnHover: true,
-              arrows: false,
-              pagination: true,
+              arrows: true,
+              pagination: false,
               breakpoints: {
                 1024: { perPage: 2 },
                 640: { perPage: 1 },
               },
             }}
+            className="custom-splide"
           >
             {drones.map((drone, index) => (
-              <SplideSlide key={index} className="mt-5 mb-14 overflow-hidden rounded-lg">
+              <SplideSlide
+                key={index}
+                className="transform overflow-hidden rounded-lg bg-white shadow-lg transition-transform duration-300 hover:scale-105 dark:bg-gray-800"
+              >
                 <DroneCard
-                
                   key={drone.id}
                   id={drone.id}
                   title={drone.title}
-                  description={drone.description.split(" ").slice(0, 7).join(" ") + "..."}
+                  description={
+                    drone.description.split(" ").slice(0, 10).join(" ") + "..."
+                  }
                   image={drone.image}
-                  index={index} // Pass index to alternate animations
+                  index={index}
                 />
               </SplideSlide>
             ))}
