@@ -98,11 +98,11 @@ const Navbar = () => {
         {/* Navigation Menu */}
         <nav className="bg-white dark:bg-zinc-900">
           <div className="container">
-            <div className="flex h-16 items-center justify-between gap-10">
+            <div className="flex h-16 items-center justify-between gap-5">
               <div className="flex items-center gap-4">
                 {/* Logo */}
-                <div className="flex items-center gap-2">
-                  <div className="relative size-14 shrink-0 overflow-hidden ">
+                <div className="mr-4 flex items-center gap-2">
+                  <div className="relative size-14 shrink-0 overflow-hidden">
                     <img
                       src={logo}
                       alt="logo"
@@ -125,7 +125,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Menu */}
-                <NavigationMenu className="hidden md:flex">
+                <NavigationMenu className="hidden xl:flex">
                   <NavigationMenuList>
                     <NavigationMenuItem>
                       <NavigationMenuTrigger>Home</NavigationMenuTrigger>
@@ -558,7 +558,7 @@ const Navbar = () => {
                     >
                       <NavLink
                         to="/hardware"
-                        className="flex items-center gap-2"
+                        className="flex items-center gap-2 whitespace-nowrap"
                       >
                         Hardware Products
                       </NavLink>
@@ -580,7 +580,7 @@ const Navbar = () => {
               </div>
 
               {/* Dark mode & Others */}
-              <div className="hidden items-center gap-5 md:flex">
+              <div className="hidden items-center gap-4 xl:flex">
                 <button
                   className="flex aspect-square h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/10 px-4 py-2"
                   onClick={() =>
@@ -597,7 +597,7 @@ const Navbar = () => {
                   career
                 </NavLink>
               </div>
-              <div className="flex items-center gap-4 md:hidden">
+              <div className="flex items-center gap-4 xl:hidden">
                 {theme === "dark" ? (
                   <BiSolidSun
                     onClick={() => setTheme("light")}
