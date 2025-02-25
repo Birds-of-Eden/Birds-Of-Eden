@@ -131,7 +131,7 @@ const JobPostListStatic = () => {
             </p>
             <motion.button
               onClick={() => handleApplyClick(post)}
-              className="rounded-lg bg-blue-600 px-6 py-2 text-white transition-colors hover:bg-blue-700"
+              className="rounded-lg border-2 border-blue-800 px-6 py-2 text-white shadow-sm shadow-slate-400 transition-colors hover:bg-blue-700"
             >
               Apply Now
             </motion.button>

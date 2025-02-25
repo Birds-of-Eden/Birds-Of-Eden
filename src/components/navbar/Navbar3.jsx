@@ -1,4 +1,26 @@
-import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import React from "react";
+import {
+  Home,
+  Info,
+  Users,
+  Wrench,
+  Phone,
+  BookOpen,
+  Shield,
+  Code,
+  Database,
+  Globe,
+  Smartphone,
+  CreditCard,
+  BookCheck,
+  Boxes,
+  Building2,
+  BarChart,
+  Building,
+  ShoppingCart,
+  Cpu,
+  Bone as Drone,
+} from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -13,6 +35,7 @@ import ResponsiveMenu from "./ResponsiveMenu";
 import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 import { useOnClickOutside } from "usehooks-ts";
 import logo from "../../assets/boedl1.png";
+import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 const Navbar = () => {
   const [theme, setTheme] = useState(
@@ -111,13 +134,14 @@ const Navbar = () => {
                           <NavLink
                             to="/"
                             className={({ isActive }) =>
-                              ` flex items-center gap-2 whitespace-nowrap rounded px-3 py-2 hover:bg-zinc-200 dark:hover:bg-zinc-700/50 ${
+                              `flex items-center gap-2 whitespace-nowrap rounded px-3 py-2 hover:bg-zinc-200 dark:hover:bg-zinc-700/50 ${
                                 isActive
                                   ? "text-blue-500"
                                   : "text-black/80 dark:text-white/80"
                               }`
                             }
                           >
+                            <Home className="h-4 w-4" />
                             Home
                           </NavLink>
                           <NavLink
@@ -130,6 +154,7 @@ const Navbar = () => {
                               }`
                             }
                           >
+                            <Info className="h-4 w-4" />
                             About Us
                           </NavLink>
                           <NavLink
@@ -142,6 +167,7 @@ const Navbar = () => {
                               }`
                             }
                           >
+                            <Users className="h-4 w-4" />
                             Meet Our Executive Team
                           </NavLink>
                           <NavLink
@@ -154,6 +180,7 @@ const Navbar = () => {
                               }`
                             }
                           >
+                            <Wrench className="h-4 w-4" />
                             Services
                           </NavLink>
                           <NavLink
@@ -166,6 +193,7 @@ const Navbar = () => {
                               }`
                             }
                           >
+                            <Phone className="h-4 w-4" />
                             Contact
                           </NavLink>
                           <NavLink
@@ -178,6 +206,7 @@ const Navbar = () => {
                               }`
                             }
                           >
+                            <BookOpen className="h-4 w-4" />
                             Blogs
                           </NavLink>
                           <NavLink
@@ -190,6 +219,7 @@ const Navbar = () => {
                               }`
                             }
                           >
+                            <Shield className="h-4 w-4" />
                             Privacy policy
                           </NavLink>
                         </div>
@@ -234,6 +264,7 @@ const Navbar = () => {
                                     }`
                                   }
                                 >
+                                  <Database className="h-4 w-4" />
                                   Big Data Analysis & Dashboard Design
                                 </NavLink>
                                 <NavLink
@@ -246,6 +277,7 @@ const Navbar = () => {
                                     }`
                                   }
                                 >
+                                  <Wrench className="h-4 w-4" />
                                   Regular Services
                                 </NavLink>
                                 <NavLink
@@ -258,6 +290,7 @@ const Navbar = () => {
                                     }`
                                   }
                                 >
+                                  <Globe className="h-4 w-4" />
                                   Web Development
                                 </NavLink>
                                 <NavLink
@@ -270,6 +303,7 @@ const Navbar = () => {
                                     }`
                                   }
                                 >
+                                  <Smartphone className="h-4 w-4" />
                                   iOS App Development
                                 </NavLink>
                                 <NavLink
@@ -282,6 +316,7 @@ const Navbar = () => {
                                     }`
                                   }
                                 >
+                                  <Smartphone className="h-4 w-4" />
                                   Mobile App Development
                                 </NavLink>
                               </div>
@@ -301,8 +336,8 @@ const Navbar = () => {
                                     }`
                                   }
                                 >
-                                  Payment Gateway Integration (Stripe, PayPal,
-                                  Razorpay)
+                                  <CreditCard className="h-4 w-4" />
+                                  Payment Gateway Integration
                                 </NavLink>
                                 <NavLink
                                   to="/quickbook-integration"
@@ -314,6 +349,7 @@ const Navbar = () => {
                                     }`
                                   }
                                 >
+                                  <BookCheck className="h-4 w-4" />
                                   QuickBooks Integration
                                 </NavLink>
                                 <NavLink
@@ -326,6 +362,7 @@ const Navbar = () => {
                                     }`
                                   }
                                 >
+                                  <Boxes className="h-4 w-4" />
                                   Zoho Integration
                                 </NavLink>
                               </div>
@@ -375,6 +412,7 @@ const Navbar = () => {
                                     }`
                                   }
                                 >
+                                  <Globe className="h-4 w-4" />
                                   Frontend Technology
                                 </NavLink>
                               </div>
@@ -394,6 +432,7 @@ const Navbar = () => {
                                     }`
                                   }
                                 >
+                                  <Database className="h-4 w-4" />
                                   Backend Technology
                                 </NavLink>
                               </div>
@@ -441,6 +480,7 @@ const Navbar = () => {
                                     }`
                                   }
                                 >
+                                  <Building2 className="h-4 w-4" />
                                   Govt
                                 </NavLink>
                                 <NavLink
@@ -453,6 +493,7 @@ const Navbar = () => {
                                     }`
                                   }
                                 >
+                                  <BarChart className="h-4 w-4" />
                                   SEO Agencies
                                 </NavLink>
                                 <NavLink
@@ -465,6 +506,7 @@ const Navbar = () => {
                                     }`
                                   }
                                 >
+                                  <Building className="h-4 w-4" />
                                   Financial
                                 </NavLink>
                               </div>
@@ -484,6 +526,7 @@ const Navbar = () => {
                                     }`
                                   }
                                 >
+                                  <Building2 className="h-4 w-4" />
                                   Corporate
                                 </NavLink>
                                 <NavLink
@@ -496,6 +539,7 @@ const Navbar = () => {
                                     }`
                                   }
                                 >
+                                  <ShoppingCart className="h-4 w-4" />
                                   Ecommerce
                                 </NavLink>
                               </div>
@@ -512,7 +556,12 @@ const Navbar = () => {
                         }`
                       }
                     >
-                      <NavLink to="/hardware">Hardware Products</NavLink>
+                      <NavLink
+                        to="/hardware"
+                        className="flex items-center gap-2"
+                      >
+                        Hardware Products
+                      </NavLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem
                       asChild
@@ -522,7 +571,9 @@ const Navbar = () => {
                         }`
                       }
                     >
-                      <NavLink to="/drones">Drones</NavLink>
+                      <NavLink to="/drones" className="flex items-center gap-2">
+                        Drones
+                      </NavLink>
                     </NavigationMenuItem>
                   </NavigationMenuList>
                 </NavigationMenu>
