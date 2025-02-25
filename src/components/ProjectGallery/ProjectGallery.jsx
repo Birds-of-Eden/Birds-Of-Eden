@@ -150,17 +150,17 @@ const ProjectGallery = () => {
 
   return (
     <motion.section
-      className="bg-slate-800 py-20"
+      className="bg-slate-50 py-20 dark:bg-slate-800"
       initial={{ opacity: 0, scale: 0.95, y: 30 }}
       whileInView={{ opacity: 1, scale: 1, y: 0 }}
       viewport={{ once: false, amount: 0.3 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
     >
       <div className="container mx-auto px-4">
-        <h2 className="mb-4 text-center text-4xl font-bold text-white">
+        <h2 className="mb-4 text-center text-4xl font-bold text-black dark:text-white">
           Our Projects
         </h2>
-        <p className="mx-auto mb-12 max-w-2xl text-center text-gray-400">
+        <p className="mx-auto mb-12 max-w-2xl text-center text-black dark:text-gray-400">
           Discover our innovative solutions that push the boundaries of
           technology and create meaningful impact for our clients.
         </p>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { default as CEOImage } from "../assets/talat.webp";
-import { default as CTOImage } from "../assets/talat.webp";
+import { default as CEOImage } from "../assets/talat_md.png";
+import { default as CTOImage } from "../assets/amenul_islam.png";
 import { motion } from "framer-motion";
 
 const TeamListStatic = () => {

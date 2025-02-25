@@ -16,7 +16,7 @@ const BannerDetails = ({ reverse, img }) => {
               <img
                 src={img}
                 alt="No image"
-                className="hover:rgb-glow duration-400 hover:scale-102 mx-auto w-full transform transition-all ease-in-out md:h-[480px] md:rounded-xl"
+                className="mx-auto h-[450px] w-full rounded-md ring-2 transition-all duration-500 hover:drop-shadow-[0_0_20px_rgba(255,215,0,0.8)]"
               />
             </div>
             <div
