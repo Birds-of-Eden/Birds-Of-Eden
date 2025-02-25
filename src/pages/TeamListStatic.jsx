@@ -16,7 +16,7 @@ const TeamListStatic = () => {
       image: CEOImage,
       portfolioLink: "https://talat-me.vercel.app/",
       description:
-        "Talat Md. Tawfik Elahi is the visionary leader and dynamic CEO of our company, steering the organization with unparalleled strategic insight and a relentless drive for excellence. With a profound understanding of industry trends and a forward-thinking approach, he has been instrumental in shaping the company's growth trajectory and establishing it as a leader in its field. His ability to anticipate market shifts and adapt to evolving challenges has enabled the company to thrive in a competitive landscape.Under his leadership, the organization thrives through effective strategic planning and efficient resource allocation. He is known for his ability to bridge the gap between strategy and execution, ensuring that organizational goals are not only well-defined but also meticulously implemented. His strategic foresight allows him to anticipate challenges, enabling the organization to navigate complexities with agility.",
+        "Talat Md. Tawfik Elahi is a visionary leader driving strategic growth and excellence. With a forward-thinking approach, he anticipates market shifts and navigates challenges with agility. His leadership bridges strategy and execution, ensuring organizational success.",
     },
     {
       id: 2,
@@ -25,8 +25,8 @@ const TeamListStatic = () => {
       image: CTOImage,
       portfolioLink: "https://talat-me.vercel.app/",
       description:
-        "Md. Amenul Islam serves as the Chief Operating Officer, playing a pivotal role in steering the organization with strategic insight and operational excellence. With a visionary approach and a keen understanding of business dynamics, he ensures the seamless execution of strategic goals, driving both growth and operational efficiency. Under his leadership, the organization thrives through effective strategic planning and efficient resource allocation. He is known for his ability to bridge the gap between strategy and execution, ensuring that organizational goals are not only well-defined but also meticulously implemented. His strategic foresight allows him to anticipate challenges, enabling the organization to navigate complexities with agility.",
-    }
+        "Md. Amenul Islam is a strategic innovator leading operational efficiency and growth. He combines visionary thinking with practical execution to achieve business goals. His foresight enables the organization to adapt and thrive in a dynamic landscape.",
+    },
   ];
 
   useEffect(() => {
@@ -112,7 +112,7 @@ const TeamListStatic = () => {
                         variants={scrollVariants(index)}
                       >
                         {/* Card Section */}
-                        <div className="w-full overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800 md:w-64">
+                        <div className="w-full overflow-hidden rounded-md bg-slate-200 dark:bg-slate-800 md:w-64">
                           <div className="p-4">
                             <motion.img
                               src={member.image}
@@ -132,7 +132,7 @@ const TeamListStatic = () => {
                                 href={member.portfolioLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="block w-full rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 py-2 text-center font-medium transition-all duration-300 hover:from-blue-700 hover:to-purple-700 dark:text-white"
+                                className="boxshadow link"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                               >
@@ -144,16 +144,16 @@ const TeamListStatic = () => {
 
                         {/* Description Section */}
                         <motion.div
-                          className="flex-1 rounded-xl bg-slate-200 p-6 dark:bg-slate-800"
+                          className="flex-1 rounded-xl bg-white p-6 shadow-lg dark:bg-slate-800"
                           initial={{ opacity: 0, scale: 0.95 }}
                           whileInView={{ opacity: 1, scale: 1 }}
                           viewport={{ once: true, amount: 0.2 }}
                           transition={{ duration: 0.5, delay: index * 0.2 }}
                         >
-                          <h4 className="mb-4 text-xl font-semibold text-gray-900 dark:text-white">
+                          <h4 className="mb-4 text-xl font-bold text-gray-800 dark:text-white">
                             Description
                           </h4>
-                          <p className="rounded-md px-3 py-2 text-sm italic leading-relaxed shadow-sm shadow-gray-500 dark:text-white dark:shadow-gray-300">
+                          <p className="text-sm leading-relaxed text-gray-700 dark:text-gray-300">
                             {member.description}
                           </p>
                         </motion.div>
