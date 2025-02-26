@@ -98,7 +98,7 @@ const Navbar = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <label
-                    className={`flex size-7 cursor-pointer items-center justify-center rounded-full ${selectedLanguage === "en" ? "ring-2 ring-white" : ""}`}
+                    className={`flex size-7 cursor-pointer items-center justify-center rounded-full ${selectedLanguage === "en" ? "ring-2 ring-blue-500 ring-offset-2 ring-offset-black" : ""}`}
                     title="English"
                   >
                     <input
@@ -109,12 +109,12 @@ const Navbar = () => {
                       onChange={() => handleLanguageChange("en")}
                     />
                     <img
-                      src="/public/flags/32364_united_states_flag_usa_united states_icon.png"
+                      src="/public/flags/United-states_flag_icon_round.png"
                       className="rounded-full"
                     />
                   </label>
                   <label
-                    className={`flex size-7 cursor-pointer items-center justify-center rounded-full ${selectedLanguage === "bn" ? "ring-2 ring-white" : "border border-zinc-500"}`}
+                    className={`flex size-7 cursor-pointer items-center justify-center rounded-full ${selectedLanguage === "bn" ? "ring-2 ring-blue-500 ring-offset-2 ring-offset-black" : ""}`}
                     title="Bengali"
                   >
                     <input
@@ -125,12 +125,12 @@ const Navbar = () => {
                       onChange={() => handleLanguageChange("bn")}
                     />
                     <img
-                      src="/public/flags/2176511_bangladesh_country_flag_icon.png"
+                      src="/public/flags/circle-flag-of-bangladesh.webp"
                       className="rounded-full"
                     />
                   </label>
                   <label
-                    className={`flex size-7 cursor-pointer items-center justify-center rounded-full ${selectedLanguage === "jp" ? "ring-2 ring-white" : "border border-zinc-500"}`}
+                    className={`flex size-7 cursor-pointer items-center justify-center rounded-full ${selectedLanguage === "jp" ? "ring-2 ring-blue-500 ring-offset-2 ring-offset-black" : ""}`}
                     title="Japanese"
                   >
                     <input
@@ -141,7 +141,7 @@ const Navbar = () => {
                       onChange={() => handleLanguageChange("jp")}
                     />
                     <img
-                      src="/public/flags/2361501_flag_japan_icon.png"
+                      src="/public/flags/japan-flat-rounded-national-flag-icon.jpg"
                       className="rounded-full"
                     />
                   </label>
