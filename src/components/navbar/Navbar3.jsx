@@ -36,6 +36,7 @@ import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 import { useOnClickOutside } from "usehooks-ts";
 import logo from "../../assets/boedl1.png";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import LanguageSelector from "../LanguageSelector";
 
 const Navbar = () => {
   const [theme, setTheme] = useState(
@@ -90,6 +91,8 @@ const Navbar = () => {
                     +88-01842781978
                   </a>
                 </div>
+                {/* Language Selection */}
+                <LanguageSelector />
               </div>
             </div>
           </div>
