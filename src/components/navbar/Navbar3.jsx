@@ -39,6 +39,12 @@ import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import LanguageSelector from "../LanguageSelector";
 
 const Navbar = () => {
+  const [selectedLanguage, setSelectedLanguage] = useState(null);
+
+  const handleLanguageChange = (lang) => {
+    setSelectedLanguage(lang);
+  };
+
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark",
   );
@@ -75,7 +81,7 @@ const Navbar = () => {
           <div className="container">
             <div className="flex h-12 items-center justify-center md:justify-end">
               {/* Phone */}
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-3">
                 <div className="flex items-center gap-2 p-2 text-black dark:text-white">
                   <FaEnvelope className="size-5" />
                   <a
@@ -85,7 +91,7 @@ const Navbar = () => {
                     talat@birdsofeden.me
                   </a>
                 </div>
-                <div className="flex items-center gap-2 p-2 text-black dark:text-white">
+                <div className="flex cursor-pointer items-center gap-2 p-2 text-black dark:text-white">
                   <FaPhoneAlt className="size-5" />
                   <a href="tel:01842781978" className="hover:underline">
                     +88-01842781978
