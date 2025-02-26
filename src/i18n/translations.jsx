@@ -12,10 +12,19 @@ export const translations = {
       getStarted: "Get Started",
       learnMore: "Learn More",
     },
+
+    service: {
+      stats: [
+        { value: "5+", label: "Clients" },
+        { value: "10+", label: "Projects" },
+        { value: "1k+", label: "Subscribers" },
+        { value: "5+", label: "Clients" },
+      ],
+    },
   },
   bn: {
     hero: {
-      title: "এডেনের পাখিরা",
+      title: "Birds Of Eden",
       typewriter: [
         "ইআরপি সফটওয়্যার সমাধান এবং এআই-এর ভবিষ্যত উদ্ভাবন",
         "ব্যবসায়িক অটোমেশন বিপ্লবী",
@@ -25,6 +34,15 @@ export const translations = {
         "বার্ডস অফ এডেন হল একটি উদ্ভাবনী প্রযুক্তি সংস্থা যা উদ্ভাবনী প্রযুক্তি সমাধানের মাধ্যমে ধারণাগুলিকে বাস্তবে রূপ দেওয়ার জন্য নিবেদিত। আমাদের লক্ষ্য হল অত্যাধুনিক সফটওয়্যার দিয়ে ব্যবসা এবং ব্যক্তিদের ক্ষমতায়ন করা যা দক্ষতা, উৎপাদনশীলতা এবং ব্যবহারকারীর অভিজ্ঞতা বাড়ায়।",
       getStarted: "শুরু করুন",
       learnMore: "আরও জানুন",
+    },
+
+    service: {
+      stats: [
+        { value: "৫+", label: "ক্লায়েন্ট" },
+        { value: "১০+", label: "প্রকল্প" },
+        { value: "90", label: "সাবস্ক্রাইবার" },
+        { value: "৫+", label: "ক্লায়েন্ট" },
+      ],
     },
   },
   ar: {
@@ -40,6 +58,15 @@ export const translations = {
       getStarted: "ابدأ الآن",
       learnMore: "تعلم أكثر",
     },
+
+    service: {
+      stats: [
+        { value: "٥+", label: "عملاء" },
+        { value: "١٠+", label: "مشاريع" },
+        { value: "١ك+", label: "مشتركين" },
+        { value: "٥+", label: "عملاء" },
+      ],
+    },
   },
   ja: {
     hero: {
@@ -53,6 +80,15 @@ export const translations = {
         "Birds OF EDENは、革新的なテクノロジーソリューションを通じてアイデアを現実に変えることに専念している最先端のソフトウェア会社です。私たちの使命は、効率、生産性、ユーザーエクスペリエンスを向上させる最先端のソフトウェアで企業と個人を支援することです。",
       getStarted: "始める",
       learnMore: "もっと知る",
+    },
+
+    service: {
+      stats: [
+        { value: "5+", label: "クライアント" },
+        { value: "10+", label: "プロジェクト" },
+        { value: "1k+", label: "購読者" },
+        { value: "5+", label: "クライアント" },
+      ],
     },
   },
 };

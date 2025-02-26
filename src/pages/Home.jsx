@@ -23,6 +23,7 @@ import office_3 from "../assets/office_3.png";
 import ProjectGallery from "../components/ProjectGallery/ProjectGallery";
 import BounceCards from "../components/BounceCards/BounceCards";
 import ERPProjects from "../components/ERPProjects";
+import ORMSection from "../components/ORMSection";
 // import Top_Photo_Gallery from "../components/Top_Photo_Gallery";
 
 const images = [office_1, office_2, office_1];
@@ -56,6 +57,7 @@ const Home = () => {
       <Hero />
       <Service />
       <ERPProjects />
+      <ORMSection />
       {/* <RollingErpCard autoplay={true} pauseOnHover={true} /> */}
       {/* <ERPDesignComponent /> */}
       <BannerDetails reverse={true} img={Banner1} />
