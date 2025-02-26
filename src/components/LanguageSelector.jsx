@@ -1,10 +1,9 @@
-import React from "react";
-import { useLanguage } from "../contexts/LanguageContext";
+import { useTranslation } from "react-i18next";
 
-export default function LanguageSelector() {
-  const { language, setLanguage } = useLanguage();
+const LanguageSelector = () => {
+  const { i18n } = useTranslation();
 
-  const flags = [
+  const languages = [
     {
       code: "en",
       title: "English",
@@ -28,35 +27,37 @@ export default function LanguageSelector() {
   ];
 
   const handleLanguageChange = (lang) => {
-    setLanguage(lang);
+    i18n.changeLanguage(lang);
   };
 
   return (
     <div className="flex items-center gap-3">
-      {flags.map((flag) => (
+      {languages.map((lang) => (
         <label
-          key={flag.code}
+          key={lang.code}
           className={`flex size-7 shrink-0 cursor-pointer items-center justify-center rounded-full ${
-            language === flag.code
+            i18n.language === lang.code
               ? "ring-2 ring-blue-500 ring-offset-2 ring-offset-black"
               : ""
           }`}
-          title={flag.title}
+          title={lang.title}
         >
           <input
             type="radio"
             name="language"
             className="appearance-none"
-            checked={language === flag.code}
-            onChange={() => handleLanguageChange(flag.code)}
+            checked={i18n.language === lang.code}
+            onChange={() => handleLanguageChange(lang.code)}
           />
           <img
-            src={flag.img}
+            src={lang.img}
             className="rounded-full shadow-md transition-transform hover:scale-105"
-            alt={flag.title}
+            alt={lang.title}
           />
         </label>
       ))}
     </div>
   );
-}
+};
+
+export default LanguageSelector;

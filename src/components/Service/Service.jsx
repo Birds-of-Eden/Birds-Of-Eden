@@ -1,9 +1,11 @@
 import CountUp from "react-countup";
-import { useLanguage } from "../../contexts/LanguageContext";
+import { useTranslation } from "react-i18next";
 
 const Service = () => {
-  const { t } = useLanguage();
-  const stats = t("service.stats");
+  const { t } = useTranslation();
+  const stats = t("home.service.stats", {
+    returnObjects: true,
+  });
 
   return (
     <section className="container my-10 xl:mb-10 xl:mt-0">

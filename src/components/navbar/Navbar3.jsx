@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Home,
   Info,
@@ -7,7 +6,6 @@ import {
   Phone,
   BookOpen,
   Shield,
-  Code,
   Database,
   Globe,
   Smartphone,
@@ -18,8 +16,6 @@ import {
   BarChart,
   Building,
   ShoppingCart,
-  Cpu,
-  Bone as Drone,
 } from "lucide-react";
 import {
   NavigationMenu,
@@ -34,17 +30,11 @@ import { BiSolidMoon, BiSolidSun } from "react-icons/bi";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 import { useOnClickOutside } from "usehooks-ts";
-import logo from "../../assets/boedl1.png";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import LanguageSelector from "../LanguageSelector";
+import logo from "../../assets/boedl1.png";
 
 const Navbar = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState(null);
-
-  const handleLanguageChange = (lang) => {
-    setSelectedLanguage(lang);
-  };
-
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark",
   );

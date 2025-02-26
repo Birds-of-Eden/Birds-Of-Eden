@@ -5,7 +5,6 @@ import "aos/dist/aos.css";
 import Layout from "./layouts/Layout";
 import LogoSpinner from "./components/LogoSpinner"; // Import the Loader component
 import ProjectDetails from "./pages/ProjectDetails";
-import { LanguageProvider } from "./contexts/LanguageContext";
 
 // Lazy load components
 const TestYourIQ = lazy(() => import("./components/TestYourIQ/TestYourIQ"));
@@ -17,7 +16,7 @@ const AppDev = lazy(() => import("./pages/AppDev"));
 const BackendTechnologiesStatic = lazy(
   () => import("./pages/BackendTechnologiesStatic"),
 );
-const BlogsPage = lazy(() => import("./pages/BlogsPage"));
+// const BlogsPage = lazy(() => import("./pages/BlogsPage"));
 const ContactForm = lazy(() => import("./pages/ContactForm"));
 const Error = lazy(() => import("./pages/Error"));
 const FrontendTechnologiesStatic = lazy(
@@ -60,61 +59,56 @@ function App() {
   }, []);
 
   return (
-    <LanguageProvider>
-      <BrowserRouter>
-        <Layout>
-          <Suspense fallback={<LogoSpinner />}>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/about" element={<AboutUs />} />
-              <Route path="/team" element={<TeamListStatic />} />
-              <Route path="/contact" element={<ContactForm />} />
-              <Route path="/hardware" element={<Accessories />} />
-              <Route path="/privacy" element={<Privacy />} />
-              <Route path="/career" element={<JobPostListStatic />} />
-              <Route path="/app" element={<AppDev />} />
-              <Route path="/OurService" element={<OurService />} />
-              <Route path="/ios" element={<IOSAppDev />} />
-              <Route path="/mobile" element={<MobileApp />} />
-              <Route path="/web" element={<WebDev />} />
-              <Route path="/technologies" element={<TechnologyList />}>
-                <Route
-                  path="frontend"
-                  element={<FrontendTechnologiesStatic />}
-                />
-                <Route path="backend" element={<BackendTechnologiesStatic />} />
-              </Route>
-              <Route path="/add-book" element={<AddBook />} />
-              <Route path="/show-books" element={<BooksView />} />
-              <Route path="/edit-book" element={<EditBook />} />
-              <Route path="*" element={<Error />} />
-              <Route path="/get-started" element={<GetStartedPage />} />
-              <Route path="/learn-more" element={<LearnMorePage />} />
-              <Route path="/products/:tab" element={<ProductPage />} />
-              <Route path="/test-your-iq" element={<TestYourIQ />} />
-              <Route path="/blogs" element={<Blogs />} />
-              <Route path="/drones" element={<Drones />} />
-              <Route path="/projects/:id" element={<ProjectDetails />} />
+    <BrowserRouter>
+      <Layout>
+        <Suspense fallback={<LogoSpinner />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/team" element={<TeamListStatic />} />
+            <Route path="/contact" element={<ContactForm />} />
+            <Route path="/hardware" element={<Accessories />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/career" element={<JobPostListStatic />} />
+            <Route path="/app" element={<AppDev />} />
+            <Route path="/OurService" element={<OurService />} />
+            <Route path="/ios" element={<IOSAppDev />} />
+            <Route path="/mobile" element={<MobileApp />} />
+            <Route path="/web" element={<WebDev />} />
+            <Route path="/technologies" element={<TechnologyList />}>
+              <Route path="frontend" element={<FrontendTechnologiesStatic />} />
+              <Route path="backend" element={<BackendTechnologiesStatic />} />
+            </Route>
+            <Route path="/add-book" element={<AddBook />} />
+            <Route path="/show-books" element={<BooksView />} />
+            <Route path="/edit-book" element={<EditBook />} />
+            <Route path="*" element={<Error />} />
+            <Route path="/get-started" element={<GetStartedPage />} />
+            <Route path="/learn-more" element={<LearnMorePage />} />
+            <Route path="/products/:tab" element={<ProductPage />} />
+            <Route path="/test-your-iq" element={<TestYourIQ />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/drones" element={<Drones />} />
+            <Route path="/projects/:id" element={<ProjectDetails />} />
 
-              {/* New Routes for Other Services */}
-              <Route
-                path="/payment-gateway"
-                element={<PaymentGatewayIntegration />}
-              />
-              <Route
-                path="/quickbook-integration"
-                element={<QuickBookIntegration />}
-              />
-              <Route path="/zoho-integration" element={<ZohoIntegration />} />
-              <Route path="/orm" element={<Orm />} />
-              <Route path="/drones/:id" element={<DroneDetailsPage />} />
-              <Route path="/blog/:id" element={<BlogDetails />} />
-            </Routes>
-          </Suspense>
-        </Layout>
-      </BrowserRouter>
-    </LanguageProvider>
+            {/* New Routes for Other Services */}
+            <Route
+              path="/payment-gateway"
+              element={<PaymentGatewayIntegration />}
+            />
+            <Route
+              path="/quickbook-integration"
+              element={<QuickBookIntegration />}
+            />
+            <Route path="/zoho-integration" element={<ZohoIntegration />} />
+            <Route path="/orm" element={<Orm />} />
+            <Route path="/drones/:id" element={<DroneDetailsPage />} />
+            <Route path="/blog/:id" element={<BlogDetails />} />
+          </Routes>
+        </Suspense>
+      </Layout>
+    </BrowserRouter>
   );
 }
 
