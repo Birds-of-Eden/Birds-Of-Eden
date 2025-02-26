@@ -80,7 +80,7 @@ const Navbar = () => {
           <div className="container">
             <div className="flex h-12 items-center justify-center md:justify-end">
               {/* Phone */}
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-3">
                 <div className="flex items-center gap-2 p-2 text-black dark:text-white">
                   <FaEnvelope className="size-5" />
                   <a
@@ -96,7 +96,7 @@ const Navbar = () => {
                     +88-01842781978
                   </a>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-3">
                   <label
                     className={`flex size-7 cursor-pointer items-center justify-center rounded-full ${selectedLanguage === "en" ? "ring-2 ring-blue-500 ring-offset-2 ring-offset-black" : ""}`}
                     title="English"
@@ -126,6 +126,22 @@ const Navbar = () => {
                     />
                     <img
                       src="/public/flags/circle-flag-of-bangladesh.webp"
+                      className="rounded-full"
+                    />
+                  </label>
+                  <label
+                    className={`flex size-7 cursor-pointer items-center justify-center rounded-full ${selectedLanguage === "ar" ? "ring-2 ring-blue-500 ring-offset-2 ring-offset-black" : ""}`}
+                    title="Arabic"
+                  >
+                    <input
+                      type="radio"
+                      name="language"
+                      className="appearance-none"
+                      checked={selectedLanguage === "ar"}
+                      onChange={() => handleLanguageChange("ar")}
+                    />
+                    <img
+                      src="/public/flags/sa-circle-flag.png"
                       className="rounded-full"
                     />
                   </label>
