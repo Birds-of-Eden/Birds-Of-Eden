@@ -27,7 +27,7 @@ const ORMSection = () => {
     <section className="bg-gray-100 py-16 dark:bg-slate-700">
       <div className="container mx-auto px-6 text-center">
         <h2 className="mb-4 text-4xl font-bold">
-          Online Reputation Management
+          AI Based Online Reputation and Back Office Management
         </h2>
         <p className="mb-8 text-lg">
           Manage your online reputation to build trust, engage with your
