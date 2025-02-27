@@ -43,6 +43,328 @@
           "image": "project_17.png"
         }
       ]
+    },
+
+    "ormSection": {
+      "title": "AI Based Online Reputation and Back Office Management",
+      "description": "Manage your online reputation to build trust, engage with your audience, and enhance your brand's image.",
+      "features": [
+        {
+          "title": "Build Trust and Credibility",
+          "description": "Establish a strong online presence to enhance trust and credibility among your audience."
+        },
+        {
+          "title": "Engage with Your Audience",
+          "description": "Proactively engage with customers through reviews, comments, and social media."
+        },
+        {
+          "title": "Boost Your Brand Image",
+          "description": "Improve brand perception by highlighting positive experiences and addressing negative feedback."
+        }
+      ],
+      "learnMore": "Learn More"
+    },
+    "bannerDetails": {
+      "title": "We Build Apps That Get Trending On Appworld",
+      "description": "Birds OF EDEN is a cutting-edge software company dedicated to transforming ideas into reality through innovative technology solutions. Our mission is to empower businesses and individuals with state-of-the-art software that enhances efficiency, productivity, and user experience.",
+      "features": [
+        "Expert software development tailored to your needs.",
+        "Innovative solutions that drive growth and success.",
+        "Commitment to quality and exceptional user experience."
+      ],
+      "getStarted": "Get Started"
+    },
+    "dronePage": {
+      "title": "Our Latest Technology",
+      "viewCollections": "View Collections",
+      "viewSpecs": "View Specs",
+      "specs": {
+        "flightTime": "Flight Time",
+        "range": "Range",
+        "camera": "Camera"
+      },
+      "drones": [
+        {
+          "title": "AgriPrecision X1",
+          "description": "Advanced agricultural drone equipped with multispectral imaging for crop health monitoring, precision spraying system for efficient pesticide distribution, and AI-powered crop analysis.",
+          "image": "https://images.unsplash.com/photo-1579829366248-204fe8413f31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "flightTime": "45 minutes",
+            "range": "10 km",
+            "camera": "Multispectral + 4K RGB"
+          }
+        },
+        {
+          "title": "FireRescue Pro",
+          "description": "High-performance emergency response drone with thermal imaging, smoke penetration capabilities, and real-time video transmission.",
+          "image": "https://images.unsplash.com/photo-1579829366248-204fe8413f31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "flightTime": "35 minutes",
+            "range": "8 km",
+            "camera": "Thermal + 4K HDR"
+          }
+        },
+        {
+          "title": "InspectorTech X2",
+          "description": "Industrial inspection drone designed for infrastructure monitoring and maintenance. Features ultra-high resolution cameras, LiDAR scanning, and crack detection AI.",
+          "image": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "flightTime": "40 minutes",
+            "range": "6 km",
+            "camera": "8K + LiDAR"
+          }
+        },
+        {
+          "title": "MineMapper Elite",
+          "description": "Specialized mining and quarry drone with advanced 3D mapping capabilities, dust-resistant design, and underground navigation system.",
+          "image": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "flightTime": "50 minutes",
+            "range": "12 km",
+            "camera": "6K + 3D Scanner"
+          }
+        }
+      ]
+    },
+    "projectGallery": {
+      "title": "Our Projects",
+      "description": "Discover our innovative solutions that push the boundaries of technology and create meaningful impact for our clients.",
+      "modal": {
+        "overview": "Overview",
+        "description": "Description",
+        "close": "Close"
+      },
+      "projects": [
+        {
+          "title": "Identity Verification",
+          "description": "Upload a proof of your identity for trading verification.",
+          "image": "project_1.png"
+        },
+        {
+          "title": "Stock Market Overview",
+          "description": "View top gainers, top losers, and detailed market trends.",
+          "image": "project_2.png"
+        },
+        {
+          "title": "Wallet and Transaction History",
+          "description": "Manage your wallet and view transaction history.",
+          "image": "project_3.png"
+        },
+        {
+          "title": "E-Commerce Platform",
+          "description": "Modern e-commerce solution for book purchases.",
+          "image": "project_4.png"
+        },
+        {
+          "title": "Bookstore Collection",
+          "description": "Browse and filter a vast collection of books.",
+          "image": "project_5.png"
+        },
+        {
+          "title": "Dashboard Analytics",
+          "description": "Data visualization with grouped bar and line charts.",
+          "image": "project_6.png"
+        },
+        {
+          "title": "Reputation Management",
+          "description": "Control your reputation with tailored services.",
+          "image": "project_7.png"
+        },
+        {
+          "title": "Product Showcase",
+          "description": "Detailed product display and promotional banners.",
+          "image": "project_9.png"
+        },
+        {
+          "title": "Pricing and Subscription",
+          "description": "Flexible pricing plans for different user needs.",
+          "image": "project_10.png"
+        },
+        {
+          "title": "Account Contacts",
+          "description": "Manage account contacts and user permissions.",
+          "image": "project_11.png"
+        },
+        {
+          "title": "Dashboard Overview",
+          "description": "Comprehensive dashboard with advanced analytics.",
+          "image": "project_12.jpeg"
+        },
+        {
+          "title": "Moving Cost Calculator",
+          "description": "Calculate moving costs with an intuitive form.",
+          "image": "project_13.jpeg"
+        },
+        {
+          "title": "Client Management",
+          "description": "Overview of client campaigns and engagement metrics.",
+          "image": "project_14.png"
+        },
+        {
+          "title": "Action Summary Dashboard",
+          "description": "Track tasks, activities, and overall productivity.",
+          "image": "project_15.png"
+        }
+      ]
+    },
+    "clientPage": {
+      "title": "Our Clients",
+      "clients": [
+        {
+          "name": "Ann-Nahl Software",
+          "description": "Ann-Nahl Software provides cutting-edge software solutions for businesses, with a focus on quality and customer satisfaction.",
+          "logo": "ann-nahl.png",
+          "services": [
+            "Software Development",
+            "Consulting",
+            "Custom Solutions"
+          ],
+          "testimonial": "Ann-Nahl Software has transformed the way we operate, delivering high-quality software solutions tailored to our needs."
+        },
+        {
+          "name": "BuzzMoving",
+          "description": "BuzzMoving offers a seamless moving experience, ensuring that all relocations are handled with care and precision.",
+          "logo": "buzzmoving.png",
+          "services": [
+            "Residential Moving",
+            "Commercial Moving",
+            "Storage Services"
+          ],
+          "testimonial": "BuzzMoving made our relocation stress-free. Their team is efficient, professional, and reliable."
+        },
+        {
+          "name": "Reputation Prime",
+          "description": "Reputation Prime helps businesses build and maintain a strong online reputation through strategic reputation management solutions.",
+          "logo": "repuprime.jpeg",
+          "services": [
+            "Reputation Management",
+            "Brand Monitoring",
+            "Crisis Handling"
+          ],
+          "testimonial": "Reputation Prime played a vital role in enhancing our brand reputation and online credibility."
+        },
+        {
+          "name": "Ministry of Health Saudi Arabia",
+          "description": "The Ministry of Health Saudi Arabia provides healthcare services, policies, and medical regulations to enhance public health.",
+          "logo": "moh.png",
+          "services": [
+            "Public Health",
+            "Medical Services",
+            "Healthcare Policies"
+          ],
+          "testimonial": "The Ministry of Health has greatly improved our access to healthcare services and medical information."
+        },
+        {
+          "name": "Ministry of Human Resources & Social Development",
+          "description": "The Ministry of Human Resources and Social Development works towards an empowered community and an attractive labor market.",
+          "logo": "HRSD.png",
+          "services": [
+            "Labor Policies",
+            "Social Development",
+            "Employment Support"
+          ],
+          "testimonial": "HRSD has played a crucial role in creating a more dynamic and inclusive labor market."
+        },
+        {
+          "name": "SDAIA (Saudi Data & AI Authority)",
+          "description": "SDAIA is dedicated to advancing data and artificial intelligence solutions to drive digital transformation in Saudi Arabia.",
+          "logo": "sdaia.png",
+          "services": [
+            "Artificial Intelligence",
+            "Big Data",
+            "Digital Transformation"
+          ],
+          "testimonial": "SDAIA has significantly contributed to the growth of AI and data-driven initiatives in the country."
+        },
+        {
+          "name": "Oman Botanic Garden",
+          "description": "Oman Botanic Garden showcases the diverse plant life of Oman, promoting conservation and education.",
+          "logo": "OBG.png",
+          "services": [
+            "Botanical Conservation",
+            "Environmental Education",
+            "Tourism"
+          ],
+          "testimonial": "Oman Botanic Garden offers an immersive experience in Oman's rich biodiversity."
+        },
+        {
+          "name": "Royal Opera House Muscat",
+          "description": "The Royal Opera House Muscat is Oman's premier venue for musical and cultural performances, promoting artistic excellence.",
+          "logo": "ROHM.png",
+          "services": ["Performing Arts", "Cultural Events", "Music Education"],
+          "testimonial": "The Royal Opera House Muscat is a cultural gem, bringing world-class performances to Oman."
+        },
+        {
+          "name": "Government of Bangladesh",
+          "description": "The official portal of the Government of Bangladesh provides information and services for citizens, businesses, and visitors.",
+          "logo": "bangovt.png",
+          "services": [
+            "Government Services",
+            "Public Administration",
+            "E-Governance"
+          ],
+          "testimonial": "The Bangladesh Government portal offers a seamless experience in accessing essential government services."
+        },
+        {
+          "name": "Moving Quote NewYork",
+          "description": "New York Quote Texas provides competitive insurance quotes, helping individuals and businesses secure the best policies.",
+          "logo": "logo-png.png",
+          "services": [
+            "Insurance Quotes",
+            "Financial Planning",
+            "Risk Assessment"
+          ],
+          "testimonial": "New York Quote Texas helped us find the perfect insurance plan at an unbeatable rate."
+        },
+        {
+          "name": "Moving Texas",
+          "description": "Moving Texas offers top-notch relocation services for residential and commercial clients across the state.",
+          "logo": "moving-texas.png",
+          "services": [
+            "Residential Moving",
+            "Commercial Moving",
+            "Storage Solutions"
+          ],
+          "testimonial": "Moving Texas made our relocation smooth and hassle-free with their professional and reliable team."
+        }
+      ]
+    },
+    "blogPage": {
+      "title": "Our Latest Blogs",
+      "by": "By",
+      "readMore": "Read More",
+      "blogs": [
+        {
+          "id": 1,
+          "title": "The Power of ERP Solutions for SEO in Business Growth",
+          "date": "Feb 15, 2024",
+          "author": "Zulfiker",
+          "image": "erp.png",
+          "description": "Discover how ERP solutions streamline business processes, improve efficiency, and drive success in a digital era."
+        },
+        {
+          "id": 2,
+          "title": "How Agricultural Drones Are Transforming Farming",
+          "date": "March 10, 2024",
+          "author": "Zisan",
+          "image": "agricultural_drone.jpg",
+          "description": "Agricultural drones are revolutionizing farming with precision spraying, crop monitoring, and improved productivity."
+        },
+        {
+          "id": 3,
+          "title": "Drones for Fire Services: A Game-Changer in Emergency Response",
+          "date": "April 24, 2024",
+          "author": "Md. Hossain",
+          "image": "fire_service_drone.jpg",
+          "description": "Firefighting drones enhance safety and efficiency by providing aerial surveillance, thermal imaging, and rapid response capabilities."
+        }
+      ]
+    },
+    "teamMoments": {
+      "title": "Our Team Moments"
+    },
+    "partners": {
+      "title": "Our Partners"
     }
   }
 }
