@@ -7,22 +7,22 @@ const LanguageSelector = () => {
     {
       code: "en",
       title: "English",
-      img: "/flags/United-states_flag_icon_round.png",
+      img: "/flags/us.svg",
     },
     {
       code: "bn",
       title: "Bengali",
-      img: "/flags/circle-flag-of-bangladesh.webp",
+      img: "/flags/bd.svg",
     },
     {
       code: "ar",
       title: "Arabic",
-      img: "/flags/sa-circle-flag.png",
+      img: "/flags/sa.svg",
     },
     {
       code: "ja",
       title: "Japanese",
-      img: "/flags/japan-flat-rounded-national-flag-icon.jpg",
+      img: "/flags/jp.svg",
     },
   ];
 
@@ -35,7 +35,7 @@ const LanguageSelector = () => {
       {languages.map((lang) => (
         <label
           key={lang.code}
-          className={`flex size-7 shrink-0 cursor-pointer items-center justify-center rounded-full ${
+          className={`flex size-7 shrink-0 cursor-pointer items-center justify-center ${
             i18n.language === lang.code
               ? "ring-2 ring-blue-500 ring-offset-2 ring-offset-black"
               : ""
@@ -51,7 +51,7 @@ const LanguageSelector = () => {
           />
           <img
             src={lang.img}
-            className="rounded-full shadow-md transition-transform hover:scale-105"
+            className="shadow-md transition-transform hover:scale-105"
             alt={lang.title}
           />
         </label>
