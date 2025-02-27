@@ -225,7 +225,9 @@ const Navbar = () => {
                       </NavigationMenuContent>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                      <NavigationMenuTrigger>Services</NavigationMenuTrigger>
+                      <NavigationMenuTrigger>
+                        <NavLink to="OurService">Services</NavLink>
+                      </NavigationMenuTrigger>
                       <NavigationMenuContent>
                         <div className="flex w-[550px] flex-col gap-4 p-3">
                           <div className="flex gap-4">
@@ -372,7 +374,9 @@ const Navbar = () => {
                     </NavigationMenuItem>
                     <NavigationMenuItem>
                       <NavigationMenuTrigger>
-                        Technologies
+                        <NavLink to="/technologies/frontend">
+                          Technologies
+                        </NavLink>
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
                         <div className="flex w-[550px] flex-col gap-4 p-3">
@@ -441,7 +445,9 @@ const Navbar = () => {
                       </NavigationMenuContent>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                      <NavigationMenuTrigger>Products</NavigationMenuTrigger>
+                      <NavigationMenuTrigger>
+                        <NavLink to="/products/govt">Products</NavLink>
+                      </NavigationMenuTrigger>
                       <NavigationMenuContent>
                         <div className="flex w-[450px] flex-col gap-4 p-3">
                           <div className="flex gap-4">
