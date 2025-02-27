@@ -24,6 +24,7 @@ import ProjectGallery from "../components/ProjectGallery/ProjectGallery";
 import BounceCards from "../components/BounceCards/BounceCards";
 import ERPProjects from "../components/ERPProjects";
 import ORMSection from "../components/ORMSection";
+import { useTranslation } from "react-i18next";
 // import Top_Photo_Gallery from "../components/Top_Photo_Gallery";
 
 const images = [office_1, office_2, office_1];
@@ -52,6 +53,7 @@ const transformStyles =
     : baseTransformStyles;
 
 const Home = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <Hero />
@@ -70,7 +72,7 @@ const Home = () => {
       </div>
 
       <div style={{ height: "700px", position: "relative" }} className="pb-40">
-        <h1 className="heading3 pt-3">Our Partners</h1>
+        <h1 className="heading3 pt-3">{t("home.partners.title")}</h1>
         <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} />
       </div>
 
@@ -84,7 +86,7 @@ const Home = () => {
         className="bg-slate-50 dark:bg-slate-800"
       >
         <h2 className="heading2 pb-10 font-sans text-2xl text-white sm:text-3xl md:text-4xl lg:text-5xl">
-          Our Team Moments
+          {t("home.teamMoments.title")}
         </h2>
 
         <div
