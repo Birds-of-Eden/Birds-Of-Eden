@@ -18,6 +18,31 @@
         { "value": "1k+", "label": "Subscribers" },
         { "value": "5+", "label": "Clients" }
       ]
+    },
+
+    "erpProjects": {
+      "projects": [
+        {
+          "title": "Sales Insights Dashboard",
+          "description": "The Sales Insights Dashboard is an advanced analytics tool designed to provide businesses with comprehensive, real-time sales data.",
+          "image": "project_14.png"
+        },
+        {
+          "title": "Client Optimization Analytics",
+          "description": "The Client Optimization Analytics tool empowers businesses with deep insights into client engagement.",
+          "image": "project_15.png"
+        },
+        {
+          "title": "Campaign Performance Dashboard",
+          "description": "The Campaign Performance Dashboard helps businesses monitor and optimize their marketing campaigns.",
+          "image": "project_16.png"
+        },
+        {
+          "title": "Seamless Onboarding Workflow",
+          "description": "The Seamless Onboarding Workflow simplifies and enhances the onboarding process for new users.",
+          "image": "project_17.png"
+        }
+      ]
     }
   }
 }
