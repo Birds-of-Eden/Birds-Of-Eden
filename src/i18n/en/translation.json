@@ -373,7 +373,35 @@
     },
     "partners": {
       "title": "Our Partners"
-    }
+    },
+    "privacyPolicy": [
+      {
+        "title": "Privacy Policy",
+        "text": "At BIRDS OF EDEN, we take your privacy seriously. This Privacy Policy explains how we collect, use, and disclose information about you when you use our services. Please read this policy carefully to understand our practices regarding your information and how we will treat it."
+      },
+      {
+        "title": "Information We Collect",
+        "text": "We collect information from you when you visit our website, use our services, or communicate with us. This information may include: your name, email address, contact information, and any other information you provide to us."
+      },
+      {
+        "title": "How We Use Your Information",
+        "subtitle": "We may use the information we collect from you to:",
+        "list": [
+          "Provide and improve our services.",
+          "Communicate with you about our services.",
+          "Personalize your experience.",
+          "Respond to your inquiries."
+        ]
+      },
+      {
+        "title": "Information Sharing and Disclosure",
+        "text": "We do not sell, trade, or otherwise transfer your personal information to outside parties. This does not include trusted third parties who assist us in operating our website, conducting our business, or servicing you, as long as those parties agree to keep this information confidential."
+      },
+      {
+        "title": "Contact Us",
+        "text": "If you have any questions about this Privacy Policy, you can contact us at privacy@birdsofeden.com."
+      }
+    ]
   },
   "services": {
     "bigData": [
