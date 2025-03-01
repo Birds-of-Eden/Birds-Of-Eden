@@ -88,13 +88,47 @@
       },
       "drones": [
         {
-          "title": "AgriPrecision X1",
-          "description": "マルチスペクトルイメージングとAI駆動の作物分析を備えた高度な農業用ドローン。",
+          "id": 1,
+          "title": "アグリプレシジョン X1",
+          "description": "作物健康モニタリング用のマルチスペクトルイメージング、効率的な農薬散布用の精密散布システム、AI搭載の作物分析を備えた高度な農業用ドローン。",
           "image": "https://images.unsplash.com/photo-1579829366248-204fe8413f31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
           "specs": {
             "flightTime": "45分",
             "range": "10 km",
             "camera": "マルチスペクトル + 4K RGB"
+          }
+        },
+        {
+          "id": 2,
+          "title": "ファイアレスキュー プロ",
+          "description": "熱画像、煙透過能力、リアルタイムビデオ伝送を備えた高性能緊急対応ドローン。",
+          "image": "https://images.unsplash.com/photo-1579829366248-204fe8413f31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "flightTime": "35分",
+            "range": "8 km",
+            "camera": "熱画像 + 4K HDR"
+          }
+        },
+        {
+          "id": 3,
+          "title": "インスペクターテック X2",
+          "description": "インフラ監視およびメンテナンス用に設計された産業用検査ドローン。超高解像度カメラ、LiDARスキャン、亀裂検出AIを搭載。",
+          "image": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "flightTime": "40分",
+            "range": "6 km",
+            "camera": "8K + LiDAR"
+          }
+        },
+        {
+          "id": 4,
+          "title": "マインマッパー エリート",
+          "description": "高度な3Dマッピング機能、防塵設計、地下ナビゲーションシステムを備えた、鉱山および採石場専用のドローン。",
+          "image": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "flightTime": "50分",
+            "range": "12 km",
+            "camera": "6K + 3Dスキャナー"
           }
         }
       ]
@@ -632,5 +666,55 @@
         "location": "リモート"
       }
     ]
+  },
+
+  "aboutUs": {
+    "title": "BIRDS OF EDENについて",
+    "header": "BIRDS OF EDENは、デジタル時代において企業が成功するための革新的なソリューションを提供する、ダイナミックなソフトウェア企業です。",
+    "missionTitle": "私たちの使命",
+    "mission": "BIRDS OF EDENでは、最先端の製品やサービスを提供し、お客様の期待を超えることで、ソフトウェア業界に革命をもたらすことを使命としています。",
+    "valuesTitle": "私たちの価値観",
+    "values": [
+      "イノベーション: 私たちは常に新しいアイデアや技術を探求し、業界の最前線に立ち続けます。",
+      "品質: お客様のビジネスに価値をもたらす高品質なソリューションを提供することに尽力しています。",
+      "誠実さ: 私たちは正直さ、透明性、誠実さを持ってビジネスを行います。",
+      "顧客満足: 私たちはお客様のニーズと満足度を最優先に考えます。",
+      "協力: 成功のためには、協力とチームワークが不可欠であると信じています。"
+    ],
+    "coreMembersTitle": "主要メンバー",
+    "coreMembers": [
+      {
+        "name": "タラット・モハメッド・タウフィク・エラヒ",
+        "role": "共同創設者 & CEO"
+      },
+      {
+        "name": "モハメッド・アメヌル・イスラム",
+        "role": "CTO"
+      }
+    ]
+  },
+  "team": {
+    "title": "エグゼクティブチームを紹介",
+    "roles": {
+      "CEO": "CEO",
+      "CTO": "CTO",
+      "COO": "COO"
+    },
+    "members": [
+      {
+        "name": "タラット・モハメッド・タウフィク・エラヒ",
+        "role": "CEO",
+        "portfolioLink": "https://talat-me.vercel.app/",
+        "description": "タラット・モハメッド・タウフィク・エラヒは、戦略的成長と卓越性を推進するビジョナリーリーダーです。 先見の明のあるアプローチで市場の変化を予測し、課題を柔軟に乗り越えます。 彼のリーダーシップは戦略と実行を結びつけ、組織の成功を確実にします。"
+      },
+      {
+        "name": "モハメッド・アメヌル・イスラム",
+        "role": "CTO",
+        "portfolioLink": "https://talat-me.vercel.app/",
+        "description": "モハメッド・アメヌル・イスラムは、オペレーショナル・エフィシエンシーと成長を推進する戦略的イノベーターです。 彼はビジョナリーな思考と実践的な実行を組み合わせ、ビジネス目標を達成します。 彼の先見の明により、組織は変化する環境に適応し、成功を収めることができます。"
+      }
+    ],
+    "descriptionTitle": "説明",
+    "viewPortfolio": "ポートフォリオを見る"
   }
 }

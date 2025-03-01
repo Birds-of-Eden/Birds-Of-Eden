@@ -1,11 +1,15 @@
+import { useTranslation } from "react-i18next";
 import { useNavigate, useParams } from "react-router-dom";
-import droneData from "../Data/droneData";
+// import droneData from "../Data/droneData";
 
 const DroneDetailsPage = () => {
+  const { t } = useTranslation();
+  const droneData = t("home.dronePage.drones", { returnObjects: true });
+
   const navigate = useNavigate();
   const { id } = useParams();
   // const location = useLocation(); // Get location object
-  const drone = droneData.find((d) => d.id === id);
+  const drone = droneData.find((d) => d.id == id);
 
   // If drone not found
   if (!drone) {
@@ -32,8 +36,8 @@ const DroneDetailsPage = () => {
       <p className="mt-2 text-gray-700 dark:text-white">{drone.description}</p>
 
       <button
-        onClick={() => navigate(-1)} 
-        className="rounded-lg bg-blue-600 px-6 py-2 mt-5 text-white transition-colors hover:bg-blue-700"
+        onClick={() => navigate(-1)}
+        className="mt-5 rounded-lg bg-blue-600 px-6 py-2 text-white transition-colors hover:bg-blue-700"
       >
         Back
       </button>
