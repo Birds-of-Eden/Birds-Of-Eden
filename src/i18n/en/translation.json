@@ -89,6 +89,7 @@
       },
       "drones": [
         {
+          "id": 1,
           "title": "AgriPrecision X1",
           "description": "Advanced agricultural drone equipped with multispectral imaging for crop health monitoring, precision spraying system for efficient pesticide distribution, and AI-powered crop analysis.",
           "image": "https://images.unsplash.com/photo-1579829366248-204fe8413f31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
@@ -99,6 +100,7 @@
           }
         },
         {
+          "id": 2,
           "title": "FireRescue Pro",
           "description": "High-performance emergency response drone with thermal imaging, smoke penetration capabilities, and real-time video transmission.",
           "image": "https://images.unsplash.com/photo-1579829366248-204fe8413f31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
@@ -109,6 +111,7 @@
           }
         },
         {
+          "id": 3,
           "title": "InspectorTech X2",
           "description": "Industrial inspection drone designed for infrastructure monitoring and maintenance. Features ultra-high resolution cameras, LiDAR scanning, and crack detection AI.",
           "image": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
@@ -119,6 +122,7 @@
           }
         },
         {
+          "id": 4,
           "title": "MineMapper Elite",
           "description": "Specialized mining and quarry drone with advanced 3D mapping capabilities, dust-resistant design, and underground navigation system.",
           "image": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
@@ -540,5 +544,54 @@
         "location": "Remote"
       }
     ]
+  },
+  "aboutUs": {
+    "title": "About Birds OF EDEN",
+    "header": "BIRDS OF EDEN is a dynamic software company dedicated to creating innovative solutions that empower businesses to thrive in the digital age.",
+    "missionTitle": "Our Mission",
+    "mission": "At BIRDS OF EDEN, our mission is to revolutionize the software industry by delivering cutting-edge products and services that exceed our clients' expectations.",
+    "valuesTitle": "Our Values",
+    "values": [
+      "Innovation: We constantly explore new ideas and technologies to stay ahead of the curve.",
+      "Quality: We are committed to delivering high-quality solutions that add value to our clients' businesses.",
+      "Integrity: We conduct business with honesty, transparency, and integrity.",
+      "Customer Satisfaction: We prioritize the needs and satisfaction of our clients above all else.",
+      "Collaboration: We believe in the power of collaboration and teamwork to achieve success."
+    ],
+    "coreMembersTitle": "Core Members",
+    "coreMembers": [
+      {
+        "name": "Talat Md. Tawfiq Elahi",
+        "role": "Co-Founder & CEO"
+      },
+      {
+        "name": "Md. Amenul Islam",
+        "role": "CTO"
+      }
+    ]
+  },
+  "team": {
+    "title": "Meet Our Executive Team",
+    "roles": {
+      "CEO": "CEO",
+      "CTO": "CTO",
+      "COO": "COO"
+    },
+    "members": [
+      {
+        "name": "Talat Md. Tawfik Elahi",
+        "role": "CEO",
+        "portfolioLink": "https://talat-me.vercel.app/",
+        "description": "Talat Md. Tawfik Elahi is a visionary leader driving strategic growth and excellence. With a forward-thinking approach, he anticipates market shifts and navigates challenges with agility. His leadership bridges strategy and execution, ensuring organizational success."
+      },
+      {
+        "name": "Md. Amenul Islam",
+        "role": "CTO",
+        "portfolioLink": "https://talat-me.vercel.app/",
+        "description": "Md. Amenul Islam is a strategic innovator leading operational efficiency and growth. He combines visionary thinking with practical execution to achieve business goals. His foresight enables the organization to adapt and thrive in a dynamic landscape."
+      }
+    ],
+    "descriptionTitle": "Description",
+    "viewPortfolio": "View Portfolio"
   }
 }

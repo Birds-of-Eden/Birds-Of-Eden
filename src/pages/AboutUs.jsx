@@ -1,19 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import talatImage from "./../assets/talat_md.png";
-import amenul_islam from "./../assets/amenul_islam.png";
+import amenulIslam from "./../assets/amenul_islam.png";
 
 const AboutUs = () => {
+  const { t } = useTranslation();
+  const aboutUs = t("aboutUs", { returnObjects: true });
+
   const fadeInUpVariant = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        type: "spring",
-        duration: 0.8,
-        bounce: 0.3,
-      },
+      transition: { type: "spring", duration: 0.8, bounce: 0.3 },
     },
   };
 
@@ -21,10 +21,7 @@ const AboutUs = () => {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.3,
-      },
+      transition: { staggerChildren: 0.2, delayChildren: 0.3 },
     },
   };
 
@@ -33,24 +30,7 @@ const AboutUs = () => {
     visible: {
       opacity: 1,
       scale: 1,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 15,
-      },
-    },
-  };
-
-  const headerVariant = {
-    hidden: { opacity: 0, y: -20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 20,
-      },
+      transition: { type: "spring", stiffness: 100, damping: 15 },
     },
   };
 
@@ -64,55 +44,42 @@ const AboutUs = () => {
       >
         <motion.div
           className="relative z-[1] bg-[url('/pexels-felixmittermeier-1205301.jpg')] bg-cover bg-center bg-no-repeat py-8 text-center after:absolute after:inset-0 after:bg-gradient-to-t after:from-slate-100 after:to-blue-500/60 dark:bg-blue-500/50 dark:to-slate-800 dark:after:from-slate-800"
-          variants={headerVariant}
+          variants={fadeInUpVariant}
         >
           <motion.h1
             className="relative z-[1] justify-center rounded-lg p-4 text-center text-4xl font-bold"
             variants={fadeInUpVariant}
           >
-            About{" "}
-            <span className="ml-1 inline-block bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent drop-shadow-lg">
-              Birds OF EDEN
-            </span>
+            {aboutUs.title}
           </motion.h1>
         </motion.div>
 
         <motion.div
-          className="container bg-gradient-to-t from-transparent to-slate-100 dark:to-slate-800"
+          className="container bg-gradient-to-t from-transparent to-slate-100 px-8 py-10 dark:to-slate-800"
           variants={containerVariant}
         >
           <motion.p className="mb-8 text-lg" variants={fadeInUpVariant}>
-            <span className="font-semibold">BIRDS OF EDEN</span> is a dynamic
-            software company dedicated to creating innovative solutions that
-            empower businesses to thrive in the digital age.
+            {aboutUs.header}
           </motion.p>
 
           <motion.h2
             className="mb-6 text-3xl font-bold"
             variants={fadeInUpVariant}
           >
-            Our Mission
+            {aboutUs.missionTitle}
           </motion.h2>
           <motion.p className="mb-8 text-lg" variants={fadeInUpVariant}>
-            At <span className="font-semibold">BIRDS OF EDEN</span>, our mission
-            is to revolutionize the software industry by delivering cutting-edge
-            products and services that exceed our clients' expectations.
+            {aboutUs.mission}
           </motion.p>
 
           <motion.h2
             className="mb-6 text-3xl font-bold"
             variants={fadeInUpVariant}
           >
-            Our Values
+            {aboutUs.valuesTitle}
           </motion.h2>
           <motion.ul className="mb-8 text-lg" variants={containerVariant}>
-            {[
-              "Innovation: We constantly explore new ideas and technologies to stay ahead of the curve.",
-              "Quality: We are committed to delivering high-quality solutions that add value to our clients' businesses.",
-              "Integrity: We conduct business with honesty, transparency, and integrity.",
-              "Customer Satisfaction: We prioritize the needs and satisfaction of our clients above all else.",
-              "Collaboration: We believe in the power of collaboration and teamwork to achieve success.",
-            ].map((value, index) => (
+            {aboutUs.values.map((value, index) => (
               <motion.li
                 key={index}
                 className="mb-4"
@@ -127,26 +94,13 @@ const AboutUs = () => {
             className="mb-6 text-3xl font-bold"
             variants={fadeInUpVariant}
           >
-            Core Members
+            {aboutUs.coreMembersTitle}
           </motion.h2>
           <motion.div
             className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
             variants={containerVariant}
           >
-            {[
-              {
-                name: "Talat Md. Tawfiq Elahi",
-                role: "Co-Founder & CEO",
-                direction: -1,
-                Image: talatImage,
-              },
-              {
-                name: "Md.Amenul Islam",
-                role: "CTO",
-                direction: 0,
-                Image: amenul_islam,
-              },
-            ].map((member, index) => (
+            {aboutUs.coreMembers.map((member, index) => (
               <motion.div
                 key={index}
                 className="rounded-lg bg-gray-100 p-3 ring-2 ring-purple-600"
@@ -155,23 +109,9 @@ const AboutUs = () => {
                   scale: 1.05,
                   transition: { type: "spring", stiffness: 300 },
                 }}
-                initial={{
-                  opacity: 0,
-                  x: member.direction * 50,
-                }}
-                animate={{
-                  opacity: 1,
-                  x: 0,
-                  transition: {
-                    type: "spring",
-                    stiffness: 100,
-                    damping: 15,
-                    delay: index * 0.2,
-                  },
-                }}
               >
                 <img
-                  src={member.Image}
+                  src={index === 0 ? talatImage : amenulIslam}
                   alt={member.name}
                   className="mb-2 w-full rounded-lg"
                 />
