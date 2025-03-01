@@ -1,6 +1,11 @@
-// import React from "react";
+import { useTranslation } from "react-i18next";
 
 const WebDev = () => {
+  const { t } = useTranslation();
+  const webDev = t("services.webDev", {
+    returnObjects: true,
+  });
+
   return (
     <div className="">
       <div className="mx-auto mb-16 mt-8 max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl ">
@@ -9,45 +14,17 @@ const WebDev = () => {
             Web Development Services
           </h2>
 
-          <p className="mb-6 text-gray-700 dark:text-white">
-            BIRDS OF EDEN specializes in building dynamic and user-friendly
-            websites tailored to help you achieve your online goals and enhance
-            your digital presence.
-          </p>
+          <p className="mb-6 text-gray-700 dark:text-white">{webDev.header}</p>
 
           <ul className="mb-6 list-inside list-disc">
-            <li className="text-gray-700 dark:text-white">
-              <span className="font-bold">Custom Web Solutions:</span> We
-              develop bespoke websites tailored to your unique business
-              requirements, ensuring a personalized and engaging user
-              experience.
-            </li>
-
-            <li className="text-gray-700 dark:text-white">
-              <span className="font-bold">Responsive Design:</span> Our websites
-              are optimized for all devices and screen sizes, ensuring seamless
-              functionality and accessibility across desktops, tablets, and
-              smartphones.
-            </li>
-
-            <li className="text-gray-700 dark:text-white">
-              <span className="font-bold">Content Management:</span> With
-              intuitive content management systems (CMS), you have full control
-              over your website content, allowing for easy updates and
-              modifications.
-            </li>
-            <li className="text-gray-700 dark:text-white">
-              <span className="font-bold">SEO Integration:</span> We incorporate
-              search engine optimization (SEO) best practices to improve your
-              website's visibility and ranking on search engine results pages
-              (SERPs), driving organic traffic and increasing your online
-              presence.
-            </li>
+            {webDev.list.map((dev, index) => (
+              <li key={index} className="text-gray-700 dark:text-white">
+                <span className="font-bold">{dev.title}:</span> We
+                {dev.description}
+              </li>
+            ))}
           </ul>
-          <p className="text-gray-700 dark:text-white">
-            Partner with us to transform your online presence and achieve your
-            business objectives through innovative and effective web solutions.
-          </p>
+          <p className="text-gray-700 dark:text-white">{webDev.footer}</p>
         </div>
       </div>
     </div>
