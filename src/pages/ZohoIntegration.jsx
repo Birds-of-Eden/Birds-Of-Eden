@@ -2,7 +2,9 @@ import { useTranslation } from "react-i18next";
 
 const ZohoIntegration = () => {
   const { t } = useTranslation();
-  const zohoIntegration = t("services.zohoIntegration");
+  const zohoIntegration = t("services.zohoIntegration", {
+    returnObjects: true,
+  });
 
   return (
     <section className="bg-gray-50 py-12 dark:bg-slate-900">
