@@ -520,6 +520,77 @@
         }
       ],
       "footer": "Partner with us to leverage the power of mobile technology and propel your business to new heights of success in today's digital landscape."
+    },
+    "paymentGateway": {
+      "title": "Secure Payment Gateway Integration",
+      "description": "We provide seamless **payment gateway integration** solutions for businesses looking to **accept online payments securely**. Whether you need to integrate **Stripe, PayPal, or Razorpay**, we ensure smooth and **hassle-free transactions** for your customers.",
+      "whyChoose": {
+        "title": "Why Choose Our Payment Gateway Integration?",
+        "list": [
+          {
+            "title": "High Security Standards:",
+            "text": "Implement **PCI-DSS compliance**, fraud protection, and **SSL encryption**."
+          },
+          {
+            "title": "Fast & Seamless Transactions:",
+            "text": "Optimized APIs for **instant payment processing**."
+          },
+          {
+            "title": "Custom Checkout Experience:",
+            "text": "Design tailored payment pages with a **smooth user experience**."
+          },
+          {
+            "title": "Recurring Payments & Subscriptions:",
+            "text": "Automate billing cycles for **subscriptions and memberships**."
+          }
+        ]
+      },
+      "providers": {
+        "title": "Supported Payment Providers",
+        "list": [
+          {
+            "title": "Stripe",
+            "text": "**Fast, secure, and developer-friendly** payment processing for businesses of all sizes.",
+            "image": "https://logos-world.net/wp-content/uploads/2021/02/Stripe-Emblem.png"
+          },
+          {
+            "title": "PayPal",
+            "text": "**Trusted worldwide**, offering both personal and business transaction solutions.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
+          },
+          {
+            "title": "Razorpay",
+            "text": "**Best suited for Indian businesses**, supporting UPI, credit cards, and wallets.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/9/92/Razorpay_logo.svg"
+          }
+        ]
+      },
+      "integrationProcess": {
+        "title": "Our Integration Process",
+        "list": [
+          {
+            "title": "Consultation & Requirements Analysis:",
+            "text": "Understanding your business needs."
+          },
+          {
+            "title": "API Integration:",
+            "text": "Seamless connection with **Stripe, PayPal, or Razorpay**."
+          },
+          {
+            "title": "Testing & Compliance:",
+            "text": "Ensuring **secure transactions** before going live."
+          },
+          {
+            "title": "Go Live & Support:",
+            "text": "Continuous **monitoring and maintenance** for smooth operations."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Ready to Accept Online Payments?",
+        "description": "Get started with **secure and efficient payment gateway integration today**.",
+        "contact": "Contact Us Now"
+      }
     }
   },
   "technologyList": {
