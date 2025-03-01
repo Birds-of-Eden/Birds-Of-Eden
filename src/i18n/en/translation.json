@@ -451,7 +451,29 @@
         "title": "UI/UX Design",
         "description": "Craft visually stunning and intuitive interfaces that captivate your audience and elevate user experience."
       }
-    ]
+    ],
+    "webDev": {
+      "header": "BIRDS OF EDEN specializes in building dynamic and user-friendly websites tailored to help you achieve your online goals and enhance your digital presence.",
+      "list": [
+        {
+          "title": "Custom Web Solutions",
+          "description": "We develop bespoke websites tailored to your unique business requirements, ensuring a personalized and engaging user experience."
+        },
+        {
+          "title": "Responsive Design",
+          "description": "Our websites are optimized for all devices and screen sizes, ensuring seamless functionality and accessibility across desktops, tablets, and smartphones."
+        },
+        {
+          "title": "Content Management",
+          "description": "With intuitive content management systems (CMS), you have full control over your website content, allowing for easy updates and modifications."
+        },
+        {
+          "title": "SEO Integration",
+          "description": "We incorporate search engine optimization (SEO) best practices to improve your website's visibility and ranking on search engine results pages (SERPs), driving organic traffic and increasing your online presence."
+        }
+      ],
+      "footer": "Partner with us to transform your online presence and achieve your business objectives through innovative and effective web solutions."
+    }
   },
   "technologyList": {
     "ourTechnology": "Our Technology",
