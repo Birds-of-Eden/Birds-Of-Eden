@@ -1,0 +1,166 @@
+{
+  "hardwareProductsEN": {
+    "premiumTech": {
+      "title": "Premium Tech Accessories",
+      "description": "Empower your workspace with high-quality, professional-grade tech accessories.",
+      "slider": {
+        "title": "Professional Tech Accessories",
+        "description": "Enhance productivity with premium accessories:",
+        "list": [
+          {
+            "title": "Mechanical Keyboards & Ergonomic Mice:",
+            "text": "Precision and comfort for daily use."
+          },
+          {
+            "title": "High-Speed SSDs & External Storage:",
+            "text": "Secure and fast data management."
+          },
+          {
+            "title": "Ultra HD Monitors & Docking Stations:",
+            "text": "Optimized for multitasking efficiency."
+          }
+        ]
+      }
+    },
+    "networkingAndTech": [
+      {
+        "image": "router_1.jpg",
+        "title": "Accessory 1",
+        "description": "High-performance accessory for professionals."
+      },
+      {
+        "image": "docking_station.jpg",
+        "title": "Accessory 2",
+        "description": "High-performance accessory for professionals."
+      },
+      {
+        "image": "external_hdd.jpg",
+        "title": "Accessory 3",
+        "description": "High-performance accessory for professionals."
+      }
+    ]
+  },
+  "hardwareProductsJA": {
+    "premiumTech": {
+      "title": "プレミアムテックアクセサリー",
+      "description": "高品質でプロフェッショナルグレードのテックアクセサリーでワークスペースを強化しましょう。",
+      "slider": {
+        "title": "プロフェッショナルテックアクセサリー",
+        "description": "プレミアムアクセサリーで生産性を向上させましょう：",
+        "list": [
+          {
+            "title": "メカニカルキーボード＆エルゴノミクスマウス：",
+            "text": "日常使用のための精度と快適性。"
+          },
+          {
+            "title": "高速SSD＆外部ストレージ：",
+            "text": "安全で高速なデータ管理。"
+          },
+          {
+            "title": "ウルトラHDモニター＆ドッキングステーション：",
+            "text": "マルチタスク効率のために最適化。"
+          }
+        ]
+      }
+    },
+    "networkingAndTech": [
+      {
+        "image": "router_1.jpg",
+        "title": "アクセサリー1",
+        "description": "プロフェッショナル向けの高性能アクセサリー。"
+      },
+      {
+        "image": "docking_station.jpg",
+        "title": "アクセサリー2",
+        "description": "プロフェッショナル向けの高性能アクセサリー。"
+      },
+      {
+        "image": "external_hdd.jpg",
+        "title": "アクセサリー3",
+        "description": "プロフェッショナル向けの高性能アクセサリー。"
+      }
+    ]
+  },
+  "hardwareProductsAR": {
+    "premiumTech": {
+      "title": "ملحقات تقنية فاخرة",
+      "description": "عزز مساحة عملك بملحقات تقنية عالية الجودة من الدرجة الاحترافية.",
+      "slider": {
+        "title": "ملحقات تقنية احترافية",
+        "description": "عزز الإنتاجية بملحقات فاخرة:",
+        "list": [
+          {
+            "title": "لوحات مفاتيح ميكانيكية وفئران مريحة:",
+            "text": "دقة وراحة للاستخدام اليومي."
+          },
+          {
+            "title": "محركات أقراص SSD عالية السرعة وتخزين خارجي:",
+            "text": "إدارة بيانات آمنة وسريعة."
+          },
+          {
+            "title": "شاشات فائقة الدقة ومحطات إرساء:",
+            "text": "محسّنة لكفاءة المهام المتعددة."
+          }
+        ]
+      }
+    },
+    "networkingAndTech": [
+      {
+        "image": "router_1.jpg",
+        "title": "ملحق 1",
+        "description": "ملحق عالي الأداء للمحترفين."
+      },
+      {
+        "image": "docking_station.jpg",
+        "title": "ملحق 2",
+        "description": "ملحق عالي الأداء للمحترفين."
+      },
+      {
+        "image": "external_hdd.jpg",
+        "title": "ملحق 3",
+        "description": "ملحق عالي الأداء للمحترفين."
+      }
+    ]
+  },
+  "hardwareProductsBN": {
+    "premiumTech": {
+      "title": "প্রিমিয়াম টেক অ্যাক্সেসরিজ",
+      "description": "উচ্চ-মানের, পেশাদার-গ্রেডের টেক অ্যাক্সেসরিজ দিয়ে আপনার কর্মক্ষেত্রকে শক্তিশালী করুন।",
+      "slider": {
+        "title": "পেশাদার টেক অ্যাক্সেসরিজ",
+        "description": "প্রিমিয়াম অ্যাক্সেসরিজ দিয়ে উৎপাদনশীলতা বাড়ান:",
+        "list": [
+          {
+            "title": "মেকানিক্যাল কীবোর্ড এবং এরগোনোমিক মাউস:",
+            "text": "দৈনন্দিন ব্যবহারের জন্য নির্ভুলতা এবং আরাম।"
+          },
+          {
+            "title": "হাই-স্পিড SSD এবং বাহ্যিক স্টোরেজ:",
+            "text": "নিরাপদ এবং দ্রুত ডেটা ব্যবস্থাপনা।"
+          },
+          {
+            "title": "আল্ট্রা এইচডি মনিটর এবং ডকিং স্টেশন:",
+            "text": "মাল্টিটাস্কিং দক্ষতার জন্য অপ্টিমাইজ করা হয়েছে।"
+          }
+        ]
+      }
+    },
+    "networkingAndTech": [
+      {
+        "image": "router_1.jpg",
+        "title": "অ্যাক্সেসরি 1",
+        "description": "পেশাদারদের জন্য উচ্চ-কার্যকারিতা অ্যাক্সেসরি।"
+      },
+      {
+        "image": "docking_station.jpg",
+        "title": "অ্যাক্সেসরি 2",
+        "description": "পেশাদারদের জন্য উচ্চ-কার্যকারিতা অ্যাক্সেসরি।"
+      },
+      {
+        "image": "external_hdd.jpg",
+        "title": "অ্যাক্সেসরি 3",
+        "description": "পেশাদারদের জন্য উচ্চ-কার্যকারিতা অ্যাক্সেসরি।"
+      }
+    ]
+  }
+}
