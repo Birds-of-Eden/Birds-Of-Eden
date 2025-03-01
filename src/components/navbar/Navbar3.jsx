@@ -67,7 +67,7 @@ const Navbar = () => {
     <>
       <header className="sticky top-0 z-50 w-full">
         {/* Top Bar */}
-        <div className="bg-slate-200 dark:bg-zinc-800">
+        <div className="bg-slate-200 text-sm  dark:bg-zinc-800">
           <div className="container">
             <div className="flex h-12 items-center justify-center md:justify-end">
               {/* Phone */}
@@ -88,7 +88,10 @@ const Navbar = () => {
                   </a>
                 </div>
                 {/* Language Selection */}
-                <LanguageSelector />
+                <div className="flex items-center gap-1">
+                  <span>Language:&nbsp;</span>
+                  <LanguageSelector />
+                </div>
               </div>
             </div>
           </div>
