@@ -1,0 +1,286 @@
+{
+  "paymentGatewayEN": {
+    "title": "Secure Payment Gateway Integration",
+    "description": "We provide seamless **payment gateway integration** solutions for businesses looking to **accept online payments securely**. Whether you need to integrate **Stripe, PayPal, or Razorpay**, we ensure smooth and **hassle-free transactions** for your customers.",
+    "whyChoose": {
+      "title": "Why Choose Our Payment Gateway Integration?",
+      "list": [
+        {
+          "title": "High Security Standards:",
+          "text": "Implement **PCI-DSS compliance**, fraud protection, and **SSL encryption**."
+        },
+        {
+          "title": "Fast & Seamless Transactions:",
+          "text": "Optimized APIs for **instant payment processing**."
+        },
+        {
+          "title": "Custom Checkout Experience:",
+          "text": "Design tailored payment pages with a **smooth user experience**."
+        },
+        {
+          "title": "Recurring Payments & Subscriptions:",
+          "text": "Automate billing cycles for **subscriptions and memberships**."
+        }
+      ]
+    },
+    "providers": {
+      "title": "Supported Payment Providers",
+      "list": [
+        {
+          "title": "Stripe",
+          "text": "**Fast, secure, and developer-friendly** payment processing for businesses of all sizes.",
+          "image": "https://logos-world.net/wp-content/uploads/2021/02/Stripe-Emblem.png"
+        },
+        {
+          "title": "PayPal",
+          "text": "**Trusted worldwide**, offering both personal and business transaction solutions.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
+        },
+        {
+          "title": "Razorpay",
+          "text": "**Best suited for Indian businesses**, supporting UPI, credit cards, and wallets.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/9/92/Razorpay_logo.svg"
+        }
+      ]
+    },
+    "integrationProcess": {
+      "title": "Our Integration Process",
+      "list": [
+        {
+          "title": "Consultation & Requirements Analysis:",
+          "text": "Understanding your business needs."
+        },
+        {
+          "title": "API Integration:",
+          "text": "Seamless connection with **Stripe, PayPal, or Razorpay**."
+        },
+        {
+          "title": "Testing & Compliance:",
+          "text": "Ensuring **secure transactions** before going live."
+        },
+        {
+          "title": "Go Live & Support:",
+          "text": "Continuous **monitoring and maintenance** for smooth operations."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Accept Online Payments?",
+      "description": "Get started with **secure and efficient payment gateway integration today**.",
+      "contact": "Contact Us Now"
+    }
+  },
+  "paymentGatewayJA": {
+    "title": "安全な決済ゲートウェイ統合",
+    "description": "当社は、**オンライン決済を安全に受け付けたい**企業向けに、シームレスな**決済ゲートウェイ統合**ソリューションを提供します。**Stripe、PayPal、Razorpay**のいずれを統合する必要がある場合でも、お客様にスムーズで**手間のかからない取引**を保証します。",
+    "whyChoose": {
+      "title": "当社の決済ゲートウェイ統合を選ぶ理由",
+      "list": [
+        {
+          "title": "高いセキュリティ基準：",
+          "text": "**PCI-DSSコンプライアンス**、不正防止、および**SSL暗号化**を実装します。"
+        },
+        {
+          "title": "迅速でシームレスな取引：",
+          "text": "**即時決済処理**のための最適化されたAPI。"
+        },
+        {
+          "title": "カスタムチェックアウト体験：",
+          "text": "**スムーズなユーザーエクスペリエンス**を備えた、カスタマイズされた決済ページを設計します。"
+        },
+        {
+          "title": "定期的な支払いとサブスクリプション：",
+          "text": "**サブスクリプションとメンバーシップ**の請求サイクルを自動化します。"
+        }
+      ]
+    },
+    "providers": {
+      "title": "サポートされている決済プロバイダー",
+      "list": [
+        {
+          "title": "Stripe",
+          "text": "あらゆる規模の企業向けに、**高速、安全、開発者フレンドリー**な決済処理を提供します。",
+          "image": "https://logos-world.net/wp-content/uploads/2021/02/Stripe-Emblem.png"
+        },
+        {
+          "title": "PayPal",
+          "text": "**世界中で信頼されており**、個人およびビジネスの取引ソリューションを提供します。",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
+        },
+        {
+          "title": "Razorpay",
+          "text": "**インドの企業に最適**で、UPI、クレジットカード、ウォレットをサポートします。",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/9/92/Razorpay_logo.svg"
+        }
+      ]
+    },
+    "integrationProcess": {
+      "title": "当社の統合プロセス",
+      "list": [
+        {
+          "title": "コンサルテーションと要件分析：",
+          "text": "お客様のビジネスニーズを理解します。"
+        },
+        {
+          "title": "API統合：",
+          "text": "**Stripe、PayPal、またはRazorpay**とのシームレスな接続。"
+        },
+        {
+          "title": "テストとコンプライアンス：",
+          "text": "稼働前に**安全な取引**を保証します。"
+        },
+        {
+          "title": "稼働とサポート：",
+          "text": "スムーズな運用のために、継続的な**監視とメンテナンス**を行います。"
+        }
+      ]
+    },
+    "cta": {
+      "title": "オンライン決済を受け付ける準備はできましたか？",
+      "description": "**安全で効率的な決済ゲートウェイ統合を今すぐ開始しましょう**。",
+      "contact": "今すぐお問い合わせください"
+    }
+  },
+  "paymentGatewayAR": {
+    "title": "تكامل بوابة الدفع الآمنة",
+    "description": "نقدم حلول **تكامل بوابة الدفع** السلسة للشركات التي تتطلع إلى **قبول المدفوعات عبر الإنترنت بأمان**. سواء كنت بحاجة إلى دمج **Stripe أو PayPal أو Razorpay**، فإننا نضمن معاملات سلسة **وخالية من المتاعب** لعملائك.",
+    "whyChoose": {
+      "title": "لماذا تختار تكامل بوابة الدفع لدينا؟",
+      "list": [
+        {
+          "title": "معايير أمان عالية:",
+          "text": "تنفيذ **التوافق مع PCI-DSS**، والحماية من الاحتيال، و**تشفير SSL**."
+        },
+        {
+          "title": "معاملات سريعة وسلسة:",
+          "text": "واجهات برمجة تطبيقات محسنة **لمعالجة الدفع الفوري**."
+        },
+        {
+          "title": "تجربة دفع مخصصة:",
+          "text": "تصميم صفحات دفع مخصصة مع **تجربة مستخدم سلسة**."
+        },
+        {
+          "title": "المدفوعات المتكررة والاشتراكات:",
+          "text": "أتمتة دورات الفوترة **للاشتراكات والعضويات**."
+        }
+      ]
+    },
+    "providers": {
+      "title": "مزودو الدفع المدعومون",
+      "list": [
+        {
+          "title": "Stripe",
+          "text": "معالجة الدفع **السريعة والآمنة والصديقة للمطورين** للشركات من جميع الأحجام.",
+          "image": "https://logos-world.net/wp-content/uploads/2021/02/Stripe-Emblem.png"
+        },
+        {
+          "title": "PayPal",
+          "text": "**موثوق به في جميع أنحاء العالم**، يقدم حلول معاملات شخصية وتجارية.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
+        },
+        {
+          "title": "Razorpay",
+          "text": "**الأفضل للشركات الهندية**، يدعم UPI وبطاقات الائتمان والمحافظ.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/9/92/Razorpay_logo.svg"
+        }
+      ]
+    },
+    "integrationProcess": {
+      "title": "عملية التكامل لدينا",
+      "list": [
+        {
+          "title": "الاستشارة وتحليل المتطلبات:",
+          "text": "فهم احتياجات عملك."
+        },
+        {
+          "title": "تكامل واجهة برمجة التطبيقات:",
+          "text": "اتصال سلس مع **Stripe أو PayPal أو Razorpay**."
+        },
+        {
+          "title": "الاختبار والتوافق:",
+          "text": "ضمان **معاملات آمنة** قبل البدء المباشر."
+        },
+        {
+          "title": "البدء المباشر والدعم:",
+          "text": "**المراقبة والصيانة المستمرة** لعمليات سلسة."
+        }
+      ]
+    },
+    "cta": {
+      "title": "هل أنت مستعد لقبول المدفوعات عبر الإنترنت؟",
+      "description": "ابدأ **بتكامل بوابة الدفع الآمن والفعال اليوم**.",
+      "contact": "اتصل بنا الآن"
+    }
+  },
+  "paymentGatewayBN": {
+    "title": "সুরক্ষিত পেমেন্ট গেটওয়ে ইন্টিগ্রেশন",
+    "description": "আমরা **নিরাপদে অনলাইন পেমেন্ট গ্রহণ করতে** আগ্রহী ব্যবসার জন্য নির্বিঘ্ন **পেমেন্ট গেটওয়ে ইন্টিগ্রেশন** সমাধান প্রদান করি। আপনার **স্ট্রাইপ, পেপাল বা রেজারপে** ইন্টিগ্রেট করার প্রয়োজন হোক না কেন, আমরা আপনার গ্রাহকদের জন্য মসৃণ এবং **ঝামেলা-মুক্ত লেনদেন** নিশ্চিত করি।",
+    "whyChoose": {
+      "title": "আমাদের পেমেন্ট গেটওয়ে ইন্টিগ্রেশন কেন বেছে নেবেন?",
+      "list": [
+        {
+          "title": "উচ্চ সুরক্ষা মান:",
+          "text": "**PCI-DSS সম্মতি**, জালিয়াতি সুরক্ষা এবং **SSL এনক্রিপশন** বাস্তবায়ন করুন।"
+        },
+        {
+          "title": "দ্রুত এবং নির্বিঘ্ন লেনদেন:",
+          "text": "**তাত্ক্ষণিক পেমেন্ট প্রক্রিয়াকরণের** জন্য অপ্টিমাইজ করা API।"
+        },
+        {
+          "title": "কাস্টম চেকআউট অভিজ্ঞতা:",
+          "text": "**মসৃণ ব্যবহারকারীর অভিজ্ঞতা** সহ তৈরি পেমেন্ট পৃষ্ঠাগুলি ডিজাইন করুন।"
+        },
+        {
+          "title": "পুনরাবৃত্ত পেমেন্ট এবং সাবস্ক্রিপশন:",
+          "text": "**সাবস্ক্রিপশন এবং সদস্যপদের** জন্য বিলিং চক্র স্বয়ংক্রিয় করুন।"
+        }
+      ]
+    },
+    "providers": {
+      "title": "সমর্থিত পেমেন্ট প্রদানকারী",
+      "list": [
+        {
+          "title": "স্ট্রাইপ",
+          "text": "সকল আকারের ব্যবসার জন্য **দ্রুত, নিরাপদ এবং বিকাশকারী-বান্ধব** পেমেন্ট প্রক্রিয়াকরণ।",
+          "image": "https://logos-world.net/wp-content/uploads/2021/02/Stripe-Emblem.png"
+        },
+        {
+          "title": "পেপাল",
+          "text": "**বিশ্বব্যাপী বিশ্বস্ত**, ব্যক্তিগত এবং ব্যবসায়িক উভয় লেনদেন সমাধান প্রদান করে।",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
+        },
+        {
+          "title": "রেজারপে",
+          "text": "**ভারতীয় ব্যবসার জন্য সবচেয়ে উপযুক্ত**, UPI, ক্রেডিট কার্ড এবং ওয়ালেট সমর্থন করে।",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/9/92/Razorpay_logo.svg"
+        }
+      ]
+    },
+    "integrationProcess": {
+      "title": "আমাদের ইন্টিগ্রেশন প্রক্রিয়া",
+      "list": [
+        {
+          "title": "পরামর্শ এবং প্রয়োজনীয়তা বিশ্লেষণ:",
+          "text": "আপনার ব্যবসার চাহিদা বোঝা।"
+        },
+        {
+          "title": "API ইন্টিগ্রেশন:",
+          "text": "**স্ট্রাইপ, পেপাল বা রেজারপে** এর সাথে নির্বিঘ্ন সংযোগ।"
+        },
+        {
+          "title": "পরীক্ষা এবং সম্মতি:",
+          "text": "লাইভ হওয়ার আগে **নিরাপদ লেনদেন** নিশ্চিত করা।"
+        },
+        {
+          "title": "লাইভ এবং সমর্থন:",
+          "text": "মসৃণ অপারেশনের জন্য ক্রমাগত **মনিটরিং এবং রক্ষণাবেক্ষণ**।"
+        }
+      ]
+    },
+    "cta": {
+      "title": "অনলাইন পেমেন্ট গ্রহণ করতে প্রস্তুত?",
+      "description": "**আজই নিরাপদ এবং দক্ষ পেমেন্ট গেটওয়ে ইন্টিগ্রেশন দিয়ে শুরু করুন**।",
+      "contact": "এখনই আমাদের সাথে যোগাযোগ করুন"
+    }
+  }
+}
