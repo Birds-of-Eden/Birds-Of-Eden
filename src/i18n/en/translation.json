@@ -473,6 +473,53 @@
         }
       ],
       "footer": "Partner with us to transform your online presence and achieve your business objectives through innovative and effective web solutions."
+    },
+    "iosAppDev": {
+      "title": "iOS App Development",
+      "header": "At BIRDS OF EDEN, we specialize in crafting seamless and intuitive iOS applications to enhance your brand presence and engage your audience on the App Store.",
+      "list": [
+        {
+          "title": "User-Centric Design",
+          "description": "We prioritize user experience and interface design to create iOS apps that are not only visually appealing but also intuitive to use."
+        },
+        {
+          "title": "Performance Optimization",
+          "description": "Leveraging the latest technologies and best practices, we ensure optimal performance and responsiveness for your iOS applications."
+        },
+        {
+          "title": "App Store Optimization (ASO)",
+          "description": "Our team helps you navigate the complexities of the App Store ecosystem, optimizing your app listing for maximum visibility and downloads."
+        },
+        {
+          "title": "Continuous Support",
+          "description": "From concept to launch and beyond, we provide comprehensive support to ensure your iOS app meets your business objectives and evolves with your needs."
+        }
+      ],
+      "footer": "Partner with us to bring your iOS app ideas to life and leave a lasting impression on your users in the ever-growing iOS ecosystem."
+    },
+
+    "mobileApp": {
+      "title": "Mobile App Solutions",
+      "header": "BIRDS OF EDEN offers comprehensive mobile app solutions to empower your business with responsive and feature-rich applications across platforms.",
+      "list": [
+        {
+          "title": "Platform Diversity",
+          "description": "Our expertise extends to developing applications for iOS, Android, and cross-platform environments, ensuring broad accessibility for your target audience."
+        },
+        {
+          "title": "Feature-Rich Functionality",
+          "description": "From user authentication and push notifications to in-app purchases and third-party integrations, we implement a wide range of features to enhance user experience and engagement."
+        },
+        {
+          "title": "Scalable Architecture",
+          "description": "We design scalable architectures that accommodate your app's growth and evolving requirements, ensuring seamless performance and reliability as your user base expands."
+        },
+        {
+          "title": "Agile Development",
+          "description": "With agile methodologies, we prioritize collaboration and flexibility, allowing for rapid iteration and continuous improvement throughout the development process."
+        }
+      ],
+      "footer": "Partner with us to leverage the power of mobile technology and propel your business to new heights of success in today's digital landscape."
     }
   },
   "technologyList": {
