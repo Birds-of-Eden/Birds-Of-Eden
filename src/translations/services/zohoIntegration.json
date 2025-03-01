@@ -1,0 +1,94 @@
+{
+  "zohoIntegrationEN": {
+    "title": "Zoho Integration Services",
+    "description": "Enhance your business efficiency with our **Zoho Integration Services**. We specialize in seamlessly integrating **Zoho CRM, Zoho Books, Zoho People, and Zoho Inventory** to streamline your operations and drive productivity.",
+    "list": [
+      {
+        "title": "Zoho CRM Integration",
+        "text": "Automate customer relationship management to optimize sales pipelines and enhance client engagement."
+      },
+      {
+        "title": "Finance & Accounting Solutions",
+        "text": "Efficiently manage **invoices, expenses, and accounting** with Zoho Books, including integrations with **QuickBooks and Stripe**."
+      },
+      {
+        "title": "HR & Payroll Management",
+        "text": "Streamline workforce operations with **Zoho People** for attendance tracking, leave management, and payroll processing."
+      },
+      {
+        "title": "Custom Zoho Workflows",
+        "text": "Develop **automated workflows** and integrate **third-party applications** to enhance operational efficiency."
+      }
+    ],
+    "footer": "Leverage **Zoho's suite of business tools** to enhance productivity and scalability. Contact us today to explore a **custom-tailored Zoho integration solution** for your business."
+  },
+  "zohoIntegrationJA": {
+    "title": "Zoho統合サービス",
+    "description": "当社の**Zoho統合サービス**でビジネス効率を向上させましょう。当社は、**Zoho CRM、Zoho Books、Zoho People、Zoho Inventory**をシームレスに統合し、業務を合理化し、生産性を向上させることに特化しています。",
+    "list": [
+      {
+        "title": "Zoho CRM統合",
+        "text": "顧客関係管理を自動化して、営業パイプラインを最適化し、顧客エンゲージメントを強化します。"
+      },
+      {
+        "title": "財務および会計ソリューション",
+        "text": "**QuickBooksおよびStripe**との統合を含むZoho Booksで**請求書、経費、および会計**を効率的に管理します。"
+      },
+      {
+        "title": "人事および給与管理",
+        "text": "出席追跡、休暇管理、および給与処理のために**Zoho People**で従業員業務を合理化します。"
+      },
+      {
+        "title": "カスタムZohoワークフロー",
+        "text": "業務効率を向上させるために**自動化されたワークフロー**を開発し、**サードパーティアプリケーション**を統合します。"
+      }
+    ],
+    "footer": "生産性と拡張性を高めるために**Zohoのビジネスツールスイート**を活用してください。お客様のビジネスに合わせた**カスタムZoho統合ソリューション**を検討するために、今すぐお問い合わせください。"
+  },
+  "zohoIntegrationAR": {
+    "title": "خدمات تكامل Zoho",
+    "description": "عزز كفاءة أعمالك من خلال **خدمات تكامل Zoho** الخاصة بنا. نحن متخصصون في دمج **Zoho CRM و Zoho Books و Zoho People و Zoho Inventory** بسلاسة لتبسيط عملياتك وزيادة الإنتاجية.",
+    "list": [
+      {
+        "title": "تكامل Zoho CRM",
+        "text": "أتمتة إدارة علاقات العملاء لتحسين مسارات المبيعات وتعزيز تفاعل العملاء."
+      },
+      {
+        "title": "حلول التمويل والمحاسبة",
+        "text": "إدارة **الفواتير والمصروفات والمحاسبة** بكفاءة باستخدام Zoho Books، بما في ذلك عمليات التكامل مع **QuickBooks و Stripe**."
+      },
+      {
+        "title": "إدارة الموارد البشرية وكشوف المرتبات",
+        "text": "تبسيط عمليات القوى العاملة باستخدام **Zoho People** لتتبع الحضور وإدارة الإجازات ومعالجة كشوف المرتبات."
+      },
+      {
+        "title": "تدفقات عمل Zoho المخصصة",
+        "text": "تطوير **تدفقات عمل آلية** ودمج **تطبيقات الطرف الثالث** لتعزيز الكفاءة التشغيلية."
+      }
+    ],
+    "footer": "استفد من **مجموعة أدوات أعمال Zoho** لتعزيز الإنتاجية وقابلية التوسع. اتصل بنا اليوم لاستكشاف **حل تكامل Zoho مخصص** لعملك."
+  },
+  "zohoIntegrationBN": {
+    "title": "Zoho ইন্টিগ্রেশন সার্ভিসেস",
+    "description": "আমাদের **Zoho ইন্টিগ্রেশন সার্ভিসেস** এর মাধ্যমে আপনার ব্যবসার দক্ষতা বাড়ান। আমরা আপনার কার্যক্রমকে সুগম করতে এবং উৎপাদনশীলতা বাড়াতে **Zoho CRM, Zoho Books, Zoho People এবং Zoho Inventory** কে নির্বিঘ্নে ইন্টিগ্রেট করার জন্য বিশেষজ্ঞ।",
+    "list": [
+      {
+        "title": "Zoho CRM ইন্টিগ্রেশন",
+        "text": "বিক্রয় পাইপলাইন অপ্টিমাইজ করতে এবং ক্লায়েন্ট এনগেজমেন্ট বাড়াতে গ্রাহক সম্পর্ক ব্যবস্থাপনা স্বয়ংক্রিয় করুন।"
+      },
+      {
+        "title": "ফাইন্যান্স এবং অ্যাকাউন্টিং সলিউশন",
+        "text": "**কুইকবুকস এবং স্ট্রাইপ** এর সাথে ইন্টিগ্রেশন সহ Zoho Books দিয়ে দক্ষতার সাথে **ইনভয়েস, খরচ এবং অ্যাকাউন্টিং** পরিচালনা করুন।"
+      },
+      {
+        "title": "এইচআর এবং পেরোল ম্যানেজমেন্ট",
+        "text": "উপস্থিতি ট্র্যাকিং, ছুটি ব্যবস্থাপনা এবং পেরোল প্রক্রিয়াকরণের জন্য **Zoho People** দিয়ে কর্মীবাহিনীর কার্যক্রম সুগম করুন।"
+      },
+      {
+        "title": "কাস্টম Zoho ওয়ার্কফ্লো",
+        "text": "কার্যকরী দক্ষতা বাড়াতে **স্বয়ংক্রিয় ওয়ার্কফ্লো** তৈরি করুন এবং **তৃতীয় পক্ষের অ্যাপ্লিকেশন** ইন্টিগ্রেট করুন।"
+      }
+    ],
+    "footer": "উৎপাদনশীলতা এবং মাপযোগ্যতা বাড়াতে **Zoho এর ব্যবসায়িক সরঞ্জাম স্যুট** ব্যবহার করুন। আপনার ব্যবসার জন্য একটি **কাস্টম-তৈরি Zoho ইন্টিগ্রেশন সমাধান** অন্বেষণ করতে আজই আমাদের সাথে যোগাযোগ করুন।"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "webDevEN": {
+  "quickBookEN": {
     "title": "QuickBooks Integration Services",
     "description": "Enhance your **financial management** with seamless **QuickBooks Integration**. We specialize in integrating **QuickBooks Online** and **QuickBooks Desktop**, enabling businesses to automate accounting, streamline transactions, and maintain financial accuracy.",
     "list": [
@@ -22,7 +22,7 @@
     ],
     "footer": "Optimize your business finances with our **custom QuickBooks integration solutions**. Contact us today to **automate your accounting and streamline financial operations**."
   },
-  "webDevJA": {
+  "quickBookJA": {
     "title": "QuickBooks統合サービス",
     "description": "シームレスな**QuickBooks統合**で**財務管理**を強化しましょう。当社は**QuickBooks Online**と**QuickBooks Desktop**の統合に特化し、企業が会計を自動化し、取引を合理化し、財務の正確性を維持できるようにします。",
     "list": [
@@ -45,7 +45,7 @@
     ],
     "footer": "当社の**カスタムQuickBooks統合ソリューション**でビジネス財務を最適化しましょう。会計を**自動化し、財務業務を合理化**するために、今すぐお問い合わせください。"
   },
-  "webDevAR": {
+  "quickBookAR": {
     "title": "خدمات تكامل QuickBooks",
     "description": "عزز **إدارتك المالية** بتكامل **QuickBooks** السلس. نحن متخصصون في دمج **QuickBooks Online** و **QuickBooks Desktop**، مما يمكّن الشركات من أتمتة المحاسبة، وتبسيط المعاملات، والحفاظ على الدقة المالية.",
     "list": [
@@ -68,7 +68,7 @@
     ],
     "footer": "قم بتحسين الشؤون المالية لشركتك من خلال **حلول تكامل QuickBooks المخصصة لدينا**. اتصل بنا اليوم **لأتمتة المحاسبة وتبسيط العمليات المالية**."
   },
-  "webDevBN": {
+  "quickBookBN": {
     "title": "কুইকবুকস ইন্টিগ্রেশন সার্ভিসেস",
     "description": "নির্বিঘ্ন **কুইকবুকস ইন্টিগ্রেশন** এর মাধ্যমে আপনার **আর্থিক ব্যবস্থাপনা** উন্নত করুন। আমরা **কুইকবুকস অনলাইন** এবং **কুইকবুকস ডেস্কটপ** ইন্টিগ্রেট করার জন্য বিশেষজ্ঞ, যা ব্যবসাগুলিকে অ্যাকাউন্টিং স্বয়ংক্রিয় করতে, লেনদেনগুলিকে সুগম করতে এবং আর্থিক নির্ভুলতা বজায় রাখতে সক্ষম করে।",
     "list": [
