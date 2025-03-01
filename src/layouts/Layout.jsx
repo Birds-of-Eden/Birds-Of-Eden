@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
   return (
     <div className="dark:bg-slate-900 dark:text-white">
       {/* Particles Background - Covering entire section */}
-      <div className="fixed inset-0 z-[1]">
+      <div className="pointer-events-none fixed inset-0">
         <Particles
           particleColors={["#ffffff", "#ffffff"]}
           particleCount={200}
@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
       </div>
       <Navbar />
       <SplashCursor /> {/* Directly using Splash Cursor */}
-      <main className="relative z-[1]">{children}</main>
+      <main>{children}</main>
       <Footer />
     </div>
   );
