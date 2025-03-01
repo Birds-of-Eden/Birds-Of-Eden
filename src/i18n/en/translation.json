@@ -434,5 +434,31 @@
         "text": "Optimizing Daily Operations with LLM-based Solutions - Drive down daily operational costs by implementing LLM-based solutions to support routine operations. This is additional text for the card that will be revealed when the button is clicked."
       }
     ]
+  },
+  "technologyList": {
+    "ourTechnology": "Our Technology",
+    "description": "At {{companyName}}, we are at the forefront of technological innovation. Our software solutions are built using the latest and most reliable technologies to ensure high performance, scalability, and security.",
+    "frontendTechnologies": "Frontend Technologies",
+    "backendTechnologies": "Backend Technologies",
+    "technologies": {
+      "frontend": {
+        "React.js": "A JavaScript library for building user interfaces.",
+        "Vue.js": "The Progressive JavaScript Framework.",
+        "Angular": "One framework. Mobile & desktop.",
+        "Next.js": "A React framework for production.",
+        "MUI": "A framework for ambitious web developers.",
+        "Chakra UI": "Gives structure to web applications by providing models with key-value binding.",
+        "Streamlit": "A framework for creating data apps in pure Python."
+      },
+      "backend": {
+        "Node.js": "A JavaScript runtime built on Chrome's V8 engine.",
+        "Django": "A high-level Python Web framework that encourages rapid development.",
+        "Spring Boot": "A framework that simplifies the development of Java-based applications.",
+        "Python": "A versatile, high-level programming language known for simplicity.",
+        "Go": "A statically typed, compiled programming language designed at Google.",
+        "Rust": "A system programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.",
+        "Laravel": "A PHP framework for web artisans, providing elegant syntax and robust tools."
+      }
+    }
   }
 }

@@ -86,7 +86,7 @@ const OurService = () => {
               className="group flex flex-col items-center rounded-lg bg-white p-6 shadow-lg dark:bg-slate-800"
             >
               <motion.img
-                src={`./../assets/${card.icon}`}
+                src={`../src/assets/${card.icon}`}
                 alt={card.title}
                 className="mb-4 h-12 w-12"
                 animate={{
@@ -106,7 +106,7 @@ const OurService = () => {
                 {card.title}
               </motion.h3>
               <div className="mb-4 text-center text-gray-700 dark:text-white">
-                <p>{card.text.substring(0, card.text.indexOf(".") + 1)}</p>
+                <p>{card.text}</p>
                 <motion.div
                   variants={textExpandVariants}
                   initial="hidden"

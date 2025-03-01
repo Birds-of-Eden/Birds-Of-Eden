@@ -2,9 +2,11 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const TechnologyList = () => {
   const [technologies, setTechnologies] = useState([]);
+  const { t } = useTranslation();
 
   useEffect(() => {
     axios
@@ -17,7 +19,6 @@ const TechnologyList = () => {
       });
   }, []);
 
-  // Framer Motion Variants
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -74,20 +75,14 @@ const TechnologyList = () => {
         className="mb-10 text-center text-4xl font-bold text-blue-700 dark:text-purple-500"
         variants={textVariants}
       >
-        Our Technology
+        {t("technologyList.ourTechnology")}
       </motion.h1>
 
       <motion.p
         className="mb-10 text-center text-lg text-gray-700 dark:text-white"
         variants={textVariants}
       >
-        At
-        <span className="ml-1 animate-bounce text-2xl text-green-700 dark:text-orange-500">
-          BIRDS OF EDEN
-        </span>
-        , we are at the forefront of technological innovation. Our software
-        solutions are built using the latest and most reliable technologies to
-        ensure high performance, scalability, and security.
+        {t("technologyList.description", { companyName: "BIRDS OF EDEN" })}
       </motion.p>
 
       <motion.div
@@ -103,7 +98,7 @@ const TechnologyList = () => {
                 : "mr-2 rounded bg-green-500 px-4 py-2 text-white transition-transform duration-300 hover:scale-105"
             }
           >
-            Frontend Technologies
+            {t("technologyList.frontendTechnologies")}
           </NavLink>
         </motion.div>
 
@@ -116,7 +111,7 @@ const TechnologyList = () => {
                 : "rounded bg-blue-500 px-4 py-2 text-white transition-transform duration-300 hover:scale-105"
             }
           >
-            Backend Technologies
+            {t("technologyList.backendTechnologies")}
           </NavLink>
         </motion.div>
       </motion.div>

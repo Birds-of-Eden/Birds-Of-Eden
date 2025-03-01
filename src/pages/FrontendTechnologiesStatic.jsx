@@ -1,69 +1,29 @@
+// FrontendTechnologiesStatic.js
 import React from "react";
+import { useTranslation } from "react-i18next";
 import angularLogo from "../assets/angular.jpg";
 import backboneLogo from "../assets/chakra_ui.png";
 import emberLogo from "../assets/mui.png";
-import nextjsLogo from "../assets/next js.png"; // Add Next.js logo
+import nextjsLogo from "../assets/next js.png";
 import reactLogo from "../assets/react.jpg";
-import streamlitLogo from "../assets/streamlit.jpg"; // Add Streamlit logo
+import streamlitLogo from "../assets/streamlit.jpg";
 import vueLogo from "../assets/vue.png";
 
 const FrontendTechnologiesStatic = () => {
-  // Static data for frontend technologies
+  const { t } = useTranslation();
+
   const technologies = [
-    {
-      id: 1,
-      name: "React.js",
-      category: "frontend",
-      description: "A JavaScript library for building user interfaces.",
-      image: reactLogo,
-    },
-    {
-      id: 2,
-      name: "Vue.js",
-      category: "frontend",
-      description: "The Progressive JavaScript Framework.",
-      image: vueLogo,
-    },
-    {
-      id: 3,
-      name: "Angular",
-      category: "frontend",
-      description: "One framework. Mobile & desktop.",
-      image: angularLogo,
-    },
-    {
-      id: 4,
-      name: "Next.js",
-      category: "frontend",
-      description: "A React framework for production.",
-      image: nextjsLogo,
-    },
-    {
-      id: 5,
-      name: "MUI",
-      category: "frontend",
-      description: "A framework for ambitious web developers.",
-      image: emberLogo,
-    },
-    {
-      id: 6,
-      name: "Chakra UI",
-      category: "frontend",
-      description:
-        "Gives structure to web applications by providing models with key-value binding.",
-      image: backboneLogo,
-    },
-    {
-      id: 7,
-      name: "Streamlit",
-      category: "frontend",
-      description: "A framework for creating data apps in pure Python.",
-      image: streamlitLogo,
-    },
+    { id: 1, name: "React.js", category: "frontend", image: reactLogo },
+    { id: 2, name: "Vue.js", category: "frontend", image: vueLogo },
+    { id: 3, name: "Angular", category: "frontend", image: angularLogo },
+    { id: 4, name: "Next.js", category: "frontend", image: nextjsLogo },
+    { id: 5, name: "MUI", category: "frontend", image: emberLogo },
+    { id: 6, name: "Chakra UI", category: "frontend", image: backboneLogo },
+    { id: 7, name: "Streamlit", category: "frontend", image: streamlitLogo },
   ];
 
   return (
-    <div className="grid grid-cols-1 gap-8  md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
       {technologies
         .filter((tech) => tech.category === "frontend")
         .map((technology) => (
@@ -80,7 +40,7 @@ const FrontendTechnologiesStatic = () => {
               {technology.name}
             </h3>
             <p className="text-gray-600 dark:text-white">
-              {technology.description}
+              {t(`technologyList.technologies.frontend.${technology.name}`)}
             </p>
           </div>
         ))}
