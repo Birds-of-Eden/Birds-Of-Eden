@@ -826,5 +826,46 @@
     ],
     "descriptionTitle": "Description",
     "viewPortfolio": "View Portfolio"
+  },
+  "hardwareProducts": {
+    "premiumTech": {
+      "title": "Premium Tech Accessories",
+      "description": "Empower your workspace with high-quality, professional-grade tech accessories.",
+      "slider": {
+        "title": "Professional Tech Accessories",
+        "description": "Enhance productivity with premium accessories:",
+        "list": [
+          {
+            "title": "Mechanical Keyboards & Ergonomic Mice:",
+            "text": "Precision and comfort for daily use."
+          },
+          {
+            "title": "High-Speed SSDs & External Storage:",
+            "text": "Secure and fast data management."
+          },
+          {
+            "title": "Ultra HD Monitors & Docking Stations:",
+            "text": "Optimized for multitasking efficiency."
+          }
+        ]
+      }
+    },
+    "networkingAndTech": [
+      {
+        "image": "router_1.jpg",
+        "title": "Accessory 1",
+        "description": "High-performance accessory for professionals."
+      },
+      {
+        "image": "docking_station.jpg",
+        "title": "Accessory 2",
+        "description": "High-performance accessory for professionals."
+      },
+      {
+        "image": "external_hdd.jpg",
+        "title": "Accessory 3",
+        "description": "High-performance accessory for professionals."
+      }
+    ]
   }
 }

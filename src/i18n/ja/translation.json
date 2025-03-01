@@ -791,5 +791,46 @@
     ],
     "descriptionTitle": "説明",
     "viewPortfolio": "ポートフォリオを見る"
+  },
+  "hardwareProducts": {
+    "premiumTech": {
+      "title": "プレミアムテックアクセサリー",
+      "description": "高品質でプロフェッショナルグレードのテックアクセサリーでワークスペースを強化しましょう。",
+      "slider": {
+        "title": "プロフェッショナルテックアクセサリー",
+        "description": "プレミアムアクセサリーで生産性を向上させましょう：",
+        "list": [
+          {
+            "title": "メカニカルキーボード＆エルゴノミクスマウス：",
+            "text": "日常使用のための精度と快適性。"
+          },
+          {
+            "title": "高速SSD＆外部ストレージ：",
+            "text": "安全で高速なデータ管理。"
+          },
+          {
+            "title": "ウルトラHDモニター＆ドッキングステーション：",
+            "text": "マルチタスク効率のために最適化。"
+          }
+        ]
+      }
+    },
+    "networkingAndTech": [
+      {
+        "image": "router_1.jpg",
+        "title": "アクセサリー1",
+        "description": "プロフェッショナル向けの高性能アクセサリー。"
+      },
+      {
+        "image": "docking_station.jpg",
+        "title": "アクセサリー2",
+        "description": "プロフェッショナル向けの高性能アクセサリー。"
+      },
+      {
+        "image": "external_hdd.jpg",
+        "title": "アクセサリー3",
+        "description": "プロフェッショナル向けの高性能アクセサリー。"
+      }
+    ]
   }
 }
