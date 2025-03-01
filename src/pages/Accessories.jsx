@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 // Importing hardware images
@@ -8,8 +8,14 @@ import hardware3 from "../assets/hardware_3.jpg";
 import router from "../assets/router_1.jpg";
 import dockingStation from "../assets/docking_station.jpg";
 import external_hdd from "../assets/external_hdd.jpg";
+import { useTranslation } from "react-i18next";
 
 const Accessories = () => {
+  const { t } = useTranslation();
+  const hardwareProducts = t("hardwareProducts", {
+    returnObjects: true,
+  });
+
   const images = [
     hardware1,
     hardware2,
@@ -53,11 +59,10 @@ const Accessories = () => {
         transition={{ duration: 0.6 }}
       >
         <h1 className="text-5xl font-extrabold tracking-tight text-gray-800 dark:text-white">
-          Premium Tech Accessories
+          {hardwareProducts.premiumTech.title}
         </h1>
         <p className="mt-4 text-xl text-gray-600 dark:text-gray-300">
-          Empower your workspace with high-quality, professional-grade tech
-          accessories.
+          {hardwareProducts.premiumTech.description}
         </p>
       </motion.div>
 
@@ -72,30 +77,20 @@ const Accessories = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <h2 className="mb-6 text-3xl font-bold text-gray-800 dark:text-white">
-            Professional Tech Accessories
+            {hardwareProducts.premiumTech.slider.title}
           </h2>
           <p className="mb-6 text-lg text-gray-700 dark:text-gray-300">
-            Enhance productivity with premium accessories:
+            {hardwareProducts.premiumTech.slider.description}
           </p>
           <ul className="mb-8 list-disc space-y-4 pl-6 text-lg text-gray-700 dark:text-gray-300">
-            <li>
-              <span className="font-semibold text-gray-800 dark:text-gray-100">
-                Mechanical Keyboards & Ergonomic Mice:
-              </span>{" "}
-              Precision and comfort for daily use.
-            </li>
-            <li>
-              <span className="font-semibold text-gray-800 dark:text-gray-100">
-                High-Speed SSDs & External Storage:
-              </span>{" "}
-              Secure and fast data management.
-            </li>
-            <li>
-              <span className="font-semibold text-gray-800 dark:text-gray-100">
-                Ultra HD Monitors & Docking Stations:
-              </span>{" "}
-              Optimized for multitasking efficiency.
-            </li>
+            {hardwareProducts.premiumTech.slider.list.map((list, index) => (
+              <li key={index}>
+                <span className="font-semibold text-gray-800 dark:text-gray-100">
+                  {list.title}
+                </span>{" "}
+                {list.text}
+              </li>
+            ))}
           </ul>
           <motion.button
             className="self-start rounded-md bg-blue-600 px-6 py-3 text-lg font-semibold text-white transition hover:bg-blue-700"
@@ -160,7 +155,7 @@ const Accessories = () => {
         </p>
 
         <div className="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
-          {[router, dockingStation, external_hdd].map((image, index) => (
+          {hardwareProducts.networkingAndTech.map((product, index) => (
             <motion.div
               key={index}
               className="rounded-lg bg-white p-6 shadow-2xl transition hover:shadow-xl dark:bg-gray-900"
@@ -171,15 +166,15 @@ const Accessories = () => {
               whileHover={{ scale: 1.03 }}
             >
               <img
-                src={image}
+                src={`../src/assets/${product.image}`}
                 alt="Accessory"
                 className="mb-4 w-full rounded-lg object-cover"
               />
               <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
-                Accessory {index + 1}
+                {product.title}
               </h3>
               <p className="mt-2 text-gray-600 dark:text-gray-300">
-                High-performance accessory for professionals.
+                {product.description}
               </p>
             </motion.div>
           ))}
