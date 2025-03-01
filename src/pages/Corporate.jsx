@@ -1,24 +1,25 @@
+// Corporate.js
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Corporate = () => {
+  const { t } = useTranslation();
   return (
     <div className="min-h-[200px] rounded-lg bg-gray-100 p-4 shadow-md dark:bg-slate-800 sm:p-6">
       <h2 className="mb-4 text-xl font-bold text-gray-800 dark:text-white sm:text-2xl">
-        Corporate Solutions
+        {t("products.corporateSolutions")}
       </h2>
       <p className="mb-2 text-gray-700 dark:text-white">
-        Streamline your corporate operations with our innovative software
-        solutions:
+        {t("products.corporateDescription")}
       </p>
       <ul className="mb-4 list-inside list-disc text-gray-700 dark:text-white">
-        <li>Enterprise resource planning (ERP)</li>
-        <li>Customer relationship management (CRM)</li>
-        <li>Human resources management systems (HRMS)</li>
-        <li>Data analytics and reporting</li>
+        <li>{t("products.erp")}</li>
+        <li>{t("products.crm")}</li>
+        <li>{t("products.hrms")}</li>
+        <li>{t("products.dataAnalytics")}</li>
       </ul>
       <p className="text-gray-700 dark:text-white">
-        Enhance your business efficiency and decision-making processes with our
-        customized solutions.
+        {t("products.corporateEnhance")}
       </p>
     </div>
   );

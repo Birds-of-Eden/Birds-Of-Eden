@@ -1,24 +1,25 @@
+// Financial.js
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Financial = () => {
+  const { t } = useTranslation();
   return (
     <div className="min-h-[200px] rounded-lg bg-gray-100 p-4 shadow-md dark:bg-slate-800 sm:p-6">
       <h2 className="mb-4 text-xl font-bold text-gray-800 dark:text-white sm:text-2xl">
-        Financial Institutions Solutions
+        {t("products.financialSolutions")}
       </h2>
       <p className="mb-2 text-gray-700 dark:text-white">
-        Our financial software solutions are designed to enhance the performance
-        and security of financial institutions:
+        {t("products.financialDescription")}
       </p>
       <ul className="mb-4 list-inside list-disc text-gray-700 dark:text-white">
-        <li>Online banking platforms</li>
-        <li>Fraud detection systems</li>
-        <li>Investment management tools</li>
-        <li>Risk management solutions</li>
+        <li>{t("products.onlineBanking")}</li>
+        <li>{t("products.fraudDetection")}</li>
+        <li>{t("products.investmentManagement")}</li>
+        <li>{t("products.riskManagement")}</li>
       </ul>
       <p className="text-gray-700 dark:text-white">
-        Ensure your institution's growth and reliability with our
-        state-of-the-art technology.
+        {t("products.financialEnsure")}
       </p>
     </div>
   );

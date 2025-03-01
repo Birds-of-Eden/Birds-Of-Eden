@@ -1,6 +1,8 @@
+// ProductPage.js
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import Corporate from "../pages/Corporate";
 import Ecommerce from "../pages/Ecommerce";
@@ -12,6 +14,7 @@ const ProductPage = () => {
   const { tab } = useParams();
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState(tab || "govt");
+  const { t } = useTranslation();
 
   useEffect(() => {
     setActiveTab(tab || "govt");
@@ -79,7 +82,7 @@ const ProductPage = () => {
           initial="hidden"
           animate="visible"
         >
-          Our Products
+          {t("products.ourProducts")}
         </motion.h1>
         <motion.div
           className="mb-4 flex overflow-x-scroll border-b sm:overflow-x-visible"
@@ -95,7 +98,7 @@ const ProductPage = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Govt.
+            {t("products.govt")}
           </motion.button>
           <motion.button
             className={`whitespace-nowrap px-4 py-2 ${
@@ -105,7 +108,7 @@ const ProductPage = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            ERP for SEO Agencies
+            {t("products.seo")}
           </motion.button>
           <motion.button
             className={`whitespace-nowrap px-4 py-2 ${
@@ -115,7 +118,7 @@ const ProductPage = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Financial Institutions
+            {t("products.financial")}
           </motion.button>
           <motion.button
             className={`whitespace-nowrap px-4 py-2 ${
@@ -125,7 +128,7 @@ const ProductPage = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Corporate
+            {t("products.corporate")}
           </motion.button>
           <motion.button
             className={`whitespace-nowrap px-4 py-2 ${
@@ -135,7 +138,7 @@ const ProductPage = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            E-Commerce
+            {t("products.ecommerce")}
           </motion.button>
         </motion.div>
         <AnimatePresence mode="wait">
