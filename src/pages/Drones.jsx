@@ -1,9 +1,14 @@
 import DroneCard from "../components/Drones/DroneCard";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { motion } from "framer-motion";
-import { drones } from "./../Data/drones";
+import { useTranslation } from "react-i18next";
 
 const Drones = () => {
+  const { t } = useTranslation();
+  const drones = t("home.dronePage.drones", {
+    returnObjects: true,
+  });
+
   return (
     <section className="bg-gray-50 px-6 pb-24 pt-24 dark:bg-gray-900">
       <motion.div
