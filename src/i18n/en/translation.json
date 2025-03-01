@@ -433,6 +433,24 @@
         "title": "Reduced Costs",
         "text": "Optimizing Daily Operations with LLM-based Solutions - Drive down daily operational costs by implementing LLM-based solutions to support routine operations. This is additional text for the card that will be revealed when the button is clicked."
       }
+    ],
+
+    "ourServices": [
+      {
+        "image": "webdev.jpg",
+        "title": "Web Development",
+        "description": "We specialize in creating modern, responsive, and user-friendly websites tailored to your business needs."
+      },
+      {
+        "image": "mobiledev.jpg",
+        "title": "Mobile App Development",
+        "description": "Transform your ideas into powerful mobile applications that engage users and enhance your brand."
+      },
+      {
+        "image": "uiux.jpg",
+        "title": "UI/UX Design",
+        "description": "Craft visually stunning and intuitive interfaces that captivate your audience and elevate user experience."
+      }
     ]
   },
   "technologyList": {
