@@ -21,6 +21,7 @@
     },
 
     "erpProjects": {
+      "title": "আমাদের ইআরপি প্রকল্পসমূহ",
       "projects": [
         {
           "id": 1,

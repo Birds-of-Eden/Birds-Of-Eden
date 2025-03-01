@@ -56,7 +56,7 @@ function ERPProjects() {
             transition={{ duration: 0.5 }}
             className="heading3 pb-4 text-center"
           >
-            Our ERP Projects
+            {t("home.erpProjects.title")}
           </motion.h1>
         </div>
 

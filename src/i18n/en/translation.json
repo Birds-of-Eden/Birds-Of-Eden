@@ -21,6 +21,7 @@
     },
 
     "erpProjects": {
+      "title": "Our ERP Projects",
       "projects": [
         {
           "id": 1,

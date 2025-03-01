@@ -21,6 +21,7 @@
     },
 
     "erpProjects": {
+      "title": "مشاريع ERP الخاصة بنا",
       "projects": [
         {
           "id": 1,
