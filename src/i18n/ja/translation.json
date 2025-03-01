@@ -440,5 +440,41 @@
     "contentManagement": "コンテンツ管理システム",
     "backlinkMonitoring": "バックリンク監視",
     "seoBoost": "専門的なソリューションで、クライアントの検索エンジンのランキングを上げ、オーガニックトラフィックを増やします。"
+  },
+  "JobPostPage": {
+    "title": "私たちのチームに参加しませんか",
+    "applyButton": "今すぐ応募",
+    "applyFor": "応募する",
+    "form": {
+      "namePlaceholder": "あなたの名前を入力してください",
+      "emailPlaceholder": "あなたのメールアドレスを入力してください",
+      "addressPlaceholder": "あなたの住所を入力してください",
+      "resumeUpload": "履歴書をアップロードするにはクリックしてください",
+      "coverLetterUpload": "カバーレターをアップロードするにはクリックしてください",
+      "submitButton": "送信"
+    },
+    "modal": {
+      "close": "×"
+    },
+    "jobs": [
+      {
+        "id": "1",
+        "title": "ソフトウェアエンジニア",
+        "description": "最新技術に取り組むエンジニアチームに参加しましょう。",
+        "location": "タワー71、ECBチャッター"
+      },
+      {
+        "id": "2",
+        "title": "フロントエンド開発者",
+        "description": "才能のあるフロントエンド開発者を探しています。",
+        "location": "タワー71、ECBチャッター"
+      },
+      {
+        "id": "3",
+        "title": "バックエンド開発者",
+        "description": "APIとサービスに関する作業を行う才能のあるチームと一緒に働きましょう。",
+        "location": "リモート"
+      }
+    ]
   }
 }

@@ -503,5 +503,42 @@
     "contentManagement": "Content management systems",
     "backlinkMonitoring": "Backlink monitoring",
     "seoBoost": "Boost your clients' search engine rankings and drive more organic traffic with our expert solutions."
+  },
+
+  "JobPostPage": {
+    "title": "Join Our Team",
+    "applyButton": "Apply Now",
+    "applyFor": "Apply for",
+    "form": {
+      "namePlaceholder": "Enter your name",
+      "emailPlaceholder": "Enter your email",
+      "addressPlaceholder": "Enter your address",
+      "resumeUpload": "Click to upload your Resume",
+      "coverLetterUpload": "Click to upload your Cover letter",
+      "submitButton": "Submit"
+    },
+    "modal": {
+      "close": "×"
+    },
+    "jobs": [
+      {
+        "id": "1",
+        "title": "Software Engineer",
+        "description": "Join our team of engineers working on cutting-edge technology.",
+        "location": "Tower 71, ECB Chattar"
+      },
+      {
+        "id": "2",
+        "title": "Frontend Developer",
+        "description": "We are looking for a talented frontend developer.",
+        "location": "Tower 71, ECB Chattar"
+      },
+      {
+        "id": "3",
+        "title": "Backend Developer",
+        "description": "Work on our API and services with a talented team.",
+        "location": "Remote"
+      }
+    ]
   }
 }
