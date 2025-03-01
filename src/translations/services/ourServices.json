@@ -1,0 +1,70 @@
+{
+  "ourServicesEN": [
+    {
+      "image": "webdev.jpg",
+      "title": "Web Development",
+      "description": "We specialize in creating modern, responsive, and user-friendly websites tailored to your business needs."
+    },
+    {
+      "image": "mobiledev.jpg",
+      "title": "Mobile App Development",
+      "description": "Transform your ideas into powerful mobile applications that engage users and enhance your brand."
+    },
+    {
+      "image": "ux.jpg",
+      "title": "UI/UX Design",
+      "description": "Craft visually stunning and intuitive interfaces that captivate your audience and elevate user experience."
+    }
+  ],
+  "ourServicesJA": [
+    {
+      "image": "webdev.jpg",
+      "title": "ウェブ開発",
+      "description": "お客様のビジネスニーズに合わせた、モダンでレスポンシブ、かつユーザーフレンドリーなウェブサイトの作成を専門としています。"
+    },
+    {
+      "image": "mobiledev.jpg",
+      "title": "モバイルアプリ開発",
+      "description": "ユーザーを惹きつけ、ブランドを向上させる強力なモバイルアプリケーションで、あなたのアイデアを形にします。"
+    },
+    {
+      "image": "ux.jpg",
+      "title": "UI/UXデザイン",
+      "description": "聴衆を魅了し、ユーザーエクスペリエンスを高める、視覚的に魅力的で直感的なインターフェースを作成します。"
+    }
+  ],
+  "ourServicesAR": [
+    {
+      "image": "webdev.jpg",
+      "title": "تطوير المواقع",
+      "description": "نحن متخصصون في إنشاء مواقع ويب حديثة ومتجاوبة وسهلة الاستخدام مصممة خصيصًا لتلبية احتياجات عملك."
+    },
+    {
+      "image": "mobiledev.jpg",
+      "title": "تطوير تطبيقات الجوال",
+      "description": "حول أفكارك إلى تطبيقات جوال قوية تجذب المستخدمين وتعزز علامتك التجارية."
+    },
+    {
+      "image": "ux.jpg",
+      "title": "تصميم واجهة المستخدم/تجربة المستخدم",
+      "description": "صمم واجهات مذهلة بصريًا وبديهية تأسر جمهورك وترتقي بتجربة المستخدم."
+    }
+  ],
+  "ourServicesBN": [
+    {
+      "image": "webdev.jpg",
+      "title": "ওয়েব ডেভেলপমেন্ট",
+      "description": "আমরা আপনার ব্যবসার প্রয়োজন অনুসারে আধুনিক, প্রতিক্রিয়াশীল এবং ব্যবহারকারী-বান্ধব ওয়েবসাইট তৈরি করতে বিশেষজ্ঞ।"
+    },
+    {
+      "image": "mobiledev.jpg",
+      "title": "মোবাইল অ্যাপ ডেভেলপমেন্ট",
+      "description": "আপনার ধারণাগুলিকে শক্তিশালী মোবাইল অ্যাপ্লিকেশনে রূপান্তর করুন যা ব্যবহারকারীদের আকৃষ্ট করে এবং আপনার ব্র্যান্ডকে উন্নত করে।"
+    },
+    {
+      "image": "ux.jpg",
+      "title": "UI/UX ডিজাইন",
+      "description": "দৃষ্টি নন্দন এবং স্বজ্ঞাত ইন্টারফেস তৈরি করুন যা আপনার দর্শকদের মুগ্ধ করে এবং ব্যবহারকারীর অভিজ্ঞতা উন্নত করে।"
+    }
+  ]
+}
