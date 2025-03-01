@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 
 const QuickBookIntegration = () => {
   const { t } = useTranslation();
-  const quickBook = t("services.quickBook");
+  const quickBook = t("services.quickBook", { returnObjects: true });
 
   return (
     <section className="bg-gray-50 py-12 dark:bg-slate-900">
