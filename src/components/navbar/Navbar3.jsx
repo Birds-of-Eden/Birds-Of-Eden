@@ -71,31 +71,27 @@ const Navbar = () => {
       <header className="sticky top-0 z-50 w-full">
         {/* Top Bar */}
         <div className="bg-slate-200 text-sm  dark:bg-zinc-800">
-          <div className="container">
-            <div className="flex h-12 items-center justify-center md:justify-end">
-              {/* Phone */}
-              <div className="flex items-center gap-3">
-                <div className="flex items-center gap-2 p-2 text-black dark:text-white">
-                  <FaEnvelope className="size-5" />
-                  <a
-                    href="mailto:talat@birdsofeden.com"
-                    className="hover:underline "
-                  >
-                    talat@birdsofeden.me
-                  </a>
-                </div>
-                <div className="flex cursor-pointer items-center gap-2 p-2 text-black dark:text-white">
-                  <FaPhoneAlt className="size-5" />
-                  <a href="tel:01842781978" className="hover:underline">
-                    +88-01842781978
-                  </a>
-                </div>
-                {/* Language Selection */}
-                <div className="flex items-center gap-1">
-                  <span>Language:&nbsp;</span>
-                  <LanguageSelector />
-                </div>
-              </div>
+          <div className="container flex flex-wrap items-center justify-center gap-3 py-2 md:justify-end">
+            {/* Phone */}
+            <div className="flex items-center gap-2 text-black dark:text-white">
+              <FaEnvelope className="size-5" />
+              <a
+                href="mailto:talat@birdsofeden.com"
+                className="hover:underline "
+              >
+                talat@birdsofeden.me
+              </a>
+            </div>
+            <div className="flex cursor-pointer items-center gap-2 text-black dark:text-white">
+              <FaPhoneAlt className="size-5" />
+              <a href="tel:01842781978" className="hover:underline">
+                +88-01842781978
+              </a>
+            </div>
+            {/* Language Selection */}
+            <div className="flex items-center gap-1">
+              <span>Language:&nbsp;</span>
+              <LanguageSelector />
             </div>
           </div>
         </div>

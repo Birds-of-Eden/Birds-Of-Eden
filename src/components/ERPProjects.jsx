@@ -48,17 +48,15 @@ function ERPProjects() {
       animate="visible"
       className="bg-slate-100 text-white dark:bg-slate-900"
     >
-      <div className="container mx-auto px-4 py-12">
-        <div className="mb-12">
-          <motion.h1
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="heading3 pb-4 text-center"
-          >
-            {t("home.erpProjects.title")}
-          </motion.h1>
-        </div>
+      <div className="container mx-auto px-4 py-8 xl:py-12">
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="heading3 text-center"
+        >
+          {t("home.erpProjects.title")}
+        </motion.h1>
 
         <Splide
           options={{
@@ -85,7 +83,7 @@ function ERPProjects() {
               <SplideSlide key={project.id}>
                 <motion.div
                   variants={itemVariants}
-                  className="flex flex-col items-center gap-8 p-8 md:flex-row"
+                  className="flex flex-col items-center gap-8 p-4 md:flex-row xl:p-8"
                 >
                   <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}

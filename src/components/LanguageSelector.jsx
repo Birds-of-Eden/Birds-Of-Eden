@@ -1,11 +1,4 @@
 import { useTranslation } from "react-i18next";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "../components/ui/select";
 
 const LanguageSelector = () => {
   const { i18n } = useTranslation();
@@ -34,6 +27,11 @@ const LanguageSelector = () => {
   ];
 
   const handleLanguageChange = (lang) => {
+    i18n.changeLanguage(lang);
+  };
+
+  const handleLanguageSelectChange = (event) => {
+    const lang = event.target.value;
     i18n.changeLanguage(lang);
   };
 
@@ -68,21 +66,17 @@ const LanguageSelector = () => {
 
       {/* Mobile language selector */}
       <div className="relative xl:hidden">
-        <Select onValueChange={handleLanguageChange} value={i18n.language}>
-          <SelectTrigger className="min-w-max gap-2">
-            <SelectValue placeholder="Select Language" />
-          </SelectTrigger>
-          <SelectContent>
-            {languages.map((lang) => (
-              <SelectItem key={lang.code} value={lang.code}>
-                <div className="flex items-center gap-2">
-                  <img src={lang.img} alt={lang.title} className="size-6" />
-                  {lang.title}
-                </div>
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
+        <select
+          className="focus:outline-none dark:bg-zinc-800"
+          value={i18n.language}
+          onChange={handleLanguageSelectChange}
+        >
+          {languages.map((lang) => (
+            <option key={lang.code} value={lang.code}>
+              {lang.title}
+            </option>
+          ))}
+        </select>
       </div>
     </>
   );
