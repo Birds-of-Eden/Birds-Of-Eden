@@ -129,6 +129,8 @@
         "range": "Range",
         "camera": "Camera"
       },
+      "droneCollection": "Discover Our Premium Drone Collection",
+      "droneTagline": "Cutting-edge technology for the sky explorers",
       "drones": [
         {
           "id": 1,

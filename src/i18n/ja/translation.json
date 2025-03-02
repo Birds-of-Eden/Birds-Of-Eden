@@ -128,6 +128,8 @@
         "range": "範囲",
         "camera": "カメラ"
       },
+      "droneCollection": "プレミアムドローンコレクションを発見",
+      "droneTagline": "空の探検者のための最先端技術",
       "drones": [
         {
           "id": 1,
