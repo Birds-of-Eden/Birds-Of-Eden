@@ -911,6 +911,22 @@
       }
     ]
   },
+
+  "contact": {
+    "contactUs": "Contact Us",
+    "name": "Name",
+    "namePlaceholder": "Enter your name",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "message": "Message",
+    "messagePlaceholder": "Enter your message",
+    "sendMessage": "Send Message",
+    "ourLocation": "Our Location",
+    "successMessage": "Message sent successfully!",
+    "errorMessage": "There was an error sending the message!",
+    "errorAlert": "Failed to send message."
+  },
+
   "footer": {
     "companyDescription": "BIRDS OF EDEN is a pioneering software company dedicated to transforming innovative ideas into reality.",
     "importantLinks": "Important Links",

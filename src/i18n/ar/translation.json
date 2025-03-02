@@ -885,6 +885,21 @@
       }
     ]
   },
+
+  "contact": {
+    "contactUs": "اتصل بنا",
+    "name": "الاسم",
+    "namePlaceholder": "أدخل اسمك",
+    "email": "البريد الإلكتروني",
+    "emailPlaceholder": "أدخل بريدك الإلكتروني",
+    "message": "الرسالة",
+    "messagePlaceholder": "أدخل رسالتك",
+    "sendMessage": "إرسال الرسالة",
+    "ourLocation": "موقعنا",
+    "successMessage": "تم إرسال الرسالة بنجاح!",
+    "errorMessage": "حدث خطأ أثناء إرسال الرسالة!",
+    "errorAlert": "فشل في إرسال الرسالة."
+  },
   "footer": {
     "companyDescription": "BIRDS OF EDEN هي شركة برمجيات رائدة مكرسة لتحويل الأفكار المبتكرة إلى واقع.",
     "importantLinks": "روابط هامة",

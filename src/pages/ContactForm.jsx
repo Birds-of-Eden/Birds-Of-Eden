@@ -1,8 +1,11 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
+  const { t } = useTranslation(); // Hook for translations
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -24,12 +27,12 @@ const ContactForm = () => {
         formData,
       );
       if (response.status === 201) {
-        alert("Message sent successfully!");
+        alert(t("contact.successMessage"));
         setFormData({ name: "", email: "", message: "" });
       }
     } catch (error) {
-      console.error("There was an error sending the message!", error);
-      alert("Failed to send message.");
+      console.error(t("contact.errorMessage"), error);
+      alert(t("contact.errorAlert"));
     }
   };
 
@@ -51,7 +54,7 @@ const ContactForm = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <h2 className="mb-6 text-3xl font-bold text-black dark:text-white">
-              Contact Us
+              {t("contact.contactUs")}
             </h2>
             <form onSubmit={handleSubmit}>
               <motion.div
@@ -65,7 +68,7 @@ const ContactForm = () => {
                   htmlFor="name"
                   className="block text-sm font-medium text-black dark:text-white"
                 >
-                  Name
+                  {t("contact.name")}
                 </label>
                 <input
                   type="text"
@@ -74,7 +77,7 @@ const ContactForm = () => {
                   value={formData.name}
                   onChange={handleChange}
                   className="mt-1 block w-full rounded-md bg-slate-100 px-3 py-2 text-black focus:border-blue-500 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50"
-                  placeholder="Enter your name"
+                  placeholder={t("contact.namePlaceholder")}
                 />
               </motion.div>
 
@@ -89,7 +92,7 @@ const ContactForm = () => {
                   htmlFor="email"
                   className="block text-sm font-medium text-black dark:text-white"
                 >
-                  Email
+                  {t("contact.email")}
                 </label>
                 <input
                   type="email"
@@ -98,7 +101,7 @@ const ContactForm = () => {
                   value={formData.email}
                   onChange={handleChange}
                   className="mt-1 block w-full rounded-md bg-slate-100 px-3 py-2 text-black focus:border-blue-500 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50"
-                  placeholder="Enter your email"
+                  placeholder={t("contact.emailPlaceholder")}
                 />
               </motion.div>
 
@@ -113,7 +116,7 @@ const ContactForm = () => {
                   htmlFor="message"
                   className="block text-sm font-medium text-black dark:text-white"
                 >
-                  Message
+                  {t("contact.message")}
                 </label>
                 <textarea
                   id="message"
@@ -121,7 +124,7 @@ const ContactForm = () => {
                   value={formData.message}
                   onChange={handleChange}
                   className="mt-1 block w-full rounded-md bg-slate-100 px-3 py-2 text-black focus:border-blue-500 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50"
-                  placeholder="Enter your message"
+                  placeholder={t("contact.messagePlaceholder")}
                   rows="4"
                 />
               </motion.div>
@@ -133,7 +136,7 @@ const ContactForm = () => {
                 whileTap={{ scale: 0.95 }}
                 transition={{ duration: 0.3 }}
               >
-                Send Message
+                {t("contact.sendMessage")}
               </motion.button>
             </form>
           </motion.div>
@@ -146,7 +149,7 @@ const ContactForm = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <h2 className="mb-6 text-3xl font-bold text-black dark:text-white">
-              Our Location
+              {t("contact.ourLocation")}
             </h2>
             <div className="relative mb-4 h-96 overflow-hidden rounded-lg shadow-lg">
               <div className="absolute inset-0">

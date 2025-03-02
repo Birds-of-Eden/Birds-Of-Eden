@@ -876,6 +876,20 @@
       }
     ]
   },
+  "contact": {
+    "contactUs": "お問い合わせ",
+    "name": "名前",
+    "namePlaceholder": "あなたの名前を入力してください",
+    "email": "メール",
+    "emailPlaceholder": "あなたのメールを入力してください",
+    "message": "メッセージ",
+    "messagePlaceholder": "メッセージを入力してください",
+    "sendMessage": "メッセージを送信",
+    "ourLocation": "私たちの所在地",
+    "successMessage": "メッセージが正常に送信されました！",
+    "errorMessage": "メッセージの送信中にエラーが発生しました！",
+    "errorAlert": "メッセージの送信に失敗しました。"
+  },
   "footer": {
     "companyDescription": "BIRDS OF EDENは、革新的なアイデアを現実に変える先駆的なソフトウェア企業です。",
     "importantLinks": "重要なリンク",
