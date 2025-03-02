@@ -77,7 +77,7 @@ const ProductPage = () => {
     <div className="">
       <div className="container mx-auto p-4">
         <motion.h1
-          className="my-8 bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-center text-4xl font-extrabold text-transparent sm:text-5xl"
+          className="my-8 bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text pb-4 text-center text-4xl font-extrabold text-transparent sm:text-5xl"
           variants={tabVariants}
           initial="hidden"
           animate="visible"

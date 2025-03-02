@@ -455,7 +455,7 @@ const Navbar = () => {
                         </NavLink>
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
-                        <div className="flex w-[450px] flex-col gap-4 p-3">
+                        <div className="flex w-[600px] flex-col gap-4 p-3">
                           <div className="flex gap-4">
                             <div className="h-36 w-36 shrink-0 overflow-hidden rounded bg-zinc-800">
                               <img

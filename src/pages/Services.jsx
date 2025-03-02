@@ -16,7 +16,7 @@ const Services = () => {
       className="min-h-screen bg-gray-100 dark:bg-slate-800"
     >
       <div className="container mx-auto min-h-screen py-12 ">
-        <h1 className="heading">Our Services</h1>
+        <h1 className="heading">Regular Services</h1>
         <div className="grid grid-cols-1 gap-8  sm:grid-cols-2 lg:grid-cols-3 ">
           {/* Service Cards */}
           {ourServices.map((service, index) => (
