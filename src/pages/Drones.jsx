@@ -24,10 +24,10 @@ const Drones = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "anticipate" }}
         >
-          Discover Our Premium Drone Collection
+          {t("home.dronePage.droneCollection")}
         </motion.h2>
         <p className="mb-12 text-center text-lg text-gray-600 dark:text-gray-300">
-          Cutting-edge technology for the sky explorers
+          {t("home.dronePage.droneTagline")}
         </p>
         <div className="relative">
           <Splide
