@@ -93,7 +93,7 @@ const JobPostListStatic = () => {
             </p>
             <motion.button
               onClick={() => handleApplyClick(post)}
-              className="rounded-lg border-2 border-blue-800 px-6 py-2 text-white shadow-sm shadow-slate-400 transition-colors hover:bg-blue-700"
+              className="rounded-lg border-2 border-blue-800 px-6 py-2 text-black shadow-sm shadow-slate-400 transition-colors hover:bg-blue-700 dark:text-white"
             >
               {t("JobPostPage.applyButton")}
             </motion.button>
