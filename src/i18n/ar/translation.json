@@ -882,5 +882,14 @@
         "description": "ملحق عالي الأداء للمحترفين."
       }
     ]
+  },
+  "footer": {
+    "companyDescription": "BIRDS OF EDEN هي شركة برمجيات رائدة مكرسة لتحويل الأفكار المبتكرة إلى واقع.",
+    "importantLinks": "روابط هامة",
+    "links": "روابط",
+    "socialLinks": "روابط اجتماعية",
+    "newsletter": "اشترك في نشرتنا الإخبارية",
+    "emailPlaceholder": "أدخل بريدك الإلكتروني",
+    "copyright": "© حقوق النشر"
   }
 }

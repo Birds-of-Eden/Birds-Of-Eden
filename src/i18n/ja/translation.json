@@ -873,5 +873,14 @@
         "description": "プロフェッショナル向けの高性能アクセサリー。"
       }
     ]
+  },
+  "footer": {
+    "companyDescription": "BIRDS OF EDENは、革新的なアイデアを現実に変える先駆的なソフトウェア企業です。",
+    "importantLinks": "重要なリンク",
+    "links": "リンク",
+    "socialLinks": "ソーシャルリンク",
+    "newsletter": "ニュースレターを購読する",
+    "emailPlaceholder": "メールを入力してください",
+    "copyright": "© 著作権"
   }
 }

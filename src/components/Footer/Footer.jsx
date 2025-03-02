@@ -3,9 +3,11 @@ import { BiMoon, BiSun } from "react-icons/bi";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/boedl1.png";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "system");
+  const { t } = useTranslation();
 
   useEffect(() => {
     const element = document.documentElement;
@@ -55,14 +57,15 @@ const Footer = () => {
           </h1>
 
           <p className="mt-2 text-center text-black dark:text-white">
-            BIRDS OF EDEN is a pioneering software company dedicated to
-            transforming innovative ideas into reality.
+            {t("footer.companyDescription")}
           </p>
         </div>
         <div className="mt-8 text-black dark:text-white md:mt-0 md:w-2/3">
           <div className="grid grid-cols-2 gap-8 md:grid-cols-3">
             <div>
-              <h2 className="mb-4 text-xl font-semibold">Important Links</h2>
+              <h2 className="mb-4 text-xl font-semibold">
+                {t("footer.importantLinks")}
+              </h2>
               <ul className="flex flex-col gap-2">
                 <li className="cursor-pointer transition duration-300 hover:text-primary">
                   <NavLink
@@ -73,7 +76,7 @@ const Footer = () => {
                         : "flex  items-center gap-2"
                     }
                   >
-                    Home
+                    {t("navbar.home")}
                   </NavLink>
                 </li>
                 <li className="cursor-pointer transition duration-300 hover:text-primary">
@@ -85,7 +88,7 @@ const Footer = () => {
                         : "flex  items-center gap-2"
                     }
                   >
-                    About Us
+                    {t("navbar.about")}
                   </NavLink>
                 </li>
 
@@ -98,13 +101,15 @@ const Footer = () => {
                         : "flex items-center gap-2"
                     }
                   >
-                    Contact
+                    {t("navbar.contact")}
                   </NavLink>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 className="mb-4 text-xl font-semibold">Links</h2>
+              <h2 className="mb-4 text-xl font-semibold">
+                {t("footer.links")}
+              </h2>
               <ul className="flex flex-col gap-2">
                 <li className="cursor-pointer transition duration-300 hover:text-primary">
                   <NavLink
@@ -115,7 +120,7 @@ const Footer = () => {
                         : "flex  items-center gap-2"
                     }
                   >
-                    Privacy policy
+                    {t("navbar.privacy")}
                   </NavLink>
                 </li>
                 <li className="cursor-pointer transition duration-300 hover:text-primary">
@@ -127,19 +132,21 @@ const Footer = () => {
                         : "flex  items-center gap-2"
                     }
                   >
-                    Services
+                    {t("navbar.services")}
                   </NavLink>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 className="mb-4 text-xl font-semibold">Social Links</h2>
+              <h2 className="mb-4 text-xl font-semibold">
+                {t("footer.socialLinks")}
+              </h2>
               <div className="flex flex-col gap-2">
-                <h3>Subscribe to our newsletter</h3>
+                <h3>{t("footer.newsletter")}</h3>
                 <input
                   className="rounded-full bg-slate-200 px-3 py-1 text-black focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500 dark:bg-slate-100"
                   type="text"
-                  placeholder="Email"
+                  placeholder={t("footer.emailPlaceholder")}
                 />
                 <div className="flex gap-2">
                   <NavLink to="/">
@@ -165,7 +172,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t border-gray-300 pb-4 pt-8 text-center text-black dark:text-white">
-        <p>@copyright 2024 Talat</p>
+        <p>{t("footer.copyright")} 2024 Talat</p>
         <button
           onClick={toggleTheme}
           className="mt-4 rounded-md border border-black px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black dark:border-white dark:focus:ring-white "

@@ -908,5 +908,14 @@
         "description": "High-performance accessory for professionals."
       }
     ]
+  },
+  "footer": {
+    "companyDescription": "BIRDS OF EDEN is a pioneering software company dedicated to transforming innovative ideas into reality.",
+    "importantLinks": "Important Links",
+    "links": "Links",
+    "socialLinks": "Social Links",
+    "newsletter": "Subscribe to our newsletter",
+    "emailPlaceholder": "Enter your email",
+    "copyright": "© Copyright"
   }
 }
