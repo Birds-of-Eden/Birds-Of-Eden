@@ -1,8 +1,8 @@
 // data/erpProjects.js
-import project_14 from "../assets/project_14.png";
-import project_15 from "../assets/project_15.png";
-import project_16 from "../assets/project_16.png";
-import project_17 from "../assets/project_17.png";
+import project_14 from "/assets/project_14.png";
+import project_15 from "/assets/project_15.png";
+import project_16 from "/assets/project_16.png";
+import project_17 from "/assets/project_17.png";
 
 const erpProjects = [
   {

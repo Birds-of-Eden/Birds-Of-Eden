@@ -8,7 +8,7 @@ import Blogs from "./../components/Blogs/Blogs";
 import Service from "./../components/Service/Service";
 
 import ClientPage from "../components/ClientPage/ClientPage";
-import Banner1 from "./../assets/blog1.jpg";
+import Banner1 from "/assets/blog1.jpg";
 import BannerDetails from "./../components/BannerDetails/BannerDetails";
 import Gallery from "../components/Gallery";
 import CircularGallery from "../components/CircularGallery/CircularGallery";
@@ -17,9 +17,9 @@ import DronePage from "./DronePage";
 
 import RollingErpCard from "../components/ErpSolutions/RollingCard";
 
-import office_1 from "../assets/office_1.png";
-import office_2 from "../assets/office_2.png";
-import office_3 from "../assets/office_3.png";
+import office_1 from "/assets/office_1.png";
+import office_2 from "/assets/office_2.png";
+import office_3 from "/assets/office_3.png";
 import ProjectGallery from "../components/ProjectGallery/ProjectGallery";
 import BounceCards from "../components/BounceCards/BounceCards";
 import ERPProjects from "../components/ERPProjects";

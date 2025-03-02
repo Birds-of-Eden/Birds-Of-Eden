@@ -27,7 +27,7 @@ const Blogs = () => {
                 {/* Image with Overlay */}
                 <div className="relative">
                   <img
-                    src={`../src/assets/${blog.image}`}
+                    src={`/assets/${blog.image}`}
                     alt={blog.title}
                     className="h-[250px] w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />

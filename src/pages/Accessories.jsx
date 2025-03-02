@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 // Importing hardware images
-import hardware1 from "../assets/hardware_1.jpg";
-import hardware2 from "../assets/hardware_2.jpg";
-import hardware3 from "../assets/hardware_3.jpg";
-import router from "../assets/router_1.jpg";
-import dockingStation from "../assets/docking_station.jpg";
-import external_hdd from "../assets/external_hdd.jpg";
+import hardware1 from "/assets/hardware_1.jpg";
+import hardware2 from "/assets/hardware_2.jpg";
+import hardware3 from "/assets/hardware_3.jpg";
+import router from "/assets/router_1.jpg";
+import dockingStation from "/assets/docking_station.jpg";
+import external_hdd from "/assets/external_hdd.jpg";
 import { useTranslation } from "react-i18next";
 
 const Accessories = () => {
@@ -166,7 +166,7 @@ const Accessories = () => {
               whileHover={{ scale: 1.03 }}
             >
               <img
-                src={`../src/assets/${product.image}`}
+                src={`/assets/${product.image}`}
                 alt="Accessory"
                 className="mb-4 w-full rounded-lg object-cover"
               />

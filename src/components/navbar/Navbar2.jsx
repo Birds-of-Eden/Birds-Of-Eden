@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { BiSolidMoon, BiSolidSun } from "react-icons/bi";
 import { HiMenuAlt1, HiMenuAlt3, HiOutlineChevronDown } from "react-icons/hi";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/boedl1.png";
+import logo from "/assets/boedl1.png";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { useOnClickOutside } from "usehooks-ts";

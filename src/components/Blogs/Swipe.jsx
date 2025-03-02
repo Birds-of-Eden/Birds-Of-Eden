@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import BlogCard from "./BlogCard";
-import ImgBlog from "../../assets/blog1.jpg";
+import ImgBlog from "/assets/blog1.jpg";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;

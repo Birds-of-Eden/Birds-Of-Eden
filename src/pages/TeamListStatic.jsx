@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import CEOImage from "../assets/talat_md.png";
-import CTOImage from "../assets/amenul_islam.png";
+import CEOImage from "/assets/talat_md.png";
+import CTOImage from "/assets/amenul_islam.png";
 
 const TeamListStatic = () => {
   const { t } = useTranslation();

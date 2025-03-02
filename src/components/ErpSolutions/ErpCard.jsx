@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import project1 from "../../assets/project_14.png";
-import project2 from "../../assets/project_15.png";
-import project3 from "../../assets/rss_feeds.png";
+import project1 from "/assets/project_14.png";
+import project2 from "/assets/project_15.png";
+import project3 from "/assets/rss_feeds.png";
 
 const ErpCard = () => {
   const [selectedClient, setSelectedClient] = useState(null);

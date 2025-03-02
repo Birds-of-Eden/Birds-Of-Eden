@@ -1,13 +1,13 @@
 // BackendTechnologiesStatic.js
 import React from "react";
 import { useTranslation } from "react-i18next";
-import djangoLogo from "../assets/django.png";
-import goLogo from "../assets/go.png";
-import laravelLogo from "../assets/laravel.png";
-import nodejsLogo from "../assets/nodejs.png";
-import pythonLogo from "../assets/python.png";
-import rustLogo from "../assets/rust.png";
-import springbootLogo from "../assets/springboot.png";
+import djangoLogo from "/assets/django.png";
+import goLogo from "/assets/go.png";
+import laravelLogo from "/assets/laravel.png";
+import nodejsLogo from "/assets/nodejs.png";
+import pythonLogo from "/assets/python.png";
+import rustLogo from "/assets/rust.png";
+import springbootLogo from "/assets/springboot.png";
 
 const BackendTechnologiesStatic = () => {
   const { t } = useTranslation();

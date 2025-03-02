@@ -1,13 +1,13 @@
 // FrontendTechnologiesStatic.js
 import React from "react";
 import { useTranslation } from "react-i18next";
-import angularLogo from "../assets/angular.jpg";
-import backboneLogo from "../assets/chakra_ui.png";
-import emberLogo from "../assets/mui.png";
-import nextjsLogo from "../assets/next js.png";
-import reactLogo from "../assets/react.jpg";
-import streamlitLogo from "../assets/streamlit.jpg";
-import vueLogo from "../assets/vue.png";
+import angularLogo from "/assets/angular.jpg";
+import backboneLogo from "/assets/chakra_ui.png";
+import emberLogo from "/assets/mui.png";
+import nextjsLogo from "/assets/next js.png";
+import reactLogo from "/assets/react.jpg";
+import streamlitLogo from "/assets/streamlit.jpg";
+import vueLogo from "/assets/vue.png";
 
 const FrontendTechnologiesStatic = () => {
   const { t } = useTranslation();

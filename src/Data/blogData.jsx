@@ -1,6 +1,6 @@
-import erp_solution from "../assets/erp.png";
-import agricultural_drone from "../assets/agricultural_drone.jpg";
-import fire_service_drone from "../assets/fire_service_drone.jpg";
+import erp_solution from "/assets/erp.png";
+import agricultural_drone from "/assets/agricultural_drone.jpg";
+import fire_service_drone from "/assets/fire_service_drone.jpg";
 
 const blogData = [
   {

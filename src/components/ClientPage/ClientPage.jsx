@@ -50,7 +50,7 @@ const ClientPage = () => {
                 <div className="flex h-full flex-col">
                   <div className="mb-4 h-20 flex-shrink-0">
                     <img
-                      src={`../src/assets/${client.logo}`}
+                      src={`/assets/${client.logo}`}
                       alt={client.name}
                       className="mx-auto h-full object-contain"
                     />

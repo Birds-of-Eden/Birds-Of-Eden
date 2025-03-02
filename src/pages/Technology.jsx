@@ -2,24 +2,24 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 // Importing technology logos
-import bootstrapLogo from "./../assets/bootstrap.png";
-import cakephpLogo from "./../assets/cakephp.png";
-import chakraUiLogo from "./../assets/chakra_ui.png";
-import djangoLogo from "./../assets/django.png";
-import expressLogo from "./../assets/express.png";
-import fastapiLogo from "./../assets/fastapi.png";
-import goLogo from "./../assets/go.png";
-import javaLogo from "./../assets/java.png";
-import muiLogo from "./../assets/mui.png";
-import nextjsLogo from "./../assets/next js.png";
-import nodejsLogo from "./../assets/nodejs.png";
-import phpLogo from "./../assets/php.png";
-import pythonLogo from "./../assets/python.png";
-import reactLogo from "./../assets/react.jpg";
-import reduxLogo from "./../assets/redux.jpg";
-import rustLogo from "./../assets/rust.png";
-import springbootLogo from "./../assets/springboot.png";
-import tailwindLogo from "./../assets/tailwind.jpg";
+import bootstrapLogo from "/assets/bootstrap.png";
+import cakephpLogo from "/assets/cakephp.png";
+import chakraUiLogo from "/assets/chakra_ui.png";
+import djangoLogo from "/assets/django.png";
+import expressLogo from "/assets/express.png";
+import fastapiLogo from "/assets/fastapi.png";
+import goLogo from "/assets/go.png";
+import javaLogo from "/assets/java.png";
+import muiLogo from "/assets/mui.png";
+import nextjsLogo from "/assets/next js.png";
+import nodejsLogo from "/assets/nodejs.png";
+import phpLogo from "/assets/php.png";
+import pythonLogo from "/assets/python.png";
+import reactLogo from "/assets/react.jpg";
+import reduxLogo from "/assets/redux.jpg";
+import rustLogo from "/assets/rust.png";
+import springbootLogo from "/assets/springboot.png";
+import tailwindLogo from "/assets/tailwind.jpg";
 
 // Technology data
 const technologies = [

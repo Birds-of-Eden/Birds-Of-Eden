@@ -1,10 +1,8 @@
 // components/ERPProjects.js
-import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { useNavigate } from "react-router-dom";
-import { motion } from "framer-motion"; // Import Framer Motion
-// import erpProjects from "../data/erpProjects";
+import { motion } from "framer-motion";
 
 import { useTranslation } from "react-i18next";
 
@@ -92,7 +90,7 @@ function ERPProjects() {
                     className="transition-opacity duration-500 md:w-1/2"
                   >
                     <img
-                      src={`../src/assets/${project.image}`}
+                      src={`/assets/${project.image}`}
                       alt={project.title}
                       className="h-[400px] w-full rounded-lg object-contain shadow-xl"
                     />

@@ -1,6 +1,6 @@
-// import camera_drone from "../assets/camera_drone.jpg";
-// import mini_drone from "../assets/mini_drone.jpg";
-// import beginners_drone from "../assets/beginners_drone.jpg";
+// import camera_drone from "/assets/camera_drone.jpg";
+// import mini_drone from "/assets/mini_drone.jpg";
+// import beginners_drone from "/assets/beginners_drone.jpg";
 
 const droneData = [
   {

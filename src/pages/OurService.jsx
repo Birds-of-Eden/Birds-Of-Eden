@@ -86,7 +86,7 @@ const OurService = () => {
               className="group flex flex-col items-center rounded-lg bg-white p-6 shadow-lg dark:bg-slate-800"
             >
               <motion.img
-                src={`../src/assets/${card.icon}`}
+                src={`/assets/${card.icon}`}
                 alt={card.title}
                 className="mb-4 h-12 w-12"
                 animate={{

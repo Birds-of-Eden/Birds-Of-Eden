@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import talatImage from "./../assets/talat_md.png";
-import amenulIslam from "./../assets/amenul_islam.png";
+import talatImage from "/assets/talat_md.png";
+import amenulIslam from "/assets/amenul_islam.png";
 
 const AboutUs = () => {
   const { t } = useTranslation();

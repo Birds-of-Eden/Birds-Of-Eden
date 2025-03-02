@@ -26,7 +26,7 @@ const Services = () => {
               className="rounded-lg bg-white p-6 shadow-md dark:bg-slate-800 "
             >
               <img
-                src={`../src/assets/${service.image}`}
+                src={`/assets/${service.image}`}
                 alt="Web Development"
                 className="mb-4 h-40 w-full rounded object-cover"
               />

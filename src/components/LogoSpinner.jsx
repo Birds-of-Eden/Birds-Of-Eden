@@ -1,6 +1,6 @@
 // src/components/LogoSpinner.jsx
 import React from "react";
-import logo from "../assets/boedl1.png";
+import logo from "/assets/boedl1.png";
 
 const LogoSpinner = () => {
   return (

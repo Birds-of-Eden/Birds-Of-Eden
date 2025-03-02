@@ -15,15 +15,15 @@ import {
   Texture,
 } from "ogl";
 
-import office_1 from "../../assets/office_1.png";
-import office_2 from "../../assets/office_2.png";
-import chatgpt from "../../assets/chatgpt.jpg";
-import cisco from "../../assets/cisco.png";
-import huawei from "../../assets/huawei.jpg";
-import juniper from "../../assets/juniper.png";
-import wordpress from "../../assets/wordpress.jpg";
-import tenda from "../../assets/tenda.png";
-import oracle from "../../assets/oracle.jpg";
+import office_1 from "/assets/office_1.png";
+import office_2 from "/assets/office_2.png";
+import chatgpt from "/assets/chatgpt.jpg";
+import cisco from "/assets/cisco.png";
+import huawei from "/assets/huawei.jpg";
+import juniper from "/assets/juniper.png";
+import wordpress from "/assets/wordpress.jpg";
+import tenda from "/assets/tenda.png";
+import oracle from "/assets/oracle.jpg";
 
 import React from "react";
 

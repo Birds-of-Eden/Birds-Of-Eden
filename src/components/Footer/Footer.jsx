@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BiMoon, BiSun } from "react-icons/bi";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/boedl1.png";
+import logo from "/assets/boedl1.png";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {

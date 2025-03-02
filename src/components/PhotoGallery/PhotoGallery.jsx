@@ -1,20 +1,20 @@
 import React, { useState, useCallback } from "react";
 import { X } from "lucide-react";
 
-import project1 from "../../assets/project_1.png";
-import project2 from "../../assets/project_2.png";
-import project3 from "../../assets/project_3.png";
-import project4 from "../../assets/project_4.png";
-import project5 from "../../assets/project_5.png";
-import project6 from "../../assets/project_6.png";
-import project7 from "../../assets/project_7.png";
-import project9 from "../../assets/project_9.png";
-import project10 from "../../assets/project_10.png";
-import project11 from "../../assets/project_11.png";
-import project12 from "../../assets/project_12.jpeg";
-import project13 from "../../assets/project_13.jpeg";
-import project14 from "../../assets/project_14.png";
-import project15 from "../../assets/project_15.png";
+import project1 from "/assets/project_1.png";
+import project2 from "/assets/project_2.png";
+import project3 from "/assets/project_3.png";
+import project4 from "/assets/project_4.png";
+import project5 from "/assets/project_5.png";
+import project6 from "/assets/project_6.png";
+import project7 from "/assets/project_7.png";
+import project9 from "/assets/project_9.png";
+import project10 from "/assets/project_10.png";
+import project11 from "/assets/project_11.png";
+import project12 from "/assets/project_12.jpeg";
+import project13 from "/assets/project_13.jpeg";
+import project14 from "/assets/project_14.png";
+import project15 from "/assets/project_15.png";
 
 const projects = [
   {

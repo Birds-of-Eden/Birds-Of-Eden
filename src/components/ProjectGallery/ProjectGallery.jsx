@@ -70,7 +70,7 @@ const ProjectGallery = () => {
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img
-                  src={`../src/assets/${project.image}`}
+                  src={`/assets/${project.image}`}
                   alt={project.title}
                   className="h-full w-full transform object-cover transition-transform duration-700 group-hover:scale-110"
                 />
@@ -125,7 +125,7 @@ const ProjectGallery = () => {
             <div className="grid h-full grid-cols-1 lg:grid-cols-2">
               <div className="relative h-full">
                 <img
-                  src={`../src/assets/${selectedProject.image}`}
+                  src={`/assets/${selectedProject.image}`}
                   alt={selectedProject.title}
                   className="h-full w-full rounded-t-2xl object-contain object-center transition-transform duration-500 ease-in-out hover:scale-105 lg:rounded-l-2xl lg:rounded-tr-none"
                   loading="lazy"

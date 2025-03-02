@@ -5,12 +5,12 @@ import {
   useTransform,
   useAnimation,
 } from "framer-motion";
-import project1 from "../../assets/project_14.png";
-import project2 from "../../assets/project_15.png";
-import project3 from "../../assets/rss_feeds.png";
-import project4 from "../../assets/streamlit.jpg";
-import project5 from "../../assets/uiux.jpg";
-import project6 from "../../assets/sdaia.png";
+import project1 from "/assets/project_14.png";
+import project2 from "/assets/project_15.png";
+import project3 from "/assets/rss_feeds.png";
+import project4 from "/assets/streamlit.jpg";
+import project5 from "/assets/uiux.jpg";
+import project6 from "/assets/sdaia.png";
 
 const clients = [
   {

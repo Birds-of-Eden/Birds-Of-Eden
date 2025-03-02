@@ -32,7 +32,7 @@ import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 import { useOnClickOutside } from "usehooks-ts";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import LanguageSelector from "../LanguageSelector";
-import logo from "../../assets/boedl1.png";
+import logo from "/assets/boedl1.png";
 import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
