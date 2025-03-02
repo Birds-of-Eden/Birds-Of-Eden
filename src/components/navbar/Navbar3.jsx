@@ -79,7 +79,7 @@ const Navbar = () => {
                 href="mailto:talat@birdsofeden.com"
                 className="hover:underline "
               >
-                talat@birdsofeden.me
+                atservice@birdsofeden.me
               </a>
             </div>
             <div className="flex cursor-pointer items-center gap-2 text-black dark:text-white">
