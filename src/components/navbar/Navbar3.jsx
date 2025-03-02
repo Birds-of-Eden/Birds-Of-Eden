@@ -33,8 +33,11 @@ import { useOnClickOutside } from "usehooks-ts";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import LanguageSelector from "../LanguageSelector";
 import logo from "../../assets/boedl1.png";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const { t } = useTranslation();
+
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark",
   );
@@ -130,7 +133,9 @@ const Navbar = () => {
                 <NavigationMenu className="hidden xl:flex">
                   <NavigationMenuList>
                     <NavigationMenuItem>
-                      <NavigationMenuTrigger>Home</NavigationMenuTrigger>
+                      <NavigationMenuTrigger>
+                        {t("navbar.home")}
+                      </NavigationMenuTrigger>
                       <NavigationMenuContent>
                         <div className=" flex flex-col p-3">
                           <NavLink
@@ -144,7 +149,7 @@ const Navbar = () => {
                             }
                           >
                             <Home className="h-4 w-4" />
-                            Home
+                            {t("navbar.home")}
                           </NavLink>
                           <NavLink
                             to="/about"
@@ -157,7 +162,7 @@ const Navbar = () => {
                             }
                           >
                             <Info className="h-4 w-4" />
-                            About Us
+                            {t("navbar.about")}
                           </NavLink>
                           <NavLink
                             to="/team"
@@ -170,7 +175,7 @@ const Navbar = () => {
                             }
                           >
                             <Users className="h-4 w-4" />
-                            Meet Our Executive Team
+                            {t("navbar.team")}
                           </NavLink>
                           <NavLink
                             to="/OurService"
@@ -183,7 +188,7 @@ const Navbar = () => {
                             }
                           >
                             <Wrench className="h-4 w-4" />
-                            Services
+                            {t("navbar.services")}
                           </NavLink>
                           <NavLink
                             to="/contact"
@@ -196,7 +201,7 @@ const Navbar = () => {
                             }
                           >
                             <Phone className="h-4 w-4" />
-                            Contact
+                            {t("navbar.contact")}
                           </NavLink>
                           <NavLink
                             to="/blogs"
@@ -209,7 +214,7 @@ const Navbar = () => {
                             }
                           >
                             <BookOpen className="h-4 w-4" />
-                            Blogs
+                            {t("navbar.blogs")}
                           </NavLink>
                           <NavLink
                             to="/privacy"
@@ -222,163 +227,15 @@ const Navbar = () => {
                             }
                           >
                             <Shield className="h-4 w-4" />
-                            Privacy policy
+                            {t("navbar.privacy")}
                           </NavLink>
                         </div>
                       </NavigationMenuContent>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
                       <NavigationMenuTrigger>
-                        <NavLink to="OurService">Services</NavLink>
-                      </NavigationMenuTrigger>
-                      <NavigationMenuContent>
-                        <div className="flex w-[550px] flex-col gap-4 p-3">
-                          <div className="flex gap-4">
-                            <div className="h-36 w-36 shrink-0 overflow-hidden rounded bg-zinc-800">
-                              <img
-                                className="rounded"
-                                src="https://picsum.photos/200"
-                                alt="Service"
-                              />
-                            </div>
-                            <div className="mb-4">
-                              <h1 className="text-lg font-semibold">
-                                Best Selling
-                              </h1>
-                              <p className="text-sm text-black/70 dark:text-white/70">
-                                Explore our top-rated services tailored to meet
-                                your needs.
-                              </p>
-                            </div>
-                          </div>
-
-                          <div className="flex gap-4">
-                            <div className="border-r pr-4">
-                              <h2 className="mb-2 text-lg font-semibold">
-                                Development
-                              </h2>
-                              <div className="flex flex-col gap-3">
-                                <NavLink
-                                  to="/OurService"
-                                  className={({ isActive }) =>
-                                    `flex items-center gap-2 hover:underline ${
-                                      isActive
-                                        ? "text-blue-500"
-                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
-                                    }`
-                                  }
-                                >
-                                  <Database className="h-4 w-4" />
-                                  Big Data Analysis & Dashboard Design
-                                </NavLink>
-                                <NavLink
-                                  to="/services"
-                                  className={({ isActive }) =>
-                                    `flex items-center gap-2 hover:underline ${
-                                      isActive
-                                        ? "text-blue-500"
-                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
-                                    }`
-                                  }
-                                >
-                                  <Wrench className="h-4 w-4" />
-                                  Regular Services
-                                </NavLink>
-                                <NavLink
-                                  to="/Web"
-                                  className={({ isActive }) =>
-                                    `flex items-center gap-2 hover:underline ${
-                                      isActive
-                                        ? "text-blue-500"
-                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
-                                    }`
-                                  }
-                                >
-                                  <Globe className="h-4 w-4" />
-                                  Web Development
-                                </NavLink>
-                                <NavLink
-                                  to="/IOS"
-                                  className={({ isActive }) =>
-                                    `flex items-center gap-2 hover:underline ${
-                                      isActive
-                                        ? "text-blue-500"
-                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
-                                    }`
-                                  }
-                                >
-                                  <Smartphone className="h-4 w-4" />
-                                  iOS App Development
-                                </NavLink>
-                                <NavLink
-                                  to="/Mobile"
-                                  className={({ isActive }) =>
-                                    `flex items-center gap-2 hover:underline ${
-                                      isActive
-                                        ? "text-blue-500"
-                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
-                                    }`
-                                  }
-                                >
-                                  <Smartphone className="h-4 w-4" />
-                                  Mobile App Development
-                                </NavLink>
-                              </div>
-                            </div>
-                            <div>
-                              <h2 className="mb-2 text-lg font-semibold">
-                                Other Services
-                              </h2>
-                              <div className="flex flex-col gap-3">
-                                <NavLink
-                                  to="/payment-gateway"
-                                  className={({ isActive }) =>
-                                    `flex items-center gap-2 hover:underline ${
-                                      isActive
-                                        ? "text-blue-500"
-                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
-                                    }`
-                                  }
-                                >
-                                  <CreditCard className="h-4 w-4" />
-                                  Payment Gateway Integration
-                                </NavLink>
-                                <NavLink
-                                  to="/quickbook-integration"
-                                  className={({ isActive }) =>
-                                    `flex items-center gap-2 hover:underline ${
-                                      isActive
-                                        ? "text-blue-500"
-                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
-                                    }`
-                                  }
-                                >
-                                  <BookCheck className="h-4 w-4" />
-                                  QuickBooks Integration
-                                </NavLink>
-                                <NavLink
-                                  to="/zoho-integration"
-                                  className={({ isActive }) =>
-                                    `flex items-center gap-2 hover:underline ${
-                                      isActive
-                                        ? "text-blue-500"
-                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
-                                    }`
-                                  }
-                                >
-                                  <Boxes className="h-4 w-4" />
-                                  Zoho Integration
-                                </NavLink>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </NavigationMenuContent>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem>
-                      <NavigationMenuTrigger>
-                        <NavLink to="/technologies/frontend">
-                          Technologies
+                        <NavLink to="OurService">
+                          {t("navbar.services")}
                         </NavLink>
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
@@ -393,11 +250,159 @@ const Navbar = () => {
                             </div>
                             <div className="mb-4">
                               <h1 className="text-lg font-semibold">
-                                Our Technologies
+                                {t("navbar.bestSelling")}
                               </h1>
                               <p className="text-sm text-black/70 dark:text-white/70">
-                                Explore our top-rated services tailored to meet
-                                your needs.
+                                {t("navbar.exploreServices")}
+                              </p>
+                            </div>
+                          </div>
+
+                          <div className="flex gap-4">
+                            <div className="border-r pr-4">
+                              <h2 className="mb-2 text-lg font-semibold">
+                                {t("navbar.development")}
+                              </h2>
+                              <div className="flex flex-col gap-3">
+                                <NavLink
+                                  to="/OurService"
+                                  className={({ isActive }) =>
+                                    `flex items-center gap-2 hover:underline ${
+                                      isActive
+                                        ? "text-blue-500"
+                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                    }`
+                                  }
+                                >
+                                  <Database className="h-4 w-4" />
+                                  {t("navbar.bigdata")}
+                                </NavLink>
+                                <NavLink
+                                  to="/services"
+                                  className={({ isActive }) =>
+                                    `flex items-center gap-2 hover:underline ${
+                                      isActive
+                                        ? "text-blue-500"
+                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                    }`
+                                  }
+                                >
+                                  <Wrench className="h-4 w-4" />
+                                  {t("navbar.regularServices")}
+                                </NavLink>
+                                <NavLink
+                                  to="/Web"
+                                  className={({ isActive }) =>
+                                    `flex items-center gap-2 hover:underline ${
+                                      isActive
+                                        ? "text-blue-500"
+                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                    }`
+                                  }
+                                >
+                                  <Globe className="h-4 w-4" />
+                                  {t("navbar.webdev")}
+                                </NavLink>
+                                <NavLink
+                                  to="/IOS"
+                                  className={({ isActive }) =>
+                                    `flex items-center gap-2 hover:underline ${
+                                      isActive
+                                        ? "text-blue-500"
+                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                    }`
+                                  }
+                                >
+                                  <Smartphone className="h-4 w-4" />
+                                  {t("navbar.iosdev")}
+                                </NavLink>
+                                <NavLink
+                                  to="/Mobile"
+                                  className={({ isActive }) =>
+                                    `flex items-center gap-2 hover:underline ${
+                                      isActive
+                                        ? "text-blue-500"
+                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                    }`
+                                  }
+                                >
+                                  <Smartphone className="h-4 w-4" />
+                                  {t("navbar.mobiledev")}
+                                </NavLink>
+                              </div>
+                            </div>
+                            <div>
+                              <h2 className="mb-2 text-lg font-semibold">
+                                {t("navbar.otherServices")}
+                              </h2>
+                              <div className="flex flex-col gap-3">
+                                <NavLink
+                                  to="/payment-gateway"
+                                  className={({ isActive }) =>
+                                    `flex items-center gap-2 hover:underline ${
+                                      isActive
+                                        ? "text-blue-500"
+                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                    }`
+                                  }
+                                >
+                                  <CreditCard className="h-4 w-4" />
+                                  {t("navbar.payment")}
+                                </NavLink>
+                                <NavLink
+                                  to="/quickbook-integration"
+                                  className={({ isActive }) =>
+                                    `flex items-center gap-2 hover:underline ${
+                                      isActive
+                                        ? "text-blue-500"
+                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                    }`
+                                  }
+                                >
+                                  <BookCheck className="h-4 w-4" />
+                                  {t("navbar.quickbooks")}
+                                </NavLink>
+                                <NavLink
+                                  to="/zoho-integration"
+                                  className={({ isActive }) =>
+                                    `flex items-center gap-2 hover:underline ${
+                                      isActive
+                                        ? "text-blue-500"
+                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                    }`
+                                  }
+                                >
+                                  <Boxes className="h-4 w-4" />
+                                  {t("navbar.zoho")}
+                                </NavLink>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem>
+                      <NavigationMenuTrigger>
+                        <NavLink to="/technologies/frontend">
+                          {t("navbar.technologies")}
+                        </NavLink>
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent>
+                        <div className="flex w-[550px] flex-col gap-4 p-3">
+                          <div className="flex gap-4">
+                            <div className="h-36 w-36 shrink-0 overflow-hidden rounded bg-zinc-800">
+                              <img
+                                className="rounded"
+                                src="https://picsum.photos/200"
+                                alt="Service"
+                              />
+                            </div>
+                            <div className="mb-4">
+                              <h1 className="text-lg font-semibold">
+                                {t("navbar.ourTechnologies")}
+                              </h1>
+                              <p className="text-sm text-black/70 dark:text-white/70">
+                                {t("navbar.exploreTechnologies")}
                               </p>
                             </div>
                           </div>
@@ -405,7 +410,7 @@ const Navbar = () => {
                           <div className="flex gap-4">
                             <div className="border-r pr-4">
                               <h2 className="text-md mb-2 font-semibold">
-                                Technologies
+                                {t("navbar.technologies")}
                               </h2>
                               <div className="flex flex-col gap-3">
                                 <NavLink
@@ -419,13 +424,13 @@ const Navbar = () => {
                                   }
                                 >
                                   <Globe className="h-4 w-4" />
-                                  Frontend Technology
+                                  {t("navbar.frontend")}
                                 </NavLink>
                               </div>
                             </div>
                             <div>
                               <h2 className="text-md mb-2 font-semibold">
-                                Other
+                                {t("navbar.other")}
                               </h2>
                               <div className="flex flex-col gap-3">
                                 <NavLink
@@ -439,7 +444,7 @@ const Navbar = () => {
                                   }
                                 >
                                   <Database className="h-4 w-4" />
-                                  Backend Technology
+                                  {t("navbar.backend")}
                                 </NavLink>
                               </div>
                             </div>
@@ -449,7 +454,9 @@ const Navbar = () => {
                     </NavigationMenuItem>
                     <NavigationMenuItem>
                       <NavigationMenuTrigger>
-                        <NavLink to="/products/govt">Products</NavLink>
+                        <NavLink to="/products/govt">
+                          {t("navbar.products")}
+                        </NavLink>
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
                         <div className="flex w-[450px] flex-col gap-4 p-3">
@@ -463,11 +470,10 @@ const Navbar = () => {
                             </div>
                             <div className="mb-4">
                               <h1 className="text-lg font-semibold">
-                                Our Products
+                                {t("navbar.ourProducts")}
                               </h1>
                               <p className="text-sm text-black/70 dark:text-white/70">
-                                Explore our top-rated services tailored to meet
-                                your needs.
+                                {t("navbar.exploreProducts")}
                               </p>
                             </div>
                           </div>
@@ -475,7 +481,7 @@ const Navbar = () => {
                           <div className="flex gap-4">
                             <div className="border-r pr-4">
                               <h2 className="text-md mb-2 font-semibold">
-                                Products
+                                {t("navbar.products")}
                               </h2>
                               <div className="flex flex-col gap-3">
                                 <NavLink
@@ -489,7 +495,7 @@ const Navbar = () => {
                                   }
                                 >
                                   <Building2 className="h-4 w-4" />
-                                  Govt
+                                  {t("navbar.govt")}
                                 </NavLink>
                                 <NavLink
                                   to="/products/seo"
@@ -502,7 +508,7 @@ const Navbar = () => {
                                   }
                                 >
                                   <BarChart className="h-4 w-4" />
-                                  SEO Agencies
+                                  {t("navbar.seo")}
                                 </NavLink>
                                 <NavLink
                                   to="/products/financial"
@@ -515,13 +521,13 @@ const Navbar = () => {
                                   }
                                 >
                                   <Building className="h-4 w-4" />
-                                  Financial
+                                  {t("navbar.financial")}
                                 </NavLink>
                               </div>
                             </div>
                             <div>
                               <h2 className="text-md mb-2 font-semibold">
-                                Other Products
+                                {t("navbar.otherProducts")}
                               </h2>
                               <div className="flex flex-col gap-3">
                                 <NavLink
@@ -535,7 +541,7 @@ const Navbar = () => {
                                   }
                                 >
                                   <Building2 className="h-4 w-4" />
-                                  Corporate
+                                  {t("navbar.corporate")}
                                 </NavLink>
                                 <NavLink
                                   to="/products/ecommerce"
@@ -548,7 +554,7 @@ const Navbar = () => {
                                   }
                                 >
                                   <ShoppingCart className="h-4 w-4" />
-                                  Ecommerce
+                                  {t("navbar.ecommerce")}
                                 </NavLink>
                               </div>
                             </div>
@@ -568,7 +574,7 @@ const Navbar = () => {
                         to="/hardware"
                         className="flex items-center gap-2 whitespace-nowrap"
                       >
-                        Hardware Products
+                        {t("navbar.hardware")}
                       </NavLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem
@@ -580,7 +586,7 @@ const Navbar = () => {
                       }
                     >
                       <NavLink to="/drones" className="flex items-center gap-2">
-                        Drones
+                        {t("navbar.drones")}
                       </NavLink>
                     </NavigationMenuItem>
                   </NavigationMenuList>
@@ -602,7 +608,7 @@ const Navbar = () => {
                   )}
                 </button>
                 <NavLink to="/career" className={() => `link boxshadow`}>
-                  career
+                  {t("navbar.career")}
                 </NavLink>
               </div>
               <div className="flex items-center gap-4 xl:hidden">
