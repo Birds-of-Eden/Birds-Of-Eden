@@ -14,11 +14,11 @@ body {
 }
 
 .heading2 {
-  @apply mb-12 animate-gradient-slow bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 bg-clip-text text-center text-3xl font-extrabold leading-relaxed text-transparent;
+  @apply mb-12 animate-gradient-slow bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 bg-clip-text pt-4 text-center text-3xl font-extrabold leading-relaxed text-transparent;
 }
 
 .heading3 {
-  @apply bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-center text-5xl font-bold text-transparent;
+  @apply bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text pt-4 text-center text-5xl font-bold text-transparent;
 }
 
 .splide__arrow {
@@ -306,8 +306,6 @@ body {
     transform: rotate(360deg);
   }
 }
-
-
 
 @layer base {
   * {
