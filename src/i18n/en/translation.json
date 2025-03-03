@@ -722,22 +722,22 @@
     "backendTechnologies": "Backend Technologies",
     "technologies": {
       "frontend": {
-        "React.js": "A JavaScript library for building user interfaces.",
-        "Vue.js": "The Progressive JavaScript Framework.",
-        "Angular": "One framework. Mobile & desktop.",
-        "Next.js": "A React framework for production.",
-        "MUI": "A framework for ambitious web developers.",
-        "Chakra UI": "Gives structure to web applications by providing models with key-value binding.",
-        "Streamlit": "A framework for creating data apps in pure Python."
+        "reactJs": "A JavaScript library for building user interfaces.",
+        "vueJs": "The Progressive JavaScript Framework.",
+        "angular": "One framework. Mobile & desktop.",
+        "nextJs": "A React framework for production.",
+        "mui": "A framework for ambitious web developers.",
+        "chakraUi": "Gives structure to web applications by providing models with key-value binding.",
+        "streamlit": "A framework for creating data apps in pure Python."
       },
       "backend": {
-        "Node.js": "A JavaScript runtime built on Chrome's V8 engine.",
-        "Django": "A high-level Python Web framework that encourages rapid development.",
-        "Spring Boot": "A framework that simplifies the development of Java-based applications.",
-        "Python": "A versatile, high-level programming language known for simplicity.",
-        "Go": "A statically typed, compiled programming language designed at Google.",
-        "Rust": "A system programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.",
-        "Laravel": "A PHP framework for web artisans, providing elegant syntax and robust tools."
+        "nodeJs": "A JavaScript runtime built on Chrome's V8 engine.",
+        "django": "A high-level Python Web framework that encourages rapid development.",
+        "springBoot": "A framework that simplifies the development of Java-based applications.",
+        "python": "A versatile, high-level programming language known for simplicity.",
+        "go": "A statically typed, compiled programming language designed at Google.",
+        "rust": "A system programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.",
+        "laravel": "A PHP framework for web artisans, providing elegant syntax and robust tools."
       }
     }
   },

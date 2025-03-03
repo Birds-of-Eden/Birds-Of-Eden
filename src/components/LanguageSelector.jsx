@@ -24,6 +24,11 @@ const LanguageSelector = () => {
       title: "Japanese",
       img: "/flags/jp.svg",
     },
+    {
+      code: "zh",
+      title: "Chinese",
+      img: "/public/flags/cn.svg",
+    },
   ];
 
   const handleLanguageChange = (lang) => {
@@ -43,7 +48,7 @@ const LanguageSelector = () => {
             key={lang.code}
             className={`flex size-6 shrink-0 cursor-pointer items-center justify-center ${
               i18n.language === lang.code
-                ? "ring-2 ring-blue-500 ring-offset-2 ring-offset-black"
+                ? "ring-2 ring-blue-500 ring-offset-2 dark:ring-offset-zinc-800"
                 : ""
             }`}
             title={lang.title}
