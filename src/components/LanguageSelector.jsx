@@ -27,7 +27,7 @@ const LanguageSelector = () => {
     {
       code: "zh",
       title: "Chinese",
-      img: "/public/flags/cn.svg",
+      img: "/flags/cn.svg",
     },
   ];
 
