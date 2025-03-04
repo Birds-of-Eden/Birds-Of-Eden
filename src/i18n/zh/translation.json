@@ -468,24 +468,28 @@
         "text": "通过基于LLM的解决方案优化日常运营 - 通过实施基于LLM的解决方案来支持日常运营，从而降低日常运营成本。这是点击按钮后将显示的卡片的附加文本。"
       }
     ],
-    "ourServices": [
-      {
-        "image": "webdev.jpg",
-        "title": "网站开发",
-        "description": "我们专注于创建现代、响应式和用户友好的网站，以满足您的业务需求。"
-      },
-      {
-        "image": "mobiledev.jpg",
-        "title": "移动应用开发",
-        "description": "将您的想法转化为强大的移动应用程序，吸引用户并提升您的品牌。"
-      },
-      {
-        "image": "uiux.jpg",
-        "title": "UI/UX设计",
-        "description": "制作视觉上令人惊叹且直观的界面，吸引您的受众并提升用户体验。"
-      }
-    ],
+    "ourServices": {
+      "title": "常规服务",
+      "services": [
+        {
+          "image": "webdev.jpg",
+          "title": "网页开发",
+          "description": "我们专注于创建满足您业务需求的现代化、响应式和用户友好的网站。"
+        },
+        {
+          "image": "mobiledev.jpg",
+          "title": "手机应用程序开发",
+          "description": "将您的想法转化为吸引用户并提升您品牌形象的强大手机应用程序。"
+        },
+        {
+          "image": "uiux.jpg",
+          "title": "UI/UX 设计",
+          "description": "打造视觉上令人惊叹且直观的界面，吸引您的受众并提升用户体验。"
+        }
+      ]
+    },
     "webDev": {
+      "title": "网页开发服务",
       "header": "伊甸园之鸟专注于构建动态且用户友好的网站，旨在帮助您实现在线目标并增强您的数字形象。",
       "list": [
         {

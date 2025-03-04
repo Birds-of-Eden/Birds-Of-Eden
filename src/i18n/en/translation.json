@@ -511,24 +511,28 @@
       }
     ],
 
-    "ourServices": [
-      {
-        "image": "webdev.jpg",
-        "title": "Web Development",
-        "description": "We specialize in creating modern, responsive, and user-friendly websites tailored to your business needs."
-      },
-      {
-        "image": "mobiledev.jpg",
-        "title": "Mobile App Development",
-        "description": "Transform your ideas into powerful mobile applications that engage users and enhance your brand."
-      },
-      {
-        "image": "uiux.jpg",
-        "title": "UI/UX Design",
-        "description": "Craft visually stunning and intuitive interfaces that captivate your audience and elevate user experience."
-      }
-    ],
+    "ourServices": {
+      "title": "Regular Services",
+      "services": [
+        {
+          "image": "webdev.jpg",
+          "title": "Web Development",
+          "description": "We specialize in creating modern, responsive, and user-friendly websites tailored to your business needs."
+        },
+        {
+          "image": "mobiledev.jpg",
+          "title": "Mobile App Development",
+          "description": "Transform your ideas into powerful mobile applications that engage users and enhance your brand."
+        },
+        {
+          "image": "uiux.jpg",
+          "title": "UI/UX Design",
+          "description": "Craft visually stunning and intuitive interfaces that captivate your audience and elevate user experience."
+        }
+      ]
+    },
     "webDev": {
+      "title": "Web Development Services",
       "header": "BIRDS OF EDEN specializes in building dynamic and user-friendly websites tailored to help you achieve your online goals and enhance your digital presence.",
       "list": [
         {

@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 const Services = () => {
   const { t } = useTranslation();
-  const ourServices = t("services.ourServices", {
+  const { title, services } = t("services.ourServices", {
     returnObjects: true,
   });
 
@@ -16,10 +16,10 @@ const Services = () => {
       className="min-h-screen bg-gray-100 dark:bg-slate-800"
     >
       <div className="container mx-auto min-h-screen py-12 ">
-        <h1 className="heading">Regular Services</h1>
-        <div className="grid grid-cols-1 gap-8  sm:grid-cols-2 lg:grid-cols-3 ">
+        <h1 className="heading">{title}</h1> {/* Render the section title */}
+        <div className=" sm:grid-cols-2 grid grid-cols-1 gap-8 lg:grid-cols-3 ">
           {/* Service Cards */}
-          {ourServices.map((service, index) => (
+          {services.map((service, index) => (
             <motion.div
               key={index}
               whileHover={{ scale: 1.05 }}
@@ -27,7 +27,7 @@ const Services = () => {
             >
               <img
                 src={`/assets/${service.image}`}
-                alt="Web Development"
+                alt={service.title}
                 className="mb-4 h-40 w-full rounded object-cover"
               />
               <h2 className="mb-4 text-xl font-semibold text-gray-800 dark:text-white">
