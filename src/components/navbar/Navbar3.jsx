@@ -130,7 +130,7 @@ const Navbar = () => {
                   <NavigationMenuList>
                     <NavigationMenuItem>
                       <NavigationMenuTrigger>
-                        {t("navbar.home")}
+                        <NavLink to="/">{t("navbar.home")}</NavLink>
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
                         <div className=" flex flex-col p-3">
