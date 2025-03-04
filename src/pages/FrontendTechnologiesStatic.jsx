@@ -13,13 +13,13 @@ const FrontendTechnologiesStatic = () => {
   const { t } = useTranslation();
 
   const technologies = [
-    { id: 1, name: "React.js", category: "frontend", image: reactLogo },
-    { id: 2, name: "Vue.js", category: "frontend", image: vueLogo },
-    { id: 3, name: "Angular", category: "frontend", image: angularLogo },
-    { id: 4, name: "Next.js", category: "frontend", image: nextjsLogo },
-    { id: 5, name: "MUI", category: "frontend", image: emberLogo },
-    { id: 6, name: "Chakra UI", category: "frontend", image: backboneLogo },
-    { id: 7, name: "Streamlit", category: "frontend", image: streamlitLogo },
+    { id: 1, name: "reactJs", category: "frontend", image: reactLogo },
+    { id: 2, name: "vueJs", category: "frontend", image: vueLogo },
+    { id: 3, name: "angular", category: "frontend", image: angularLogo },
+    { id: 4, name: "nextJs", category: "frontend", image: nextjsLogo },
+    { id: 5, name: "mui", category: "frontend", image: emberLogo },
+    { id: 6, name: "chakraUi", category: "frontend", image: backboneLogo },
+    { id: 7, name: "streamlit", category: "frontend", image: streamlitLogo },
   ];
 
   return (
@@ -33,7 +33,7 @@ const FrontendTechnologiesStatic = () => {
           >
             <img
               src={technology.image}
-              alt={technology.name}
+              alt={t(`technologyList.technologies.frontend.${technology.name}`)}
               className="mb-4 h-24 w-24 animate-spin-slow rounded-full border-4 border-gray-300 object-cover"
             />
             <h3 className="mb-2 text-2xl font-bold text-gray-800 dark:text-white">

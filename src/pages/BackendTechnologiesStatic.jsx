@@ -13,13 +13,13 @@ const BackendTechnologiesStatic = () => {
   const { t } = useTranslation();
 
   const technologies = [
-    { id: 1, name: "Node.js", category: "backend", image: nodejsLogo },
-    { id: 2, name: "Django", category: "backend", image: djangoLogo },
-    { id: 3, name: "Spring Boot", category: "backend", image: springbootLogo },
-    { id: 4, name: "Python", category: "backend", image: pythonLogo },
-    { id: 5, name: "Go", category: "backend", image: goLogo },
-    { id: 6, name: "Rust", category: "backend", image: rustLogo },
-    { id: 7, name: "Laravel", category: "backend", image: laravelLogo },
+    { id: 1, name: "nodeJs", category: "backend", image: nodejsLogo },
+    { id: 2, name: "django", category: "backend", image: djangoLogo },
+    { id: 3, name: "springBoot", category: "backend", image: springbootLogo },
+    { id: 4, name: "python", category: "backend", image: pythonLogo },
+    { id: 5, name: "go", category: "backend", image: goLogo },
+    { id: 6, name: "rust", category: "backend", image: rustLogo },
+    { id: 7, name: "laravel", category: "backend", image: laravelLogo },
   ];
 
   return (
@@ -33,11 +33,11 @@ const BackendTechnologiesStatic = () => {
           >
             <img
               src={technology.image}
-              alt={technology.name}
+              alt={t(`technologyList.technologies.backend.${technology.name}`)}
               className="mb-4 h-24 w-24 animate-spin-slow rounded-full border-4 border-gray-300 object-cover"
             />
             <h3 className="mb-2 text-2xl font-bold text-gray-800 dark:text-white">
-              {technology.name}
+              {technology.name} {/* Display the key */}
             </h3>
             <p className="text-gray-600 dark:text-white">
               {t(`technologyList.technologies.backend.${technology.name}`)}
