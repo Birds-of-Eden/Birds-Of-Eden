@@ -126,7 +126,7 @@ function ERPProjects() {
                         className="link boxshadow rounded-xl"
                         onClick={() => handleLearnMore(project.id)}
                       >
-                        Learn More
+                        {t("home.ormSection.learnMore")}
                       </motion.button>
                     </motion.div>
                   </div>
