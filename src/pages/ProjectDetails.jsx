@@ -2,16 +2,22 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import erpProjects from "../data/erpProjects";
+import { useTranslation } from "react-i18next";
 
 const ProjectDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const project = erpProjects.find((p) => p.id === parseInt(id));
+  const { t } = useTranslation();
+
+  const projects = t("home.erpProjects.projects", { returnObjects: true });
+
+  const project = projects.find((p) => p.id === parseInt(id));
 
   if (!project) {
     return (
-      <p className="text-center text-lg text-red-600">Project not found.</p>
+      <p className="text-center text-lg text-red-600">
+        {t("projectDetails.notFound")}
+      </p>
     );
   }
 
@@ -40,12 +46,12 @@ const ProjectDetails = () => {
           </motion.h1>
 
           <motion.img
-            src={project.image}
+            src={`/assets/${project.image}`}
             alt={project.title}
             initial={{ scale: 0.95, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="mx-auto mb-10 w-full  rounded-lg object-contain shadow-xl"
+            className="mx-auto mb-10 w-full rounded-lg object-contain shadow-xl"
           />
 
           <motion.p
@@ -65,7 +71,7 @@ const ProjectDetails = () => {
           onClick={() => navigate(-1)}
           className="link boxshadow rounded-lg px-6 py-3 text-white transition-all duration-300"
         >
-          Go Back
+          goBack
         </motion.button>
       </motion.div>
     </motion.div>
