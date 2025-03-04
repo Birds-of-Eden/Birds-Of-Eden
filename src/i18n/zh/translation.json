@@ -682,22 +682,22 @@
     "backendTechnologies": "后端技术",
     "technologies": {
       "frontend": {
-        "React.js": "用于构建用户界面的JavaScript库。",
-        "Vue.js": "渐进式JavaScript框架。",
-        "Angular": "一个框架。移动和桌面。",
-        "Next.js": "用于生产的React框架。",
-        "MUI": "面向雄心勃勃的Web开发人员的框架。",
-        "Chakra UI": "通过提供具有键值绑定的模型，为Web应用程序提供结构。",
-        "Streamlit": "用于在纯Python中创建数据应用程序的框架。"
+        "reactJs": "用于构建用户界面的JavaScript库。",
+        "vueJs": "渐进式JavaScript框架。",
+        "angular": "一个框架。移动和桌面。",
+        "nextJs": "用于生产的React框架。",
+        "mui": "面向雄心勃勃的Web开发人员的框架。",
+        "chakraUi": "通过提供具有键值绑定的模型，为Web应用程序提供结构。",
+        "streamlit": "用于在纯Python中创建数据应用程序的框架。"
       },
       "backend": {
-        "Node.js": "构建在Chrome的V8引擎上的JavaScript运行时。",
-        "Django": "一个鼓励快速开发的高级Python Web框架。",
-        "Spring Boot": "一个简化基于Java的应用程序开发的框架。",
-        "Python": "一种以简单性而闻名的多功能高级编程语言。",
-        "Go": "在Google设计的静态类型编译编程语言。",
-        "Rust": "一种运行速度极快、防止段错误并保证线程安全的系统编程语言。",
-        "Laravel": "面向Web工匠的PHP框架，提供优雅的语法和强大的工具。"
+        "nodeJs": "构建在Chrome的V8引擎上的JavaScript运行时。",
+        "django": "一个鼓励快速开发的高级Python Web框架。",
+        "springBoot": "一个简化基于Java的应用程序开发的框架。",
+        "python": "一种以简单性而闻名的多功能高级编程语言。",
+        "go": "在Google设计的静态类型编译编程语言。",
+        "rust": "一种运行速度极快、防止段错误并保证线程安全的系统编程语言。",
+        "laravel": "面向Web工匠的PHP框架，提供优雅的语法和强大的工具。"
       }
     }
   },
