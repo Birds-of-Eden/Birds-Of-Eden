@@ -1,12 +1,9 @@
 // Home.jsx
-// import React from "react";
+import React, { useRef } from "react"; // Import useRef
 import Hero from "../components/Hero/Hero";
 import Banner from "./../components/Banner/Banner";
-
 import Blogs from "./../components/Blogs/Blogs";
-
 import Service from "./../components/Service/Service";
-
 import ClientPage from "../components/ClientPage/ClientPage";
 import Banner1 from "/assets/blog1.jpg";
 import BannerDetails from "./../components/BannerDetails/BannerDetails";
@@ -14,9 +11,7 @@ import Gallery from "../components/Gallery";
 import CircularGallery from "../components/CircularGallery/CircularGallery";
 import PhotoGallery from "../components/PhotoGallery/PhotoGallery";
 import DronePage from "./DronePage";
-
 import RollingErpCard from "../components/ErpSolutions/RollingCard";
-
 import office_1 from "/assets/office_1.png";
 import office_2 from "/assets/office_2.png";
 import office_3 from "/assets/office_3.png";
@@ -25,7 +20,6 @@ import BounceCards from "../components/BounceCards/BounceCards";
 import ERPProjects from "../components/ERPProjects";
 import ORMSection from "../components/ORMSection";
 import { useTranslation } from "react-i18next";
-// import Top_Photo_Gallery from "../components/Top_Photo_Gallery";
 
 const images = [office_1, office_2, office_1];
 const baseTransformStyles = [
@@ -38,15 +32,15 @@ const transformStyles =
   window.innerWidth < 640
     ? baseTransformStyles.map((style) =>
         style
-          .replace(/rotate\(([-0-9.]+)deg\)/g, (match, p1) => {
-            const newRotation = parseFloat(p1) * 0.4; // 40% rotation for mobile
+          .replace(/rotate\\(([-0-9.]+)deg\\)/g, (match, p1) => {
+            const newRotation = parseFloat(p1) * 0.4;
             return `rotate(${newRotation}deg)`;
           })
-          .replace(/translate\(([-0-9.]+)px\)/g, (match, p1) => {
+          .replace(/translate\\(([-0-9.]+)px\\)/g, (match, p1) => {
             const newTranslate = Math.max(
               Math.min(parseFloat(p1) * 0.5, 80),
               -80,
-            ); // Limit translate to ±80px
+            );
             return `translate(${newTranslate}px)`;
           }),
       )
@@ -54,30 +48,34 @@ const transformStyles =
 
 const Home = () => {
   const { t } = useTranslation();
+  const erpProjectsRef = useRef(null); // Create a ref for the ERPProjects section
+
+  const scrollToERPProjects = () => {
+    if (erpProjectsRef.current) {
+      erpProjectsRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div>
-      <Hero />
+      <Hero scrollToERPProjects={scrollToERPProjects} />{" "}
+      {/* Pass the function */}
       <Service />
-      <ERPProjects />
+      <div ref={erpProjectsRef}>
+        {" "}
+        {/* Attach the ref to the ERPProjects section */}
+        <ERPProjects />
+      </div>
       <ORMSection />
-      {/* <RollingErpCard autoplay={true} pauseOnHover={true} /> */}
-      {/* <ERPDesignComponent /> */}
       <BannerDetails reverse={true} img={Banner1} />
-      {/* <BannerDetails img={Banner2} /> */}
-      {/* <Banner /> */}
       <DronePage />
-
       <div>
         <ProjectGallery />
       </div>
-
       <div style={{ height: "700px", position: "relative" }} className="pb-40">
         <h1 className="heading3 pt-3">{t("home.partners.title")}</h1>
         <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} />
       </div>
-
-      {/* Add content for the home page */}
-      {/* BounceCards Section with Title and Background */}
       <div
         style={{
           padding: "50px 0",
@@ -88,21 +86,20 @@ const Home = () => {
         <h2 className="heading2 pb-10 font-sans text-2xl text-white sm:text-3xl md:text-4xl lg:text-5xl">
           {t("home.teamMoments.title")}
         </h2>
-
         <div
           style={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            flexWrap: window.innerWidth < 640 ? "wrap" : "nowrap", // Wrap on mobile
-            gap: window.innerWidth < 640 ? "5px" : "20px", // Smaller gap on mobile
+            flexWrap: window.innerWidth < 640 ? "wrap" : "nowrap",
+            gap: window.innerWidth < 640 ? "5px" : "20px",
           }}
         >
           <BounceCards
             className="custom-bounceCards"
             images={images}
-            containerWidth={window.innerWidth < 640 ? 350 : 500} // Smaller width on mobile
-            containerHeight={window.innerWidth < 640 ? 200 : 250} // Smaller height on mobile
+            containerWidth={window.innerWidth < 640 ? 350 : 500}
+            containerHeight={window.innerWidth < 640 ? 200 : 250}
             animationDelay={1}
             animationStagger={0.09}
             easeType="elastic.out(1, 0.5)"
@@ -113,11 +110,8 @@ const Home = () => {
       </div>
       <ClientPage />
       <Blogs />
-      {/* <Top_Photo_Gallery /> */}
     </div>
   );
 };
 
 export default Home;
-
-// cisco , jonipar , mikrotik , tender , huwaie , zte , winradio , oracle , wordpress , odoo , chatgpt , deepseek ,

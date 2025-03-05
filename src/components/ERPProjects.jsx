@@ -44,6 +44,7 @@ function ERPProjects() {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
+      id="erp"
       className="bg-slate-100 text-white dark:bg-slate-900"
     >
       <div className="container mx-auto px-4 py-8 xl:py-12">

@@ -1,9 +1,11 @@
+// components/Hero/Hero.jsx
 import { Link } from "react-router-dom";
 import CircleServices from "./circleServices";
 import Typewriter from "typewriter-effect";
 import { useTranslation } from "react-i18next";
 
-const Hero = () => {
+const Hero = ({ scrollToERPProjects }) => {
+  // Receive the function as a prop
   const { t } = useTranslation();
   const typewriterStrings = t("home.hero.typewriter", {
     returnObjects: true,
@@ -39,14 +41,14 @@ const Hero = () => {
               {t("home.hero.description")}
             </p>
             <div className="mt-4 flex w-full justify-start gap-4">
-              <Link
-                to="/get-started"
+              <button // Change Link to button
+                onClick={scrollToERPProjects} // Call the function on click
                 className="mb-2 rounded-md border-2 border-blue-500 bg-blue-500/50 px-4 py-2 text-lg text-black shadow-md transition-transform duration-300 hover:scale-105 hover:border-blue-700 hover:bg-blue-700 dark:text-white xl:px-8 xl:py-3 xl:text-2xl"
               >
                 {t("home.hero.getStarted")}
-              </Link>
+              </button>
               <Link
-                to="/learn-more"
+                to="/OurService"
                 className="mb-2 rounded-md border-2 border-emerald-500 bg-emerald-500/50 px-4 py-2 text-lg text-black shadow-md transition-transform duration-300 hover:scale-105 hover:border-emerald-700 hover:bg-emerald-700 dark:text-white xl:px-8 xl:py-3 xl:text-2xl"
               >
                 {t("home.hero.learnMore")}

@@ -1,19 +1,17 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { Dialog, DialogContent, DialogTitle } from "../ui/dialog";
 
 const ProjectGallery = () => {
   const { t } = useTranslation();
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [modalTab, setModalTab] = useState("overview");
   const projectsPerPage = 8;
 
   // Fetch projects from translation JSON
-  const projects = t("home.projectGallery.projects", {
-    returnObjects: true,
-  });
+  const projects = t("home.projectGallery.projects", { returnObjects: true });
 
   const indexOfLastProject = currentPage * projectsPerPage;
   const indexOfFirstProject = indexOfLastProject - projectsPerPage;
@@ -22,26 +20,6 @@ const ProjectGallery = () => {
     indexOfLastProject,
   );
   const totalPages = Math.ceil(projects.length / projectsPerPage);
-
-  const nextProject = () => {
-    const currentIndex = projects.findIndex(
-      (p) => p.id === selectedProject?.id,
-    );
-    if (currentIndex < projects.length - 1) {
-      setSelectedProject(projects[currentIndex + 1]);
-      setModalTab("overview");
-    }
-  };
-
-  const prevProject = () => {
-    const currentIndex = projects.findIndex(
-      (p) => p.id === selectedProject?.id,
-    );
-    if (currentIndex > 0) {
-      setSelectedProject(projects[currentIndex - 1]);
-      setModalTab("overview");
-    }
-  };
 
   return (
     <motion.section
@@ -64,7 +42,10 @@ const ProjectGallery = () => {
             <motion.div
               key={index}
               className="group relative cursor-pointer overflow-hidden rounded-xl shadow-lg"
-              onClick={() => setSelectedProject(project)}
+              onClick={() => {
+                setSelectedProject(project);
+                setOpenModal(true);
+              }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -74,7 +55,7 @@ const ProjectGallery = () => {
                   alt={project.title}
                   className="h-full w-full transform object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 <div className="absolute bottom-0 left-0 right-0 translate-y-6 transform p-6 transition-transform duration-500 group-hover:translate-y-0">
                   <span className="mb-2 block text-sm font-semibold text-emerald-400">
                     {project.category}
@@ -110,58 +91,60 @@ const ProjectGallery = () => {
         )}
       </div>
 
-      {selectedProject && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm">
-          <div className="relative h-[600px] w-full max-w-4xl overflow-hidden rounded-2xl bg-gray-800 shadow-2xl">
-            <div className="absolute right-4 top-4 z-10 flex gap-4">
-              <button
-                onClick={() => setSelectedProject(null)}
-                className="text-white/70 transition-colors hover:text-white"
-              >
-                <X size={28} />
-              </button>
+      <Dialog open={openModal} onOpenChange={setOpenModal}>
+        <DialogContent>
+          <div className="relative flex h-[600px] flex-col">
+            <div className="relative h-[400px]">
+              <img
+                src={`/assets/${selectedProject?.image}`}
+                alt={selectedProject?.title || "project image"}
+                className="size-full object-cover"
+                loading="lazy"
+              />
             </div>
 
-            <div className="grid h-full grid-cols-1 lg:grid-cols-2">
-              <div className="relative h-full">
-                <img
-                  src={`/assets/${selectedProject.image}`}
-                  alt={selectedProject.title}
-                  className="h-full w-full rounded-t-2xl object-contain object-center transition-transform duration-500 ease-in-out hover:scale-105 lg:rounded-l-2xl lg:rounded-tr-none"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+            <div className="flex flex-col justify-between border-t border-slate-500 p-6">
+              <div className="mb-2">
+                <DialogTitle className="text-2xl font-bold text-white">
+                  {selectedProject?.title}
+                </DialogTitle>
               </div>
 
-              <div className="flex flex-col justify-between p-8">
-                <div>
-                  <h3 className="mb-4 text-3xl font-bold text-white">
-                    {selectedProject.title}
-                  </h3>
-                </div>
-
-                <div className="space-y-4">
-                  <h4 className="text-xl font-semibold text-emerald-400">
-                    {t("home.projectGallery.modal.description")}
-                  </h4>
-                  <p className="leading-relaxed text-gray-300">
-                    {selectedProject.description}
-                  </p>
-                </div>
-
-                <div className="flex justify-end">
-                  <button
-                    onClick={() => setSelectedProject(null)}
-                    className="mt-6 rounded-lg bg-emerald-500 px-4 py-2 text-white transition-colors hover:bg-emerald-600"
+              <div className="mb-4 flex flex-wrap items-center gap-2">
+                {["React", "Next.js", "TailwindCSS"].map((tech, index) => (
+                  <span
+                    key={index}
+                    className="mb-2inline-block rounded-lg bg-slate-600 px-2 py-1 text-xs text-white"
                   >
-                    {t("home.projectGallery.modal.close")}
-                  </button>
-                </div>
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <div className="">
+                <h4 className="text-lg font-semibold text-emerald-400">
+                  {t("home.projectGallery.modal.description")}
+                </h4>
+                <p className="font-light leading-relaxed text-gray-300">
+                  {selectedProject?.description}
+                </p>
+              </div>
+
+              <div className="flex justify-end">
+                <button
+                  onClick={() => {
+                    setSelectedProject(null);
+                    setOpenModal(false);
+                  }}
+                  className="mt-6 rounded-lg bg-slate-700 px-4 py-2 text-white transition-colors hover:bg-slate-600"
+                >
+                  {t("home.projectGallery.modal.close")}
+                </button>
               </div>
             </div>
           </div>
-        </div>
-      )}
+        </DialogContent>
+      </Dialog>
     </motion.section>
   );
 };
