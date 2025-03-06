@@ -39,7 +39,7 @@ const DroneDetailsPage = () => {
         onClick={() => navigate(-1)}
         className="mt-5 rounded-lg bg-blue-600 px-6 py-2 text-white transition-colors hover:bg-blue-700"
       >
-        Back
+        {t("home.erpProjects.button")}
       </button>
     </div>
   );

@@ -38,7 +38,8 @@ const BlogDetails = () => {
           to="/blogs"
           className="link boxshadow mt-6 inline-block text-blue-500 hover:underline"
         >
-          Back To Blogs
+          {t("home.erpProjects.button")}
+
           {/* Use translation for "Back to Blogs" */}
         </Link>
       </div>

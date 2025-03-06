@@ -97,7 +97,7 @@ const Accessories = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Explore Collection
+            {hardwareProducts.premiumTech.slider.expButton}
           </motion.button>
         </motion.div>
 
@@ -148,10 +148,10 @@ const Accessories = () => {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <h2 className="text-center text-4xl font-bold text-gray-800 dark:text-white">
-          Networking & Tech Solutions
+          {hardwareProducts.netTitle}
         </h2>
         <p className="mt-4 text-center text-lg text-gray-600 dark:text-gray-300">
-          High-performance gear for seamless connectivity and productivity.
+          {hardwareProducts.netDescription}
         </p>
 
         <div className="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">

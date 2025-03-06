@@ -63,6 +63,7 @@
 
     "erpProjects": {
       "title": "Our ERP Projects",
+      "button": "Go Back",
       "projects": [
         {
           "id": 1,
@@ -110,6 +111,23 @@
       ],
       "learnMore": "Learn More"
     },
+    "ormDetails": {
+      "title": "ORM Details",
+      "description": "Online Reputation Management (ORM) is crucial for maintaining a positive brand image. It involves monitoring, influencing, and managing your online reputation. Here's a deeper look:",
+      "keyAspectsTitle": "Key Aspects of ORM",
+      "monitoring": "Monitoring online mentions of your brand across various platforms.",
+      "responding": "Responding to reviews and comments promptly and professionally.",
+      "contentCreation": "Creating positive content to influence search results.",
+      "socialMedia": "Managing your social media presence to engage and build trust.",
+      "crisisManagement": "Handling negative publicity and mitigating potential damage.",
+      "benefitsTitle": "Benefits of Effective ORM",
+      "enhancedTrust": "Enhanced trust and credibility with your audience.",
+      "improvedBrandImage": "Improved brand image and perception.",
+      "increasedSales": "Increased sales and customer loyalty.",
+      "proactiveReputation": "Proactive reputation management.",
+      "competitiveAdvantage": "Competitive advantage in the market.",
+      "conclusion": "Investing in ORM is essential for any business looking to build and maintain a strong online presence. It helps you control your narrative and build lasting relationships with your customers."
+    },
     "bannerDetails": {
       "title": "We Build Apps That Get Trending On Appworld",
       "description": "Birds OF EDEN is a cutting-edge software company dedicated to transforming ideas into reality through innovative technology solutions. Our mission is to empower businesses and individuals with state-of-the-art software that enhances efficiency, productivity, and user experience.",
@@ -118,7 +136,10 @@
         "Innovative solutions that drive growth and success.",
         "Commitment to quality and exceptional user experience."
       ],
-      "getStarted": "Get Started"
+      "getStarted": "Get Started",
+      "featuresTitle": "Key Features",
+      "getStartedMessage": "Ready to turn your app idea into reality? Contact us today to get started!",
+      "contactUs": "Contact Us"
     },
     "dronePage": {
       "title": "Our Latest Technology",
@@ -448,6 +469,8 @@
     ]
   },
   "services": {
+    "showLess": "Show Less",
+    "learnMore": "Learn More",
     "bigData": [
       {
         "icon": "icon1.png",
@@ -793,6 +816,7 @@
     "title": "Join Our Team",
     "applyButton": "Apply Now",
     "applyFor": "Apply for",
+    "location": "Location",
     "form": {
       "namePlaceholder": "Enter your name",
       "emailPlaceholder": "Enter your email",
@@ -894,9 +918,13 @@
             "title": "Ultra HD Monitors & Docking Stations:",
             "text": "Optimized for multitasking efficiency."
           }
-        ]
+        ],
+        "expButton": "Explore Collections"
       }
     },
+
+    "netTitle": "Networking & Tech Solutions",
+    "netDescription": "High-performance gear for seamless connectivity and productivity.",
     "networkingAndTech": [
       {
         "image": "router_1.jpg",

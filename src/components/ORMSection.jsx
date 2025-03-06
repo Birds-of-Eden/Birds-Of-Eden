@@ -1,6 +1,7 @@
 import React from "react";
 import { CheckCircle, MessageSquare, TrendingUp } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const ORMSection = () => {
   const { t } = useTranslation();
@@ -40,10 +41,11 @@ const ORMSection = () => {
             );
           })}
         </div>
-
-        <button className="boxshadow link mt-10">
-          {t("home.ormSection.learnMore")}
-        </button>
+        <div className="mt-8">
+          <Link to="/orm-details" className="boxshadow link">
+            {t("home.ormSection.learnMore")}
+          </Link>
+        </div>
       </div>
     </section>
   );

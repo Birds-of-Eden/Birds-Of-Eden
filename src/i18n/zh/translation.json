@@ -62,6 +62,7 @@
     },
     "erpProjects": {
       "title": "我们的ERP项目",
+      "button": "返回",
       "projects": [
         {
           "id": 1,
@@ -108,6 +109,23 @@
       ],
       "learnMore": "了解更多"
     },
+    "ormDetails": {
+      "title": "在线声誉管理详情",
+      "description": "在线声誉管理（ORM）对于维护积极的品牌形象至关重要。它包括监控、影响和管理您的在线声誉。以下是更深入的了解：",
+      "keyAspectsTitle": "在线声誉管理的关键方面",
+      "monitoring": "监控您的品牌在各个平台上的在线提及。",
+      "responding": "及时、专业地回复评论和意见。",
+      "contentCreation": "创建积极的内容以影响搜索结果。",
+      "socialMedia": "管理您的社交媒体存在，以互动和建立信任。",
+      "crisisManagement": "处理负面宣传并减轻潜在损害。",
+      "benefitsTitle": "有效在线声誉管理的优势",
+      "enhancedTrust": "增强您与受众的信任和信誉。",
+      "improvedBrandImage": "改善品牌形象和认知。",
+      "increasedSales": "增加销售额和客户忠诚度。",
+      "proactiveReputation": "积极主动的声誉管理。",
+      "competitiveAdvantage": "在市场中获得竞争优势。",
+      "conclusion": "对于任何希望建立和维护强大在线影响力的企业来说，投资在线声誉管理至关重要。它有助于您掌控自己的叙述，并与客户建立持久的关系。"
+    },
     "bannerDetails": {
       "title": "我们构建在应用世界中流行的应用程序",
       "description": "伊甸园之鸟是一家尖端的软件公司，致力于通过创新技术解决方案将想法变为现实。我们的使命是通过最先进的软件增强效率、生产力和用户体验，从而赋能企业和个人。",
@@ -116,7 +134,10 @@
         "推动增长和成功的创新解决方案。",
         "对质量和卓越用户体验的承诺。"
       ],
-      "getStarted": "开始使用"
+      "getStarted": "开始使用",
+      "featuresTitle": "主要特点",
+      "getStartedMessage": "准备好将您的应用想法变为现实了吗？立即联系我们开始！",
+      "contactUs": "联系我们"
     },
     "dronePage": {
       "title": "我们的最新技术",
@@ -406,6 +427,8 @@
     ]
   },
   "services": {
+    "showLess": "显示较少",
+    "learnMore": "了解更多",
     "bigData": [
       {
         "icon": "icon1.png",
@@ -749,6 +772,7 @@
     "title": "加入我们的团队",
     "applyButton": "立即申请",
     "applyFor": "申请",
+    "location": "地点",
     "form": {
       "namePlaceholder": "输入您的姓名",
       "emailPlaceholder": "输入您的电子邮件",
@@ -850,9 +874,12 @@
             "title": "超高清显示器和扩展坞：",
             "text": "针对多任务处理效率进行了优化。"
           }
-        ]
+        ],
+        "expButton": "浏览收藏"
       }
     },
+    "netTitle": "网络与技术解决方案",
+    "netDescription": "用于无缝连接和生产力的高性能设备。",
     "networkingAndTech": [
       {
         "image": "router_1.jpg",

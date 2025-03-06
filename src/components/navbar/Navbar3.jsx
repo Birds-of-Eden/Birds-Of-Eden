@@ -90,7 +90,7 @@ const Navbar = () => {
             </div>
             {/* Language Selection */}
             <div className="flex items-center gap-1">
-              <span>Language:&nbsp;</span>
+              <span>{t("navbar.language")}:&nbsp;</span>
               <LanguageSelector />
             </div>
           </div>

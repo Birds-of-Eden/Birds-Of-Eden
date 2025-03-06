@@ -122,7 +122,9 @@ const OurService = () => {
                 whileTap={{ scale: 0.95 }}
                 className="mt-auto rounded-md bg-indigo-600 px-4 py-2 text-white transition-colors duration-300 hover:bg-indigo-700 dark:text-white"
               >
-                {visibleText[index] ? "Show Less" : "Learn More"}
+                {visibleText[index]
+                  ? t("services.showLess")
+                  : t("services.learnMore")}
               </motion.button>
             </motion.div>
           ))}

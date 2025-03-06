@@ -89,7 +89,7 @@ const JobPostListStatic = () => {
               {post.description}
             </p>
             <p className="mb-4 text-lg text-gray-600 dark:text-gray-300">
-              <strong>Location:</strong> {post.location}
+              <strong>{t("JobPostPage.location")} :</strong> {post.location}
             </p>
             <motion.button
               onClick={() => handleApplyClick(post)}

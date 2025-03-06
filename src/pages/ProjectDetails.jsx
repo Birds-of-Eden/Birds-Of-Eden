@@ -71,7 +71,7 @@ const ProjectDetails = () => {
           onClick={() => navigate(-1)}
           className="link boxshadow rounded-lg px-6 py-3 text-white transition-all duration-300"
         >
-          goBack
+          {t("home.erpProjects.button")}
         </motion.button>
       </motion.div>
     </motion.div>

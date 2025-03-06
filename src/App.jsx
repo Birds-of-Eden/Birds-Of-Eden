@@ -46,6 +46,7 @@ const DroneDetailsPage = lazy(() => import("./pages/DroneDetailsPage"));
 const BlogDetails = lazy(() => import("./components/Blogs/BlogDetails"));
 const Blogs = lazy(() => import("./components/Blogs/Blogs"));
 const Orm = lazy(() => import("./pages/Orm"));
+const ORMDetails = lazy(() => import("./pages/ORMDetails"));
 
 function App() {
   useEffect(() => {
@@ -105,6 +106,7 @@ function App() {
             <Route path="/orm" element={<Orm />} />
             <Route path="/drones/:id" element={<DroneDetailsPage />} />
             <Route path="/blog/:id" element={<BlogDetails />} />
+            <Route path="/orm-details" element={<ORMDetails />} />
           </Routes>
         </Suspense>
       </Layout>
