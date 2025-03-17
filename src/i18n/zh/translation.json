@@ -203,78 +203,93 @@
       "modal": {
         "overview": "概述",
         "description": "描述",
-        "close": "关闭"
+        "close": "关闭",
+        "viewDemo": "查看实时演示"
       },
       "projects": [
         {
           "title": "身份验证",
           "description": "上传您的身份证明以进行交易验证。",
-          "image": "project_1.png"
+          "image": "project_1.png",
+          "deploymentUrl": "https://trading-platform-zir6.vercel.app"
         },
         {
           "title": "股市概览",
           "description": "查看涨幅最大的股票、跌幅最大的股票和详细的市场趋势。",
-          "image": "project_2.png"
+          "image": "project_2.png",
+          "deploymentUrl": "https://trading-platform-seven-omega.vercel.app"
         },
         {
           "title": "钱包和交易历史",
           "description": "管理您的钱包并查看交易历史。",
-          "image": "project_3.png"
+          "image": "project_3.png",
+          "deploymentUrl": "https://trade-linkers.vercel.app"
         },
         {
           "title": "电子商务平台",
           "description": "用于图书购买的现代电子商务解决方案。",
-          "image": "project_4.png"
+          "image": "project_4.png",
+          "deploymentUrl": "https://boighor-front-s.vercel.app"
         },
         {
           "title": "书店系列",
           "description": "浏览和筛选大量书籍。",
-          "image": "project_5.png"
+          "image": "project_5.png",
+          "deploymentUrl": "https://birds-of-eden.vercel.app"
         },
         {
           "title": "仪表板分析",
           "description": "具有分组条形图和折线图的数据可视化。",
-          "image": "project_6.png"
+          "image": "project_6.png",
+          "deploymentUrl": "https://orm-dash.vercel.app"
         },
         {
           "title": "声誉管理",
           "description": "通过量身定制的服务控制您的声誉。",
-          "image": "project_7.png"
+          "image": "project_7.png",
+          "deploymentUrl": "https://reputation-prime.vercel.app"
         },
         {
           "title": "产品展示",
           "description": "详细的产品展示和促销横幅。",
-          "image": "project_9.png"
+          "image": "project_9.png",
+          "deploymentUrl": "https://trade-link-engineer-ltd.vercel.app"
         },
         {
           "title": "定价和订阅",
           "description": "满足不同用户需求的灵活定价计划。",
-          "image": "project_10.png"
+          "image": "project_10.png",
+          "deploymentUrl": "https://reputation-prime-ai.vercel.app"
         },
         {
           "title": "帐户联系人",
           "description": "管理帐户联系人和用户权限。",
-          "image": "project_11.png"
+          "image": "project_11.png",
+          "deploymentUrl": "https://orm-dash-brok.vercel.app"
         },
         {
           "title": "仪表板概览",
           "description": "具有高级分析功能的综合仪表板。",
-          "image": "project_12.jpeg"
+          "image": "project_12.jpeg",
+          "deploymentUrl": "https://ormdash-app.vercel.app"
         },
         {
           "title": "搬家费用计算器",
           "description": "使用直观的表格计算搬家费用。",
-          "image": "project_13.jpeg"
+          "image": "project_13.jpeg",
+          "deploymentUrl": "https://moving-quote-newyork.vercel.app"
         },
         {
           "title": "客户管理",
           "description": "客户活动和参与度指标的概览。",
-          "image": "project_14.png"
+          "image": "project_14.png",
+          "deploymentUrl": "https://reputation-form.vercel.app"
         },
         {
           "title": "行动摘要仪表板",
           "description": "跟踪任务、活动和整体生产力。",
-          "image": "project_15.png"
+          "image": "project_15.png",
+          "deploymentUrl": "https://orm-seo.vercel.app"
         }
       ]
     },

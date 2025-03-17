@@ -204,78 +204,93 @@
       "modal": {
         "overview": "ওভারভিউ",
         "description": "বিবরণ",
-        "close": "বন্ধ করুন"
+        "close": "বন্ধ করুন",
+        "viewDemo": "লাইভ ডেমো দেখুন"
       },
       "projects": [
         {
           "title": "পরিচয় যাচাইকরণ",
           "description": "ট্রেডিং যাচাইয়ের জন্য আপনার পরিচয়ের প্রমাণ আপলোড করুন।",
-          "image": "project_1.png"
+          "image": "project_1.png",
+          "deploymentUrl": "https://trading-platform-zir6.vercel.app"
         },
         {
           "title": "স্টক মার্কেট ওভারভিউ",
           "description": "শীর্ষ লাভকারী, শীর্ষ ক্ষতিগ্রস্থ এবং বিস্তারিত বাজার প্রবণতা দেখুন।",
-          "image": "project_2.png"
+          "image": "project_2.png",
+          "deploymentUrl": "https://trading-platform-seven-omega.vercel.app"
         },
         {
           "title": "ওয়ালেট এবং লেনদেন ইতিহাস",
           "description": "আপনার ওয়ালেট পরিচালনা করুন এবং লেনদেনের ইতিহাস দেখুন।",
-          "image": "project_3.png"
+          "image": "project_3.png",
+          "deploymentUrl": "https://trade-linkers.vercel.app"
         },
         {
           "title": "ই-কমার্স প্ল্যাটফর্ম",
           "description": "বই কেনার জন্য আধুনিক ই-কমার্স সমাধান।",
-          "image": "project_4.png"
+          "image": "project_4.png",
+          "deploymentUrl": "https://boighor-front-s.vercel.app"
         },
         {
           "title": "বইয়ের সংগ্রহ",
           "description": "বইয়ের বিশাল সংগ্রহ ব্রাউজ এবং ফিল্টার করুন।",
-          "image": "project_5.png"
+          "image": "project_5.png",
+          "deploymentUrl": "https://birds-of-eden.vercel.app"
         },
         {
           "title": "ড্যাশবোর্ড অ্যানালিটিক্স",
           "description": "গ্রুপ করা বার এবং লাইন চার্ট সহ ডেটা ভিজ্যুয়ালাইজেশন।",
-          "image": "project_6.png"
+          "image": "project_6.png",
+          "deploymentUrl": "https://orm-dash.vercel.app"
         },
         {
           "title": "সুনাম ব্যবস্থাপনা",
           "description": "আপনার সুনাম নিয়ন্ত্রণ করুন এবং কাস্টমাইজড পরিষেবাগুলি উপভোগ করুন।",
-          "image": "project_7.png"
+          "image": "project_7.png",
+          "deploymentUrl": "https://reputation-prime.vercel.app"
         },
         {
           "title": "পণ্য প্রদর্শনী",
           "description": "বিস্তারিত পণ্য প্রদর্শনী এবং প্রচারমূলক ব্যানার।",
-          "image": "project_9.png"
+          "image": "project_9.png",
+          "deploymentUrl": "https://trade-link-engineer-ltd.vercel.app"
         },
         {
           "title": "মূল্য নির্ধারণ এবং সাবস্ক্রিপশন",
           "description": "ভিন্ন ব্যবহারকারীর চাহিদার জন্য নমনীয় মূল্য পরিকল্পনা।",
-          "image": "project_10.png"
+          "image": "project_10.png",
+          "deploymentUrl": "https://reputation-prime-ai.vercel.app"
         },
         {
           "title": "অ্যাকাউন্ট কন্টাক্টস",
           "description": "অ্যাকাউন্টের যোগাযোগ এবং ব্যবহারকারীর অনুমতি পরিচালনা করুন।",
-          "image": "project_11.png"
+          "image": "project_11.png",
+          "deploymentUrl": "https://orm-dash-brok.vercel.app"
         },
         {
           "title": "ড্যাশবোর্ড ওভারভিউ",
           "description": "উন্নত অ্যানালিটিক্স সহ বিস্তৃত ড্যাশবোর্ড।",
-          "image": "project_12.jpeg"
+          "image": "project_12.jpeg",
+          "deploymentUrl": "https://ormdash-app.vercel.app"
         },
         {
           "title": "মুভিং খরচ ক্যালকুলেটর",
           "description": "ইনটুইটিভ ফর্ম দিয়ে মুভিং খরচ হিসাব করুন।",
-          "image": "project_13.jpeg"
+          "image": "project_13.jpeg",
+          "deploymentUrl": "https://moving-quote-newyork.vercel.app"
         },
         {
           "title": "ক্লায়েন্ট ম্যানেজমেন্ট",
           "description": "ক্লায়েন্ট ক্যাম্পেইন এবং এনগেজমেন্ট মেট্রিক্সের ওভারভিউ।",
-          "image": "project_14.png"
+          "image": "project_14.png",
+          "deploymentUrl": "https://reputation-form.vercel.app"
         },
         {
           "title": "অ্যাকশন সামারি ড্যাশবোর্ড",
           "description": "কর্ম, কার্যকলাপ এবং সামগ্রিক উৎপাদনশীলতা ট্র্যাক করুন।",
-          "image": "project_15.png"
+          "image": "project_15.png",
+          "deploymentUrl": "https://orm-seo.vercel.app"
         }
       ]
     },

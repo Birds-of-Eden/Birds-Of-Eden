@@ -205,78 +205,93 @@
       "modal": {
         "overview": "Overview",
         "description": "Description",
-        "close": "Close"
+        "close": "Close",
+        "viewDemo": "View Live Demo"
       },
       "projects": [
         {
           "title": "Identity Verification",
           "description": "Upload a proof of your identity for trading verification.",
-          "image": "project_1.png"
+          "image": "project_1.png",
+          "deploymentUrl": "https://trading-platform-zir6.vercel.app"
         },
         {
           "title": "Stock Market Overview",
           "description": "View top gainers, top losers, and detailed market trends.",
-          "image": "project_2.png"
+          "image": "project_2.png",
+          "deploymentUrl": "https://trading-platform-zir6.vercel.app"
         },
         {
           "title": "Wallet and Transaction History",
           "description": "Manage your wallet and view transaction history.",
-          "image": "project_3.png"
+          "image": "project_3.png",
+          "deploymentUrl": "https://trading-platform-zir6.vercel.app"
         },
         {
           "title": "E-Commerce Platform",
           "description": "Modern e-commerce solution for book purchases.",
-          "image": "project_4.png"
+          "image": "project_4.png",
+          "deploymentUrl": "https://boighor-front-s.vercel.app"
         },
         {
           "title": "Bookstore Collection",
           "description": "Browse and filter a vast collection of books.",
-          "image": "project_5.png"
+          "image": "project_5.png",
+          "deploymentUrl": "https://boighor-front-s.vercel.app"
         },
         {
           "title": "Dashboard Analytics",
           "description": "Data visualization with grouped bar and line charts.",
-          "image": "project_6.png"
+          "image": "project_6.png",
+          "deploymentUrl": "https://reputation-form.vercel.app/"
         },
         {
           "title": "Reputation Management",
           "description": "Control your reputation with tailored services.",
-          "image": "project_7.png"
+          "image": "project_7.png",
+          "deploymentUrl": "https://reputation-prime-ai-fresh.vercel.app/"
         },
         {
           "title": "Product Showcase",
           "description": "Detailed product display and promotional banners.",
-          "image": "project_9.png"
+          "image": "project_9.png",
+          "deploymentUrl": "https://trade-link-engineer-ltd.vercel.app"
         },
         {
           "title": "Pricing and Subscription",
           "description": "Flexible pricing plans for different user needs.",
-          "image": "project_10.png"
+          "image": "project_10.png",
+          "deploymentUrl": "https://reputation-prime-ai.vercel.app"
         },
         {
           "title": "Account Contacts",
           "description": "Manage account contacts and user permissions.",
-          "image": "project_11.png"
+          "image": "project_11.png",
+          "deploymentUrl": "https://orm-dash-brok.vercel.app"
         },
         {
           "title": "Dashboard Overview",
           "description": "Comprehensive dashboard with advanced analytics.",
-          "image": "project_12.jpeg"
+          "image": "project_12.jpeg",
+          "deploymentUrl": "https://islami-dawa-institute.vercel.app/"
         },
         {
           "title": "Moving Cost Calculator",
           "description": "Calculate moving costs with an intuitive form.",
-          "image": "project_13.jpeg"
+          "image": "project_13.jpeg",
+          "deploymentUrl": "https://moving-quote-texas.vercel.app/"
         },
         {
           "title": "Client Management",
           "description": "Overview of client campaigns and engagement metrics.",
-          "image": "project_14.png"
+          "image": "project_14.png",
+          "deploymentUrl": "https://reputation-form.vercel.app"
         },
         {
           "title": "Action Summary Dashboard",
           "description": "Track tasks, activities, and overall productivity.",
-          "image": "project_15.png"
+          "image": "project_15.png",
+          "deploymentUrl": "https://orm-pied.vercel.app/brand-assets"
         }
       ]
     },

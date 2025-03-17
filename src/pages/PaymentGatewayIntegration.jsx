@@ -1,10 +1,19 @@
 import { useTranslation } from "react-i18next";
+import { CreditCard, ShieldCheck, DollarSign, Mail } from "lucide-react"; // Import icons
 
 const PaymentGatewayIntegration = () => {
   const { t } = useTranslation();
   const paymentGateway = t("services.paymentGateway", {
     returnObjects: true,
   });
+
+  const providerIcons = {
+    // Replace with appropriate icons for each provider
+    PayPal: <CreditCard className="mx-auto mb-3 h-8 w-8 text-blue-500" />,
+    Stripe: <ShieldCheck className="mx-auto mb-3 h-8 w-8 text-purple-500" />,
+    Razorpay: <DollarSign className="mx-auto mb-3 h-8 w-8 text-green-500" />,
+    // Add more providers and their icons here
+  };
 
   return (
     <div className="">
@@ -40,11 +49,10 @@ const PaymentGatewayIntegration = () => {
                 key={index}
                 className="rounded-lg bg-white p-4 shadow-md transition hover:shadow-lg dark:bg-gray-900"
               >
-                <img
-                  src={provider.image}
-                  alt={provider.title}
-                  className="mx-auto mb-3 w-32"
-                />
+                {providerIcons[provider.title] || (
+                  <CreditCard className="mx-auto mb-3 h-8 w-8 text-gray-500" />
+                )}{" "}
+                {/* Use default icon if provider icon not found */}
                 <h4 className="text-center text-lg font-bold text-gray-800 dark:text-white">
                   {provider.title}
                 </h4>

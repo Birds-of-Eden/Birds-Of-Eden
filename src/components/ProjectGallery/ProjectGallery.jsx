@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Dialog, DialogContent, DialogTitle } from "../ui/dialog";
+import { ExternalLink } from "lucide-react";
 
 const ProjectGallery = () => {
   const { t } = useTranslation();
-  const [selectedProject, setSelectedProject] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
   const [openModal, setOpenModal] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const projectsPerPage = 8;
 
-  // Fetch projects from translation JSON
   const projects = t("home.projectGallery.projects", { returnObjects: true });
 
   const indexOfLastProject = currentPage * projectsPerPage;
@@ -23,7 +23,7 @@ const ProjectGallery = () => {
 
   return (
     <motion.section
-      className="bg-slate-50 py-20 dark:bg-slate-800 "
+      className="bg-slate-50 py-20 dark:bg-slate-800"
       initial={{ opacity: 0, scale: 0.95, y: 30 }}
       whileInView={{ opacity: 1, scale: 1, y: 0 }}
       viewport={{ once: false, amount: 0.3 }}
@@ -37,7 +37,7 @@ const ProjectGallery = () => {
           {t("home.projectGallery.description")}
         </p>
 
-        <motion.div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
+        <motion.div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {currentProjects.map((project, index) => (
             <motion.div
               key={index}
@@ -57,9 +57,6 @@ const ProjectGallery = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 <div className="absolute bottom-0 left-0 right-0 translate-y-6 transform p-6 transition-transform duration-500 group-hover:translate-y-0">
-                  <span className="mb-2 block text-sm font-semibold text-emerald-400">
-                    {project.category}
-                  </span>
                   <h3 className="mb-2 text-xl font-bold text-white">
                     {project.title}
                   </h3>
@@ -93,56 +90,69 @@ const ProjectGallery = () => {
 
       <Dialog open={openModal} onOpenChange={setOpenModal}>
         <DialogContent>
-          <div className="relative flex h-[600px] flex-col">
-            <div className="relative h-[400px]">
-              <img
-                src={`/assets/${selectedProject?.image}`}
-                alt={selectedProject?.title || "project image"}
-                className="size-full object-cover"
-                loading="lazy"
-              />
-            </div>
-
-            <div className="flex flex-col justify-between border-t border-slate-500 p-6">
-              <div className="mb-2">
-                <DialogTitle className="text-2xl font-bold text-white">
-                  {selectedProject?.title}
-                </DialogTitle>
+          {selectedProject && (
+            <div className="relative flex h-[600px] flex-col">
+              <div className="relative h-[400px]">
+                <img
+                  src={`/assets/${selectedProject.image}`}
+                  alt={selectedProject.title}
+                  className="size-full object-cover"
+                  loading="lazy"
+                />
               </div>
 
-              <div className="mb-4 flex flex-wrap items-center gap-2">
-                {["React", "Next.js", "TailwindCSS"].map((tech, index) => (
-                  <span
-                    key={index}
-                    className="mb-2inline-block rounded-lg bg-slate-600 px-2 py-1 text-xs text-white"
+              <div className="flex flex-col justify-between border-t border-slate-500 p-6">
+                <div className="mb-2">
+                  <DialogTitle className="text-2xl font-bold text-white">
+                    {selectedProject.title}
+                  </DialogTitle>
+                </div>
+
+                <div className="mb-4 flex flex-wrap items-center gap-2">
+                  {["React", "Next.js", "TailwindCSS"].map((tech, index) => (
+                    <span
+                      key={index}
+                      className="inline-block rounded-lg bg-slate-600 px-2 py-1 text-xs text-white"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <div>
+                  <h4 className="text-lg font-semibold text-emerald-400">
+                    {t("home.projectGallery.modal.description")}
+                  </h4>
+                  <p className="mb-4 font-light leading-relaxed text-gray-300">
+                    {selectedProject.description}
+                  </p>
+
+                  <a
+                    href={selectedProject.deploymentUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg bg-emerald-500 px-4 py-2 text-white transition-colors hover:bg-emerald-600"
+                    onClick={(e) => e.stopPropagation()}
                   >
-                    {tech}
-                  </span>
-                ))}
-              </div>
+                    <ExternalLink size={16} />
+                    {t("home.projectGallery.modal.viewDemo")}
+                  </a>
+                </div>
 
-              <div className="">
-                <h4 className="text-lg font-semibold text-emerald-400">
-                  {t("home.projectGallery.modal.description")}
-                </h4>
-                <p className="font-light leading-relaxed text-gray-300">
-                  {selectedProject?.description}
-                </p>
-              </div>
-
-              <div className="flex justify-end">
-                <button
-                  onClick={() => {
-                    setSelectedProject(null);
-                    setOpenModal(false);
-                  }}
-                  className="mt-6 rounded-lg bg-slate-700 px-4 py-2 text-white transition-colors hover:bg-slate-600"
-                >
-                  {t("home.projectGallery.modal.close")}
-                </button>
+                <div className="flex justify-end">
+                  <button
+                    onClick={() => {
+                      setSelectedProject(null);
+                      setOpenModal(false);
+                    }}
+                    className=" rounded-lg bg-slate-700 px-4 py-2 text-white transition-colors hover:bg-slate-600"
+                  >
+                    {t("home.projectGallery.modal.close")}
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
+          )}
         </DialogContent>
       </Dialog>
     </motion.section>
