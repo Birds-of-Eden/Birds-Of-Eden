@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import laptops from "../Data/laptops.json";
 
-const pills = ["All", ...new Set(laptops.map((item) => item.segment))];
+const pills = ["All", ...new Set(laptops.map((item) => item.brand))];
 
 const specsMap = [
   { icon: Cpu, key: "cpu", label: "CPU" },
@@ -26,7 +26,7 @@ const Laptop = () => {
 
   const filteredLaptops = useMemo(() => {
     if (filter === "All") return laptops;
-    return laptops.filter((item) => item.segment === filter);
+    return laptops.filter((item) => item.brand === filter);
   }, [filter]);
 
   return (
@@ -68,7 +68,7 @@ const Laptop = () => {
                   loading="lazy"
                 />
                 <span className="absolute left-3 top-3 rounded-full bg-white/95 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide text-gray-900 shadow-sm backdrop-blur-sm dark:bg-gray-900/95 dark:text-gray-100">
-                  {item.segment}
+                  {item.brand}
                 </span>
               </div>
 

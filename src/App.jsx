@@ -37,6 +37,8 @@ const WebDev = lazy(() => import("./pages/WebDev"));
 const OurService = lazy(() => import("./pages/OurService"));
 const Accessories = lazy(() => import("./pages/Accessories"));
 const PrinterPage = lazy(() => import("./pages/Printer"));
+const KeyboardPage = lazy(() => import("./pages/Keyboard"));
+const MousePage = lazy(() => import("./pages/Mouse"));
 const Laptop = lazy(() => import("./pages/Laptop"));
 const PaymentGatewayIntegration = lazy(
   () => import("./pages/PaymentGatewayIntegration"),
@@ -73,6 +75,8 @@ function App() {
             <Route path="/contact" element={<ContactForm />} />
             <Route path="/hardware" element={<Accessories />} />
             <Route path="/hardware/printer" element={<PrinterPage />} />
+            <Route path="/hardware/keyboard" element={<KeyboardPage />} />
+            <Route path="/hardware/mouse" element={<MousePage />} />
             <Route path="/hardware/laptop" element={<Laptop />} />
             <Route path="/hardware/printer" element={<PrinterPage />} />
             <Route path="/privacy" element={<Privacy />} />
