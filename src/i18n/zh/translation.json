@@ -287,6 +287,13 @@
           "deploymentUrl": "https://eco-monitor-jade.vercel.app/"
         },
         {
+          "title": "欺诈检测系统",
+          "description": "该项目是一个欺诈审核与验证系统，旨在分析和验证企业评论活动。系统展示包含位置地图、联系方式、评分和评论统计的详细企业档案。平台追踪评论总数、评论者数量以及人均评论数，以识别可疑模式。通过重新扫描、状态跟踪、PDF 导出和请求管理等功能，系统能够检测欺诈行为，确保数据真实性，并支持评论审核与合规决策。",
+          "image": "FD1.jpeg",
+          "deploymentUrl": "https://review.reputationtask.com/login"
+        },
+
+        {
           "title": "PCO 驾驶培训平台",
           "description": "PCO 培训平台专为英国专业司机打造，提供系统化培训课程、模拟测试及认证准备，帮助司机满足法规要求并提升专业技能。",
           "image": "PCO1.png",

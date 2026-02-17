@@ -213,7 +213,7 @@
         "overview": "Overview",
         "description": "Description",
         "close": "Close",
-        "viewDemo": "View Live Demo"
+        "viewDemo": "View Live"
       },
       "projects": [
         {
@@ -296,10 +296,10 @@
           "deploymentUrl": "https://uk-driving-course.vercel.app/en"
         },
         {
-          "title": "Action Summary Dashboard",
-          "description": "Track tasks, activities, and overall productivity.",
-          "image": "project_15.png",
-          "deploymentUrl": "https://orm-pied.vercel.app/brand-assets"
+          "title": "Fraud Detection System",
+          "description": "This project is a fraud review and verification system designed to analyze and validate business review activities. It displays detailed business profiles with location mapping, contact information, ratings, and review statistics. The platform tracks total reviews, reviewers, and average reviews per person to identify suspicious patterns. With features like rescan, status tracking, PDF export, and request management, the system helps detect fraudulent behavior, ensures data authenticity, and supports informed decision-making for review moderation and compliance.",
+          "image": "FD1.jpeg",
+          "deploymentUrl": "https://review.reputationtask.com/login"
         }
       ]
     },

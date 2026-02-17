@@ -88,64 +88,104 @@ const ProjectGallery = () => {
         )}
       </div>
 
-    <Dialog open={openModal} onOpenChange={setOpenModal}>
-  <DialogContent className="max-h-[90vh] overflow-y-auto p-0 scrollbar-elegant">
+  <Dialog open={openModal} onOpenChange={setOpenModal}>
+  <DialogContent className="w-[95vw] max-w-4xl overflow-hidden rounded-2xl border border-white/10 bg-slate-900 p-0 shadow-2xl">
     {selectedProject && (
-      <div className="relative flex flex-col">
-        <div className="relative h-[400px] shrink-0">
+      <div className="flex max-h-[90vh] flex-col md:flex-col">
+        {/* Image section */}
+        <div
+          className="
+            relative w-full
+            md:shrink-0
+          "
+        >
           <img
             src={`/assets/${selectedProject.image}`}
             alt={selectedProject.title}
-            className="size-full object-cover"
+            className="
+              w-full object-cover
+              h-[220px]
+              sm:h-[260px]
+              md:h-[360px]
+            "
             loading="lazy"
           />
-        </div>
 
-        <div className="flex flex-col justify-between border-t border-slate-500 p-6">
-          <div className="mb-2">
+          {/* overlay only for md+ */}
+          <div className="pointer-events-none absolute inset-0 hidden bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent md:block" />
+
+          {/* title on image (md+) */}
+          <div className="absolute bottom-0 left-0 right-0 hidden p-6 md:block">
             <DialogTitle className="text-2xl font-bold text-white">
               {selectedProject.title}
             </DialogTitle>
           </div>
+        </div>
 
-          <div className="mb-4 flex flex-wrap items-center gap-2">
-            {["React", "Next.js", "TailwindCSS"].map((tech, index) => (
+        {/* Content section */}
+        <div
+          className="
+            scrollbar-elegant
+            flex-1
+            overflow-y-auto
+            border-t border-white/10
+            p-5
+            sm:p-6
+          "
+        >
+          {/* Title for mobile */}
+          <div className="mb-3 md:hidden">
+            <DialogTitle className="text-xl font-bold text-white">
+              {selectedProject.title}
+            </DialogTitle>
+          </div>
+
+          {/* Tech stack */}
+          <div className="mb-4 flex flex-wrap gap-2">
+            {[
+              "React",
+              "Next.js",
+              "TailwindCSS",
+              "TypeScript",
+              "PostgreSQL",
+              "ShadCn UI",
+            ].map((tech, index) => (
               <span
                 key={index}
-                className="inline-block rounded-lg bg-slate-600 px-2 py-1 text-xs text-white"
+                className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-gray-200"
               >
                 {tech}
               </span>
             ))}
           </div>
 
-          <div>
-            <h4 className="text-lg font-semibold text-emerald-400">
-              {t("home.projectGallery.modal.description")}
-            </h4>
-            <p className="mb-4 font-light leading-relaxed text-gray-300">
-              {selectedProject.description}
-            </p>
+          <h4 className="text-lg font-semibold text-emerald-400">
+            {t("home.projectGallery.modal.description")}
+          </h4>
 
+          <p className="mt-2 whitespace-pre-line text-sm leading-relaxed text-gray-300 sm:text-base">
+            {selectedProject.description}
+          </p>
+
+          {/* Actions */}
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <a
               href={selectedProject.deploymentUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg bg-emerald-500 px-4 py-2 text-white transition-colors hover:bg-emerald-600"
               onClick={(e) => e.stopPropagation()}
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-500 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-emerald-600"
             >
               <ExternalLink size={16} />
               {t("home.projectGallery.modal.viewDemo")}
             </a>
-          </div>
 
-          <div className="flex justify-end">
             <button
               onClick={() => {
                 setSelectedProject(null);
                 setOpenModal(false);
               }}
-              className="rounded-lg bg-slate-700 px-4 py-2 text-white transition-colors hover:bg-slate-600"
+              className="rounded-xl bg-white/5 px-5 py-2.5 text-sm font-medium text-gray-200 transition hover:bg-white/10"
             >
               {t("home.projectGallery.modal.close")}
             </button>
@@ -155,6 +195,8 @@ const ProjectGallery = () => {
     )}
   </DialogContent>
 </Dialog>
+
+
 
     </motion.section>
   );
