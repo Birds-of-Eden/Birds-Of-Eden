@@ -36,6 +36,8 @@ const TechnologyList = lazy(() => import("./pages/TechnologyList"));
 const WebDev = lazy(() => import("./pages/WebDev"));
 const OurService = lazy(() => import("./pages/OurService"));
 const Accessories = lazy(() => import("./pages/Accessories"));
+const PrinterPage = lazy(() => import("./pages/Printer"));
+const Laptop = lazy(() => import("./pages/Laptop"));
 const PaymentGatewayIntegration = lazy(
   () => import("./pages/PaymentGatewayIntegration"),
 );
@@ -70,6 +72,9 @@ function App() {
             <Route path="/team" element={<TeamListStatic />} />
             <Route path="/contact" element={<ContactForm />} />
             <Route path="/hardware" element={<Accessories />} />
+            <Route path="/hardware/printer" element={<PrinterPage />} />
+            <Route path="/hardware/laptop" element={<Laptop />} />
+            <Route path="/hardware/printer" element={<PrinterPage />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/career" element={<JobPostListStatic />} />
             <Route path="/app" element={<AppDev />} />
