@@ -266,34 +266,34 @@
           "deploymentUrl": "https://www.gravionne.com/"
         },
         {
-          "title": "Pricing and Subscription",
-          "description": "Flexible pricing plans for different user needs.",
-          "image": "project_10.png",
-          "deploymentUrl": "https://reputation-prime-ai.vercel.app"
+          "title": "AIBL Leave Management System",
+          "description": "This project is a Smart Attendance Management System developed for Al-Arafah Islami Bank PLC to monitor and manage employee attendance in real time. The system provides a dynamic dashboard displaying total active employees, present, late, absent, and on-duty staff with percentage insights.",
+          "image": "AIBL1.jpeg",
+          "deploymentUrl": "https://aibl-plc.vercel.app/"
         },
         {
-          "title": "Account Contacts",
-          "description": "Manage account contacts and user permissions.",
-          "image": "project_11.png",
-          "deploymentUrl": "https://orm-dash-brok.vercel.app"
+          "title": "DNA Report System",
+          "description": "DNA Archive is a centralized laboratory management system that tracks cases, samples, reports, storage, and user activity. It provides real-time analytics, system monitoring, and streamlined workflows for efficient forensic data management.",
+          "image": "DNA1.png",
+          "deploymentUrl": "https://dna-case-management.vercel.app/login"
         },
         {
-          "title": "Dashboard Overview",
-          "description": "Comprehensive dashboard with advanced analytics.",
-          "image": "project_12.jpeg",
-          "deploymentUrl": "https://islami-dawa-institute.vercel.app/"
+          "title": "Real Estate Management System",
+          "description": "This real estate company platform is designed to manage property listings and user interactions with distinct roles for admins, agents, and clients. Admins can oversee all operations, manage users and properties; agents can add and manage their property listings; while users can browse, filter, and inquire about properties. The system ensures secure role-based access, multilingual support, and smooth communication between all parties involved.",
+          "image": "RE1.png",
+          "deploymentUrl": "https://real-estate-admin-jade.vercel.app/en"
         },
         {
-          "title": "Moving Cost Calculator",
-          "description": "Calculate moving costs with an intuitive form.",
-          "image": "project_13.jpeg",
-          "deploymentUrl": "https://moving-quote-texas.vercel.app/"
+          "title": "Ecomonitor System",
+          "description": "EcoMonitor is a smart environmental monitoring system that provides real-time weather insights and analytics. It displays key metrics such as temperature, humidity, wind speed, pressure, UV index, and precipitation through interactive dashboards and visual charts. The platform features trend analysis, animated data visualization, and system alerts like high UV warnings to support proactive decision-making. With modules for weather monitoring, water quality tracking, reports, and user management, EcoMonitor ensures accurate data tracking and efficient environmental analysis in a modern, user-friendly interface.",
+          "image": "EM1.jpeg",
+          "deploymentUrl": "https://eco-monitor-jade.vercel.app/"
         },
         {
-          "title": "Client Management",
-          "description": "Overview of client campaigns and engagement metrics.",
-          "image": "project_14.png",
-          "deploymentUrl": "https://reputation-form.vercel.app"
+          "title": "PCO Training",
+          "description": "PCO Training is a specialized platform for professional drivers in the UK. It offers comprehensive training modules, practice tests, and certification preparation to help drivers meet regulatory requirements and improve their skills.",
+          "image": "PCO1.png",
+          "deploymentUrl": "https://uk-driving-course.vercel.app/en"
         },
         {
           "title": "Action Summary Dashboard",

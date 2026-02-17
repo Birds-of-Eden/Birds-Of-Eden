@@ -312,6 +312,30 @@ body {
   animation: spin 2s linear infinite;
   transition: transform 0.3s ease-in-out;
 }
+/* ===== Custom Scrollbar (Classy & Minimal) ===== */
+.scrollbar-elegant::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-elegant::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-elegant::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #10b981, #059669);
+  border-radius: 9999px;
+}
+
+.scrollbar-elegant::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #34d399, #10b981);
+}
+
+/* Firefox */
+.scrollbar-elegant {
+  scrollbar-width: thin;
+  scrollbar-color: #10b981 transparent;
+}
+
 
 @keyframes spin {
   0% {

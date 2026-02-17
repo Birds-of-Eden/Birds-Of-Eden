@@ -72,54 +72,54 @@
       "title": "当社のERPプロジェクト",
       "button": "戻る",
       "projects": [
-         {
-    "title": "バングラデシュ気象政府プロジェクト",
-    "description": "高度な気象分析プラットフォーム。精度と明瞭さを重視した本ダッシュボードは、バングラデシュ向けに包括的な気象データと洞察を提供します。",
-    "image": "BDW1.png",
-    "deploymentUrl": "https://www.bmdcl17.com/"
-  },
-  {
-    "title": "イスラミー・ダーワ・インスティテュート",
-    "description": "イスラミー・ダーワは、Next.js（App Router）とTypeScriptで構築された、イスラム布教活動の調整および報告を行うアプリケーションです。管理者、ダアイ／アンバサダー、アシスタント、一般ユーザー向けの役割別ダッシュボードを備えています。",
-    "image": "ISD1.jpeg",
-    "deploymentUrl": "https://hisab.hilfulfujulbd.com/"
-  },
-  {
-    "title": "ムービング・クオート・テキサス",
-    "description": "ムービング・テキサスは、テキサス州全域でエンドツーエンドの引越しサービスを提供します。信頼できる引越し業者とのマッチング、即時見積もり、リアルタイムの進捗追跡により、ストレスのない体験を実現します。",
-    "image": "MQT1.png",
-    "deploymentUrl": "https://movingquotetexas.com/"
-  },
-  {
-    "title": "ヒルフル・フズル — 書店",
-    "description": "ヒルフル・フズルは、書籍および出版社向けに設計されたNext.js（App Router）とTypeScriptベースのECプラットフォームです。商品、著者、出版社、注文管理のための管理機能に加え、検索、カート、ウィッシュリスト、決済機能を備えた顧客向けストアフロントを提供します。",
-    "image": "KG2.png",
-    "deploymentUrl": "https://hilfulfujulbd.com/"
-  },
-  {
-    "title": "ムービング・クオート・ニューヨーク",
-    "description": "ムービング・クオート・ニューヨークは、ニューヨーク州全域で包括的な引越しサービスを提供します。即時見積もり、リアルタイム追跡、信頼性の高い業者との連携により、安心した引越し体験を提供します。",
-    "image": "MQN1.png",
-    "deploymentUrl": "https://movingquotenewyork.com/"
-  },
-  {
-    "title": "ネット・レピュテーション・タスク管理システム",
-    "description": "ネット・レピュテーション・タスク管理システムは、Next.js（App Router）とTypeScriptで構築された、エンドツーエンドのクライアント運用管理プラットフォームです。役割別ダッシュボード、タスクおよびQCワークフロー、パフォーマンス評価機能を備えています。",
-    "image": "NR2.png",
-    "deploymentUrl": "http://app.netreptask.com/"
-  },
-  {
-    "title": "レピュテーション・プライム",
-    "description": "レピュテーション・プライムは、Next.js（App Router）とTypeScriptで構築された高度なタスク管理システムです。役割別ダッシュボードと品質管理ワークフローにより、効率的なクライアント運用を実現します。",
-    "image": "RP2.png",
-    "deploymentUrl": "https://reputationtask.com/"
-  },
-  {
-    "title": "グラヴィオン — 健康・ウェルネス・人類の向上",
-    "description": "グラヴィオンは、科学と人間性が交差するラグジュアリーとウェルネスの融合を信念としています。私たちのアプローチは、精密さ、研究、そして人間の可能性の最大化に根ざしています。",
-    "image": "GR1.png",
-    "deploymentUrl": "https://www.gravionne.com/"
-  }
+        {
+          "title": "バングラデシュ気象政府プロジェクト",
+          "description": "高度な気象分析プラットフォーム。精度と明瞭さを重視した本ダッシュボードは、バングラデシュ向けに包括的な気象データと洞察を提供します。",
+          "image": "BDW1.png",
+          "deploymentUrl": "https://www.bmdcl17.com/"
+        },
+        {
+          "title": "イスラミー・ダーワ・インスティテュート",
+          "description": "イスラミー・ダーワは、Next.js（App Router）とTypeScriptで構築された、イスラム布教活動の調整および報告を行うアプリケーションです。管理者、ダアイ／アンバサダー、アシスタント、一般ユーザー向けの役割別ダッシュボードを備えています。",
+          "image": "ISD1.jpeg",
+          "deploymentUrl": "https://hisab.hilfulfujulbd.com/"
+        },
+        {
+          "title": "ムービング・クオート・テキサス",
+          "description": "ムービング・テキサスは、テキサス州全域でエンドツーエンドの引越しサービスを提供します。信頼できる引越し業者とのマッチング、即時見積もり、リアルタイムの進捗追跡により、ストレスのない体験を実現します。",
+          "image": "MQT1.png",
+          "deploymentUrl": "https://movingquotetexas.com/"
+        },
+        {
+          "title": "ヒルフル・フズル — 書店",
+          "description": "ヒルフル・フズルは、書籍および出版社向けに設計されたNext.js（App Router）とTypeScriptベースのECプラットフォームです。商品、著者、出版社、注文管理のための管理機能に加え、検索、カート、ウィッシュリスト、決済機能を備えた顧客向けストアフロントを提供します。",
+          "image": "KG2.png",
+          "deploymentUrl": "https://hilfulfujulbd.com/"
+        },
+        {
+          "title": "ムービング・クオート・ニューヨーク",
+          "description": "ムービング・クオート・ニューヨークは、ニューヨーク州全域で包括的な引越しサービスを提供します。即時見積もり、リアルタイム追跡、信頼性の高い業者との連携により、安心した引越し体験を提供します。",
+          "image": "MQN1.png",
+          "deploymentUrl": "https://movingquotenewyork.com/"
+        },
+        {
+          "title": "ネット・レピュテーション・タスク管理システム",
+          "description": "ネット・レピュテーション・タスク管理システムは、Next.js（App Router）とTypeScriptで構築された、エンドツーエンドのクライアント運用管理プラットフォームです。役割別ダッシュボード、タスクおよびQCワークフロー、パフォーマンス評価機能を備えています。",
+          "image": "NR2.png",
+          "deploymentUrl": "http://app.netreptask.com/"
+        },
+        {
+          "title": "レピュテーション・プライム",
+          "description": "レピュテーション・プライムは、Next.js（App Router）とTypeScriptで構築された高度なタスク管理システムです。役割別ダッシュボードと品質管理ワークフローにより、効率的なクライアント運用を実現します。",
+          "image": "RP2.png",
+          "deploymentUrl": "https://reputationtask.com/"
+        },
+        {
+          "title": "グラヴィオン — 健康・ウェルネス・人類の向上",
+          "description": "グラヴィオンは、科学と人間性が交差するラグジュアリーとウェルネスの融合を信念としています。私たちのアプローチは、精密さ、研究、そして人間の可能性の最大化に根ざしています。",
+          "image": "GR1.png",
+          "deploymentUrl": "https://www.gravionne.com/"
+        }
       ]
     },
     "ormSection": {
@@ -239,54 +239,84 @@
         "viewDemo": "ライブデモを見る"
       },
       "projects": [
-         {
-    "title": "バングラデシュ気象政府プロジェクト",
-    "description": "高度な気象分析プラットフォーム。精度と明瞭さを重視した本ダッシュボードは、バングラデシュ向けに包括的な気象データと洞察を提供します。",
-    "image": "BDW1.png",
-    "deploymentUrl": "https://www.bmdcl17.com/"
-  },
-  {
-    "title": "イスラミー・ダーワ・インスティテュート",
-    "description": "イスラミー・ダーワは、Next.js（App Router）とTypeScriptで構築された、イスラム布教活動の調整および報告を行うアプリケーションです。管理者、ダアイ／アンバサダー、アシスタント、一般ユーザー向けの役割別ダッシュボードを備えています。",
-    "image": "ISD1.jpeg",
-    "deploymentUrl": "https://hisab.hilfulfujulbd.com/"
-  },
-  {
-    "title": "ムービング・クオート・テキサス",
-    "description": "ムービング・テキサスは、テキサス州全域でエンドツーエンドの引越しサービスを提供します。信頼できる引越し業者とのマッチング、即時見積もり、リアルタイムの進捗追跡により、ストレスのない体験を実現します。",
-    "image": "MQT1.png",
-    "deploymentUrl": "https://movingquotetexas.com/"
-  },
-  {
-    "title": "ヒルフル・フズル — 書店",
-    "description": "ヒルフル・フズルは、書籍および出版社向けに設計されたNext.js（App Router）とTypeScriptベースのECプラットフォームです。商品、著者、出版社、注文管理のための管理機能に加え、検索、カート、ウィッシュリスト、決済機能を備えた顧客向けストアフロントを提供します。",
-    "image": "KG2.png",
-    "deploymentUrl": "https://hilfulfujulbd.com/"
-  },
-  {
-    "title": "ムービング・クオート・ニューヨーク",
-    "description": "ムービング・クオート・ニューヨークは、ニューヨーク州全域で包括的な引越しサービスを提供します。即時見積もり、リアルタイム追跡、信頼性の高い業者との連携により、安心した引越し体験を提供します。",
-    "image": "MQN1.png",
-    "deploymentUrl": "https://movingquotenewyork.com/"
-  },
-  {
-    "title": "ネット・レピュテーション・タスク管理システム",
-    "description": "ネット・レピュテーション・タスク管理システムは、Next.js（App Router）とTypeScriptで構築された、エンドツーエンドのクライアント運用管理プラットフォームです。役割別ダッシュボード、タスクおよびQCワークフロー、パフォーマンス評価機能を備えています。",
-    "image": "NR2.png",
-    "deploymentUrl": "http://app.netreptask.com/"
-  },
-  {
-    "title": "レピュテーション・プライム",
-    "description": "レピュテーション・プライムは、Next.js（App Router）とTypeScriptで構築された高度なタスク管理システムです。役割別ダッシュボードと品質管理ワークフローにより、効率的なクライアント運用を実現します。",
-    "image": "RP2.png",
-    "deploymentUrl": "https://reputationtask.com/"
-  },
-  {
-    "title": "グラヴィオン — 健康・ウェルネス・人類の向上",
-    "description": "グラヴィオンは、科学と人間性が交差するラグジュアリーとウェルネスの融合を信念としています。私たちのアプローチは、精密さ、研究、そして人間の可能性の最大化に根ざしています。",
-    "image": "GR1.png",
-    "deploymentUrl": "https://www.gravionne.com/"
-  }
+        {
+          "title": "バングラデシュ気象政府プロジェクト",
+          "description": "高度な気象分析プラットフォーム。精度と明瞭さを重視した本ダッシュボードは、バングラデシュ向けに包括的な気象データと洞察を提供します。",
+          "image": "BDW1.png",
+          "deploymentUrl": "https://www.bmdcl17.com/"
+        },
+        {
+          "title": "イスラミー・ダーワ・インスティテュート",
+          "description": "イスラミー・ダーワは、Next.js（App Router）とTypeScriptで構築された、イスラム布教活動の調整および報告を行うアプリケーションです。管理者、ダアイ／アンバサダー、アシスタント、一般ユーザー向けの役割別ダッシュボードを備えています。",
+          "image": "ISD1.jpeg",
+          "deploymentUrl": "https://hisab.hilfulfujulbd.com/"
+        },
+        {
+          "title": "ムービング・クオート・テキサス",
+          "description": "ムービング・テキサスは、テキサス州全域でエンドツーエンドの引越しサービスを提供します。信頼できる引越し業者とのマッチング、即時見積もり、リアルタイムの進捗追跡により、ストレスのない体験を実現します。",
+          "image": "MQT1.png",
+          "deploymentUrl": "https://movingquotetexas.com/"
+        },
+        {
+          "title": "ヒルフル・フズル — 書店",
+          "description": "ヒルフル・フズルは、書籍および出版社向けに設計されたNext.js（App Router）とTypeScriptベースのECプラットフォームです。商品、著者、出版社、注文管理のための管理機能に加え、検索、カート、ウィッシュリスト、決済機能を備えた顧客向けストアフロントを提供します。",
+          "image": "KG2.png",
+          "deploymentUrl": "https://hilfulfujulbd.com/"
+        },
+        {
+          "title": "ムービング・クオート・ニューヨーク",
+          "description": "ムービング・クオート・ニューヨークは、ニューヨーク州全域で包括的な引越しサービスを提供します。即時見積もり、リアルタイム追跡、信頼性の高い業者との連携により、安心した引越し体験を提供します。",
+          "image": "MQN1.png",
+          "deploymentUrl": "https://movingquotenewyork.com/"
+        },
+        {
+          "title": "ネット・レピュテーション・タスク管理システム",
+          "description": "ネット・レピュテーション・タスク管理システムは、Next.js（App Router）とTypeScriptで構築された、エンドツーエンドのクライアント運用管理プラットフォームです。役割別ダッシュボード、タスクおよびQCワークフロー、パフォーマンス評価機能を備えています。",
+          "image": "NR2.png",
+          "deploymentUrl": "http://app.netreptask.com/"
+        },
+        {
+          "title": "レピュテーション・プライム",
+          "description": "レピュテーション・プライムは、Next.js（App Router）とTypeScriptで構築された高度なタスク管理システムです。役割別ダッシュボードと品質管理ワークフローにより、効率的なクライアント運用を実現します。",
+          "image": "RP2.png",
+          "deploymentUrl": "https://reputationtask.com/"
+        },
+        {
+          "title": "グラヴィオン — 健康・ウェルネス・人類の向上",
+          "description": "グラヴィオンは、科学と人間性が交差するラグジュアリーとウェルネスの融合を信念としています。私たちのアプローチは、精密さ、研究、そして人間の可能性の最大化に根ざしています。",
+          "image": "GR1.png",
+          "deploymentUrl": "https://www.gravionne.com/"
+        },
+        {
+          "title": "AIBL 休暇・勤怠管理システム",
+          "description": "本プロジェクトは、アル・アラファ・イスラミ銀行向けに開発されたスマート勤怠管理システムです。従業員の出勤状況をリアルタイムで管理し、在籍、出勤、遅刻、欠勤、外勤の状況を割合とともにダッシュボードで表示します。",
+          "image": "AIBL1.jpeg",
+          "deploymentUrl": "https://aibl-plc.vercel.app/"
+        },
+        {
+          "title": "DNA レポート管理システム",
+          "description": "DNA アーカイブは、事件、サンプル、レポート、保管、ユーザー活動を一元管理するラボ管理システムです。リアルタイム分析と効率的なワークフローにより、法医学データ管理を最適化します。",
+          "image": "DNA1.png",
+          "deploymentUrl": "https://dna-case-management.vercel.app/login"
+        },
+        {
+          "title": "不動産管理システム",
+          "description": "本システムは不動産会社向けに設計され、管理者、エージェント、顧客の役割を明確に分離しています。安全な権限管理、多言語対応、円滑なコミュニケーションを実現します。",
+          "image": "RE1.png",
+          "deploymentUrl": "https://real-estate-admin-jade.vercel.app/en"
+        },
+        {
+          "title": "エコモニター環境監視システム",
+          "description": "エコモニターは、気温、湿度、風速、気圧、UV指数などをリアルタイムで可視化する環境監視システムです。高度な分析とアラート機能により、迅速な意思決定を支援します。",
+          "image": "EM1.jpeg",
+          "deploymentUrl": "https://eco-monitor-jade.vercel.app/"
+        },
+        {
+          "title": "PCO ドライバー研修",
+          "description": "PCO ドライバー研修は、英国のプロドライバー向けに設計された専門プラットフォームで、包括的なトレーニング、模擬試験、資格取得支援を提供します。",
+          "image": "PCO1.png",
+          "deploymentUrl": "https://uk-driving-course.vercel.app/en"
+        }
       ]
     },
     "clientPage": {

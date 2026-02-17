@@ -215,88 +215,82 @@
       },
       "projects": [
         {
-    "title": "孟加拉国政府气象项目",
-    "description": "先进的气象分析平台。该智能仪表板以高精度和清晰度为核心，为孟加拉国提供全面的气象数据与洞察。",
-    "image": "BDW1.png",
-    "deploymentUrl": "https://www.bmdcl17.com/"
-  },
-  {
-    "title": "伊斯兰宣教学院",
-    "description": "伊斯兰宣教学院是一个基于 Next.js（App Router）和 TypeScript 构建的应用平台，用于协调和汇报伊斯兰宣教活动。系统提供管理员、宣教人员、助理及普通用户的角色化仪表板。",
-    "image": "ISD1.jpeg",
-    "deploymentUrl": "https://hisab.hilfulfujulbd.com/"
-  },
-  {
-    "title": "德克萨斯搬家报价平台",
-    "description": "该平台在德克萨斯州范围内提供一站式搬家服务。系统可匹配可靠的搬家公司，提供即时报价、实时进度追踪，并确保无压力的搬迁体验。",
-    "image": "MQT1.png",
-    "deploymentUrl": "https://movingquotetexas.com/"
-  },
-  {
-    "title": "希尔富尔·福祖尔 — 书店",
-    "description": "希尔富尔·福祖尔是一个基于 Next.js（App Router）和 TypeScript 的电子商务平台，专为书籍和出版社打造。系统包含商品、作者、出版社和订单管理功能，并为用户提供搜索、购物车、收藏夹及安全支付流程。",
-    "image": "KG2.png",
-    "deploymentUrl": "https://hilfulfujulbd.com/"
-  },
-  {
-    "title": "纽约搬家报价平台",
-    "description": "纽约搬家报价平台在纽约州提供完整的搬迁解决方案，包括即时报价、实时状态追踪以及与可靠搬家公司对接，确保顺畅无忧的搬家体验。",
-    "image": "MQN1.png",
-    "deploymentUrl": "https://movingquotenewyork.com/"
-  },
-  {
-    "title": "网络声誉任务管理系统",
-    "description": "网络声誉任务管理系统是一个基于 Next.js（App Router）和 TypeScript 的全流程客户运营平台，提供多角色仪表板、任务与质量控制流程、暂停原因管理及绩效评分功能。",
-    "image": "NR2.png",
-    "deploymentUrl": "http://app.netreptask.com/"
-  },
-  {
-    "title": "声誉先锋",
-    "description": "声誉先锋是一套现代化任务管理系统，基于 Next.js（App Router）和 TypeScript 构建，支持端到端客户运营管理、角色化仪表板以及绩效与质量控制流程。",
-    "image": "RP2.png",
-    "deploymentUrl": "https://reputationtask.com/"
-  },
-  {
-    "title": "Gravionne —— 提升健康、身心与人类福祉",
-    "description": "在 Gravionne，我们相信奢华与健康的交汇点，在这里科学与人文相融合。我们的理念以精准为基础，以研究为指导，并致力于释放人类潜能的最大价值。",
-    "image": "GR1.png",
-    "deploymentUrl": "https://www.gravionne.com/"
-  },
-        {
-          "title": "定价和订阅",
-          "description": "满足不同用户需求的灵活定价计划。",
-          "image": "project_10.png",
-          "deploymentUrl": "https://reputation-prime-ai.vercel.app"
+          "title": "孟加拉国政府气象项目",
+          "description": "先进的气象分析平台。该智能仪表板以高精度和清晰度为核心，为孟加拉国提供全面的气象数据与洞察。",
+          "image": "BDW1.png",
+          "deploymentUrl": "https://www.bmdcl17.com/"
         },
         {
-          "title": "帐户联系人",
-          "description": "管理帐户联系人和用户权限。",
-          "image": "project_11.png",
-          "deploymentUrl": "https://orm-dash-brok.vercel.app"
+          "title": "伊斯兰宣教学院",
+          "description": "伊斯兰宣教学院是一个基于 Next.js（App Router）和 TypeScript 构建的应用平台，用于协调和汇报伊斯兰宣教活动。系统提供管理员、宣教人员、助理及普通用户的角色化仪表板。",
+          "image": "ISD1.jpeg",
+          "deploymentUrl": "https://hisab.hilfulfujulbd.com/"
         },
         {
-          "title": "仪表板概览",
-          "description": "具有高级分析功能的综合仪表板。",
-          "image": "project_12.jpeg",
-          "deploymentUrl": "https://ormdash-app.vercel.app"
+          "title": "德克萨斯搬家报价平台",
+          "description": "该平台在德克萨斯州范围内提供一站式搬家服务。系统可匹配可靠的搬家公司，提供即时报价、实时进度追踪，并确保无压力的搬迁体验。",
+          "image": "MQT1.png",
+          "deploymentUrl": "https://movingquotetexas.com/"
         },
         {
-          "title": "搬家费用计算器",
-          "description": "使用直观的表格计算搬家费用。",
-          "image": "project_13.jpeg",
-          "deploymentUrl": "https://moving-quote-newyork.vercel.app"
+          "title": "希尔富尔·福祖尔 — 书店",
+          "description": "希尔富尔·福祖尔是一个基于 Next.js（App Router）和 TypeScript 的电子商务平台，专为书籍和出版社打造。系统包含商品、作者、出版社和订单管理功能，并为用户提供搜索、购物车、收藏夹及安全支付流程。",
+          "image": "KG2.png",
+          "deploymentUrl": "https://hilfulfujulbd.com/"
         },
         {
-          "title": "客户管理",
-          "description": "客户活动和参与度指标的概览。",
-          "image": "project_14.png",
-          "deploymentUrl": "https://reputation-form.vercel.app"
+          "title": "纽约搬家报价平台",
+          "description": "纽约搬家报价平台在纽约州提供完整的搬迁解决方案，包括即时报价、实时状态追踪以及与可靠搬家公司对接，确保顺畅无忧的搬家体验。",
+          "image": "MQN1.png",
+          "deploymentUrl": "https://movingquotenewyork.com/"
         },
         {
-          "title": "行动摘要仪表板",
-          "description": "跟踪任务、活动和整体生产力。",
-          "image": "project_15.png",
-          "deploymentUrl": "https://orm-seo.vercel.app"
+          "title": "网络声誉任务管理系统",
+          "description": "网络声誉任务管理系统是一个基于 Next.js（App Router）和 TypeScript 的全流程客户运营平台，提供多角色仪表板、任务与质量控制流程、暂停原因管理及绩效评分功能。",
+          "image": "NR2.png",
+          "deploymentUrl": "http://app.netreptask.com/"
+        },
+        {
+          "title": "声誉先锋",
+          "description": "声誉先锋是一套现代化任务管理系统，基于 Next.js（App Router）和 TypeScript 构建，支持端到端客户运营管理、角色化仪表板以及绩效与质量控制流程。",
+          "image": "RP2.png",
+          "deploymentUrl": "https://reputationtask.com/"
+        },
+        {
+          "title": "Gravionne —— 提升健康、身心与人类福祉",
+          "description": "在 Gravionne，我们相信奢华与健康的交汇点，在这里科学与人文相融合。我们的理念以精准为基础，以研究为指导，并致力于释放人类潜能的最大价值。",
+          "image": "GR1.png",
+          "deploymentUrl": "https://www.gravionne.com/"
+        },
+        {
+          "title": "AIBL 请假与考勤管理系统",
+          "description": "该项目是为阿拉法伊斯兰银行开发的智能考勤管理系统，可实时监控和管理员工出勤情况。系统通过动态仪表板展示在岗、迟到、缺勤及外勤员工数量，并提供百分比分析。",
+          "image": "AIBL1.jpeg",
+          "deploymentUrl": "https://aibl-plc.vercel.app/"
+        },
+        {
+          "title": "DNA 报告管理系统",
+          "description": "DNA 档案系统是一个集中式实验室管理平台，用于追踪案件、样本、报告、存储和用户活动。系统提供实时分析、系统监控以及高效的法医数据管理流程。",
+          "image": "DNA1.png",
+          "deploymentUrl": "https://dna-case-management.vercel.app/login"
+        },
+        {
+          "title": "房地产管理系统",
+          "description": "该平台专为房地产公司设计，支持管理员、代理和客户等多种角色。管理员可管理用户和房产，代理可维护房源信息，用户可浏览、筛选并咨询房产。系统支持安全的角色权限控制和多语言功能。",
+          "image": "RE1.png",
+          "deploymentUrl": "https://real-estate-admin-jade.vercel.app/en"
+        },
+        {
+          "title": "EcoMonitor 环境监测系统",
+          "description": "EcoMonitor 是一套智能环境监测系统，提供实时天气数据与分析，包括温度、湿度、风速、气压、紫外线指数和降水信息。系统通过可视化仪表板、趋势分析和预警功能，支持科学决策。",
+          "image": "EM1.jpeg",
+          "deploymentUrl": "https://eco-monitor-jade.vercel.app/"
+        },
+        {
+          "title": "PCO 驾驶培训平台",
+          "description": "PCO 培训平台专为英国专业司机打造，提供系统化培训课程、模拟测试及认证准备，帮助司机满足法规要求并提升专业技能。",
+          "image": "PCO1.png",
+          "deploymentUrl": "https://uk-driving-course.vercel.app/en"
         }
       ]
     },
