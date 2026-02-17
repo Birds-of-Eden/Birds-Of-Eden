@@ -937,5 +937,45 @@
     "newsletter": "订阅我们的新闻通讯",
     "emailPlaceholder": "输入您的电子邮件",
     "copyright": "© 版权所有"
+  },
+  "keyboardPage": {
+    "all": "全部",
+    "switches": "开关",
+    "layout": "布局",
+    "connectivity": "连接",
+    "keycaps": "键帽",
+    "lighting": "灯光",
+    "deliveryTime": "3-5天"
+  },
+  "mousePage": {
+    "all": "全部",
+    "sensor": "传感器",
+    "dpi": "DPI",
+    "buttons": "按钮",
+    "connectivity": "连接",
+    "weight": "重量",
+    "deliveryTime": "3-5天"
+  },
+  "laptopPage": {
+    "all": "全部",
+    "cpu": "CPU",
+    "ram": "内存",
+    "storage": "存储",
+    "display": "显示器",
+    "battery": "电池",
+    "deliveryTime": "3-5天"
+  },
+  "printerPage": {
+    "all": "全部",
+    "type": "类型",
+    "speed": "速度",
+    "resolution": "分辨率",
+    "connectivity": "连接",
+    "dutyCycle": "工作周期",
+    "deliveryTime": "3-5天"
+  },
+  "modal": {
+    "nextProduct": "下一个产品",
+    "previousProduct": "上一个产品"
   }
 }

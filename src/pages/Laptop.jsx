@@ -1,5 +1,7 @@
 import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import ProductModal from "../components/ProductModal";
 import {
   BatteryCharging,
   Cpu,
@@ -11,23 +13,52 @@ import {
 } from "lucide-react";
 import laptops from "../Data/laptops.json";
 
-const pills = ["All", ...new Set(laptops.map((item) => item.brand))];
-
-const specsMap = [
-  { icon: Cpu, key: "cpu", label: "CPU" },
-  { icon: MemoryStick, key: "ram", label: "RAM" },
-  { icon: HardDrive, key: "storage", label: "Storage" },
-  { icon: Monitor, key: "display", label: "Display" },
-  { icon: BatteryCharging, key: "battery", label: "Battery" },
-];
-
 const Laptop = () => {
-  const [filter, setFilter] = useState("All");
+  const { t } = useTranslation();
+  const [filter, setFilter] = useState("ALL");
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [selectedProductIndex, setSelectedProductIndex] = useState(null);
+
+  const pills = ["ALL", ...new Set(laptops.map((item) => item.brand))];
+
+  const specsMap = [
+    { icon: Cpu, key: "cpu", label: t("laptopPage.cpu") },
+    { icon: MemoryStick, key: "ram", label: t("laptopPage.ram") },
+    { icon: HardDrive, key: "storage", label: t("laptopPage.storage") },
+    { icon: Monitor, key: "display", label: t("laptopPage.display") },
+    { icon: BatteryCharging, key: "battery", label: t("laptopPage.battery") },
+  ];
 
   const filteredLaptops = useMemo(() => {
-    if (filter === "All") return laptops;
+    if (filter === "ALL") return laptops;
     return laptops.filter((item) => item.brand === filter);
   }, [filter]);
+
+  const openModal = (product, index) => {
+    setSelectedProduct(product);
+    setSelectedProductIndex(index);
+  };
+
+  const closeModal = () => {
+    setSelectedProduct(null);
+    setSelectedProductIndex(null);
+  };
+
+  const nextProduct = () => {
+    if (selectedProductIndex !== null && selectedProductIndex < filteredLaptops.length - 1) {
+      const nextIndex = selectedProductIndex + 1;
+      setSelectedProduct(filteredLaptops[nextIndex]);
+      setSelectedProductIndex(nextIndex);
+    }
+  };
+
+  const prevProduct = () => {
+    if (selectedProductIndex !== null && selectedProductIndex > 0) {
+      const prevIndex = selectedProductIndex - 1;
+      setSelectedProduct(filteredLaptops[prevIndex]);
+      setSelectedProductIndex(prevIndex);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gray-50 pb-20 transition-colors duration-300 dark:bg-gray-900">
@@ -44,7 +75,7 @@ const Laptop = () => {
                   : "border-gray-300 bg-white text-gray-700 hover:border-blue-500 hover:bg-blue-50 hover:text-blue-600 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200 dark:hover:border-blue-400 dark:hover:bg-blue-900/20 dark:hover:text-blue-300 focus:ring-gray-500 dark:focus:ring-gray-400"
               }`}
             >
-              {pill}
+              {pill === "ALL" ? t("laptopPage.all") : pill}
             </button>
           ))}
         </div>
@@ -58,7 +89,8 @@ const Laptop = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.35, delay: idx * 0.03 }}
-              className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
+              className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-gray-700 dark:bg-gray-800 cursor-pointer"
+              onClick={() => openModal(item, idx)}
             >
               <div className="relative h-52 w-full overflow-hidden bg-gray-100 dark:bg-gray-900">
                 <img
@@ -122,7 +154,7 @@ const Laptop = () => {
                 <div className="flex items-center justify-between border-t border-gray-100 pt-3 dark:border-gray-700">
                   <div className="flex items-center gap-1 text-[10px] text-gray-500 dark:text-gray-400">
                     <Gauge className="h-3 w-3" />
-                    <span>3-5 days</span>
+                    <span>{t("laptopPage.deliveryTime")}</span>
                   </div>
                 </div>
               </div>
@@ -130,6 +162,19 @@ const Laptop = () => {
           ))}
         </div>
       </section>
+      
+      <ProductModal
+        isOpen={!!selectedProduct}
+        onClose={closeModal}
+        product={selectedProduct}
+        specsMap={specsMap}
+        t={t}
+        pageKey="laptopPage"
+        allProducts={filteredLaptops}
+        currentProductIndex={selectedProductIndex}
+        onNextProduct={nextProduct}
+        onPrevProduct={prevProduct}
+      />
     </div>
   );
 };

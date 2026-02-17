@@ -957,5 +957,45 @@
     "newsletter": "اشترك في نشرتنا الإخبارية",
     "emailPlaceholder": "أدخل بريدك الإلكتروني",
     "copyright": "© حقوق النشر"
+  },
+  "keyboardPage": {
+    "all": "الكل",
+    "switches": "المفاتيح",
+    "layout": "التخطيط",
+    "connectivity": "الاتصال",
+    "keycaps": "غطاء المفاتيح",
+    "lighting": "الإضاءة",
+    "deliveryTime": "3-5 أيام"
+  },
+  "mousePage": {
+    "all": "الكل",
+    "sensor": "المستشعر",
+    "dpi": "DPI",
+    "buttons": "الأزرار",
+    "connectivity": "الاتصال",
+    "weight": "الوزن",
+    "deliveryTime": "3-5 أيام"
+  },
+  "laptopPage": {
+    "all": "الكل",
+    "cpu": "المعالج",
+    "ram": "الذاكرة",
+    "storage": "التخزين",
+    "display": "الشاشة",
+    "battery": "البطارية",
+    "deliveryTime": "3-5 أيام"
+  },
+  "printerPage": {
+    "all": "الكل",
+    "type": "النوع",
+    "speed": "السرعة",
+    "resolution": "الدقة",
+    "connectivity": "الاتصال",
+    "dutyCycle": "دورة العمل",
+    "deliveryTime": "3-5 أيام"
+  },
+  "modal": {
+    "nextProduct": "المنتج التالي",
+    "previousProduct": "المنتج السابق"
   }
 }

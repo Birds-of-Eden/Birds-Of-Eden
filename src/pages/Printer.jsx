@@ -1,5 +1,7 @@
 import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import ProductModal from "../components/ProductModal";
 import {
   Droplets,
   Gauge,
@@ -10,23 +12,52 @@ import {
 } from "lucide-react";
 import printers from "../Data/printers.json";
 
-const pills = ["All", ...new Set(printers.map((item) => item.category))];
-
-const specsMap = [
-  { icon: PrinterIcon, key: "type", label: "Type" },
-  { icon: Gauge, key: "speed", label: "Speed" },
-  { icon: Layers, key: "resolution", label: "Resolution" },
-  { icon: Wifi, key: "connectivity", label: "Connectivity" },
-  { icon: Droplets, key: "duty", label: "Duty cycle" },
-];
-
 const PrinterPage = () => {
-  const [filter, setFilter] = useState("All");
+  const { t } = useTranslation();
+  const [filter, setFilter] = useState("ALL");
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [selectedProductIndex, setSelectedProductIndex] = useState(null);
+
+  const pills = ["ALL", ...new Set(printers.map((item) => item.category))];
+
+  const specsMap = [
+    { icon: PrinterIcon, key: "type", label: t("printerPage.type") },
+    { icon: Gauge, key: "speed", label: t("printerPage.speed") },
+    { icon: Layers, key: "resolution", label: t("printerPage.resolution") },
+    { icon: Wifi, key: "connectivity", label: t("printerPage.connectivity") },
+    { icon: Droplets, key: "duty", label: t("printerPage.dutyCycle") },
+  ];
 
   const filteredPrinters = useMemo(() => {
-    if (filter === "All") return printers;
+    if (filter === "ALL") return printers;
     return printers.filter((item) => item.category === filter);
   }, [filter]);
+
+  const openModal = (product, index) => {
+    setSelectedProduct(product);
+    setSelectedProductIndex(index);
+  };
+
+  const closeModal = () => {
+    setSelectedProduct(null);
+    setSelectedProductIndex(null);
+  };
+
+  const nextProduct = () => {
+    if (selectedProductIndex !== null && selectedProductIndex < filteredPrinters.length - 1) {
+      const nextIndex = selectedProductIndex + 1;
+      setSelectedProduct(filteredPrinters[nextIndex]);
+      setSelectedProductIndex(nextIndex);
+    }
+  };
+
+  const prevProduct = () => {
+    if (selectedProductIndex !== null && selectedProductIndex > 0) {
+      const prevIndex = selectedProductIndex - 1;
+      setSelectedProduct(filteredPrinters[prevIndex]);
+      setSelectedProductIndex(prevIndex);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gray-50 pb-20 transition-colors duration-300 dark:bg-gray-900">
@@ -43,7 +74,7 @@ const PrinterPage = () => {
                   : "border-gray-300 bg-white text-gray-700 hover:border-blue-500 hover:bg-blue-50 hover:text-blue-600 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200 dark:hover:border-blue-400 dark:hover:bg-blue-900/20 dark:hover:text-blue-300 focus:ring-gray-500 dark:focus:ring-gray-400"
               }`}
             >
-              {pill}
+              {pill === "ALL" ? t("printerPage.all") : pill}
             </button>
           ))}
         </div>
@@ -57,7 +88,8 @@ const PrinterPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.35, delay: idx * 0.03 }}
-              className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
+              className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-gray-700 dark:bg-gray-800 cursor-pointer"
+              onClick={() => openModal(item, idx)}
             >
               <div className="relative h-52 w-full overflow-hidden bg-gray-100 dark:bg-gray-900">
                 <img
@@ -122,7 +154,7 @@ const PrinterPage = () => {
                 <div className="flex items-center justify-between border-t border-gray-100 pt-3 dark:border-gray-700">
                   <div className="flex items-center gap-1 text-[10px] text-gray-500 dark:text-gray-400">
                     <Gauge className="h-3 w-3" />
-                    <span>3-5 days</span>
+                    <span>{t("printerPage.deliveryTime")}</span>
                   </div>
                 </div>
               </div>
@@ -130,6 +162,19 @@ const PrinterPage = () => {
           ))}
         </div>
       </section>
+      
+      <ProductModal
+        isOpen={!!selectedProduct}
+        onClose={closeModal}
+        product={selectedProduct}
+        specsMap={specsMap}
+        t={t}
+        pageKey="printerPage"
+        allProducts={filteredPrinters}
+        currentProductIndex={selectedProductIndex}
+        onNextProduct={nextProduct}
+        onPrevProduct={prevProduct}
+      />
     </div>
   );
 };

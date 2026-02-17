@@ -969,5 +969,45 @@
     "newsletter": "ニュースレターを購読する",
     "emailPlaceholder": "メールを入力してください",
     "copyright": "© 著作権"
+  },
+  "keyboardPage": {
+    "all": "すべて",
+    "switches": "スイッチ",
+    "layout": "レイアウト",
+    "connectivity": "接続",
+    "keycaps": "キーキャップ",
+    "lighting": "ライティング",
+    "deliveryTime": "3-5日"
+  },
+  "mousePage": {
+    "all": "すべて",
+    "sensor": "センサー",
+    "dpi": "DPI",
+    "buttons": "ボタン",
+    "connectivity": "接続",
+    "weight": "重量",
+    "deliveryTime": "3-5日"
+  },
+  "laptopPage": {
+    "all": "すべて",
+    "cpu": "CPU",
+    "ram": "RAM",
+    "storage": "ストレージ",
+    "display": "ディスプレイ",
+    "battery": "バッテリー",
+    "deliveryTime": "3-5日"
+  },
+  "printerPage": {
+    "all": "すべて",
+    "type": "タイプ",
+    "speed": "速度",
+    "resolution": "解像度",
+    "connectivity": "接続",
+    "dutyCycle": "デューティーサイクル",
+    "deliveryTime": "3-5日"
+  },
+  "modal": {
+    "nextProduct": "次の製品",
+    "previousProduct": "前の製品"
   }
 }

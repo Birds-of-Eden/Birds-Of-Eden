@@ -990,5 +990,45 @@
     "newsletter": "Subscribe to our newsletter",
     "emailPlaceholder": "Enter your email",
     "copyright": "© Copyright"
+  },
+  "keyboardPage": {
+    "all": "All",
+    "switches": "Switches",
+    "layout": "Layout",
+    "connectivity": "Connectivity",
+    "keycaps": "Keycaps",
+    "lighting": "Lighting",
+    "deliveryTime": "3-5 days"
+  },
+  "mousePage": {
+    "all": "All",
+    "sensor": "Sensor",
+    "dpi": "DPI",
+    "buttons": "Buttons",
+    "connectivity": "Connectivity",
+    "weight": "Weight",
+    "deliveryTime": "3-5 days"
+  },
+  "laptopPage": {
+    "all": "All",
+    "cpu": "CPU",
+    "ram": "RAM",
+    "storage": "Storage",
+    "display": "Display",
+    "battery": "Battery",
+    "deliveryTime": "3-5 days"
+  },
+  "printerPage": {
+    "all": "All",
+    "type": "Type",
+    "speed": "Speed",
+    "resolution": "Resolution",
+    "connectivity": "Connectivity",
+    "dutyCycle": "Duty cycle",
+    "deliveryTime": "3-5 days"
+  },
+  "modal": {
+    "nextProduct": "Next Product",
+    "previousProduct": "Previous Product"
   }
 }

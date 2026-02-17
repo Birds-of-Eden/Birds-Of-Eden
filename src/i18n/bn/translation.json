@@ -952,5 +952,45 @@
     "newsletter": "আমাদের নিউজলেটারে সদস্যতা নিন",
     "emailPlaceholder": "আপনার ইমেল লিখুন",
     "copyright": "© কপিরাইট"
+  },
+  "keyboardPage": {
+    "all": "সব",
+    "switches": "সুইচ",
+    "layout": "লেআউট",
+    "connectivity": "সংযোগ",
+    "keycaps": "কীক্যাপ",
+    "lighting": "আলোকসজ্জা",
+    "deliveryTime": "৩-৫ দিন"
+  },
+  "mousePage": {
+    "all": "সব",
+    "sensor": "সেন্সর",
+    "dpi": "DPI",
+    "buttons": "বোতাম",
+    "connectivity": "সংযোগ",
+    "weight": "ওজন",
+    "deliveryTime": "৩-৫ দিন"
+  },
+  "laptopPage": {
+    "all": "সব",
+    "cpu": "CPU",
+    "ram": "RAM",
+    "storage": "স্টোরেজ",
+    "display": "ডিসপ্লে",
+    "battery": "ব্যাটারি",
+    "deliveryTime": "৩-৫ দিন"
+  },
+  "printerPage": {
+    "all": "সব",
+    "type": "ধরন",
+    "speed": "গতি",
+    "resolution": "রেজোলিউশন",
+    "connectivity": "সংযোগ",
+    "dutyCycle": "ডিউটি সাইকেল",
+    "deliveryTime": "৩-৫ দিন"
+  },
+  "modal": {
+    "nextProduct": "পরবর্তী পণ্য",
+    "previousProduct": "পূর্ববর্তী পণ্য"
   }
 }
