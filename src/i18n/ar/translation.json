@@ -218,59 +218,53 @@
       },
       "projects": [
         {
-          "title": "التحقق من الهوية",
-          "description": "قم بتحميل إثبات هويتك للتحقق من التداول.",
-          "image": "project_1.png",
-          "deploymentUrl": "https://trading-platform-zir6.vercel.app"
-        },
-        {
-          "title": "نظرة عامة على سوق الأسهم",
-          "description": "عرض كبار الرابحين، كبار الخاسرين، واتجاهات السوق بالتفصيل.",
-          "image": "project_2.png",
-          "deploymentUrl": "https://trading-platform-seven-omega.vercel.app"
-        },
-        {
-          "title": "المحفظة وسجل المعاملات",
-          "description": "إدارة محفظتك وعرض سجل المعاملات.",
-          "image": "project_3.png",
-          "deploymentUrl": "https://trade-linkers.vercel.app"
-        },
-        {
-          "title": "منصة التجارة الإلكترونية",
-          "description": "حل حديث للتجارة الإلكترونية لشراء الكتب.",
-          "image": "project_4.png",
-          "deploymentUrl": "https://boighor-front-s.vercel.app"
-        },
-        {
-          "title": "مجموعة الكتب",
-          "description": "تصفح وفلترا مجموعة واسعة من الكتب.",
-          "image": "project_5.png",
-          "deploymentUrl": "https://birds-of-eden.vercel.app"
-        },
-        {
-          "title": "تحليلات لوحة المعلومات",
-          "description": "تصور البيانات مع الرسوم البيانية الشريطية والمخططات الخطية.",
-          "image": "project_6.png",
-          "deploymentUrl": "https://orm-dash.vercel.app"
-        },
-        {
-          "title": "إدارة السمعة",
-          "description": "تحكم في سمعتك مع خدمات مخصصة.",
-          "image": "project_7.png",
-          "deploymentUrl": "https://reputation-prime.vercel.app"
-        },
-        {
-          "title": "عرض المنتجات",
-          "description": "عرض تفصيلي للمنتجات مع لافتات ترويجية.",
-          "image": "project_9.png",
-          "deploymentUrl": "https://trade-link-engineer-ltd.vercel.app"
-        },
-        {
-          "title": "التسعير والاشتراك",
-          "description": "خطط تسعير مرنة لتلبية احتياجات المستخدمين المختلفة.",
-          "image": "project_10.png",
-          "deploymentUrl": "https://reputation-prime-ai.vercel.app"
-        },
+    "title": "مشروع الطقس الحكومي في بنغلاديش",
+    "description": "منصة متقدمة لتحليلات الطقس. توفر هذه اللوحة الذكية رؤى شاملة ودقيقة حول بيانات الطقس في بنغلاديش بوضوح واحترافية عالية.",
+    "image": "BDW1.png",
+    "deploymentUrl": "https://www.bmdcl17.com/"
+  },
+  {
+    "title": "معهد الدعوة الإسلامية",
+    "description": "معهد الدعوة الإسلامية هو تطبيق مبني باستخدام Next.js (App Router) وTypeScript، يهدف إلى تنسيق وإعداد تقارير أنشطة الدعوة الإسلامية. يتضمن لوحات تحكم قائمة على الأدوار للمشرفين والدعاة والمساعدين والمستخدمين.",
+    "image": "ISD1.jpeg",
+    "deploymentUrl": "https://hisab.hilfulfujulbd.com/"
+  },
+  {
+    "title": "منصة عروض النقل – تكساس",
+    "description": "توفر منصة عروض النقل في تكساس خدمات انتقال متكاملة في جميع أنحاء الولاية. تقوم بمطابقة العملاء مع شركات نقل موثوقة، وتقديم عروض أسعار فورية، وتتبع تقدم عملية النقل في الوقت الفعلي لضمان تجربة خالية من التوتر.",
+    "image": "MQT1.png",
+    "deploymentUrl": "https://movingquotetexas.com/"
+  },
+  {
+    "title": "هيلفول فُضول — متجر الكتب",
+    "description": "هيلفول فُضول هو متجر إلكتروني مبني باستخدام Next.js (App Router) وTypeScript، مخصص للكتب ودور النشر. يتضمن نظام إدارة للمنتجات والمؤلفين والناشرين والطلبات، بالإضافة إلى واجهة تسوق للعملاء تشمل التصفح والبحث وسلة المشتريات وقائمة المفضلة ونظام دفع متكامل.",
+    "image": "KG2.png",
+    "deploymentUrl": "https://hilfulfujulbd.com/"
+  },
+  {
+    "title": "منصة عروض النقل – نيويورك",
+    "description": "توفر منصة عروض النقل في نيويورك خدمات انتقال شاملة داخل الولاية، مع تقديم عروض أسعار فورية، وتتبع مباشر لحالة النقل، وربط العملاء بشركات موثوقة لضمان تجربة سلسة وآمنة.",
+    "image": "MQN1.png",
+    "deploymentUrl": "https://movingquotenewyork.com/"
+  },
+  {
+    "title": "نظام إدارة المهام للسمعة الرقمية",
+    "description": "نظام إدارة المهام للسمعة الرقمية هو منصة مبنية باستخدام Next.js (App Router) وTypeScript لإدارة عمليات العملاء بشكل متكامل. يتضمن لوحات تحكم مخصصة حسب الأدوار، وسير عمل للمهام وضبط الجودة، وإدارة أسباب الإيقاف، ونظام تقييم الأداء.",
+    "image": "NR2.png",
+    "deploymentUrl": "http://app.netreptask.com/"
+  },
+  {
+    "title": "ريبيوتيشن برايم",
+    "description": "ريبيوتيشن برايم هو نظام حديث لإدارة المهام مبني باستخدام Next.js (App Router) وTypeScript، يتيح إدارة عمليات العملاء من البداية إلى النهاية مع لوحات تحكم متعددة الأدوار وسير عمل متكامل لمراقبة الجودة وتقييم الأداء.",
+    "image": "RP2.png",
+    "deploymentUrl": "https://reputationtask.com/"
+  },
+  {
+    "title": "غرافيون — الارتقاء بالصحة والعافية والإنسانية",
+    "description": "في غرافيون نؤمن بالتقاء الفخامة والعافية، حيث يلتقي العلم بالإنسانية. نهجنا قائم على الدقة ومدعوم بالأبحاث ومستوحى من الإمكانات العميقة لازدهار الإنسان.",
+    "image": "GR1.png",
+    "deploymentUrl": "https://www.gravionne.com/"
+  },
         {
           "title": "جهات الاتصال في الحساب",
           "description": "إدارة جهات الاتصال في الحساب وأذونات المستخدمين.",

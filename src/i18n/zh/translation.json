@@ -215,53 +215,53 @@
       },
       "projects": [
         {
-          "title": "身份验证",
-          "description": "上传您的身份证明以进行交易验证。",
-          "image": "project_1.png",
-          "deploymentUrl": "https://trading-platform-zir6.vercel.app"
-        },
-        {
-          "title": "股市概览",
-          "description": "查看涨幅最大的股票、跌幅最大的股票和详细的市场趋势。",
-          "image": "project_2.png",
-          "deploymentUrl": "https://trading-platform-seven-omega.vercel.app"
-        },
-        {
-          "title": "钱包和交易历史",
-          "description": "管理您的钱包并查看交易历史。",
-          "image": "project_3.png",
-          "deploymentUrl": "https://trade-linkers.vercel.app"
-        },
-        {
-          "title": "电子商务平台",
-          "description": "用于图书购买的现代电子商务解决方案。",
-          "image": "project_4.png",
-          "deploymentUrl": "https://boighor-front-s.vercel.app"
-        },
-        {
-          "title": "书店系列",
-          "description": "浏览和筛选大量书籍。",
-          "image": "project_5.png",
-          "deploymentUrl": "https://birds-of-eden.vercel.app"
-        },
-        {
-          "title": "仪表板分析",
-          "description": "具有分组条形图和折线图的数据可视化。",
-          "image": "project_6.png",
-          "deploymentUrl": "https://orm-dash.vercel.app"
-        },
-        {
-          "title": "声誉管理",
-          "description": "通过量身定制的服务控制您的声誉。",
-          "image": "project_7.png",
-          "deploymentUrl": "https://reputation-prime.vercel.app"
-        },
-        {
-          "title": "产品展示",
-          "description": "详细的产品展示和促销横幅。",
-          "image": "project_9.png",
-          "deploymentUrl": "https://trade-link-engineer-ltd.vercel.app"
-        },
+    "title": "孟加拉国政府气象项目",
+    "description": "先进的气象分析平台。该智能仪表板以高精度和清晰度为核心，为孟加拉国提供全面的气象数据与洞察。",
+    "image": "BDW1.png",
+    "deploymentUrl": "https://www.bmdcl17.com/"
+  },
+  {
+    "title": "伊斯兰宣教学院",
+    "description": "伊斯兰宣教学院是一个基于 Next.js（App Router）和 TypeScript 构建的应用平台，用于协调和汇报伊斯兰宣教活动。系统提供管理员、宣教人员、助理及普通用户的角色化仪表板。",
+    "image": "ISD1.jpeg",
+    "deploymentUrl": "https://hisab.hilfulfujulbd.com/"
+  },
+  {
+    "title": "德克萨斯搬家报价平台",
+    "description": "该平台在德克萨斯州范围内提供一站式搬家服务。系统可匹配可靠的搬家公司，提供即时报价、实时进度追踪，并确保无压力的搬迁体验。",
+    "image": "MQT1.png",
+    "deploymentUrl": "https://movingquotetexas.com/"
+  },
+  {
+    "title": "希尔富尔·福祖尔 — 书店",
+    "description": "希尔富尔·福祖尔是一个基于 Next.js（App Router）和 TypeScript 的电子商务平台，专为书籍和出版社打造。系统包含商品、作者、出版社和订单管理功能，并为用户提供搜索、购物车、收藏夹及安全支付流程。",
+    "image": "KG2.png",
+    "deploymentUrl": "https://hilfulfujulbd.com/"
+  },
+  {
+    "title": "纽约搬家报价平台",
+    "description": "纽约搬家报价平台在纽约州提供完整的搬迁解决方案，包括即时报价、实时状态追踪以及与可靠搬家公司对接，确保顺畅无忧的搬家体验。",
+    "image": "MQN1.png",
+    "deploymentUrl": "https://movingquotenewyork.com/"
+  },
+  {
+    "title": "网络声誉任务管理系统",
+    "description": "网络声誉任务管理系统是一个基于 Next.js（App Router）和 TypeScript 的全流程客户运营平台，提供多角色仪表板、任务与质量控制流程、暂停原因管理及绩效评分功能。",
+    "image": "NR2.png",
+    "deploymentUrl": "http://app.netreptask.com/"
+  },
+  {
+    "title": "声誉先锋",
+    "description": "声誉先锋是一套现代化任务管理系统，基于 Next.js（App Router）和 TypeScript 构建，支持端到端客户运营管理、角色化仪表板以及绩效与质量控制流程。",
+    "image": "RP2.png",
+    "deploymentUrl": "https://reputationtask.com/"
+  },
+  {
+    "title": "Gravionne —— 提升健康、身心与人类福祉",
+    "description": "在 Gravionne，我们相信奢华与健康的交汇点，在这里科学与人文相融合。我们的理念以精准为基础，以研究为指导，并致力于释放人类潜能的最大价值。",
+    "image": "GR1.png",
+    "deploymentUrl": "https://www.gravionne.com/"
+  },
         {
           "title": "定价和订阅",
           "description": "满足不同用户需求的灵活定价计划。",

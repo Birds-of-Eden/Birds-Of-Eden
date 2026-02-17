@@ -217,52 +217,53 @@
       },
       "projects": [
         {
-          "title": "Identity Verification",
-          "description": "Upload a proof of your identity for trading verification.",
-          "image": "project_1.png",
-          "deploymentUrl": "https://trading-platform-zir6.vercel.app"
+          "title": "BD Weather Govt. Project",
+          "description": "Advanced Weather Analytics Platform Our sophisticated dashboard provides comprehensive weather insights for Bangladesh with precision and clarity.",
+          "image": "BDW1.png",
+          "deploymentUrl": "https://www.bmdcl17.com/"
         },
         {
-          "title": "Stock Market Overview",
-          "description": "View top gainers, top losers, and detailed market trends.",
-          "image": "project_2.png",
-          "deploymentUrl": "https://trading-platform-zir6.vercel.app"
+          "title": "Islami Dawa Institute",
+          "description": "Islami Dawah is a Next.js (App Router) + TypeScript application for coordinating and reporting Islamic outreach activities. It features role-based dashboards (admin, dayi/ambassador, assistant, and user).",
+          "image": "ISD1.jpeg",
+          "deploymentUrl": "https://hisab.hilfulfujulbd.com/"
         },
         {
-          "title": "Wallet and Transaction History",
-          "description": "Manage your wallet and view transaction history.",
-          "image": "project_3.png",
-          "deploymentUrl": "https://trading-platform-zir6.vercel.app"
+          "title": "Moving Quote Texas",
+          "description": "Moving Texas provides end-to-end relocation services across Texas. The platform matches customers with reliable movers, offers instant quotes, tracks moving progress in real-time, and provides comprehensive moving resources to ensure a stress-free experience.",
+          "image": "MQT1.png",
+          "deploymentUrl": "https://movingquotetexas.com/"
         },
         {
-          "title": "E-Commerce Platform",
-          "description": "Modern e-commerce solution for book purchases.",
-          "image": "project_4.png",
-          "deploymentUrl": "https://boighor-front-s.vercel.app"
+          "title": "Hilful Fuzul — Book Shop",
+          "description": "Hilful Fuzul is a Next.js (App Router) + TypeScript e-commerce platform tailored for books and publishers. It includes role-based admin interfaces for managing products, writers, publishers, and orders; a customer-facing storefront with category browsing, search, cart and wishlist; and a checkout flow with payment processing. ",
+          "image": "KG2.png",
+          "deploymentUrl": "https://hilfulfujulbd.com/"
         },
         {
-          "title": "Bookstore Collection",
-          "description": "Browse and filter a vast collection of books.",
-          "image": "project_5.png",
-          "deploymentUrl": "https://boighor-front-s.vercel.app"
+          "title": "Moving Quote New York",
+          "description": "Moving Quote New York provides end-to-end relocation services across NY. The platform matches customers with reliable movers, offers instant quotes, tracks moving progress in real-time, and provides comprehensive moving resources to ensure a stress-free experience.",
+          "image": "MQN1.png",
+          "deploymentUrl": "https://movingquotenewyork.com/"
+        },
+        
+        {
+          "title": "Net Reputation Task Management System",
+          "description": "Net Reputation Task Management System is a Next.js (App Router) + TypeScript platform for running end-to-end client ops. It includes role-specific dashboards (admin, AM/CEO, agent, QC, data-entry, client), task & QC workflows with pause reasons and performance scoring.",
+          "image": "NR2.png",
+          "deploymentUrl": "http://app.netreptask.com/"
         },
         {
-          "title": "Dashboard Analytics",
-          "description": "Data visualization with grouped bar and line charts.",
-          "image": "project_6.png",
-          "deploymentUrl": "https://reputation-form.vercel.app/"
+          "title": "Reputation Prime",
+          "description": "Reputation Prime Task Management System is a Next.js (App Router) + TypeScript platform for running end-to-end client ops. It includes role-specific dashboards (admin, AM/CEO, agent, QC, data-entry, client), task & QC workflows with pause reasons and performance scoring.",
+          "image": "RP2.png",
+          "deploymentUrl": "https://reputationtask.com/"
         },
         {
-          "title": "Reputation Management",
-          "description": "Control your reputation with tailored services.",
-          "image": "project_7.png",
-          "deploymentUrl": "https://reputation-prime-ai-fresh.vercel.app/"
-        },
-        {
-          "title": "Product Showcase",
-          "description": "Detailed product display and promotional banners.",
-          "image": "project_9.png",
-          "deploymentUrl": "https://trade-link-engineer-ltd.vercel.app"
+          "title": "Gravionne - Elevating Health, Wellness & Humanity",
+          "description": "At Gravionne, we believe in the intersection of luxury and wellness, where science meets humanity. Our approach is rooted in precision, guided by research, and inspired by the profound potential of human flourishing.",
+          "image": "GR1.png",
+          "deploymentUrl": "https://www.gravionne.com/"
         },
         {
           "title": "Pricing and Subscription",
