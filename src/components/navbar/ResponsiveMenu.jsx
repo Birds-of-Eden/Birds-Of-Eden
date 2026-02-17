@@ -15,12 +15,14 @@ import {
   Building,
   ShoppingCart,
   Cpu,
+  Phone,
 } from "lucide-react";
 
 const ResponsiveMenu = React.forwardRef(({ showMenu }, ref) => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isTechnologiesOpen, setIsTechnologiesOpen] = useState(false);
   const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const [isHardwareOpen, setIsHardwareOpen] = useState(false);
 
   return (
     <div
@@ -76,18 +78,107 @@ const ResponsiveMenu = React.forwardRef(({ showMenu }, ref) => {
                   Meet Our Executive Team
                 </NavLink>
               </li>
-              {/* <li className="p-2 hover:bg-violet-200">
-                <NavLink
-                  to="/OurService"
-                  className={({ isActive }) =>
-                    isActive
-                      ? "flex items-center gap-2 text-red-500"
-                      : "flex items-center gap-2"
-                  }
+
+              {/* Hardware Dropdown */}
+              <li className="group relative cursor-pointer p-2 hover:bg-violet-200">
+                <div
+                  onClick={() => setIsHardwareOpen(!isHardwareOpen)}
+                  className="flex items-center gap-2"
                 >
-                  Services
-                </NavLink>
-              </li> */}
+                  Hardware{" "}
+                  {isHardwareOpen ? (
+                    <FaCaretUp className="transform transition-transform duration-200" />
+                  ) : (
+                    <FaCaretDown className="transform transition-transform duration-200" />
+                  )}
+                </div>
+                <div
+                  className={`absolute left-0 z-10 w-full max-w-md rounded-lg bg-slate-200 shadow-lg transition-all duration-200 dark:bg-slate-800 dark:text-white ${
+                    isHardwareOpen
+                      ? "max-h-96 overflow-auto"
+                      : "max-h-0 overflow-hidden"
+                  }`}
+                >
+                  <div className="flex flex-col gap-4 p-4 md:flex-row">
+                    <div className="w-full overflow-hidden md:w-36">
+                      <img
+                        className="w-full rounded-lg"
+                        src="https://picsum.photos/200"
+                        alt="Hardware"
+                      />
+                    </div>
+                    <div>
+                      <div className="mb-4">
+                        <h1 className="text-lg font-semibold">Hardware Products</h1>
+                        <p className="text-sm">
+                          Explore our wide range of hardware products.
+                        </p>
+                      </div>
+                      <div className="grid grid-cols-1 gap-4">
+                        <div>
+                          <h2 className="text-md mb-2 font-semibold text-green-300">
+                            Hardware Categories
+                          </h2>
+                          <ul className="flex flex-col gap-1">
+                            <li className="mb-3 cursor-pointer hover:text-primary">
+                              <NavLink
+                                to="/hardware/laptop"
+                                className={({ isActive }) =>
+                                  isActive
+                                    ? "flex items-center gap-2 text-red-500"
+                                    : "flex items-center gap-2"
+                                }
+                              >
+                                <Cpu className="h-4 w-4" />
+                                Laptop
+                              </NavLink>
+                            </li>
+                            <li className="mb-3 cursor-pointer hover:text-primary">
+                              <NavLink
+                                to="/hardware/printer"
+                                className={({ isActive }) =>
+                                  isActive
+                                    ? "flex items-center gap-2 text-red-500"
+                                    : "flex items-center gap-2"
+                                }
+                              >
+                                <Database className="h-4 w-4" />
+                                Printer
+                              </NavLink>
+                            </li>
+                            <li className="mb-3 cursor-pointer hover:text-primary">
+                              <NavLink
+                                to="/hardware/keyboard"
+                                className={({ isActive }) =>
+                                  isActive
+                                    ? "flex items-center gap-2 text-red-500"
+                                    : "flex items-center gap-2"
+                                }
+                              >
+                                <Wrench className="h-4 w-4" />
+                                Keyboard
+                              </NavLink>
+                            </li>
+                            <li className="mb-3 cursor-pointer hover:text-primary">
+                              <NavLink
+                                to="/hardware/mouse"
+                                className={({ isActive }) =>
+                                  isActive
+                                    ? "flex items-center gap-2 text-red-500"
+                                    : "flex items-center gap-2"
+                                }
+                              >
+                                <Phone className="h-4 w-4" />
+                                Mouse
+                              </NavLink>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
 
               {/* Services Dropdown */}
               <li className="group relative cursor-pointer p-2 hover:bg-violet-200 ">
@@ -455,19 +546,6 @@ const ResponsiveMenu = React.forwardRef(({ showMenu }, ref) => {
                     </div>
                   </div>
                 </div>
-              </li>
-
-              <li className="p-2 hover:bg-violet-200">
-                <NavLink
-                  to="/hardware"
-                  className={({ isActive }) =>
-                    isActive
-                      ? "flex items-center gap-2 text-red-500"
-                      : "flex items-center gap-2"
-                  }
-                >
-                  Hardware Products
-                </NavLink>
               </li>
 
               <li className="p-2 hover:bg-violet-200">

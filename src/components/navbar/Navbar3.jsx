@@ -16,6 +16,7 @@ import {
   BarChart,
   Building,
   ShoppingCart,
+  Cpu,
 } from "lucide-react";
 import {
   NavigationMenu,
@@ -225,6 +226,96 @@ const Navbar = () => {
                             <Shield className="h-4 w-4" />
                             {t("navbar.privacy")}
                           </NavLink>
+                        </div>
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem>
+                      <NavigationMenuTrigger>
+                        <NavLink to="/hardware">
+                          {t("navbar.hardware")}
+                        </NavLink>
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent>
+                        <div className="flex w-[400px] flex-col gap-4 p-3">
+                          <div className="flex gap-4">
+                            <div className="h-36 w-36 shrink-0 overflow-hidden rounded bg-zinc-800">
+                              <img
+                                className="rounded"
+                                src="https://picsum.photos/200"
+                                alt="Hardware"
+                              />
+                            </div>
+                            <div className="mb-4">
+                              <h1 className="text-lg font-semibold">
+                                {t("navbar.hardwareProducts")}
+                              </h1>
+                              <p className="text-sm text-black/70 dark:text-white/70">
+                                {t("navbar.exploreHardware")}
+                              </p>
+                            </div>
+                          </div>
+
+                          <div className="flex gap-4">
+                            <div className="w-full">
+                              <h2 className="mb-2 text-lg font-semibold">
+                                {t("navbar.hardwareCategories")}
+                              </h2>
+                              <div className="flex flex-col gap-3">
+                                <NavLink
+                                  to="/hardware/laptop"
+                                  className={({ isActive }) =>
+                                    `flex items-center gap-2 hover:underline ${
+                                      isActive
+                                        ? "text-blue-500"
+                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                    }`
+                                  }
+                                >
+                                  <Cpu className="h-4 w-4" />
+                                  {t("navbar.laptop")}
+                                </NavLink>
+                                <NavLink
+                                  to="/hardware/printer"
+                                  className={({ isActive }) =>
+                                    `flex items-center gap-2 hover:underline ${
+                                      isActive
+                                        ? "text-blue-500"
+                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                    }`
+                                  }
+                                >
+                                  <Database className="h-4 w-4" />
+                                  {t("navbar.printer")}
+                                </NavLink>
+                                <NavLink
+                                  to="/hardware/keyboard"
+                                  className={({ isActive }) =>
+                                    `flex items-center gap-2 hover:underline ${
+                                      isActive
+                                        ? "text-blue-500"
+                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                    }`
+                                  }
+                                >
+                                  <Wrench className="h-4 w-4" />
+                                  {t("navbar.keyboard")}
+                                </NavLink>
+                                <NavLink
+                                  to="/hardware/mouse"
+                                  className={({ isActive }) =>
+                                    `flex items-center gap-2 hover:underline ${
+                                      isActive
+                                        ? "text-blue-500"
+                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                    }`
+                                  }
+                                >
+                                  <Phone className="h-4 w-4" />
+                                  {t("navbar.mouse")}
+                                </NavLink>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </NavigationMenuContent>
                     </NavigationMenuItem>
@@ -567,21 +658,9 @@ const Navbar = () => {
                       }
                     >
                       <NavLink
-                        to="/hardware"
+                        to="/drones"
                         className="flex items-center gap-2 whitespace-nowrap"
                       >
-                        {t("navbar.hardware")}
-                      </NavLink>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem
-                      asChild
-                      className={({ isActive }) =>
-                        `rounded-lg px-4 py-2 tracking-wide transition-colors hover:bg-zinc-200 focus:outline-none dark:hover:bg-zinc-700/50 dark:focus:bg-zinc-700/50 dark:active:bg-zinc-700/50 ${
-                          isActive ? "text-blue-500" : ""
-                        }`
-                      }
-                    >
-                      <NavLink to="/drones" className="flex items-center gap-2">
                         {t("navbar.drones")}
                       </NavLink>
                     </NavigationMenuItem>

@@ -617,7 +617,7 @@ const Navbar2 = () => {
                         }`
                       }
                     >
-                      Hardware Products
+                      Hardware
                     </NavLink>
                   </li>
 
