@@ -219,45 +219,52 @@
         {
           "title": "BD Weather Govt. Project",
           "description": "Advanced Weather Analytics Platform Our sophisticated dashboard provides comprehensive weather insights for Bangladesh with precision and clarity.",
-          "image": "BDW1.png",
+          "images": ["BDW1.png", "BDW2.png", "BDW3.png"],
           "deploymentUrl": "https://www.bmdcl17.com/"
         },
         {
           "title": "Islami Dawa Institute",
           "description": "Islami Dawah is a Next.js (App Router) + TypeScript application for coordinating and reporting Islamic outreach activities. It features role-based dashboards (admin, dayi/ambassador, assistant, and user).",
-          "image": "ISD1.jpeg",
+          "images": ["ISD1.jpeg", "ISD2.jpeg", "ISD3.jpeg"],
           "deploymentUrl": "https://hisab.hilfulfujulbd.com/"
-        },
-        {
-          "title": "Moving Quote Texas",
-          "description": "Moving Texas provides end-to-end relocation services across Texas. The platform matches customers with reliable movers, offers instant quotes, tracks moving progress in real-time, and provides comprehensive moving resources to ensure a stress-free experience.",
-          "image": "MQT1.png",
-          "deploymentUrl": "https://movingquotetexas.com/"
-        },
-        {
-          "title": "Hilful Fuzul — Book Shop",
-          "description": "Hilful Fuzul is a Next.js (App Router) + TypeScript e-commerce platform tailored for books and publishers. It includes role-based admin interfaces for managing products, writers, publishers, and orders; a customer-facing storefront with category browsing, search, cart and wishlist; and a checkout flow with payment processing. ",
-          "image": "KG2.png",
-          "deploymentUrl": "https://hilfulfujulbd.com/"
         },
         {
           "title": "Moving Quote New York",
           "description": "Moving Quote New York provides end-to-end relocation services across NY. The platform matches customers with reliable movers, offers instant quotes, tracks moving progress in real-time, and provides comprehensive moving resources to ensure a stress-free experience.",
-          "image": "MQN1.png",
+          "images": ["MQT1.png", "MQT2.png", "MQT3.png"],
           "deploymentUrl": "https://movingquotenewyork.com/"
+
         },
-        
-        {
+     {
+          "title": "Hilful Fuzul — Book Shop",
+          "description": "Hilful Fuzul is a Next.js (App Router) + TypeScript e-commerce platform tailored for books and publishers. It includes role-based admin interfaces for managing products, writers, publishers, and orders; a customer-facing storefront with category browsing, search, cart and wishlist; and a checkout flow with payment processing. ",
+          "images": ["KG2.png", "KG1.png", "KG3.png"],
+          "deploymentUrl": "https://hilfulfujulbd.com/"
+
+        },
+       {
+          "title": "Moving Quote New York",
+          "description": "Moving Quote New York provides end-to-end relocation services across NY. The platform matches customers with reliable movers, offers instant quotes, tracks moving progress in real-time, and provides comprehensive moving resources to ensure a stress-free experience.",
+          "images": ["MQN1.png", "MQT2.png", "MQT3.png"],
+          "deploymentUrl": "https://movingquotenewyork.com/"
+
+
+        },
+       {
           "title": "Net Reputation Task Management System",
           "description": "Net Reputation Task Management System is a Next.js (App Router) + TypeScript platform for running end-to-end client ops. It includes role-specific dashboards (admin, AM/CEO, agent, QC, data-entry, client), task & QC workflows with pause reasons and performance scoring.",
-          "image": "NR2.png",
+          "images": ["NR1.png", "NR2.png", "NR3.png"],
           "deploymentUrl": "http://app.netreptask.com/"
+
+
         },
-        {
+       {
           "title": "Reputation Prime",
           "description": "Reputation Prime Task Management System is a Next.js (App Router) + TypeScript platform for running end-to-end client ops. It includes role-specific dashboards (admin, AM/CEO, agent, QC, data-entry, client), task & QC workflows with pause reasons and performance scoring.",
-          "image": "RP2.png",
+          "images": ["RP1.png", "RP2.png", "RP3.png"],
           "deploymentUrl": "https://reputationtask.com/"
+
+
         },
         {
           "title": "Gravionne - Elevating Health, Wellness & Humanity",
@@ -268,38 +275,46 @@
         {
           "title": "AIBL Leave Management System",
           "description": "This project is a Smart Attendance Management System developed for Al-Arafah Islami Bank PLC to monitor and manage employee attendance in real time. The system provides a dynamic dashboard displaying total active employees, present, late, absent, and on-duty staff with percentage insights.",
-          "image": "AIBL1.jpeg",
+          "images": ["AIBL1.jpeg", "AIBL2.jpeg"],
           "deploymentUrl": "https://aibl-plc.vercel.app/"
-        },
-        {
-          "title": "DNA Report System",
-          "description": "DNA Archive is a centralized laboratory management system that tracks cases, samples, reports, storage, and user activity. It provides real-time analytics, system monitoring, and streamlined workflows for efficient forensic data management.",
-          "image": "DNA1.png",
-          "deploymentUrl": "https://dna-case-management.vercel.app/login"
-        },
-        {
-          "title": "Real Estate Management System",
-          "description": "This real estate company platform is designed to manage property listings and user interactions with distinct roles for admins, agents, and clients. Admins can oversee all operations, manage users and properties; agents can add and manage their property listings; while users can browse, filter, and inquire about properties. The system ensures secure role-based access, multilingual support, and smooth communication between all parties involved.",
-          "image": "RE1.png",
-          "deploymentUrl": "https://real-estate-admin-jade.vercel.app/en"
+
+
         },
         {
           "title": "Ecomonitor System",
           "description": "EcoMonitor is a smart environmental monitoring system that provides real-time weather insights and analytics. It displays key metrics such as temperature, humidity, wind speed, pressure, UV index, and precipitation through interactive dashboards and visual charts. The platform features trend analysis, animated data visualization, and system alerts like high UV warnings to support proactive decision-making. With modules for weather monitoring, water quality tracking, reports, and user management, EcoMonitor ensures accurate data tracking and efficient environmental analysis in a modern, user-friendly interface.",
-          "image": "EM1.jpeg",
+          "images": ["EM1.jpeg","EM2.jpeg","EM3.jpeg","EM4.jpeg"],
           "deploymentUrl": "https://eco-monitor-jade.vercel.app/"
+
+
+        },
+        {
+          "title": "DNA Report System",
+          "description": "DNA Archive is a centralized laboratory management system that tracks cases, samples, reports, storage, and user activity. It provides real-time analytics, system monitoring, and streamlined workflows for efficient forensic data management.",
+          "images": ["DNA1.png"],
+          "deploymentUrl": "https://dna-case-management.vercel.app/login"
+
+        },
+        {
+          "title": "Real Estate Management System",
+          "description": "This real estate company platform is designed to manage property listings and user interactions with distinct roles for admins, agents, and clients. Admins can oversee all operations, manage users and properties; agents can add and manage their property listings; while users can browse, filter, and inquire about properties. The system ensures secure role-based access, multilingual support, and smooth communication between all parties involved.",
+          "images": ["RE1.png"],
+          "deploymentUrl": "https://real-estate-admin-jade.vercel.app/en"
+
         },
         {
           "title": "PCO Training",
           "description": "PCO Training is a specialized platform for professional drivers in the UK. It offers comprehensive training modules, practice tests, and certification preparation to help drivers meet regulatory requirements and improve their skills.",
-          "image": "PCO1.png",
+          "images": ["PCO1.png"],
           "deploymentUrl": "https://uk-driving-course.vercel.app/en"
+
         },
         {
           "title": "Fraud Detection System",
           "description": "This project is a fraud review and verification system designed to analyze and validate business review activities. It displays detailed business profiles with location mapping, contact information, ratings, and review statistics. The platform tracks total reviews, reviewers, and average reviews per person to identify suspicious patterns. With features like rescan, status tracking, PDF export, and request management, the system helps detect fraudulent behavior, ensures data authenticity, and supports informed decision-making for review moderation and compliance.",
-          "image": "FD1.jpeg",
+          "images": ["FD1.jpeg"],
           "deploymentUrl": "https://review.reputationtask.com/login"
+
         }
       ]
     },
