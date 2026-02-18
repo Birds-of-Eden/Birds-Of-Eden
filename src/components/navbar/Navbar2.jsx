@@ -636,7 +636,7 @@ const Navbar2 = () => {
                 </ul>
               </div>
               <div className="flex items-center gap-2">
-                <div className="flex hidden items-center gap-5 md:flex">
+                <div className="flex items-center gap-5 md:flex">
                   <button
                     className="flex aspect-square h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/10 px-4 py-2"
                     onClick={() =>
