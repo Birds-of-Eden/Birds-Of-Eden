@@ -231,98 +231,100 @@
     },
     "projectGallery": {
       "title": "私たちのプロジェクト",
-      "description": "技術の境界を押し広げ、クライアントに意義のある影響を与える革新的なソリューションを発見してください。",
-      "modal": {
-        "overview": "概要",
-        "description": "説明",
-        "close": "閉じる",
-        "viewDemo": "ライブデモを見る"
-      },
-      "projects": [
-        {
-          "title": "バングラデシュ気象政府プロジェクト",
-          "description": "高度な気象分析プラットフォーム。精度と明瞭さを重視した本ダッシュボードは、バングラデシュ向けに包括的な気象データと洞察を提供します。",
-          "image": "BDW1.png",
-          "deploymentUrl": "https://www.bmdcl17.com/"
-        },
-        {
-          "title": "イスラミー・ダーワ・インスティテュート",
-          "description": "イスラミー・ダーワは、Next.js（App Router）とTypeScriptで構築された、イスラム布教活動の調整および報告を行うアプリケーションです。管理者、ダアイ／アンバサダー、アシスタント、一般ユーザー向けの役割別ダッシュボードを備えています。",
-          "image": "ISD1.jpeg",
-          "deploymentUrl": "https://hisab.hilfulfujulbd.com/"
-        },
-        {
-          "title": "ムービング・クオート・テキサス",
-          "description": "ムービング・テキサスは、テキサス州全域でエンドツーエンドの引越しサービスを提供します。信頼できる引越し業者とのマッチング、即時見積もり、リアルタイムの進捗追跡により、ストレスのない体験を実現します。",
-          "image": "MQT1.png",
-          "deploymentUrl": "https://movingquotetexas.com/"
-        },
-        {
-          "title": "ヒルフル・フズル — 書店",
-          "description": "ヒルフル・フズルは、書籍および出版社向けに設計されたNext.js（App Router）とTypeScriptベースのECプラットフォームです。商品、著者、出版社、注文管理のための管理機能に加え、検索、カート、ウィッシュリスト、決済機能を備えた顧客向けストアフロントを提供します。",
-          "image": "KG2.png",
-          "deploymentUrl": "https://hilfulfujulbd.com/"
-        },
-        {
-          "title": "ムービング・クオート・ニューヨーク",
-          "description": "ムービング・クオート・ニューヨークは、ニューヨーク州全域で包括的な引越しサービスを提供します。即時見積もり、リアルタイム追跡、信頼性の高い業者との連携により、安心した引越し体験を提供します。",
-          "image": "MQN1.png",
-          "deploymentUrl": "https://movingquotenewyork.com/"
-        },
-        {
-          "title": "ネット・レピュテーション・タスク管理システム",
-          "description": "ネット・レピュテーション・タスク管理システムは、Next.js（App Router）とTypeScriptで構築された、エンドツーエンドのクライアント運用管理プラットフォームです。役割別ダッシュボード、タスクおよびQCワークフロー、パフォーマンス評価機能を備えています。",
-          "image": "NR2.png",
-          "deploymentUrl": "http://app.netreptask.com/"
-        },
-        {
-          "title": "レピュテーション・プライム",
-          "description": "レピュテーション・プライムは、Next.js（App Router）とTypeScriptで構築された高度なタスク管理システムです。役割別ダッシュボードと品質管理ワークフローにより、効率的なクライアント運用を実現します。",
-          "image": "RP2.png",
-          "deploymentUrl": "https://reputationtask.com/"
-        },
-        {
-          "title": "グラヴィオン — 健康・ウェルネス・人類の向上",
-          "description": "グラヴィオンは、科学と人間性が交差するラグジュアリーとウェルネスの融合を信念としています。私たちのアプローチは、精密さ、研究、そして人間の可能性の最大化に根ざしています。",
-          "image": "GR1.png",
-          "deploymentUrl": "https://www.gravionne.com/"
-        },
-        {
-          "title": "AIBL 休暇・勤怠管理システム",
-          "description": "本プロジェクトは、アル・アラファ・イスラミ銀行向けに開発されたスマート勤怠管理システムです。従業員の出勤状況をリアルタイムで管理し、在籍、出勤、遅刻、欠勤、外勤の状況を割合とともにダッシュボードで表示します。",
-          "image": "AIBL1.jpeg",
-          "deploymentUrl": "https://aibl-plc.vercel.app/"
-        },
-        {
-          "title": "DNA レポート管理システム",
-          "description": "DNA アーカイブは、事件、サンプル、レポート、保管、ユーザー活動を一元管理するラボ管理システムです。リアルタイム分析と効率的なワークフローにより、法医学データ管理を最適化します。",
-          "image": "DNA1.png",
-          "deploymentUrl": "https://dna-case-management.vercel.app/login"
-        },
-        {
-          "title": "不動産管理システム",
-          "description": "本システムは不動産会社向けに設計され、管理者、エージェント、顧客の役割を明確に分離しています。安全な権限管理、多言語対応、円滑なコミュニケーションを実現します。",
-          "image": "RE1.png",
-          "deploymentUrl": "https://real-estate-admin-jade.vercel.app/en"
-        },
-        {
-          "title": "エコモニター環境監視システム",
-          "description": "エコモニターは、気温、湿度、風速、気圧、UV指数などをリアルタイムで可視化する環境監視システムです。高度な分析とアラート機能により、迅速な意思決定を支援します。",
-          "image": "EM1.jpeg",
-          "deploymentUrl": "https://eco-monitor-jade.vercel.app/"
-        },
-        {
-          "title": "不正検出システム",
-          "description": "本プロジェクトは、ビジネスレビュー活動を分析・検証するために設計された不正レビュー確認システムです。位置マッピング、連絡先情報、評価、レビュー統計を含む詳細なビジネスプロフィールを表示します。総レビュー数、レビュアー数、1人当たりの平均レビュー数を追跡し、不審なパターンを特定します。再スキャン、ステータス管理、PDFエクスポート、リクエスト管理機能により、不正行為の検出、データの信頼性確保、レビュー管理およびコンプライアンスの意思決定を支援します。",
-          "image": "FD1.jpeg",
-          "deploymentUrl": "https://review.reputationtask.com/login"
-        },
-        {
-          "title": "PCO ドライバー研修",
-          "description": "PCO ドライバー研修は、英国のプロドライバー向けに設計された専門プラットフォームで、包括的なトレーニング、模擬試験、資格取得支援を提供します。",
-          "image": "PCO1.png",
-          "deploymentUrl": "https://uk-driving-course.vercel.app/en"
-        }
+    "description": "テクノロジーの限界を押し広げ、クライアントに意味のあるインパクトを生み出す、革新的なソリューションをご覧ください。",
+    "modal": {
+      "overview": "概要",
+      "description": "説明",
+      "close": "閉じる",
+      "viewDemo": "デモを見る"
+    },
+  "projects": [
+    {
+      "title": "バングラデシュ気象政府プロジェクト",
+      "description": "高度な気象分析プラットフォーム。私たちの洗練されたダッシュボードは、バングラデシュの包括的な気象インサイトを精度と明確さで提供します。",
+      "images": ["BDW1.png", "BDW2.png", "BDW3.png"],
+      "deploymentUrl": "https://www.bmdcl17.com/"
+    },
+    {
+      "title": "イスラミ・ダワ研究所",
+      "description": "Islami Dawahは、イスラムの啓発活動を調整・報告するためのNext.js（App Router）+ TypeScriptアプリケーションです。管理者、ダーイ（宣教師）/アンバサダー、アシスタント、ユーザーなど、役割ベースのダッシュボードを備えています。",
+      "images": ["ISD1.jpeg", "ISD2.jpeg", "ISD3.jpeg"],
+      "deploymentUrl": "https://hisab.hilfulfujulbd.com/"
+    },
+    {
+      "title": "ムービングクォートニューヨーク",
+      "description": "Moving Quote New Yorkは、ニューヨーク州全域で包括的な引越しサービスを提供しています。このプラットフォームは、信頼できる業者と顧客をマッチングし、即時見積もりを提供し、引越しの進捗状況をリアルタイムで追跡し、ストレスのない体験を保証するための包括的な引越しリソースを提供します。",
+      "images": ["MQT1.png", "MQT2.png", "MQT3.png"],
+      "deploymentUrl": "https://movingquotenewyork.com/"
+    },
+    {
+      "title": "ヒルフル・フズール — 書店",
+      "description": "Hilful Fuzulは、書籍と出版社に特化したNext.js（App Router）+ TypeScriptのEコマースプラットフォームです。製品、著者、出版社、注文を管理するための役割ベースの管理インターフェース、カテゴリブラウジング、検索、カート、ウィッシュリストを備えた顧客向けストアフロント、および支払い処理を伴うチェックアウトフローが含まれています。",
+      "images": ["KG2.png", "KG1.png", "KG3.png"],
+      "deploymentUrl": "https://hilfulfujulbd.com/"
+    },
+    {
+      "title": "ムービングクォートニューヨーク",
+      "description": "Moving Quote New Yorkは、ニューヨーク州全域で包括的な引越しサービスを提供しています。このプラットフォームは、信頼できる業者と顧客をマッチングし、即時見積もりを提供し、引越しの進捗状況をリアルタイムで追跡し、ストレスのない体験を保証するための包括的な引越しリソースを提供します。",
+      "images": ["MQN1.png", "MQT2.png", "MQT3.png"],
+      "deploymentUrl": "https://movingquotenewyork.com/"
+    },
+    {
+      "title": "Net Reputation タスク管理システム",
+      "description": "Net Reputationタスク管理システムは、エンドツーエンドのクライアントオペレーションを実行するためのNext.js（App Router）+ TypeScriptプラットフォームです。これには、役割固有のダッシュボード（管理者、AM/CEO、エージェント、QC、データ入力、クライアント）、一時停止理由とパフォーマンススコアリングを備えたタスクおよびQCワークフローが含まれます。",
+      "images": ["NR1.png", "NR2.png", "NR3.png"],
+      "deploymentUrl": "http://app.netreptask.com/"
+    },
+    {
+      "title": "レピュテーションプライム",
+      "description": "Reputation Primeタスク管理システムは、エンドツーエンドのクライアントオペレーションを実行するためのNext.js（App Router）+ TypeScriptプラットフォームです。これには、役割固有のダッシュボード（管理者、AM/CEO、エージェント、QC、データ入力、クライアント）、一時停止理由とパフォーマンススコアリングを備えたタスクおよびQCワークフローが含まれます。",
+      "images": ["RP1.png", "RP2.png", "RP3.png"],
+      "deploymentUrl": "https://reputationtask.com/"
+    },
+    {
+      "title": "Gravionne - 健康、ウェルネス、人間性の向上",
+      "description": "Gravionneでは、ラグジュアリーとウェルネスの交差点、科学と人間性が出会う場所を信じています。私たちのアプローチは精度に根ざし、研究に導かれ、人間の潜在的な繁栄の可能性に触発されています。",
+      "image": "GR1.png",
+      "deploymentUrl": "https://www.gravionne.com/"
+    },
+    {
+      "title": "AIBL 休暇管理システム",
+      "description": "このプロジェクトは、Al-Arafah Islami Bank PLC のために開発されたスマートな勤怠管理システムであり、従業員の出退勤をリアルタイムで監視および管理します。このシステムは、総アクティブ従業員数、出勤者数、遅刻者数、欠勤者数、当直者数を割合の洞察とともに表示する動的なダッシュボードを提供します。",
+      "images": ["AIBL1.jpeg", "AIBL2.jpeg"],
+      "deploymentUrl": "https://aibl-plc.vercel.app/"
+    },
+    {
+      "title": "エコモニターシステム",
+      "description": "EcoMonitorは、リアルタイムの気象インサイトと分析を提供するスマートな環境監視システムです。インタラクティブなダッシュボードと視覚的なチャートを通じて、温度、湿度、風速、気圧、UV指数、降水量などの主要な指標を表示します。このプラットフォームは、トレンド分析、アニメーションデータの可視化、およびプロアクティブな意思決定をサポートする高UV警告などのシステムアラートを備えています。気象監視、水質追跡、レポート、ユーザー管理のモジュールにより、EcoMonitorはモダンでユーザーフレンドリーなインターフェースで正確なデータ追跡と効率的な環境分析を保証します。",
+      "images": ["EM1.jpeg","EM2.jpeg","EM3.jpeg","EM4.jpeg"],
+      "deploymentUrl": "https://eco-monitor-jade.vercel.app/"
+    },
+    {
+      "title": "DNA レポートシステム",
+      "description": "DNA Archiveは、症例、サンプル、レポート、保管、およびユーザーアクティビティを追跡する集中型ラボ管理システムです。リアルタイムの分析、システム監視、および効率的な法医学データ管理のための合理化されたワークフローを提供します。",
+      "images": ["DNA1.png"],
+      "deploymentUrl": "https://dna-case-management.vercel.app/login"
+    },
+    {
+      "title": "不動産管理システム",
+      "description": "この不動産会社プラットフォームは、管理者、エージェント、クライアントに明確な役割を割り当て、物件リストとユーザーインタラクションを管理するように設計されています。管理者はすべての操作を監督し、ユーザーと物件を管理できます。エージェントは自分の物件リストを追加および管理できます。ユーザーは物件を閲覧、フィルタリング、問い合わせることができます。このシステムは、安全な役割ベースのアクセス、多言語サポート、および関係者全員間の円滑なコミュニケーションを保証します。",
+      "images": ["RE1.png"],
+      "deploymentUrl": "https://real-estate-admin-jade.vercel.app/en"
+    },
+    {
+      "title": "PCO トレーニング",
+      "description": "PCO Trainingは、英国のプロドライバー向けの専門プラットフォームです。ドライバーが規制要件を満たし、スキルを向上させるのに役立つ、包括的なトレーニングモジュール、模擬試験、および資格取得準備を提供します。",
+      "images": ["PCO1.png"],
+      "deploymentUrl": "https://uk-driving-course.vercel.app/en"
+    },
+    {
+      "title": "不正検出システム",
+      "description": "このプロジェクトは、ビジネスレビュー活動を分析および検証するために設計された不正レビューおよび検証システムです。ロケーションマッピング、連絡先情報、評価、レビュー統計を含む詳細なビジネスプロファイルを表示します。このプラットフォームは、総レビュー数、レビュアー数、および一人当たりの平均レビュー数を追跡して、不審なパターンを特定します。再スキャン、ステータス追跡、PDFエクスポート、リクエスト管理などの機能により、このシステムは不正行為の検出、データの信頼性の確保、およびレビューモデレーションとコンプライアンスのための情報に基づいた意思決定をサポートします。",
+      "images": ["FD1.jpeg"],
+      "deploymentUrl": "https://review.reputationtask.com/login"
+    }
+  
+
       ]
     },
     "clientPage": {
