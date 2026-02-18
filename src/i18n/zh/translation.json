@@ -876,7 +876,53 @@
       }
     ],
     "descriptionTitle": "描述",
-    "viewPortfolio": "查看作品集"
+    "viewPortfolio": "查看作品集",
+    "leadershipLabel": "领导团队",
+    "clickToLearnMore": "点击了解更多",
+    "biographyLabel": "简介",
+    "areasOfExpertiseLabel": "专业领域",
+    "close": "关闭",
+    "social": {
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook",
+      "github": "GitHub"
+    },
+    "leadershipHero": {
+      "title": "为可衡量的转型而打造的领导力。",
+      "subtitle": "Birds of Eden 汇聚 ERP 资深专家、AI 战略顾问与一线交付负责人，为每一次合作保驾护航。"
+    },
+    "membersById": {
+      "talat": {
+        "role": "创始人兼首席执行官",
+        "quote": "我与客户携手，将大胆愿景转化为严谨交付，并专注于 ERP、AI 与韧性建设。",
+        "bio": "Talat Mahmud 是 Birds of Eden 的富有远见的领导者与 CEO，专注于提供创新的软件解决方案，并推动企业持续增长。他在业务战略、软件开发与管理方面拥有丰富经验，强调创新、客户满意与卓越执行。",
+        "pillars": [
+          "ERP 战略与治理",
+          "AI 产品路线图",
+          "全球合作伙伴联盟"
+        ]
+      },
+      "amenul": {
+        "role": "首席技术官",
+        "quote": "我们架构高韧性平台，将清晰的后端、AI 模型与工业级硬件升级无缝融合。",
+        "bio": "Amenul Islam 负责平台工程、云运维与研发，专注打造可扩展、可靠的技术体系，并以安全与工程质量为核心推动交付。",
+        "pillars": [
+          "微服务与 AI 模型治理",
+          "安全优先 DevOps",
+          "硬件集成控制"
+        ]
+      },
+      "anisur": {
+        "role": "高级顾问（业务发展）",
+        "quote": "我建立战略合作伙伴关系，把机会转化为长期增长与可衡量的影响。",
+        "bio": "Anisur 负责业务发展、战略合作与全球市场拓展，聚焦识别增长机会、培育企业级合作关系，并推动跨区域的可持续营收策略。",
+        "pillars": [
+          "战略合作伙伴关系",
+          "市场拓展",
+          "企业谈判"
+        ]
+      }
+    }
   },
   "hardwareProducts": {
     "premiumTech": {

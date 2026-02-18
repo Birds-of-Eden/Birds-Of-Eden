@@ -934,7 +934,53 @@
       }
     ],
     "descriptionTitle": "Description",
-    "viewPortfolio": "View Portfolio"
+    "viewPortfolio": "View Portfolio",
+    "leadershipLabel": "Leadership",
+    "clickToLearnMore": "Click to learn more",
+    "biographyLabel": "Biography",
+    "areasOfExpertiseLabel": "Areas of expertise",
+    "close": "Close",
+    "social": {
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook",
+      "github": "GitHub"
+    },
+    "leadershipHero": {
+      "title": "Leadership crafted for measurable transformation.",
+      "subtitle": "Birds of Eden brings together ERP veterans, AI strategists, and hands-on delivery leads to guide every engagement."
+    },
+    "membersById": {
+      "talat": {
+        "role": "Founder & CEO",
+        "quote": "I partner with clients to turn bold visions into disciplined delivery, with a sharp focus on ERP, AI, and resilience.",
+        "bio": "Talat Md. Tawfiq Elahi is the visionary leader and CEO of Birds of Eden Software Firm, a cutting-edge technology company focused on providing innovative software solutions. He also heads Adon Venture General Trading LLC, a dynamic enterprise with a broad scope in the international trading sector. With extensive expertise in business strategy, software development, and corporate management, Talat has played a key role in driving both companies towards growth and success. His leadership emphasizes innovation, client satisfaction, and a commitment to excellence, making him a trusted name in the industry. Under his guidance, Birds of Eden has delivered exceptional digital products while Adon Venture continues to thrive in the global marketplace.",
+        "pillars": [
+          "ERP strategy & governance",
+          "AI product roadmap",
+          "Global partner alliances"
+        ]
+      },
+      "amenul": {
+        "role": "Chief Technology Officer",
+        "quote": "We architect resilient platforms that combine clean backends, AI models, and industrial-grade hardware uplifts.",
+        "bio": "Md. Amenul Islam is the dynamic and forward-thinking CEO of Ann-Nahl, a pioneering company dedicated to transforming the digital landscape through innovative solutions. With a deep understanding of technology and a passion for driving change, Amenul has steered Ann-Nahl towards becoming a leader in the industry. Under his leadership, the company has expanded its reach, offering cutting-edge services and exceptional client experiences. Amenul’s commitment to innovation, strategic vision, and strong leadership continues to drive the success of Ann-Nahl, making him a key figure in shaping the future of the company and its industry.",
+        "pillars": [
+          "Microservice & AI model governance",
+          "Security-first DevOps",
+          "Hardware integration controls"
+        ]
+      },
+      "anisur": {
+        "role": "Senior Consultant ( Business Development )",
+        "quote": "I build strategic partnerships that transform opportunities into long-term growth and measurable impact.",
+        "bio": "Anisur leads business development, strategic partnerships, and global market expansion initiatives. He focuses on identifying growth opportunities, nurturing enterprise relationships, and driving sustainable revenue strategies across regions.",
+        "pillars": [
+          "Strategic partnerships",
+          "Market expansion",
+          "Enterprise negotiations"
+        ]
+      }
+    }
   },
   "hardwareProducts": {
     "premiumTech": {
