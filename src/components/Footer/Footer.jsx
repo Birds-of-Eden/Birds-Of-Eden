@@ -25,7 +25,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-slate-50 text-white dark:bg-[#334155]">
-      <div className="container flex flex-col items-center justify-between py-12 md:flex-row">
+      <div className="container flex flex-col items-center justify-between gap-8 py-12 md:flex-row">
         <div className="md:w-1/3">
           <div className="mb-4 flex items-center justify-center md:mb-0">
             <div className="relative h-20 w-20 overflow-hidden rounded-full border-2 border-white p-2 shadow-md transition duration-300 hover:shadow-lg md:h-24 md:w-24">
@@ -60,83 +60,128 @@ const Footer = () => {
             {t("footer.companyDescription")}
           </p>
         </div>
+
         <div className="mt-8 text-black dark:text-white md:mt-0 md:w-2/3">
           <div className="grid grid-cols-2 gap-8 md:grid-cols-3">
-            <div>
-              <h2 className="mb-4 text-xl font-semibold">
-                {t("footer.importantLinks")}
-              </h2>
-              <ul className="flex flex-col gap-2">
-                <li className="cursor-pointer transition duration-300 hover:text-primary">
-                  <NavLink
-                    to="/"
-                    className={({ isActive }) =>
-                      isActive
-                        ? "flex  items-center gap-2 text-blue-500"
-                        : "flex  items-center gap-2"
-                    }
-                  >
-                    {t("navbar.home")}
-                  </NavLink>
-                </li>
-                <li className="cursor-pointer transition duration-300 hover:text-primary">
-                  <NavLink
-                    to="/about"
-                    className={({ isActive }) =>
-                      isActive
-                        ? "flex  items-center gap-2 text-blue-500"
-                        : "flex  items-center gap-2"
-                    }
-                  >
-                    {t("navbar.about")}
-                  </NavLink>
-                </li>
+            <div className="col-span-2">
+              <div className="flex gap-40">
+                <div>
+                  <h2 className="mb-4 text-xl font-semibold">
+                    {t("footer.importantLinks")}
+                  </h2>
+                  <ul className="flex flex-col gap-2">
+                    <li className="cursor-pointer transition duration-300 hover:text-primary">
+                      <NavLink
+                        to="/"
+                        className={({ isActive }) =>
+                          isActive
+                            ? "flex  items-center gap-2 text-blue-500"
+                            : "flex  items-center gap-2"
+                        }
+                      >
+                        {t("navbar.home")}
+                      </NavLink>
+                    </li>
+                    <li className="cursor-pointer transition duration-300 hover:text-primary">
+                      <NavLink
+                        to="/about"
+                        className={({ isActive }) =>
+                          isActive
+                            ? "flex  items-center gap-2 text-blue-500"
+                            : "flex  items-center gap-2"
+                        }
+                      >
+                        {t("navbar.about")}
+                      </NavLink>
+                    </li>
 
-                <li className="cursor-pointer transition duration-300 hover:text-primary">
-                  <NavLink
-                    to="/contact"
-                    className={({ isActive }) =>
-                      isActive
-                        ? "flex items-center gap-2 text-blue-500"
-                        : "flex items-center gap-2"
-                    }
-                  >
-                    {t("navbar.contact")}
-                  </NavLink>
-                </li>
-              </ul>
+                    <li className="cursor-pointer transition duration-300 hover:text-primary">
+                      <NavLink
+                        to="/contact"
+                        className={({ isActive }) =>
+                          isActive
+                            ? "flex items-center gap-2 text-blue-500"
+                            : "flex items-center gap-2"
+                        }
+                      >
+                        {t("navbar.contact")}
+                      </NavLink>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="mb-4 text-xl font-semibold">
+                    {t("footer.links")}
+                  </h2>
+                  <ul className="flex flex-col gap-2">
+                    <li className="cursor-pointer transition duration-300 hover:text-primary">
+                      <NavLink
+                        to="/privacy"
+                        className={({ isActive }) =>
+                          isActive
+                            ? "flex  items-center gap-2 text-blue-500"
+                            : "flex  items-center gap-2"
+                        }
+                      >
+                        {t("navbar.privacy")}
+                      </NavLink>
+                    </li>
+                    <li className="cursor-pointer transition duration-300 hover:text-primary">
+                      <NavLink
+                        to="/services"
+                        className={({ isActive }) =>
+                          isActive
+                            ? "flex  items-center gap-2 text-blue-500"
+                            : "flex  items-center gap-2"
+                        }
+                      >
+                        {t("navbar.services")}
+                      </NavLink>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="mt-8 flex flex-wrap items-center gap-8">
+                <div className="flex items-center justify-center transition-transform duration-300 hover:scale-110">
+                  <div className="flex h-12 w-24 items-center justify-center rounded-lg bg-white p-2">
+                    <img
+                      src="/assets/basis.webp"
+                      alt="BASIS"
+                      className="h-full w-full object-contain"
+                    />
+                  </div>
+                </div>
+                <div className="flex items-center justify-center transition-transform duration-300 hover:scale-110">
+                  <div className="flex h-12 w-24 items-center justify-center rounded-lg bg-white p-2">
+                    <img
+                      src="/assets/microsoft.png"
+                      alt="Microsoft"
+                      className="h-full w-full object-contain"
+                    />
+                  </div>
+                </div>
+                <div className="flex items-center justify-center transition-transform duration-300 hover:scale-110">
+                  <div className="flex h-12 w-24 items-center justify-center rounded-lg bg-white p-2">
+                    <img
+                      src="/assets/cisco new.png"
+                      alt="Cisco"
+                      className="h-full w-full object-contain"
+                    />
+                  </div>
+                </div>
+                <div className="flex items-center justify-center transition-transform duration-300 hover:scale-110">
+                  <div className="flex h-12 w-24 items-center justify-center rounded-lg bg-white p-2">
+                    <img
+                      src="/assets/Bangladesh_National_Portal_logo.png"
+                      alt="Bangladesh National Portal"
+                      className="h-full w-full object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <h2 className="mb-4 text-xl font-semibold">
-                {t("footer.links")}
-              </h2>
-              <ul className="flex flex-col gap-2">
-                <li className="cursor-pointer transition duration-300 hover:text-primary">
-                  <NavLink
-                    to="/privacy"
-                    className={({ isActive }) =>
-                      isActive
-                        ? "flex  items-center gap-2 text-blue-500"
-                        : "flex  items-center gap-2"
-                    }
-                  >
-                    {t("navbar.privacy")}
-                  </NavLink>
-                </li>
-                <li className="cursor-pointer transition duration-300 hover:text-primary">
-                  <NavLink
-                    to="/services"
-                    className={({ isActive }) =>
-                      isActive
-                        ? "flex  items-center gap-2 text-blue-500"
-                        : "flex  items-center gap-2"
-                    }
-                  >
-                    {t("navbar.services")}
-                  </NavLink>
-                </li>
-              </ul>
-            </div>
+
             <div>
               <h2 className="mb-4 text-xl font-semibold">
                 {t("footer.socialLinks")}
@@ -171,6 +216,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
       <div className="border-t border-gray-300 pb-4 pt-8 text-center text-black dark:text-white">
         <p>{t("footer.copyright")} 2024 Talat</p>
         <button
