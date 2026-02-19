@@ -111,7 +111,7 @@ const TeamListStatic = () => {
           animate={{ opacity: 1 }}
         >
           <motion.div
-            className="h-[60vh] w-[50vw] overflow-hidden rounded-3xl bg-white shadow-2xl dark:bg-slate-900"
+            className="h-[80vh] md:h-[60vh] w-full md:w-[60vw] overflow-hidden rounded-3xl bg-white shadow-2xl dark:bg-slate-900"
             initial={{ scale: 0.95 }}
             animate={{ scale: 1 }}
           >
